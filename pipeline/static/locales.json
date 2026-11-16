@@ -1,0 +1,174 @@
+{
+  "_nota": "Horarios de las iglesias de Sotogrande y su entorno publicados por la parroquia en holasoto.com/sotogrande/misas (actualizado 1-nov-2026). Cuando coinciden con una ficha del Obispado, mandan los más recientes; el resto se añade aparte.",
+  "fuente_url": "https://holasoto.com/sotogrande/misas/",
+  "verificado": "2026-11-01",
+  "iglesias": [
+    {
+      "id": "l-sotogrande-merced",
+      "nombre": "Nuestra Señora de la Merced",
+      "localidad": "Sotogrande",
+      "calle": "Calle Bellota",
+      "num": "305",
+      "cp": "11310",
+      "parroco": "Parroquia de Guadiaro (Juan Ramón Rouco Fonseret)",
+      "tel": "956614328",
+      "arciprestazgo": "San Roque",
+      "diocesis": "Cádiz y Ceuta",
+      "h": {
+        "inv": {
+          "lab": [
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "visp": [],
+          "fest": [
+            "10:00"
+          ]
+        }
+      },
+      "obs": "Domingos y festivos a las 10:00. Confesión media hora antes de cada misa. Horario de verano no publicado: se muestra el de invierno.",
+      "idiomas": [
+        "es"
+      ]
+    },
+    {
+      "id": "l-guadiaro-rosario",
+      "reemplaza": "nuestra-senora-del-rosario-guadiaro",
+      "nombre": "Nuestra Señora del Rosario",
+      "localidad": "Guadiaro",
+      "calle": "Plaza de la Iglesia",
+      "num": "",
+      "cp": "11311",
+      "tel": "956614328",
+      "arciprestazgo": "San Roque",
+      "diocesis": "Cádiz y Ceuta",
+      "h": {
+        "inv": {
+          "lab": [
+            [],
+            [
+              "19:00"
+            ],
+            [
+              "19:00"
+            ],
+            [
+              "19:00"
+            ],
+            []
+          ],
+          "visp": [
+            "19:00"
+          ],
+          "fest": [
+            "19:00"
+          ]
+        }
+      },
+      "obs": "Invierno 2026: martes, miércoles, jueves, sábado y domingo a las 19:00. Exposición del Santísimo los jueves. (La ficha del Obispado añade también el viernes.)",
+      "idiomas": [
+        "es"
+      ]
+    },
+    {
+      "id": "l-pueblo-nuevo-misericordia",
+      "nombre": "Santuario de la Divina Misericordia",
+      "localidad": "Pueblo Nuevo de Guadiaro",
+      "calle": "",
+      "num": "",
+      "cp": "11311",
+      "tel": "956614328",
+      "arciprestazgo": "San Roque",
+      "diocesis": "Cádiz y Ceuta",
+      "h": {
+        "inv": {
+          "lab": [
+            [],
+            [],
+            [],
+            [],
+            [
+              "19:00"
+            ]
+          ],
+          "visp": [
+            "19:00"
+          ],
+          "fest": [
+            "10:30",
+            "13:00"
+          ]
+        }
+      },
+      "obs": "Viernes y sábado a las 19:00. Domingo: 10:30 misa en inglés y 13:00 misa en español.",
+      "idiomas": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "id": "l-torreguadiaro-santa-maria-del-mar",
+      "nombre": "Capilla de Santa María del Mar",
+      "localidad": "Torreguadiaro",
+      "calle": "",
+      "num": "",
+      "cp": "11311",
+      "tel": "956614328",
+      "arciprestazgo": "San Roque",
+      "diocesis": "Cádiz y Ceuta",
+      "h": {
+        "inv": {
+          "lab": [
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "visp": [
+            "18:00"
+          ],
+          "fest": []
+        }
+      },
+      "obs": "Sábados a las 18:00 (invierno 2026).",
+      "idiomas": [
+        "es"
+      ]
+    },
+    {
+      "id": "l-sotogrande-milagrosa",
+      "nombre": "Capilla de la Residencia La Milagrosa",
+      "localidad": "Sotogrande",
+      "calle": "",
+      "num": "",
+      "cp": "11310",
+      "tel": "",
+      "arciprestazgo": "San Roque",
+      "diocesis": "Cádiz y Ceuta",
+      "h": {
+        "inv": {
+          "lab": [
+            [],
+            [],
+            [],
+            [
+              "10:30"
+            ],
+            []
+          ],
+          "visp": [],
+          "fest": []
+        }
+      },
+      "obs": "Misa los jueves a las 10:30 en la residencia de mayores (también lo indica el Obispado en la ficha de San Enrique). Confirma antes si no eres residente.",
+      "idiomas": [
+        "es"
+      ],
+      "residencia": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+name: Actualizar horarios de misa
+
+on:
+  schedule:
+    # GitHub retrasa (o se salta) las tareas programadas. Por eso se intenta cada hora en una ventana
+    # y el trabajo «decidir» deja pasar solo la primera que llegue; las demás terminan en segundos.
+    # Hora UTC (Madrid = +1 en invierno, +2 en verano): de 4:23 a 9:23 en Madrid.
+    - cron: '23 3-8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  decidir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      go: ${{ steps.d.outputs.go }}
+    steps:
+      - id: d
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EV: ${{ github.event_name }}
+          REPO: ${{ github.repository }}
+          RUN: ${{ github.run_id }}
+        run: |
+          if [ "$EV" != "schedule" ]; then echo "go=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          D=$(date -u +%Y-%m-%d); A="${D}T00:00:00Z"
+          # Solo cuentan las pasadas de hoy que actualizaron de verdad (o están en ello); las que se saltaron no.
+          OK=$(gh api "repos/$REPO/actions/workflows/actualizar.yml/runs?created=%3E%3D$A&per_page=50" \
+            --jq "[.workflow_runs[] | select(.id != $RUN)] | map(.id) | join(\" \")")
+          HECHO=0
+          for R in $OK; do
+            J=$(gh api "repos/$REPO/actions/runs/$R/jobs" --jq '[.jobs[] | select(.name == "actualizar") | select(.conclusion == "success" or .status != "completed")] | length')
+            [ "$J" -gt 0 ] && HECHO=1 && break
+          done
+          echo "¿ya se actualizó hoy? $HECHO"
+          if [ "$HECHO" = 1 ]; then echo "go=0" >> "$GITHUB_OUTPUT"; else echo "go=1" >> "$GITHUB_OUTPUT"; fi
+
+  actualizar:
+    needs: decidir
+    if: ${{ always() && needs.decidir.outputs.go == '1' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: actualizar
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+
+      - name: Leer las diócesis y generar los datos
+        env:
+          TZ: Europe/Madrid
+        run: python3 pipeline/build.py
+
+      - name: Validar
+        run: python3 pipeline/check.py
+
+      - name: Publicar
+        run: |
+          git config user.name "Campana (actualización diaria)"
+          git config user.email "actions@users.noreply.github.com"
+          cp site/misas.js /tmp/misas.js
+          cp pipeline/static/geo_cache.json /tmp/geo_cache.json
+          publicar() {
+            cp /tmp/misas.js site/misas.js
+            cp /tmp/geo_cache.json pipeline/static/geo_cache.json
+            git add -A site/misas.js pipeline/static/geo_cache.json
+            if git diff --cached --quiet; then echo "Sin cambios"; return 0; fi
+            git commit -q -m "Horarios actualizados $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
+          }
+          publicar
+          # Si alguien ha subido cambios mientras tanto, se rehace sobre la versión nueva
+          for intento in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "La rama ha cambiado; se rehace la publicación (intento $intento)"
+            sleep $((intento * 5))
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            publicar
+          done
+          exit 1
