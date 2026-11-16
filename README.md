@@ -1,6 +1,6 @@
 # Campana · horarios de misa
 
-Web estática que dice **cuál es la misa más cercana** y **cuál empieza antes** según dónde estés y la hora que sea, en Sotogrande y 50 km alrededor (Cádiz y Málaga). Mismo diseño que Turno, en violeta litúrgico.
+Web estática que dice **cuál es la misa más cercana** y **cuál empieza antes** según dónde estés y la hora que sea, en Sotogrande y 50 km alrededor (Cádiz y Málaga). Mismo diseño que Turno, en burdeos cardenalicio y oro.
 
 - Pestañas: **Cerca de mí** (dos tarjetas, lista y mapa), **Esta semana**, **Favoritas** y **Fuentes**.
 - Al entrar pide tu ubicación; si no la das, muestra Sotogrande. La posición no sale del dispositivo.
