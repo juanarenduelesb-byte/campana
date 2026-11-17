@@ -43,7 +43,7 @@ Campana ya no se limita a Sotogrande: cada diócesis es una fuente independiente
 y solo se usan las webs oficiales de las diócesis. `pipeline/build.py` genera un archivo por diócesis (`site/data/<id>.js`)
 y un índice de cobertura (`site/data/indice.js`); la web carga solo las diócesis cercanas a tu ubicación.
 
-- Hoy: Cádiz y Ceuta, Málaga y Sevilla. Pendientes: ver `pipeline/static/pendientes.json`.
+- Hoy: Cádiz y Ceuta, Málaga, Sevilla y Madrid. Pendientes: ver `pipeline/static/pendientes.json`.
 - Para añadir una diócesis: crea `pipeline/fuentes/<id>.py` con `run() -> (lista_normalizada, fallos)`, añádela a `FUENTES` en `build.py` y prueba con `python3 pipeline/build.py <id>`.
 - Si una diócesis falla o devuelve menos del 60 % de lo anterior, se conservan sus datos anteriores y el índice la marca como «antiguo».
 - Sevilla guarda una caché (`pipeline/static/cache_sevilla.json`) para no volver a descargar las fichas que no han cambiado.

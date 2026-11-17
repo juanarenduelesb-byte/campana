@@ -15,6 +15,7 @@ FUENTES = [  # (id, módulo, nombre, web oficial)
     ('cadiz', 'cadiz', 'Cádiz y Ceuta', 'https://www.obispadocadizyceuta.es/parroquias/'),
     ('malaga', 'malaga', 'Málaga', 'https://diocesismalaga.es/parroquias'),
     ('sevilla', 'sevilla', 'Sevilla', 'https://www.archisevilla.org/iglesia/'),
+    ('madrid', 'madrid', 'Madrid', 'https://www.archimadrid.org/index.php/component/archimadrid/?view=parroquias&Itemid=1236'),
 ]
 PENDIENTES = json.load(open(os.path.join(AQUI, 'static', 'pendientes.json'), encoding='utf8'))
 MIN_RATIO = 0.6   # si una diócesis devuelve menos de este % de lo anterior, se descarta lo nuevo
@@ -55,6 +56,7 @@ def preparar(lista, id_):
     for x in fin:
         o = {k: x[k] for k in CAMPOS}
         o['res'] = bool(x.get('res'))
+        x.pop('_raros', None)
         o['h'] = {'inv': x['h']['inv'], 'ver': x['h']['ver']}
         o['obs'] = x.get('obs_raw') or x.get('obs', ''); o['texto'] = x.get('texto', '')
         o['interpretado'] = not (season_empty(x['h']['inv']) and season_empty(x['h']['ver']))
