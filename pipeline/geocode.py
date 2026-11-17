@@ -21,7 +21,10 @@ def cargar():
 
 def guardar(c):
     os.makedirs(os.path.dirname(CACHE), exist_ok=True)
-    json.dump(c, open(CACHE, 'w', encoding='utf8'), ensure_ascii=False, indent=0, sort_keys=True)
+    c = {**cargar(), **c}   # fusiona con lo que haya en disco (varios procesos a la vez)
+    tmp = CACHE + '.%d.tmp' % os.getpid()
+    json.dump(c, open(tmp, 'w', encoding='utf8'), ensure_ascii=False, indent=0, sort_keys=True)
+    os.replace(tmp, CACHE)
 
 def nominatim(q):
     u = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=es,gi&q=' + urllib.parse.quote(q)

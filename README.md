@@ -35,3 +35,15 @@ Probar en local: `cd site && python3 -m http.server` y abrir `http://localhost:8
 - El tiempo en coche es una estimación por distancia en línea recta, sin tráfico.
 - `robots.txt` y las cabeceras piden no indexar (como Turno). Para que salga en Google, cambiar `robots.txt`, `X-Robots-Tag` en `site/_headers` y la etiqueta `robots` de `index.html`.
 - Un proyecto de **esclusa**.
+
+
+## Cobertura por diócesis (actualizado)
+
+Campana ya no se limita a Sotogrande: cada diócesis es una fuente independiente en `pipeline/fuentes/<diocesis>.py`
+y solo se usan las webs oficiales de las diócesis. `pipeline/build.py` genera un archivo por diócesis (`site/data/<id>.js`)
+y un índice de cobertura (`site/data/indice.js`); la web carga solo las diócesis cercanas a tu ubicación.
+
+- Hoy: Cádiz y Ceuta, Málaga y Sevilla. Pendientes: ver `pipeline/static/pendientes.json`.
+- Para añadir una diócesis: crea `pipeline/fuentes/<id>.py` con `run() -> (lista_normalizada, fallos)`, añádela a `FUENTES` en `build.py` y prueba con `python3 pipeline/build.py <id>`.
+- Si una diócesis falla o devuelve menos del 60 % de lo anterior, se conservan sus datos anteriores y el índice la marca como «antiguo».
+- Sevilla guarda una caché (`pipeline/static/cache_sevilla.json`) para no volver a descargar las fichas que no han cambiado.

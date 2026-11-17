@@ -14,7 +14,7 @@ LOCALIDADES = ['estepona', 'manilva', 'casares', 'gaucin', 'marbella', 'san-pedr
 def listar():
     t = get(BASE + '/parroquias')
     ls = sorted(set(re.findall(r'href="(/parroquias/\d+/[^"]+)"', t)))
-    return [BASE + l for l in ls if any(k in l for k in LOCALIDADES)]
+    return [BASE + l for l in ls]
 
 DIAS_RE = r'(lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bados?|domingos?)'
 def dias_de(txt):

@@ -43,7 +43,7 @@ jobs:
     needs: decidir
     if: ${{ always() && needs.decidir.outputs.go == '1' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 150
     concurrency:
       group: actualizar
       cancel-in-progress: false
@@ -66,12 +66,12 @@ jobs:
         run: |
           git config user.name "Campana (actualización diaria)"
           git config user.email "actions@users.noreply.github.com"
-          cp site/misas.js /tmp/misas.js
+          rm -rf /tmp/data && cp -r site/data /tmp/data
           cp pipeline/static/geo_cache.json /tmp/geo_cache.json
           publicar() {
-            cp /tmp/misas.js site/misas.js
+            rm -rf site/data && cp -r /tmp/data site/data
             cp /tmp/geo_cache.json pipeline/static/geo_cache.json
-            git add -A site/misas.js pipeline/static/geo_cache.json
+            git add -A site/data pipeline/static/geo_cache.json
             if git diff --cached --quiet; then echo "Sin cambios"; return 0; fi
             git commit -q -m "Horarios actualizados $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
           }

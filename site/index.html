@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Campana · Horarios de misa en Sotogrande y alrededores</title>
-<meta name="description" content="La misa más cercana y la que antes empieza en Sotogrande y 50 km a la redonda, con horarios oficiales de las parroquias.">
+<title>Campana · Horarios de misa cerca de ti</title>
+<meta name="description" content="La misa más cercana y la que antes empieza donde estés, con los horarios oficiales de las diócesis españolas que ya están incluidas.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#6B1426">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
@@ -498,7 +498,7 @@ details.note p{white-space:pre-wrap}
 <div class="wrap">
   <div class="head">
     <div>
-      <p class="eyebrow" id="eyebrow">Horarios de misa · Sotogrande y 50 km</p>
+      <p class="eyebrow" id="eyebrow">Horarios de misa · fuentes oficiales</p>
       <h1 id="h1">¿Dónde es la <em>próxima misa</em> cerca de ti?</h1>
     </div>
     <div class="kpis num" id="kpis"></div>
@@ -506,7 +506,7 @@ details.note p{white-space:pre-wrap}
 
   <form class="tool glass" id="tool" autocomplete="off">
     <label class="field q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><input type="search" id="q" placeholder="Municipio, barrio o iglesia — p. ej. Guadiaro, San Roque" aria-label="Tu ubicación o una iglesia"></label>
-    <select id="rad" class="rad" aria-label="Radio de búsqueda"><option value="5">Hasta 5 km</option><option value="10">Hasta 10 km</option><option value="25" selected>Hasta 25 km</option><option value="50">Hasta 50 km</option></select>
+    <select id="rad" class="rad" aria-label="Radio de búsqueda"><option value="5">Hasta 5 km</option><option value="10">Hasta 10 km</option><option value="25" selected>Hasta 25 km</option><option value="50">Hasta 50 km</option><option value="100">Hasta 100 km</option></select>
     <button class="btn soft" type="button" id="gps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg><span>Mi ubicación</span></button>
     <div class="sug" id="sug" hidden></div>
     <div class="gmsg" id="gmsg" hidden></div>
@@ -575,7 +575,7 @@ details.note p{white-space:pre-wrap}
 </div>
 
 <script src="geo.js"></script>
-<script src="misas.js"></script>
+<script src="data/indice.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

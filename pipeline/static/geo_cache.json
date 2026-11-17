@@ -4,9 +4,29 @@
 -5.42108,
 false
 ],
+"el-buen-pastor-puerto-real": [
+36.50251,
+-6.14359,
+false
+],
+"el-buen-pastor-san-fernando": [
+36.45049,
+-6.20659,
+false
+],
+"el-divino-salvador-vejer": [
+36.25375,
+-5.96438,
+false
+],
 "el-espiritu-santo-algeciras": [
 36.12243,
 -5.45666,
+false
+],
+"iglesia-la-conversion-san-pablo": [
+36.53377,
+-6.29788,
 false
 ],
 "l-guadiaro-rosario": [
@@ -34,14 +54,34 @@ true
 -5.27094,
 true
 ],
+"la-asuncion-de-nuestra-senora-cadiz": [
+36.51057,
+-6.27294,
+false
+],
+"la-divina-pastora-cadiz": [
+36.52961,
+-6.30096,
+false
+],
 "la-divina-pastora-facinas": [
 36.14146,
 -5.69838,
 false
 ],
+"la-divina-pastora-san-fernando": [
+36.46846,
+-6.19301,
+false
+],
 "la-inmaculada-campamento": [
 36.17743,
 -5.37435,
+false
+],
+"la-inmaculada-concepcion-san-fernando": [
+36.48104,
+-6.19921,
 false
 ],
 "la-inmaculada-la-linea": [
@@ -54,6 +94,11 @@ false
 -5.43566,
 true
 ],
+"la-sagrada-familia-san-fernando": [
+36.47578,
+-6.18789,
+false
+],
 "la-santa-misericordia-santa-maria-la-coronada-jimena": [
 36.43273,
 -5.45275,
@@ -64,14 +109,294 @@ true
 -5.4474,
 true
 ],
+"la-santisima-trinidad-san-telmo": [
+36.41989,
+-6.15002,
+false
+],
 "la-santisima-trinidad-y-santa-margarita-la-linea": [
 36.20599,
 -5.34118,
 false
 ],
+"m1": [
+36.76479,
+-4.4422,
+true
+],
+"m10": [
+36.72105,
+-4.42085,
+false
+],
+"m101": [
+36.77596,
+-4.0952,
+false
+],
+"m102": [
+36.81447,
+-4.04606,
+false
+],
+"m103": [
+36.82139,
+-4.03034,
+true
+],
+"m104": [
+36.82155,
+-4.00474,
+false
+],
+"m105": [
+36.80344,
+-4.12345,
+true
+],
+"m106": [
+36.80898,
+-4.21616,
+true
+],
+"m107": [
+36.8145,
+-4.23483,
+true
+],
+"m108": [
+36.77088,
+-4.25353,
+false
+],
+"m109": [
+36.83088,
+-4.22912,
+false
+],
+"m11": [
+36.73734,
+-4.433,
+false
+],
+"m110": [
+36.90256,
+-4.11401,
+true
+],
+"m111": [
+36.835,
+-4.19337,
+false
+],
+"m112": [
+36.84907,
+-4.24894,
+false
+],
+"m113": [
+36.83267,
+-3.97492,
+false
+],
+"m114": [
+36.84618,
+-3.98781,
+true
+],
+"m115": [
+36.83892,
+-3.99088,
+false
+],
+"m116": [
+36.87321,
+-4.08203,
+false
+],
+"m117": [
+36.86173,
+-4.03366,
+true
+],
+"m118": [
+36.85475,
+-4.02426,
+false
+],
+"m119": [
+36.86118,
+-4.13972,
+false
+],
+"m12": [
+36.74181,
+-4.42706,
+false
+],
+"m120": [
+36.92612,
+-4.18989,
+false
+],
+"m121": [
+36.93961,
+-4.22801,
+true
+],
+"m122": [
+36.90537,
+-4.33681,
+true
+],
+"m123": [
+36.91598,
+-4.29376,
+false
+],
+"m124": [
+36.77554,
+-4.10383,
+false
+],
+"m125": [
+36.83932,
+-4.20701,
+true
+],
+"m126": [
+36.83733,
+-4.25015,
+true
+],
+"m127": [
+36.73799,
+-4.24479,
+false
+],
+"m128": [
+36.77622,
+-4.18491,
+true
+],
+"m129": [
+36.75846,
+-4.18508,
+false
+],
+"m13": [
+36.76479,
+-4.4422,
+true
+],
+"m130": [
+36.73142,
+-4.13064,
+false
+],
+"m131": [
+36.72736,
+-4.22349,
+true
+],
+"m132": [
+36.71813,
+-4.19546,
+false
+],
+"m133": [
+36.76932,
+-4.21626,
+false
+],
+"m134": [
+36.76263,
+-4.21443,
+false
+],
+"m135": [
+36.71336,
+-4.27382,
+false
+],
+"m136": [
+36.71609,
+-4.30814,
+false
+],
+"m137": [
+36.74274,
+-4.09417,
+false
+],
+"m138": [
+36.74927,
+-4.07278,
+false
+],
+"m139": [
+36.74063,
+-4.00024,
+false
+],
+"m14": [
+36.74164,
+-4.42076,
+false
+],
+"m140": [
+36.77365,
+-4.03766,
+false
+],
+"m141": [
+36.79827,
+-4.01296,
+true
+],
+"m142": [
+36.75774,
+-3.95297,
+false
+],
+"m143": [
+36.74493,
+-3.87693,
+false
+],
+"m144": [
+36.75072,
+-3.8748,
+false
+],
+"m145": [
+36.79125,
+-3.89458,
+false
+],
+"m146": [
+36.75869,
+-3.84326,
+true
+],
+"m147": [
+36.79011,
+-4.16079,
+false
+],
+"m148": [
+36.71592,
+-4.26925,
+false
+],
 "m149": [
 36.74558,
 -5.15915,
+false
+],
+"m15": [
+36.73494,
+-4.42038,
 false
 ],
 "m150": [
@@ -94,9 +419,24 @@ false
 -5.15809,
 false
 ],
+"m154": [
+36.81499,
+-5.29834,
+true
+],
 "m155": [
 36.79861,
 -5.14192,
+false
+],
+"m156": [
+36.82507,
+-5.1344,
+true
+],
+"m157": [
+36.63391,
+-5.20254,
 false
 ],
 "m158": [
@@ -109,6 +449,11 @@ true
 -5.17081,
 true
 ],
+"m16": [
+36.75055,
+-4.41791,
+false
+],
 "m160": [
 36.64561,
 -5.15423,
@@ -118,6 +463,11 @@ false
 36.74558,
 -5.15915,
 false
+],
+"m162": [
+36.88492,
+-4.98101,
+true
 ],
 "m163": [
 36.57362,
@@ -147,6 +497,26 @@ true
 "m168": [
 36.55062,
 -5.27573,
+false
+],
+"m169": [
+36.78942,
+-4.94645,
+false
+],
+"m17": [
+36.78611,
+-4.43749,
+false
+],
+"m170": [
+36.95114,
+-5.02358,
+false
+],
+"m171": [
+36.87692,
+-5.0443,
 false
 ],
 "m172": [
@@ -189,6 +559,16 @@ false
 -5.25177,
 false
 ],
+"m18": [
+36.8939,
+-4.42933,
+false
+],
+"m180": [
+36.73464,
+-4.9206,
+true
+],
 "m181": [
 36.64149,
 -5.24367,
@@ -199,14 +579,589 @@ false
 -5.26906,
 false
 ],
+"m183": [
+36.59348,
+-5.26021,
+false
+],
+"m184": [
+36.82384,
+-4.70511,
+false
+],
+"m185": [
+36.71007,
+-4.63154,
+true
+],
+"m186": [
+36.73088,
+-4.57052,
+false
+],
+"m187": [
+36.72352,
+-4.54892,
+false
+],
+"m188": [
+36.72783,
+-4.85577,
+false
+],
+"m189": [
+36.78521,
+-4.84307,
+true
+],
+"m19": [
+36.72433,
+-4.51361,
+false
+],
+"m190": [
+36.87753,
+-4.84633,
+false
+],
+"m191": [
+36.85277,
+-4.81984,
+false
+],
+"m192": [
+36.90893,
+-4.75997,
+true
+],
+"m193": [
+36.73646,
+-4.61271,
+true
+],
+"m195": [
+36.74825,
+-4.76638,
+true
+],
+"m196": [
+36.76718,
+-4.70875,
+false
+],
+"m197": [
+36.74662,
+-4.72189,
+true
+],
+"m198": [
+36.76851,
+-4.74337,
+false
+],
+"m199": [
+36.65946,
+-4.75964,
+false
+],
+"m2": [
+36.76479,
+-4.4422,
+true
+],
+"m20": [
+36.72141,
+-4.3601,
+false
+],
+"m200": [
+36.6601,
+-4.75419,
+false
+],
+"m201": [
+36.64212,
+-4.68674,
+true
+],
+"m202": [
+36.66316,
+-4.56057,
+false
+],
+"m203": [
+36.70542,
+-4.56631,
+false
+],
+"m204": [
+36.66857,
+-4.50443,
+false
+],
+"m205": [
+36.65584,
+-4.83307,
+false
+],
 "m206": [
 36.62972,
 -4.83281,
 false
 ],
+"m207": [
+36.68742,
+-4.90509,
+true
+],
 "m208": [
 36.56424,
 -4.85635,
+false
+],
+"m209": [
+36.70157,
+-4.69913,
+false
+],
+"m21": [
+36.71177,
+-4.44701,
+false
+],
+"m210": [
+36.66351,
+-4.5638,
+false
+],
+"m211": [
+37.01837,
+-4.55966,
+true
+],
+"m212": [
+37.01659,
+-4.55895,
+false
+],
+"m213": [
+37.01306,
+-4.55867,
+false
+],
+"m214": [
+37.01652,
+-4.56463,
+false
+],
+"m215": [
+37.02322,
+-4.56029,
+false
+],
+"m216": [
+37.01861,
+-4.55586,
+false
+],
+"m217": [
+37.02111,
+-4.55795,
+false
+],
+"m219": [
+37.03764,
+-4.72798,
+true
+],
+"m22": [
+36.71335,
+-4.32845,
+false
+],
+"m220": [
+37.03655,
+-4.72842,
+true
+],
+"m221": [
+37.10765,
+-4.51182,
+false
+],
+"m222": [
+36.93146,
+-4.68257,
+false
+],
+"m224": [
+36.93145,
+-4.52955,
+false
+],
+"m225": [
+37.09726,
+-4.39051,
+false
+],
+"m226": [
+37.06936,
+-4.32805,
+true
+],
+"m227": [
+37.04708,
+-4.86477,
+false
+],
+"m228": [
+37.12419,
+-4.86851,
+false
+],
+"m229": [
+37.2676,
+-4.41388,
+false
+],
+"m23": [
+36.72477,
+-4.39508,
+false
+],
+"m230": [
+37.0293,
+-4.33753,
+false
+],
+"m231": [
+37.23553,
+-4.48905,
+false
+],
+"m232": [
+37.00222,
+-5.0203,
+false
+],
+"m233": [
+36.9986,
+-4.36605,
+true
+],
+"m234": [
+37.20893,
+-4.65969,
+false
+],
+"m235": [
+36.9952,
+-4.26006,
+false
+],
+"m236": [
+36.97964,
+-4.27197,
+false
+],
+"m237": [
+36.95333,
+-4.4427,
+true
+],
+"m238": [
+37.13563,
+-4.73114,
+false
+],
+"m239": [
+36.98199,
+-4.92081,
+false
+],
+"m24": [
+36.71618,
+-4.42811,
+false
+],
+"m240": [
+37.18894,
+-4.45115,
+false
+],
+"m241": [
+37.12453,
+-4.29722,
+false
+],
+"m242": [
+37.18392,
+-4.33429,
+false
+],
+"m243": [
+37.13722,
+-4.69971,
+true
+],
+"m244": [
+37.12575,
+-4.65759,
+false
+],
+"m245": [
+36.84429,
+-4.13663,
+true
+],
+"m246": [
+36.84429,
+-4.13663,
+true
+],
+"m247": [
+36.84429,
+-4.13663,
+true
+],
+"m248": [
+36.84429,
+-4.13663,
+true
+],
+"m249": [
+36.84429,
+-4.13663,
+true
+],
+"m25": [
+36.72298,
+-4.37452,
+false
+],
+"m250": [
+36.84429,
+-4.13663,
+true
+],
+"m251": [
+36.8712,
+-4.72055,
+false
+],
+"m26": [
+36.7169,
+-4.42358,
+false
+],
+"m27": [
+36.77115,
+-4.31917,
+false
+],
+"m28": [
+36.76529,
+-4.297,
+false
+],
+"m29": [
+36.72652,
+-4.3828,
+false
+],
+"m3": [
+36.73108,
+-4.41858,
+false
+],
+"m30": [
+36.72974,
+-4.43736,
+false
+],
+"m31": [
+36.73051,
+-4.43985,
+false
+],
+"m32": [
+36.7242,
+-4.42756,
+false
+],
+"m33": [
+36.71986,
+-4.31164,
+false
+],
+"m34": [
+36.72317,
+-4.42787,
+false
+],
+"m35": [
+36.72537,
+-4.44482,
+false
+],
+"m36": [
+36.72072,
+-4.43485,
+false
+],
+"m37": [
+37.01857,
+-4.56332,
+false
+],
+"m38": [
+36.72103,
+-4.42584,
+false
+],
+"m39": [
+36.72943,
+-4.42887,
+false
+],
+"m4": [
+36.72062,
+-4.42364,
+false
+],
+"m40": [
+36.72491,
+-4.43819,
+false
+],
+"m41": [
+36.7125,
+-4.44181,
+false
+],
+"m42": [
+36.72769,
+-4.45032,
+false
+],
+"m43": [
+36.74438,
+-4.42374,
+false
+],
+"m44": [
+36.71518,
+-4.45173,
+false
+],
+"m45": [
+36.7232,
+-4.48384,
+false
+],
+"m46": [
+36.71737,
+-4.44411,
+false
+],
+"m47": [
+36.70868,
+-4.4434,
+false
+],
+"m48": [
+36.72557,
+-4.46734,
+false
+],
+"m49": [
+36.71223,
+-4.44839,
+false
+],
+"m5": [
+36.79975,
+-4.45356,
+false
+],
+"m50": [
+36.72258,
+-4.44876,
+false
+],
+"m51": [
+36.70797,
+-4.48978,
+false
+],
+"m52": [
+36.70851,
+-4.46301,
+false
+],
+"m53": [
+36.73539,
+-4.47809,
+false
+],
+"m54": [
+36.74434,
+-4.49611,
+false
+],
+"m55": [
+36.72591,
+-4.36988,
+false
+],
+"m56": [
+36.82486,
+-4.54101,
+false
+],
+"m57": [
+36.68764,
+-4.44895,
+false
+],
+"m58": [
+36.69478,
+-4.45601,
+false
+],
+"m59": [
+36.69503,
+-4.44926,
+false
+],
+"m6": [
+36.72234,
+-4.41751,
+false
+],
+"m60": [
+36.70545,
+-4.43701,
+false
+],
+"m61": [
+36.70722,
+-4.4382,
+false
+],
+"m62": [
+36.70237,
+-4.43894,
+false
+],
+"m63": [
+36.70901,
+-4.43265,
+false
+],
+"m64": [
+36.70191,
+-4.44981,
 false
 ],
 "m65": [
@@ -234,6 +1189,11 @@ false
 -4.99244,
 false
 ],
+"m7": [
+36.72542,
+-4.42138,
+false
+],
 "m70": [
 36.48396,
 -4.99568,
@@ -252,6 +1212,11 @@ false
 "m73": [
 36.42113,
 -5.15315,
+false
+],
+"m74": [
+36.63434,
+-4.49033,
 false
 ],
 "m75": [
@@ -279,6 +1244,11 @@ false
 -4.95051,
 false
 ],
+"m8": [
+36.7221,
+-4.42226,
+false
+],
 "m80": [
 36.37646,
 -5.25109,
@@ -294,9 +1264,119 @@ false
 -5.31394,
 false
 ],
+"m83": [
+36.59886,
+-4.53715,
+false
+],
+"m84": [
+36.59553,
+-4.574,
+false
+],
+"m85": [
+36.59696,
+-4.52527,
+false
+],
+"m86": [
+36.53884,
+-4.6234,
+true
+],
+"m87": [
+36.54801,
+-4.61681,
+false
+],
+"m88": [
+36.73842,
+-4.42439,
+false
+],
+"m89": [
+36.55462,
+-4.61459,
+true
+],
+"m9": [
+36.72791,
+-4.42522,
+false
+],
+"m90": [
+36.53884,
+-4.6234,
+true
+],
+"m91": [
+36.62254,
+-4.50728,
+false
+],
+"m92": [
+36.62475,
+-4.50098,
+false
+],
+"m93": [
+36.61561,
+-4.50196,
+false
+],
+"m94": [
+36.62344,
+-4.50135,
+false
+],
+"m95": [
+36.59503,
+-4.63924,
+false
+],
+"m96": [
+36.54504,
+-4.63388,
+false
+],
+"m97": [
+36.50416,
+-4.67878,
+false
+],
+"m98": [
+36.66737,
+-4.46168,
+true
+],
+"m99": [
+36.78184,
+-4.09881,
+true
+],
+"maria-auxiliadora-puerto-real": [
+36.52752,
+-6.17957,
+false
+],
 "maria-auxiliadora-y-san-isidro-algeciras": [
 36.12882,
 -5.4522,
+false
+],
+"nuestra-senora-de-europa-chiclana": [
+36.35941,
+-6.16625,
+false
+],
+"nuestra-senora-de-fatima-el-colorado": [
+36.68034,
+-6.04216,
+true
+],
+"nuestra-senora-de-la-inhiesta-paterna": [
+36.52299,
+-5.86619,
 false
 ],
 "nuestra-senora-de-la-luz": [
@@ -304,10 +1384,30 @@ false
 -5.47244,
 false
 ],
+"nuestra-senora-de-la-merced-cadiz": [
+36.52834,
+-6.29084,
+false
+],
+"nuestra-senora-de-la-oliva-san-fernando": [
+36.44505,
+-6.21491,
+false
+],
 "nuestra-senora-de-la-palma-algeciras": [
 36.13117,
 -5.4474,
 true
+],
+"nuestra-senora-de-la-palma-cadiz": [
+36.46426,
+-6.19533,
+false
+],
+"nuestra-senora-de-loreto-cadiz": [
+36.50555,
+-6.27189,
+false
 ],
 "nuestra-senora-de-los-angeles-jimena": [
 36.42376,
@@ -317,6 +1417,16 @@ false
 "nuestra-senora-de-los-milagros-algeciras": [
 36.1576,
 -5.44693,
+false
+],
+"nuestra-senora-de-los-remedios-ceuta": [
+36.53719,
+-6.16264,
+true
+],
+"nuestra-senora-de-lourdes-cadiz": [
+36.50663,
+-6.26718,
 false
 ],
 "nuestra-senora-del-carmen-algeciras": [
@@ -329,6 +1439,46 @@ false
 -5.33633,
 false
 ],
+"nuestra-senora-del-carmen-san-fernando": [
+36.46193,
+-6.19996,
+false
+],
+"nuestra-senora-del-carmen-sancti-petri": [
+36.37759,
+-6.17548,
+false
+],
+"nuestra-senora-del-carmen-y-santa-teresa-cadiz": [
+36.53733,
+-6.29943,
+false
+],
+"nuestra-senora-del-carmen-zahara": [
+36.13593,
+-5.84626,
+false
+],
+"nuestra-senora-del-carmen-zahora": [
+36.20311,
+-6.03982,
+true
+],
+"nuestra-senora-del-rosario-cadiz": [
+36.53197,
+-6.29423,
+false
+],
+"nuestra-senora-del-socorro-benalup": [
+36.34292,
+-5.80895,
+false
+],
+"nuestra-senora-del-valle-ceuta": [
+36.53719,
+-6.16264,
+true
+],
 "sagrado-corazon-de-jesus-la-linea": [
 36.16939,
 -5.36024,
@@ -339,9 +1489,34 @@ false
 -5.4474,
 true
 ],
+"san-agustin-cadiz": [
+36.53263,
+-6.29471,
+false
+],
+"san-ambrosio-el-palmar": [
+36.23832,
+-6.06265,
+true
+],
+"san-antonio-cadiz": [
+36.53415,
+-6.29932,
+false
+],
 "san-antonio-de-padua-algeciras": [
 36.13793,
 -5.4511,
+false
+],
+"san-antonio-de-padua-chiclana": [
+36.41026,
+-6.14669,
+false
+],
+"san-benito-abad-puerto-real": [
+36.53082,
+-6.19728,
 false
 ],
 "san-bernardo-abad-estacion-de-san-roque": [
@@ -359,9 +1534,24 @@ false
 -5.29182,
 false
 ],
+"san-fermin-los-badalejos": [
+36.3686,
+-5.87484,
+false
+],
+"san-francisco-de-asis-san-fernando": [
+36.46212,
+-6.2003,
+false
+],
 "san-francisco-de-asis-tarifa": [
 36.0127,
 -5.60438,
+false
+],
+"san-francisco-javier-cadiz": [
+36.51672,
+-6.27506,
 false
 ],
 "san-garcia-abad": [
@@ -374,6 +1564,11 @@ false
 -5.38719,
 false
 ],
+"san-idelfonso-y-santa-beatriz-de-silva-ceuta": [
+36.53719,
+-6.16264,
+true
+],
 "san-isidro-labrador-los-barrios": [
 36.18449,
 -5.49312,
@@ -384,19 +1579,74 @@ false
 -5.75689,
 false
 ],
+"san-jorge-martir-alcala": [
+36.46219,
+-5.72151,
+false
+],
 "san-jose-algeciras": [
 36.14174,
 -5.45864,
 false
+],
+"san-jose-artesano-san-fernando": [
+36.46762,
+-6.20108,
+false
+],
+"san-jose-barbate": [
+36.13601,
+-5.84529,
+false
+],
+"san-jose-cadiz": [
+36.51403,
+-6.28055,
+false
+],
+"san-jose-ceuta": [
+36.53719,
+-6.16264,
+true
 ],
 "san-jose-la-linea": [
 36.17004,
 -5.34537,
 false
 ],
+"san-jose-san-jose-del-valle": [
+36.60478,
+-5.79781,
+false
+],
+"san-juan-bautista-chiclana": [
+36.41809,
+-6.14648,
+false
+],
 "san-juan-bautista-los-barrios": [
 36.1809,
 -5.44739,
+false
+],
+"san-juan-de-dios-ceuta": [
+36.53719,
+-6.16264,
+true
+],
+"san-juan-de-dios-medina": [
+36.46462,
+-5.93085,
+false
+],
+"san-lorenzo-cadiz": [
+36.5316,
+-6.3008,
+false
+],
+"san-marcos-evangelista-san-fernando": [
+36.46011,
+-6.19978,
 false
 ],
 "san-martin-de-tours-san-martin-tesorillo": [
@@ -419,6 +1669,16 @@ false
 -5.4125,
 false
 ],
+"san-paulino-barbate": [
+36.13502,
+-5.8459,
+false
+],
+"san-pedro-apostol": [
+36.52197,
+-6.23073,
+false
+],
 "san-pedro-apostol-la-linea": [
 36.16643,
 -5.35467,
@@ -429,14 +1689,89 @@ false
 -5.4474,
 true
 ],
+"san-pedro-y-san-pablo-san-fernando": [
+36.45575,
+-6.21265,
+false
+],
 "san-pio-x-la-linea": [
 36.16697,
 -5.34961,
 false
 ],
+"san-sebastian-chiclana": [
+36.41962,
+-6.1412,
+false
+],
+"san-sebastian-puerto-real": [
+36.52897,
+-6.18961,
+false
+],
+"san-servando-y-san-german-cadiz": [
+36.50538,
+-6.27507,
+false
+],
+"san-servando-y-san-german-san-fernando": [
+36.45656,
+-6.2104,
+false
+],
+"san-severiano-cadiz": [
+36.52152,
+-6.28377,
+false
+],
+"san-vicente-de-paul-cadiz": [
+36.51325,
+-6.27336,
+false
+],
+"santa-ana-cadiz": [
+36.23278,
+-5.37671,
+false
+],
+"santa-angela-de-la-cruz": [
+36.41695,
+-6.11989,
+false
+],
+"santa-catalina-conil": [
+36.27476,
+-6.08897,
+false
+],
+"santa-cruz-cadiz": [
+36.52882,
+-6.29439,
+false
+],
+"santa-iglesia-catedral": [
+36.53719,
+-6.16264,
+true
+],
+"santa-lucia-vejer": [
+36.26703,
+-5.97338,
+false
+],
+"santa-maria-de-africa-ceuta": [
+36.53719,
+-6.16264,
+true
+],
 "santa-maria-del-saladillo-algeciras": [
 36.1142,
 -5.45238,
+false
+],
+"santa-maria-la-coronada": [
+36.45803,
+-5.92596,
 false
 ],
 "santa-maria-la-coronada-san-roque": [
@@ -449,9 +1784,29 @@ false
 -5.46022,
 false
 ],
+"santa-maria-valdelagrana": [
+36.58102,
+-6.21643,
+false
+],
+"santa-teresa-de-jesus-ceuta": [
+36.53719,
+-6.16264,
+true
+],
+"santa-y-apostolica-iglesia-catedral": [
+36.73891,
+-6.43563,
+false
+],
 "santiago-apostol-la-linea": [
 36.16221,
 -5.34115,
+false
+],
+"santiago-el-mayor-medina": [
+36.46577,
+-5.93107,
 false
 ],
 "santisimo-corpus-christi-algeciras": [
@@ -463,5 +1818,1015 @@ false
 36.08866,
 -5.77389,
 true
+],
+"santo-angel-custodio-castrense": [
+36.53392,
+-6.30399,
+false
+],
+"santo-cristo-san-fernando": [
+36.47081,
+-6.19804,
+false
+],
+"santo-tomas-de-aquino-cadiz": [
+36.50872,
+-6.27524,
+false
+],
+"santo-tomas-de-aquino-los-naveros": [
+36.35863,
+-5.97681,
+false
+],
+"santo-tomas-de-villanueva-cantarranas": [
+36.31584,
+-5.88502,
+false
+],
+"sv-basilica-de-la-macarena-parroquia-san-gil": [
+37.38863,
+-5.99534,
+true
+],
+"sv-basilica-de-maria-auxiliadora": [
+37.3975,
+-5.97996,
+false
+],
+"sv-basilica-gran-poder-parroquia-san-lorenzo": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-c-corbeta-nuestra-senora-del-mar": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-aurora-los-palacios-y-villafranca-santa-maria-": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-aurora-los-palacios-y-villafranca-santa-maria-la-blanca": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-caridad-lebrija-ntra-sra-de-la-oliva": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-cartuja-escuela-de-ingenieros-entreplanta-i": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-esperanza-el-viso-del-alcor-santa-maria-del-al": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-esperanza-el-viso-del-alcor-santa-maria-del-alcor": [
+37.38918,
+-5.72248,
+true
+],
+"sv-capilla-de-la-hacienda-de-torrijos-nuestra-senora-de-la-estr": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-hacienda-de-torrijos-nuestra-senora-de-la-estrella-de-valencina-de-la-concepcion": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-maestranza-sagrario-de-la-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-milagrosa-estepa-san-sebastian": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-paz-e-iglesia-del-corpus-el-viso-del-alcor-san": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-paz-e-iglesia-del-corpus-el-viso-del-alcor-santa-maria-del-alcor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-piedad-hdad-baratillo-sevilla": [
+37.38623,
+-5.99747,
+false
+],
+"sv-capilla-de-la-universidad-sagrario-de-la-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-veracruz-lebrija-ntra-sra-de-la-oliva": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-la-virgen-de-la-antigua-catedral-de-sevilla": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-los-luises-iglesia-del-sagrado-corazon-sevilla": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-reina-mercedes-aparejadores-planta-i": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-san-jose-capuchinos": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-san-sebastian-los-palacios-y-villafranca-santa-ma": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-san-sebastian-los-palacios-y-villafranca-santa-maria-la-blanca": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-de-sta-angela-de-la-cruz-ecija-santiago-el-mayor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-aeropuerto-viejo-nuestra-senora-de-fatima": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-colegio-mayor-colegio-mayor-hernando-colon": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-colegio-mayor-colegio-mayor-la-luz": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-corazon-de-jesus-pilas-santa-maria-la-mayor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-cristo-de-la-paz-alcala-de-guadaira": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-del-rosario-el-viso-del-alcor-santa-maria-del-alcor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-hdad-ntra-sra-del-rocio-de-triana": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-marineros-esperanza-de-triana-santa-ana": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-mayor-santa-iglesia-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-obradoiro-ntra-sra-de-los-desamparados": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-parroquial-de-la-esperanza-parroquia-nuestra-senora-": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-parroquial-de-la-esperanza-parroquia-nuestra-senora-de-la-granada": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-real-santa-iglesia-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-s-francisco-javier-y-virgen-del-camino-lumbreras-inm": [
+37.38863,
+-5.99534,
+true
+],
+"sv-capilla-s-francisco-javier-y-virgen-del-camino-lumbreras-inmaculado-corazon-de-maria": [
+37.38863,
+-5.99534,
+true
+],
+"sv-carambolo-ermita-ntra-sra-de-guia-camas-ntra-sra-de-guia": [
+37.39279,
+-6.0377,
+true
+],
+"sv-carmelitas-descalzas-sanlucar-la-mayor-carmelitas-descalzas-": [
+37.38863,
+-5.99534,
+true
+],
+"sv-carmelitas-descalzas-sanlucar-la-mayor-carmelitas-descalzas-sanlucar-la-mayor": [
+37.3858,
+-6.20016,
+true
+],
+"sv-centro-parroquial-luz-de-cristo-nuestra-senora-de-lourdes": [
+37.38863,
+-5.99534,
+true
+],
+"sv-coca-camas-ntra-sra-de-guia": [
+37.39137,
+-6.02627,
+true
+],
+"sv-convento-de-las-hermanas-de-la-cruz-penaflor-san-pedro-apost": [
+37.38863,
+-5.99534,
+true
+],
+"sv-convento-de-las-hermanas-de-la-cruz-penaflor-san-pedro-apostol": [
+37.38863,
+-5.99534,
+true
+],
+"sv-convento-limpia-concepcion-mercedarias-descalzas": [
+37.38863,
+-5.99534,
+true
+],
+"sv-convento-santa-clara-moron-de-la-frontera": [
+37.12079,
+-5.45682,
+false
+],
+"sv-cuasiparroquia-santa-maria-de-fuente-del-rey": [
+37.38863,
+-5.99534,
+true
+],
+"sv-dos-hermanas-divino-salvador": [
+37.38863,
+-5.99534,
+true
+],
+"sv-ermita-de-san-arcadio-osuna": [
+37.38863,
+-5.99534,
+true
+],
+"sv-ermita-de-santa-ana-estepa-san-sebastian": [
+37.29137,
+-4.87264,
+true
+],
+"sv-ermita-de-santo-cristo-pedrera-san-sebastian": [
+37.22541,
+-4.89414,
+true
+],
+"sv-ermita-del-castillo-lebrija-ntra-sra-de-la-oliva": [
+36.91859,
+-6.08421,
+true
+],
+"sv-ermita-ntra-sra-de-belen-pilas-santa-maria-la-mayor": [
+37.30121,
+-6.30278,
+true
+],
+"sv-hermanas-de-la-cruz-convento-hnas-de-la-cruz": [
+37.38863,
+-5.99534,
+true
+],
+"sv-hospital-virgen-macarena": [
+37.40676,
+-5.98685,
+false
+],
+"sv-iglesia-beata-ana-mar-ntra-sra-de-los-desamparados": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-de-la-anunciacion-hdad-del-valle-sevilla": [
+37.39279,
+-5.99298,
+false
+],
+"sv-iglesia-de-la-asuncion-estepa-san-sebastian": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-de-la-victoria-ecija-santiago-el-mayor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-de-los-remedios-estepa-san-sebastian": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-del-carmen-estepa-san-sebastian": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-del-colegio-portaceli-san-bernardo": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-del-exconvento-de-ntra-sra-de-la-paz-hdad-de-la-sgda": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-del-exconvento-de-ntra-sra-de-la-paz-hdad-de-la-sgda-mortaja-sevilla": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-del-monasterio-de-santa-paula-sevilla": [
+37.38863,
+-5.99534,
+true
+],
+"sv-iglesia-los-gitanos-parroquia-san-roman-y-sta-catalina": [
+37.38863,
+-5.99534,
+true
+],
+"sv-monasterio-ntra-sra-consolacion-monjas-minimas-santas-justa-": [
+37.38863,
+-5.99534,
+true
+],
+"sv-monasterio-ntra-sra-consolacion-monjas-minimas-santas-justa-y-rufina": [
+37.38863,
+-5.99534,
+true
+],
+"sv-monasterio-santa-maria-la-real-bormujos": [
+37.38017,
+-6.06463,
+false
+],
+"sv-ntra-sra-de-los-desamparados": [
+37.412,
+-5.92706,
+false
+],
+"sv-ntra-sra-del-mayor-dolor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-nuestra-sra-del-rosario": [
+37.60933,
+-5.82329,
+false
+],
+"sv-panoleta-camas-ntra-sra-de-guia": [
+37.39137,
+-6.02627,
+true
+],
+"sv-parroquia-de-la-asuncion-osuna-cuatro-templos": [
+37.38863,
+-5.99534,
+true
+],
+"sv-parroquia-de-san-juan-de-rivera-sevilla": [
+37.38863,
+-5.99534,
+true
+],
+"sv-san-juan-bautista-templo-parroquial-villanueva-de-san-juan": [
+37.38863,
+-5.99534,
+true
+],
+"sv-san-leandro": [
+37.03114,
+-5.99451,
+false
+],
+"sv-san-onofre-sagrario-de-la-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-santa-caridad-sagrario-de-la-catedral": [
+37.38863,
+-5.99534,
+true
+],
+"sv-santo-angel-santa-maria-magdalena": [
+37.38863,
+-5.99534,
+true
+],
+"sv-santuario-de-la-virgen-del-aguila-alcala-de-guadaira-santiag": [
+37.38863,
+-5.99534,
+true
+],
+"sv-santuario-de-la-virgen-del-aguila-alcala-de-guadaira-santiago-el-mayor": [
+37.33977,
+-5.84084,
+true
+],
+"sv-santuario-de-loreto-espartinas-ntra-sra-de-la-asuncion": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-aguadulce-san-bartolome-apostol": [
+37.25302,
+-4.99062,
+true
+],
+"sv-templo-parroquial-alcala-del-rio-santa-maria-de-la-asuncion": [
+37.5181,
+-5.98202,
+true
+],
+"sv-templo-parroquial-alcolea-del-rio-san-juan-bautista": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-algamitas-dulce-nombre-de-jesus": [
+37.01448,
+-5.14984,
+false
+],
+"sv-templo-parroquial-ascension-del-senor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-badolatosa-ntra-sra-del-socorro": [
+37.30781,
+-4.67236,
+false
+],
+"sv-templo-parroquial-benacazon-ntra-sra-de-las-nieves": [
+37.35249,
+-6.19271,
+false
+],
+"sv-templo-parroquial-campillo-ntra-sra-de-los-dolores": [
+37.54285,
+-5.21754,
+false
+],
+"sv-templo-parroquial-canada-del-rosal-santa-ana": [
+37.59439,
+-5.201,
+false
+],
+"sv-templo-parroquial-carmona-san-fernando": [
+37.47257,
+-5.63876,
+false
+],
+"sv-templo-parroquial-carmona-santa-maria": [
+37.47336,
+-5.63725,
+false
+],
+"sv-templo-parroquial-casariche-ntra-sra-de-la-encarnacion": [
+37.29505,
+-4.75954,
+false
+],
+"sv-templo-parroquial-cazalla-de-la-sierra-ntra-sra-de-la-consol": [
+37.9293,
+-5.75849,
+false
+],
+"sv-templo-parroquial-cazalla-de-la-sierra-ntra-sra-de-la-consolacion": [
+37.9293,
+-5.75849,
+false
+],
+"sv-templo-parroquial-constantina-santa-maria-de-la-encarnacion": [
+37.87757,
+-5.62185,
+true
+],
+"sv-templo-parroquial-corcoya-ntra-sra-de-fuensanta": [
+37.27094,
+-4.68828,
+true
+],
+"sv-templo-parroquial-coria-del-rio-san-jose": [
+37.28675,
+-6.05333,
+false
+],
+"sv-templo-parroquial-coripe-san-pedro": [
+36.97071,
+-5.44103,
+false
+],
+"sv-templo-parroquial-corpus-christi": [
+37.3682,
+-5.9891,
+false
+],
+"sv-templo-parroquial-divino-salvador": [
+37.39007,
+-5.99269,
+false
+],
+"sv-templo-parroquial-dos-hermanas-ntra-sra-de-los-angeles-y-san": [
+37.28369,
+-5.92267,
+true
+],
+"sv-templo-parroquial-dos-hermanas-ntra-sra-de-los-angeles-y-san-jose-de-calasanz": [
+37.28369,
+-5.92267,
+true
+],
+"sv-templo-parroquial-dos-hermanas-ntra-sra-de-valme-y-beato-mar": [
+37.28369,
+-5.92267,
+true
+],
+"sv-templo-parroquial-dos-hermanas-ntra-sra-de-valme-y-beato-marcelo-spinola": [
+37.28369,
+-5.92267,
+true
+],
+"sv-templo-parroquial-e-iglesia-de-san-juan-bautista-ecija-san-g": [
+37.5406,
+-5.07959,
+true
+],
+"sv-templo-parroquial-e-iglesia-de-san-juan-bautista-ecija-san-gil-y-san-juan-bautista": [
+37.5406,
+-5.07959,
+true
+],
+"sv-templo-parroquial-ecija-ntra-sra-del-carmen": [
+37.54004,
+-5.08508,
+false
+],
+"sv-templo-parroquial-ecija-san-juan-de-avila": [
+37.5406,
+-5.07959,
+true
+],
+"sv-templo-parroquial-ecija-santa-cruz": [
+37.54352,
+-5.08057,
+false
+],
+"sv-templo-parroquial-ecija-santiago-el-mayor": [
+37.5406,
+-5.07959,
+true
+],
+"sv-templo-parroquial-el-coronil-ntra-sra-de-consolacion": [
+37.08171,
+-5.63447,
+false
+],
+"sv-templo-parroquial-el-garrobo-purisima-concepcion": [
+37.62507,
+-6.17309,
+false
+],
+"sv-templo-parroquial-el-pedroso-ntra-sra-de-la-consolacion": [
+37.84065,
+-5.76453,
+true
+],
+"sv-templo-parroquial-el-priorato-san-isidro": [
+37.68774,
+-5.44468,
+false
+],
+"sv-templo-parroquial-el-rubio-ntra-sra-del-rosario": [
+37.35566,
+-4.99007,
+false
+],
+"sv-templo-parroquial-el-saucejo-san-marcos": [
+37.07363,
+-5.09723,
+false
+],
+"sv-templo-parroquial-el-torbiscal-sagrado-corazon": [
+37.08436,
+-5.85683,
+true
+],
+"sv-templo-parroquial-el-viar-san-pio-x": [
+37.57427,
+-5.91565,
+false
+],
+"sv-templo-parroquial-esquivel-san-jose-obrero": [
+37.54544,
+-5.94198,
+false
+],
+"sv-templo-parroquial-estepa-san-sebastian": [
+37.2901,
+-4.87871,
+false
+],
+"sv-templo-parroquial-estepa-santa-maria": [
+37.28839,
+-4.87629,
+false
+],
+"sv-templo-parroquial-fuentes-de-andalucia-sta-maria-la-blanca": [
+37.46284,
+-5.34773,
+false
+],
+"sv-templo-parroquial-gilena-purisima-concepcion": [
+37.25245,
+-4.9141,
+false
+],
+"sv-templo-parroquial-guadajoz-ntra-sra-de-guadajoz": [
+37.58026,
+-5.6678,
+false
+],
+"sv-templo-parroquial-herrera-santiago-el-mayor": [
+37.36673,
+-4.84785,
+false
+],
+"sv-templo-parroquial-inmaculado-corazon-de-maria": [
+37.35365,
+-5.98455,
+false
+],
+"sv-templo-parroquial-isla-mayor-ntra-sra-del-carmen": [
+37.15058,
+-6.16237,
+false
+],
+"sv-templo-parroquial-isla-redonda-ntra-sra-de-gracia": [
+37.45149,
+-4.88456,
+true
+],
+"sv-templo-parroquial-la-anunciacion-de-ntra-sra-y-san-juan-xxii": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-la-anunciacion-de-ntra-sra-y-san-juan-xxiii": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-la-campana-santa-maria-la-blanca": [
+37.56972,
+-5.42606,
+false
+],
+"sv-templo-parroquial-la-lantejuela-purisima-concepcion": [
+37.35406,
+-5.2232,
+false
+],
+"sv-templo-parroquial-la-luisiana-purisima-concepcion": [
+37.5278,
+-5.24816,
+true
+],
+"sv-templo-parroquial-la-resurreccion-del-senor": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-la-rinconada-ntra-sra-de-las-nieves": [
+37.48803,
+-5.9789,
+false
+],
+"sv-templo-parroquial-las-cabezas-de-san-juan-san-roque": [
+36.98441,
+-5.94109,
+false
+],
+"sv-templo-parroquial-lora-del-rio-santa-cruz": [
+37.66043,
+-5.52402,
+false
+],
+"sv-templo-parroquial-los-corrales-santiago-el-mayor": [
+37.09709,
+-4.98267,
+false
+],
+"sv-templo-parroquial-mairena-del-aljarafe-espiritu-santo": [
+37.34772,
+-6.0453,
+false
+],
+"sv-templo-parroquial-marinaleda-ntra-sra-de-la-esperanza": [
+37.3711,
+-4.96285,
+false
+],
+"sv-templo-parroquial-martin-de-la-jara-ntra-sra-del-rosario": [
+37.10891,
+-4.96373,
+false
+],
+"sv-templo-parroquial-matarredonda-ntra-sra-de-la-paz": [
+37.37673,
+-4.94165,
+false
+],
+"sv-templo-parroquial-montellano-san-jose": [
+36.99507,
+-5.57135,
+true
+],
+"sv-templo-parroquial-moron-ntra-sra-de-la-merced": [
+37.35112,
+-6.17464,
+true
+],
+"sv-templo-parroquial-moron-ntra-sra-de-la-victoria-y-el-espirit": [
+37.35112,
+-6.17464,
+true
+],
+"sv-templo-parroquial-moron-ntra-sra-de-la-victoria-y-el-espiritu-santo": [
+37.35112,
+-6.17464,
+true
+],
+"sv-templo-parroquial-moron-san-francisco-de-asis": [
+37.35112,
+-6.17464,
+true
+],
+"sv-templo-parroquial-moron-san-jose": [
+37.13568,
+-5.40669,
+false
+],
+"sv-templo-parroquial-moron-san-miguel": [
+37.12169,
+-5.44921,
+false
+],
+"sv-templo-parroquial-ntra-sra-de-loreto": [
+37.36545,
+-6.02782,
+false
+],
+"sv-templo-parroquial-ntra-sra-de-lourdes-y-san-juan-de-dios": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-nuestra-senora-de-la-candelaria": [
+37.54546,
+-5.8708,
+false
+],
+"sv-templo-parroquial-nuestra-senora-de-la-oliva-954231611": [
+37.3821,
+-6.086,
+false
+],
+"sv-templo-parroquial-nuestra-senora-de-las-veredas": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-nuestra-senora-del-reposo": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-osuna-ntra-sra-de-la-victoria": [
+37.24057,
+-5.1063,
+false
+],
+"sv-templo-parroquial-paradas-san-eutropio": [
+37.28834,
+-5.49096,
+false
+],
+"sv-templo-parroquial-parroquia-san-gil": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-parroquia-san-julian": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-parroquia-santa-marina": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-pedrera-san-sebastian": [
+37.22408,
+-4.89265,
+false
+],
+"sv-templo-parroquial-pruna-san-antonio-abad": [
+36.9727,
+-5.22185,
+false
+],
+"sv-templo-parroquial-puebla-de-cazalla-ntra-sra-de-las-virtudes": [
+37.23285,
+-5.20272,
+true
+],
+"sv-templo-parroquial-roda-de-andalucia-santa-ana": [
+37.19947,
+-4.77925,
+false
+],
+"sv-templo-parroquial-sacramento": [
+37.03121,
+-5.90484,
+false
+],
+"sv-templo-parroquial-sagrados-corazones-de-jesus-y-maria": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-san-antonio-de-padua-954404348": [
+37.73574,
+-6.29269,
+false
+],
+"sv-templo-parroquial-san-ignacio-de-loyola": [
+37.39832,
+-5.95826,
+false
+],
+"sv-templo-parroquial-san-ildefonso-y-santiago": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-san-isidro-labrador": [
+37.68774,
+-5.44468,
+false
+],
+"sv-templo-parroquial-san-jeronimo": [
+37.43377,
+-5.98145,
+false
+],
+"sv-templo-parroquial-san-jose-de-la-rinconada-madre-de-dios": [
+37.48495,
+-5.9481,
+false
+],
+"sv-templo-parroquial-san-jose-de-la-rinconada-san-jose": [
+37.47159,
+-5.95834,
+false
+],
+"sv-templo-parroquial-san-jose-obrero-y-san-francisco-de-paula": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-san-juan-bosco": [
+37.39693,
+-5.98136,
+false
+],
+"sv-templo-parroquial-sanlucar-la-mayor-santa-maria-la-mayor": [
+37.38303,
+-6.19876,
+false
+],
+"sv-templo-parroquial-santa-cruz": [
+37.38536,
+-5.99105,
+false
+],
+"sv-templo-parroquial-santa-maria-del-pueblo-de-dios": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-santa-teresa": [
+37.4641,
+-6.00919,
+false
+],
+"sv-templo-parroquial-torre-de-la-reina-regina-mundi": [
+37.51229,
+-6.02518,
+false
+],
+"sv-templo-parroquial-trajano-san-pablo": [
+37.07017,
+-5.90902,
+false
+],
+"sv-templo-parroquial-villanueva-del-rio-y-minas-san-fernando": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-villanueva-del-rio-y-minas-santiago-el-may": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-villanueva-del-rio-y-minas-santiago-el-mayor": [
+37.65052,
+-5.73054,
+true
+],
+"sv-templo-parroquial-villanueva-del-rio-y-minas-santiago-el-mayor-2": [
+37.65052,
+-5.73054,
+true
+],
+"sv-templo-parroquial-y-capilla-osuna-ntra-sra-de-consolacion": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-y-ermita-del-aral-la-algaba-ntra-sra-de-la": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-y-oratorio-madre-de-dios-de-la-merced-marc": [
+37.38863,
+-5.99534,
+true
+],
+"sv-templo-parroquial-y-otros-templos-cantillana-ntra-sra-de-la-": [
+37.60518,
+-5.82605,
+false
+],
+"sv-templo-parroquial-y-otros-templos-cantillana-ntra-sra-de-la-asuncion": [
+37.60518,
+-5.82605,
+false
 ]
 }
