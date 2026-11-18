@@ -178,15 +178,16 @@ function pick(h){
 }
 $('#rad').addEventListener('change',e=>{RAD=+e.target.value;LS.set('rad',RAD);MAP.center(LOC.lat,LOC.lon,RAD);render()});
 
+let kickT=0;function kick(){document.body.classList.add('anim');clearTimeout(kickT);kickT=setTimeout(()=>document.body.classList.remove('anim'),1100)}
 // ---------- ubicación ----------
 function nearestPlace(lat,lon){let b=null,bd=1e9;PLACES.forEach(p=>{const d=distKm(lat,lon,p.lat,p.lon);if(d<bd){bd=d;b=p}});return {p:b,d:bd}}
-function setLoc(l){LOC=l; SEL=null; q.value=l.def?'':l.label; MAP.center(l.lat,l.lon,RAD); render(); if(VIEW!=='cerca'&&VIEW!=='semana')location.hash='cerca';
+function setLoc(l){kick();$('#gmsg').hidden=true;LOC=l; SEL=null; q.value=l.def?'':l.label; MAP.center(l.lat,l.lon,RAD); render(); if(VIEW!=='cerca'&&VIEW!=='semana')location.hash='cerca';
   ensureNear(l.lat,l.lon,Math.max(RAD,25)+25).then(ch=>{if(ch&&LOC===l){SEL=null;render()}})}
 function gps(auto){
   const m=$('#gmsg');
   const fail=why=>{
-    if(auto){m.hidden=false;m.textContent='No he podido leer tu ubicación'+(why?' ('+why+')':'')+'. Muestro Sotogrande; pulsa «Mi ubicación» o escribe un lugar.';}
-    else{m.hidden=false;m.textContent='No he podido leer tu ubicación (permiso denegado o no disponible). Escribe tu municipio, barrio o iglesia.'}
+    if(auto){m.hidden=false;m.textContent='No he podido leer tu ubicación'+(why?' ('+why+')':'')+'. Muestro Sotogrande; escribe un lugar o márcalo en el mapa.';}
+    else{m.hidden=false;m.textContent='No he podido leer tu ubicación (permiso denegado o no disponible). Escribe tu municipio o toca el botón del mapa para marcar dónde estás.'}
   };
   if(!navigator.geolocation)return fail('no disponible en este navegador');
   if(!auto){m.hidden=false;m.textContent='Pidiendo tu ubicación…'}
@@ -231,7 +232,7 @@ function sorted(){
 }
 // las dos tarjetas de arriba: la más cercana y la primera que puedes alcanzar
 function heroes(){
-  const arr=C.filter(c=>!c.res).map(c=>{const e=eta(c._d);const m=(c._u||[]).find(x=>x.abs-NOW.min>=e-5);return {c,d:c._d,e,m}}).filter(x=>x.m);
+  const arr=ROWS.filter(c=>!c.res).map(c=>{const e=eta(c._d);const m=(c._u||[]).find(x=>x.abs-NOW.min>=e-5);return {c,d:c._d,e,m}}).filter(x=>x.m);
   if(!arr.length)return null;
   // la más cercana: entre las que tienen misa que aún puedes alcanzar hoy; si hoy ya no queda ninguna, entre todas
   const hoy=arr.filter(x=>x.m.k===0), pool=hoy.length?hoy:arr;
@@ -241,11 +242,16 @@ function heroes(){
 }
 const whenTxt=(m)=>{const dl=m.abs-NOW.min;const w=m.k===0?'Hoy':m.k===1?'Mañana':cap(DOWS[dowOf(m.ds)])+' '+dnum(m.ds);return {a:w+' a las '+m.t,b:dl>0?'en '+dur(dl):'en curso'}};
 function heroCard(x,kind,merged,sinHoy){
-  const {c,d,e,m}=x, w=whenTxt(m);
+  const {c,d,e,m}=x, dl=m.abs-NOW.min;
+  const day=m.k===0?'hoy':m.k===1?'mañana':DOWS[dowOf(m.ds)]+' '+dnum(m.ds);
+  const rel=dl>0?'empieza en '+dur(dl):'en curso';
   const next=c._u.filter(y=>y!==m&&y.abs>m.abs).slice(0,3).map(y=>whenLabel(y,true)+y.t).join(' · ');
   const k=merged?'La más cercana y la primera en empezar':kind==='near'?(sinHoy?'La más cercana · hoy ya no hay más':'La más cercana con misa hoy'):'La primera que puedes alcanzar';
-  return `<div class="best glass on"><div class="ic">${ICON.bell}</div><div><p class="k"><i class="pulse"></i>${k}</p><h2>${esc(c.nombre)}</h2><p><b>${esc(w.a)}</b> (${esc(w.b)}) · ${esc(c.localidad)}</p>${next?`<p>Después: ${esc(next)}</p>`:''}${m.fb?'<p>Horario de la otra temporada (la parroquia no publica el actual).</p>':''}</div>
-  <div class="side"><div class="big num">${fmtKm(d)}<small>~${e} min en coche</small></div><div class="acts"><a class="btn guard" href="${route(c)}" target="_blank" rel="noopener">${ICON.go}Cómo llegar</a><button class="btn ghost" type="button" data-open="${c.i}">Ficha</button>${starBtn(c)}</div></div></div>`;
+  return `<article class="best${kind==='first'?' first':''}${merged?' only':''}"><p class="k"><i class="pulse"></i>${k}</p>
+  <div class="when"><span class="hh num">${m.t}</span><span class="day">${esc(day)}</span></div><span class="rel">${esc(rel)}</span>
+  <h2>${esc(c.nombre)} ${langBadge(c)}</h2><p class="where">${esc(c.localidad)} · ${fmtKm(d)} · ~${e} min en coche</p>
+  ${next?`<p class="after">Después: ${esc(next)}</p>`:''}${m.fb?'<p class="after">Horario de la otra temporada (la parroquia no publica el actual).</p>':''}
+  <div class="acts"><a class="btn guard" href="${route(c)}" target="_blank" rel="noopener">${ICON.go}Cómo llegar</a><button class="btn ghost" type="button" data-open="${c.i}">Ver ficha</button>${starBtn(c)}</div></article>`;
 }
 function renderBest(){
   const el=$('#best'); const h=heroes();
@@ -271,7 +277,7 @@ function renderList(){
   if(!all.length){li.innerHTML=`<div class="empty"><b>Nada con este filtro</b>${FILT==='fav'?'Marca iglesias con la estrella para verlas aquí.':'Prueba a ampliar el radio o quitar el filtro.'}</div>`;return}
   li.innerHTML=all.map(c=>{const s=c._s;return `<div class="row${s.k==='pronto'||s.k==='curso'?' g':''}" role="button" tabindex="0" data-sel="${c.i}" aria-selected="${SEL===c.i}"><i class="dot s-${s.k}"></i><span class="t"><b>${esc(c.nombre)} ${langBadge(c)}</b><span>${esc(c.localidad)}${c.aprox?' · ubicación aproximada':''}</span></span><span class="km num">${fmtKm(c._d)}</span><span class="st s-${s.k}">${esc(s.t)}<small>${esc(s.d)}</small></span>${starBtn(c)}</div>`}).join('');
 }
-$('#status').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(b){FILT=b.dataset.f;LS.set('filt',FILT);renderList();MAP.draw();return}const o=e.target.closest('[data-o]');if(o){ORD=o.dataset.o;LS.set('ord',ORD);renderList()}});
+$('#status').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(b){kick();FILT=b.dataset.f;LS.set('filt',FILT);renderList();MAP.draw();return}const o=e.target.closest('[data-o]');if(o){ORD=o.dataset.o;LS.set('ord',ORD);renderList()}});
 $('#list').addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.row')){e.preventDefault();select(+e.target.dataset.sel,true)}});
 
 document.addEventListener('click',e=>{
@@ -283,7 +289,6 @@ document.addEventListener('click',e=>{
 function select(i,pan){
   SEL=i; const c=C[i]; SEAS=null; if(VIEW!=='cerca'){location.hash='cerca'}
   render(); if(pan)MAP.focus(c.lat,c.lon);
-  if(innerWidth<900)$('.mapbox').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
 // ---------- ficha ----------
@@ -325,63 +330,54 @@ function renderCard(){
   <p class="note">Fuente: ${esc(c.fuente)}${c.actualizado?' · actualizado '+esc(c.actualizado.slice(0,10).split('-').reverse().join('/')):''}. Los festivos y vísperas de festivo pueden tener horarios distintos.</p>`;
 }
 
-// ---------- mapa vectorial ----------
+// ---------- mapa (Leaflet + teselas; si no cargan, siluetas propias) ----------
+let PICK=false;
 const MAP=(function(){
-  const box=$('#map'), svg=$('#msvg');
-  let cLat=DEFLOC.lat,cLon=DEFLOC.lon,ppk=6,inited=false,W=0,H=0;
-  const KM=111.32;
-  const proj=(lat,lon)=>[W/2+(lon-cLon)*KM*Math.cos(cLat*Math.PI/180)*ppk, H/2-(lat-cLat)*KM*ppk];
-  const unproj=(x,y)=>[cLat-(y-H/2)/(KM*ppk), cLon+(x-W/2)/(KM*Math.cos(cLat*Math.PI/180)*ppk)];
-  const RINGS=GEO.map(g=>({b:g.b,r:g.r.map(s=>s.split(' ').map(p=>p.split(',').map(Number)))}));
-  function size(){const r=box.getBoundingClientRect();W=r.width;H=r.height;svg.setAttribute('viewBox',`0 0 ${W} ${H}`)}
-  function draw(){
-    if(!W)size(); if(!W)return;
-    const [n,w]=unproj(0,0),[s,e]=unproj(W,H), out=[], km=W/ppk;
-    RINGS.forEach(g=>{
-      if(g.b[0]>e||g.b[2]<w||g.b[1]>n||g.b[3]<s)return;
-      out.push(`<path class="land" d="${g.r.map(r=>'M'+r.map(([x,y])=>proj(y,x).map(z=>z.toFixed(1)).join(',')).join('L')+'Z').join('')}"/>`);
-    });
-    if(LOC){const[x,y]=proj(LOC.lat,LOC.lon);[1,2,5,10,25,50].forEach(r=>{const rp=r*ppk;if(rp<28||rp>Math.max(W,H)*1.2)return;out.push(`<circle class="ring" cx="${x}" cy="${y}" r="${rp}"/><text class="rl" x="${x+rp*0.707+4}" y="${y-rp*0.707-4}">${r} km</text>`)})}
-    // lugares
-    const used=[]; let nl=0;
-    for(const p of PLACES.slice().sort((a,b)=>b.c-a.c)){
-      if(p.lat>n||p.lat<s||p.lon<w||p.lon>e)continue;
-      const[x,y]=proj(p.lat,p.lon); if(used.some(([a,b])=>Math.abs(a-x)<90&&Math.abs(b-y)<18))continue; used.push([x,y]);
-      out.push(`<text class="pl${p.c>2?' big':''}" x="${x}" y="${y}" text-anchor="middle">${esc(p.n)}</text>`); if(++nl>=30)break;
-    }
-    // iglesias
-    const r=km<8?8:km<25?6.5:km<70?5:3.2;
-    const hs=heroSet();
-    const items=C.filter(c=>c.lat<=n&&c.lat>=s&&c.lon>=w&&c.lon<=e&&(FILT==='todas'||passes(c)||c.i===SEL)).map(c=>[{curso:5,pronto:5,hoy:3,luego:2,nd:1}[c._s.k]+(c.i===SEL?10:0),c]);
-    items.sort((a,b)=>a[0]-b[0]);
-    for(const[,c]of items){
-      const[x,y]=proj(c.lat,c.lon), big=(c.i===SEL||hs.has(c.i))?r+2.5:r, k=c._s.k;
-      out.push(`<g class="ph s-${k}${c.i===SEL?' sel':''}${isFav(c)?' fav':''}" data-sel="${c.i}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${big}"/>${big>=8?`<path class="cross" transform="translate(${(x-big*.5).toFixed(1)} ${(y-big*.5).toFixed(1)}) scale(${(big/24).toFixed(3)})" d="M9.2 4h5.6v5.2H20v5.6h-5.2V20H9.2v-5.2H4V9.2h5.2z"/>`:''}<title>${esc(c.nombre)} · ${esc(c._s.t)}</title></g>`);
-      if((hs.has(c.i)||c.i===SEL)&&km<60)out.push(`<text class="gl" x="${(x+big+5).toFixed(1)}" y="${(y+4).toFixed(1)}">${esc(c.nombre.replace(/^(Parroquia|Iglesia|Capilla|Santuario)( de| del)?\s*/i,'').slice(0,34))}</text>`);
-    }
-    if(LOC){const[x,y]=proj(LOC.lat,LOC.lon);out.push(`<g class="me"><circle class="h" cx="${x}" cy="${y}" r="16"/><circle class="c" cx="${x}" cy="${y}" r="7"/></g>`)}
-    svg.innerHTML=out.join('');
-    const nice=[.1,.2,.5,1,2,5,10,20,50,100].find(k=>k*ppk>=60)||100;
-    $('#mscale').textContent=`${nice<1?nice*1000+' m':nice+' km'} ≈ ${Math.round(nice*ppk)} px`;
+  const box=$('#map'), el=$('#lmap');
+  const m=L.map(el,{zoomControl:false,attributionControl:true,zoomSnap:.25,wheelPxPerZoomLevel:90,scrollWheelZoom:false,fadeAnimation:true,zoomAnimation:true,markerZoomAnimation:true}).setView([DEFLOC.lat,DEFLOC.lon],11);
+  m.attributionControl.setPrefix(false);
+  m.on('click focus',()=>m.scrollWheelZoom.enable());m.on('mouseout blur',()=>m.scrollWheelZoom.disable());
+  L.control.scale({imperial:false,position:'bottomright'}).addTo(m);
+  m.createPane('landPane').style.zIndex=150;
+  const land=L.layerGroup().addTo(m);
+  GEO.forEach(g=>g.r.forEach(r=>L.polygon(r.split(' ').map(p=>{const[x,y]=p.split(',').map(Number);return [y,x]}),{pane:'landPane',className:'land',interactive:false,smoothFactor:1.5}).addTo(land)));
+  const dark=()=>{const t=document.documentElement.dataset.theme;return t?t==='dark':matchMedia('(prefers-color-scheme:dark)').matches};
+  let tiles=null;
+  function setTiles(){
+    if(tiles)m.removeLayer(tiles);
+    tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'}).addTo(m);
   }
+  setTiles();
+  new MutationObserver(setTiles).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  matchMedia('(prefers-color-scheme:dark)').addEventListener('change',setTiles);
+  const layer=L.layerGroup().addTo(m);
   function heroSet(){const h=heroes();const s=new Set();if(h){s.add(h.near.c.i);s.add(h.first.c.i)}return s}
-  function center(lat,lon,radKm){size();inited=true;cLat=lat;cLon=lon;ppk=Math.min(W,H)/(2.3*Math.max(radKm,1));draw()}
-  function focus(lat,lon){cLat=lat;cLon=lon;if(ppk<12)ppk=18;draw()}
-  function zoom(k,x,y){x=x??W/2;y=y??H/2;const[la,lo]=unproj(x,y);ppk=Math.max(.5,Math.min(200,ppk*k));const[la2,lo2]=unproj(x,y);cLat+=la-la2;cLon+=lo-lo2;draw()}
-  let drag=null,moved=false;
-  box.addEventListener('pointerdown',e=>{if(e.target.closest('.mctl'))return;drag={x:e.clientX,y:e.clientY,lat:cLat,lon:cLon};moved=false;box.setPointerCapture(e.pointerId)});
-  box.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4){moved=true;box.classList.add('drag')}
-    if(moved){cLat=drag.lat+dy/(KM*ppk);cLon=drag.lon-dx/(KM*Math.cos(cLat*Math.PI/180)*ppk);draw()}});
-  const end=e=>{if(!drag)return;box.classList.remove('drag');const was=moved;drag=null;
-    if(!was){const g=document.elementFromPoint(e.clientX,e.clientY);const ph=g&&g.closest&&g.closest('.ph');if(ph)select(+ph.dataset.sel,false)}};
-  box.addEventListener('pointerup',end);box.addEventListener('pointercancel',()=>{drag=null;box.classList.remove('drag')});
-  box.addEventListener('wheel',e=>{e.preventDefault();const r=box.getBoundingClientRect();zoom(e.deltaY<0?1.25:1/1.25,e.clientX-r.left,e.clientY-r.top)},{passive:false});
-  $('#zin').addEventListener('click',()=>zoom(1.6));$('#zout').addEventListener('click',()=>zoom(1/1.6));
+  function draw(){
+    layer.clearLayers();
+    const b=m.getBounds().pad(.25), hs=heroSet(), z=m.getZoom();
+    if(LOC)L.circle([LOC.lat,LOC.lon],{radius:RAD*1000,className:'ring',interactive:false}).addTo(layer);
+    const items=C.filter(c=>b.contains([c.lat,c.lon])&&(FILT==='todas'||passes(c)||c.i===SEL)).map(c=>[{curso:5,pronto:5,hoy:3,luego:2,nd:1}[c._s.k]+(c.i===SEL?10:0)+(hs.has(c.i)?6:0),c]);
+    items.sort((a,b)=>a[0]-b[0]);
+    for(const [w,c] of items){
+      const hero=hs.has(c.i), sel=c.i===SEL;
+      const mk=L.marker([c.lat,c.lon],{icon:L.divIcon({className:'',html:`<div class="pin s-${c._s.k}${hero?' hero':''}${sel?' sel':''}${isFav(c)?' fav':''}"><i></i></div>`,iconSize:[24,24],iconAnchor:[12,12]}),zIndexOffset:w*100,keyboard:true,title:c.nombre+' · '+c._s.t,riseOnHover:true});
+      mk.on('click',()=>{if(PICK)return;select(c.i,false)});
+      if((hero||sel)&&z>=10)mk.bindTooltip(esc(c.nombre.replace(/^(Parroquia|Iglesia|Capilla|Santuario)( de| del)?\s*/i,'').slice(0,34))+(c._s.k!=='nd'?` · <span style="color:var(--wine)">${esc(c._s.t)}</span>`:''),{permanent:true,direction:'right',offset:[12,0],className:'tag'});
+      mk.addTo(layer);
+    }
+    if(LOC)L.marker([LOC.lat,LOC.lon],{icon:L.divIcon({className:'',html:'<div class="me"><i></i></div>',iconSize:[22,22],iconAnchor:[11,11]}),interactive:false,zIndexOffset:9e4}).addTo(layer);
+  }
+  let drawT=0; m.on('moveend zoomend',()=>{clearTimeout(drawT);drawT=setTimeout(draw,60)});
+  m.on('click',e=>{if(!PICK)return;setPick(false);const {p:pl,d}=nearestPlace(e.latlng.lat,e.latlng.lng);setLoc({lat:e.latlng.lat,lon:e.latlng.lng,label:d<12&&pl?'Punto elegido · cerca de '+pl.n:'Punto elegido en el mapa',pin:true})});
+  function center(lat,lon,radKm){m.invalidateSize();m.flyToBounds(L.latLng(lat,lon).toBounds(radKm*2100),{duration:.9,easeLinearity:.2,padding:[20,20]});draw()}
+  function focus(lat,lon){m.flyTo([lat,lon],Math.max(m.getZoom(),14),{duration:.9})}
+  $('#zin').addEventListener('click',()=>m.zoomIn());$('#zout').addEventListener('click',()=>m.zoomOut());
   $('#zme').addEventListener('click',()=>center(LOC.lat,LOC.lon,RAD));
-  new ResizeObserver(()=>{size();if(W&&!inited){inited=true;center(LOC.lat,LOC.lon,RAD)}else draw()}).observe(box);
+  new ResizeObserver(()=>m.invalidateSize()).observe(box);
   return {draw,center,focus};
 })();
-$('#map').addEventListener('click',e=>{if(e.target.closest('.ph'))e.stopPropagation()},true);
+function setPick(on){PICK=on;$('#zpick').setAttribute('aria-pressed',on);$('#map').classList.toggle('picking',on);const h=$('#mhint');h.hidden=!on;if(on)h.textContent='Toca el mapa donde estás'}
+$('#zpick').addEventListener('click',()=>setPick(!PICK));
 
 // ---------- semana ----------
 function renderWeek(){
@@ -446,15 +442,19 @@ function route_(){
   VIEWS.forEach(v=>$('#v-'+v).hidden=v!==VIEW);
   document.querySelectorAll('.tabs a').forEach(a=>{const on=a.getAttribute('href')==='#'+VIEW;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const tool=VIEW==='cerca'||VIEW==='semana'; $('#tool').hidden=!tool; $('#quick').hidden=!tool;
-  render();
+  kick();render();moveInd();
 }
 addEventListener('hashchange',route_);
+function moveInd(){document.querySelectorAll('.tabs').forEach(t=>{const a=t.querySelector('a.on'),i=t.querySelector('.pill-ind');if(!a||!i||!a.offsetWidth)return;i.style.width=a.offsetWidth+'px';i.style.transform=`translateX(${a.offsetLeft}px)`})}
+addEventListener('resize',moveInd);
+if(document.fonts)document.fonts.ready.then(moveInd);
+addEventListener('scroll',()=>$('#topnav').classList.toggle('scrolled',scrollY>8),{passive:true});
 
 // tema
 const root=document.documentElement; const th=LS.get('theme'); if(th)root.dataset.theme=th;
 $('#theme').addEventListener('click',()=>{const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=dark?'light':'dark';LS.set('theme',root.dataset.theme)});
 // fondo topográfico
-(function(){let d='';for(let k=0;k<14;k++){const y=80+k*64;d+=`<path d="M-20 ${y} C 300 ${y-40-k*3} 520 ${y+50} 820 ${y} S 1300 ${y-60} 1620 ${y+10}"/>`}$('#bgTopo').innerHTML=d})();
+(function(){let d='';for(let k=0;k<14;k++){const y=80+k*64;d+=`<path d="M-20 ${y} C 300 ${y-40-k*3} 520 ${y+50} 820 ${y} S 1300 ${y-60} 1620 ${y+10}"/>`}const bt=$('#bgTopo');if(bt)bt.innerHTML=d})();
 
 // ---------- aviso de cookies ----------
 const ck=$('#cookies');
