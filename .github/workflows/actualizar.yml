@@ -43,7 +43,7 @@ jobs:
     needs: decidir
     if: ${{ always() && needs.decidir.outputs.go == '1' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 300
     concurrency:
       group: actualizar
       cancel-in-progress: false
@@ -63,6 +63,8 @@ jobs:
         run: python3 pipeline/build.py
 
       - name: Iglesias de OpenStreetMap (zonas sin fuente oficial)
+        continue-on-error: true
+        timeout-minutes: 60
         run: python3 pipeline/osm.py
 
       - name: Validar

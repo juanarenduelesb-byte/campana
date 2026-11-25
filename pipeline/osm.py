@@ -15,25 +15,39 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(AQUI, '..', 'site', 'data')
 SERVIDORES = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter',
               'https://overpass.private.coffee/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
-CONSULTA = """[out:json][timeout:600];
+ZONAS = [(35.9, -9.4, 38.6, -4.5), (35.9, -4.5, 38.6, 0.5), (38.6, -9.4, 41.2, -5.5), (38.6, -5.5, 41.2, -2.5), (38.6, -2.5, 41.2, 4.4),
+         (41.2, -9.4, 44.0, -5.5), (41.2, -5.5, 44.0, -2.5), (41.2, -2.5, 44.0, 0.8), (41.2, 0.8, 43.0, 3.4), (27.5, -18.3, 29.5, -13.3), (35.2, -5.5, 35.95, -2.8)]
+CONSULTA = """[out:json][timeout:300];
 area["ISO3166-1"="ES"][admin_level=2]->.es;
-nwr["amenity"="place_of_worship"]["religion"="christian"](area.es);
+nwr["amenity"="place_of_worship"]["religion"="christian"](area.es)(%s,%s,%s,%s);
 out center tags qt;"""
+UA_OSM = 'Campana/1.0 (horarios de misa; +https://github.com/juanarenduelesb-byte/campana)'
 NO_CATOLICA = re.compile(r'evang|protest|bapti|adventist|jehov|testigos|pentecost|mormon|latter|orthodox|ortodox|anglican|lutheran|metodist|methodist|filadelfia|asamblea|cristiana de|iglesia de cristo|nueva vida|ministerio', re.I)
 
+def _pide(servidor, q):
+    req = urllib.request.Request(servidor, data=urllib.parse.urlencode({'data': q}).encode(),
+                                 headers={'User-Agent': UA_OSM, 'Accept': 'application/json'})
+    return json.loads(urllib.request.urlopen(req, timeout=420).read())
+
 def descargar():
-    for s in SERVIDORES:
-        try:
-            print('Overpass:', s, flush=True)
-            req = urllib.request.Request(s, data=urllib.parse.urlencode({'data': CONSULTA}).encode(), headers={'User-Agent': UA})
-            t = urllib.request.urlopen(req, timeout=900).read()
-            d = json.loads(t)
-            if len(d.get('elements', [])) > 5000: return d
-            print('  pocas respuestas', len(d.get('elements', [])))
-        except Exception as e:
-            print('  falla', repr(e)[:120], flush=True)
-        time.sleep(20)
-    return None
+    """Descarga por zonas (una consulta de toda España de golpe agota el tiempo de los servidores)."""
+    todos = {}
+    for z in ZONAS:
+        ok = False
+        for intento in range(2):
+            for srv in SERVIDORES:
+                try:
+                    d = _pide(srv, CONSULTA % z)
+                    for e in d.get('elements', []): todos[(e['type'], e['id'])] = e
+                    print('  zona', z, len(d.get('elements', [])), 'de', srv, flush=True); ok = True; break
+                except Exception as e:
+                    print('  zona', z, 'falla', srv, repr(e)[:80], flush=True); time.sleep(10)
+            if ok: break
+            time.sleep(60)
+        if not ok: print('  zona sin datos:', z, flush=True)
+        time.sleep(5)
+    print('Overpass: %d elementos' % len(todos), flush=True)
+    return {'elements': list(todos.values())} if len(todos) > 5000 else None
 
 # ---------- service_times (sintaxis tipo opening_hours) ----------
 DIA = {'mo': 0, 'tu': 1, 'we': 2, 'th': 3, 'fr': 4, 'sa': 5, 'su': 6}

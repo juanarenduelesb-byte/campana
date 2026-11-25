@@ -31,7 +31,7 @@ MESES = {'ene': 1, 'gen': 1, 'feb': 2, 'mar': 3, 'abr': 4, 'may': 5, 'mai': 5, '
 def horas(s):
     """'9:30, 11:30 y 19h' -> ['09:30','11:30','19:00']. Una cifra sola solo cuenta si lleva 'h'."""
     out = []
-    for m in re.finditer(r'(?<![\d:.,/])(2[0-3]|[01]?\d)(?!\d)\s*(?:[:.,\']\s*([0-5]\d))?\s*(h\b|h\.|hs\b|hrs?\b|horas?\b|hores\b)?', s):
+    for m in re.finditer(r'(?<![\d:.,/])(2[0-3]|[01]?\d)(?!\d)\s*(?:[:.,\'´`]\s*([0-5]\d))?\s*(h\b|h\.|hs\b|hrs?\b|horas?\b|hores\b)?', s):
         if m.group(2) is None and not m.group(3): continue
         t = '%02d:%s' % (int(m.group(1)), m.group(2) or '00')
         if t not in out: out.append(t)
@@ -40,20 +40,28 @@ def horas(s):
 def dias(txt):
     """Días mencionados en un texto: (set de 0-6, laborables, vísperas, festivos)."""
     t = _plano(txt)
-    lab = bool(re.search(r'laborable|diario|entre semana|feiner|cada dia|todos los dias|tots els dies', t))
+    lab = bool(re.search(r'laborable|entre semana|feiner|cada dia|todos los dias|tots els dies', t))
     visp = bool(re.search(r'vispera|vigilia|vespre|vigil', t))
     fest = bool(re.search(r'festiv|festius|fiesta|dominical', t))
     d = set()
+    excl = set()
+    for m in re.finditer(r'(?:salvo|excepto|menos|no)\s+(?:el |los |las )?' + DIA_RE + r'(?:\s*(?:,|y|e)\s*' + DIA_RE + r')?', t):
+        excl.update(NOMBRES[g] for g in m.groups() if g)
+    t = re.sub(r'(?:salvo|excepto|menos|no)\s+(?:el |los |las )?' + DIA_RE + r'(?:\s*(?:,|y|e)\s*' + DIA_RE + r')?', ' ', t)
     for m in re.finditer(DIA_RE + r'\s+(?:a|al|hasta)\s+' + DIA_RE, t):
         a, b = NOMBRES[m.group(1)], NOMBRES[m.group(2)]
         if a <= b: d.update(range(a, b + 1))
     t2 = re.sub(DIA_RE + r'\s+(?:a|al|hasta)\s+' + DIA_RE, ' ', t)
     for m in re.finditer(r'\b' + DIA_RE + r'\b', t2): d.add(NOMBRES[m.group(1)])
-    for m in re.finditer(r'\b([lmxjvsd]|lun|mar|mie|jue|vie|sab|dom)\s*[-–a]\s*([lmxjvsd]|lun|mar|mie|jue|vie|sab|dom)\b', t):
+    for m in re.finditer(r'\b([lmxjvsd]|lun|mar|mie|jue|vie|sab|dom)\.?(?:\s*[-–]\s*|\s+a\s+)([lmxjvsd]|lun|mar|mie|jue|vie|sab|dom)\b', t):
         a, b = ABREV[m.group(1)], ABREV[m.group(2)]
         if a <= b: d.update(range(a, b + 1))
     if (lab or 'todos los dias' in t or 'tots els dies' in t) and not d & {0, 1, 2, 3, 4}: d.update(range(5))
     if re.search(r'todos los dias|tots els dies|cada dia|diariamente', t): d.update(range(7))
+    elif re.search(r'\bdiario\b|\bdiaria\b', t) and not d: d.update(range(6))
+    if excl:
+        if not d & {0, 1, 2, 3, 4}: d.update(range(5))
+        d -= excl
     return d, lab, visp, fest
 
 def _poner(h, d, visp, fest, ts):
@@ -81,8 +89,26 @@ def temporada(txt, sea):
             except ValueError: return None
     return None
 
+CORTE = re.compile(r'(?<=[.;h)])\s+(?=(?:lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bados?|domingos?|laborables|diario|invierno|verano|festivos)\b)', re.I)
+
+FRASE = re.compile(r'[\s,.]+(?=(?:y\s+)?(?:los\s+|el\s+|las\s+)?(?:domingos?|s[aá]bados?|festivos|laborables|de lunes|lunes|martes|mi[eé]rcoles|jueves|viernes)\b)', re.I)
+
+def _parte_frase(l):
+    """Parte «… a las 10:00h y los domingos a las 12:00h» en dos, solo si a la izquierda ya hay una hora."""
+    out = []; resto = l
+    while True:
+        cortado = False
+        for m in FRASE.finditer(resto):
+            izq = resto[:m.start()]
+            if horas(izq):
+                out.append(izq); resto = resto[m.end():]; cortado = True; break
+        if not cortado: break
+    out.append(resto)
+    return [x for x in out if x.strip()]
+
 def interpreta(lineas):
     """lineas: lista de textos. Devuelve (h, verano, interpretadas, sin_interpretar)."""
+    lineas = [q for l in lineas for p in CORTE.split(l) if p and p.strip() for q in _parte_frase(p)]
     H = {'inv': empty_season(), 'ver': empty_season()}
     sea = None; cat = None; verano = None; ok = 0; resto = []; tocado = set()
     for l in lineas:

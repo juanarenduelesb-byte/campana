@@ -23,12 +23,28 @@ FUENTES = [  # (id, módulo, nombre, web oficial)
     ('orihuela', 'orihuela', 'Orihuela-Alicante', 'https://diocesisoa.org/parroquias'),
     ('salamanca', 'salamanca', 'Salamanca', 'https://www.diocesisdesalamanca.com/horario-de-misas/'),
     ('pamplona', 'pamplona', 'Pamplona y Tudela', 'https://iglesianavarra.org/'),
+    ('tarragona', 'tarragona', 'Tarragona', 'https://horarismissa.arqtgn.cat/'),
+    ('lleida', 'lleida', 'Lleida', 'https://www.bisbatlleida.org/ca/content/horaris-missa'),
+    ('lugo', 'lugo', 'Lugo', 'https://www.diocesisdelugo.org/horarios-de-misa/'),
+    ('zamora', 'zamora', 'Zamora', 'https://www.diocesisdezamora.es/parroquias_horarios'),
+    ('guadalajara', 'guadalajara', 'Sigüenza-Guadalajara', 'https://www.siguenza-guadalajara.org/index.php/destacados/3800-horarios-misas-guadalajara'),
+    ('coria', 'coria', 'Coria-Cáceres', 'https://diocesiscoriacaceres.es/misas/'),
+    ('zaragoza', 'zaragoza', 'Zaragoza', 'https://www.archizaragoza.org/misas'),
+    ('vitoria', 'vitoria', 'Vitoria', 'https://diocesisvitoria.org/horario-misas-vitoria-gasteiz/'),
+    ('menorca', 'menorca', 'Menorca', 'https://bisbatdemenorca.org/horaris-de-misses/'),
+    ('huesca', 'huesca', 'Huesca', 'https://diocesisdehuesca.org/diocesis/horarios-misas'),
+    ('segovia', 'segovia', 'Segovia', 'https://diocesisdesegovia.es/horarios-de-misas/'),
+    ('palencia', 'palencia', 'Palencia', 'https://www.diocesispalencia.org/index.php/la-diocesis/horarios-de-misas'),
+    ('merida', 'merida', 'Mérida-Badajoz', 'https://www.meridabadajoz.net/horario-de-misas/'),
+    ('cordoba', 'cordoba', 'Córdoba', 'https://www.diocesisdecordoba.es/horarios-de-misas/'),
+    ('plasencia', 'plasencia', 'Plasencia', 'https://diocesisplasencia.org/horario-de-misas/'),
+    ('astorga', 'astorga', 'Astorga', 'https://www.diocesisastorga.es/actualidad/horario-de-misas'),
     ('tenerife', 'tenerife', 'Tenerife', 'https://www.obispadodetenerife.com/horarios-misas-tenerife/'),
 ]
 # Zona aproximada de cada diócesis (lat_min, lon_min, lat_max, lon_max): una coordenada fuera de ella es un error de geocodificación
 ZONA = {'cadiz': (35.8, -6.5, 36.9, -5.0), 'malaga': (36.3, -5.7, 37.4, -3.7), 'sevilla': (36.8, -6.6, 38.3, -4.6), 'madrid': (39.8, -4.6, 41.2, -3.0),
         'alcala': (39.9, -3.8, 40.9, -2.9), 'barcelona': (41.2, 1.9, 41.8, 2.6), 'granada': (36.6, -4.3, 37.6, -2.9), 'valladolid': (41.0, -5.7, 42.4, -4.0),
-        'orihuela': (37.8, -1.2, 38.9, 0.3), 'salamanca': (40.8, -5.8, 41.1, -5.5), 'tenerife': (27.6, -18.2, 28.9, -16.0), 'pamplona': (42.6, -1.9, 43.0, -1.4)}
+        'orihuela': (37.8, -1.2, 38.9, 0.3), 'salamanca': (40.8, -5.8, 41.1, -5.5), 'tenerife': (27.6, -18.2, 28.9, -16.0), 'pamplona': (42.6, -1.9, 43.0, -1.4), 'tarragona': (40.8, 0.3, 41.8, 1.8), 'lleida': (41.2, 0.2, 42.2, 1.3), 'lugo': (42.3, -8.3, 43.4, -6.8), 'zamora': (41.3, -6.9, 42.2, -5.2), 'guadalajara': (40.0, -3.6, 41.4, -1.5), 'coria': (39.0, -7.4, 40.5, -5.6), 'zaragoza': (40.6, -2.0, 42.3, 0.5), 'vitoria': (42.4, -3.3, 43.2, -2.2), 'menorca': (39.7, 3.7, 40.15, 4.4), 'huesca': (42.05, -0.5, 42.25, -0.3), 'segovia': (40.85, -4.2, 41.0, -4.0), 'palencia': (41.95, -4.6, 42.1, -4.45), 'merida': (38.8, -7.1, 39.0, -6.2), 'cordoba': (37.75, -4.95, 38.05, -4.6), 'plasencia': (39.98, -6.15, 40.08, -6.0), 'astorga': (42.2, -7.1, 42.8, -5.8)}
 PENDIENTES = json.load(open(os.path.join(AQUI, 'static', 'pendientes.json'), encoding='utf8'))
 MIN_RATIO = 0.6   # si una diócesis devuelve menos de este % de lo anterior, se descarta lo nuevo
 CAMPOS = ('id', 'nombre', 'localidad', 'calle', 'num', 'cp', 'tel', 'parroco', 'rol', 'arciprestazgo', 'diocesis', 'url', 'fuente',
