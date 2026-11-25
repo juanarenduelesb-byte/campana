@@ -355,6 +355,16 @@ const MAP=(function(){
   function draw(){
     layer.clearLayers();
     const b=m.getBounds().pad(.25), hs=heroSet(), z=m.getZoom();
+    if(z<8.5){ // vista de España: una burbuja por diócesis cubierta
+      IDX.dioc.forEach(d=>{
+        const la=(d.bbox[0]+d.bbox[2])/2, lo=(d.bbox[1]+d.bbox[3])/2;
+        const mk=L.marker([la,lo],{icon:L.divIcon({className:'',html:`<div class="dioc"><b>${esc(d.nombre)}</b> <span>${nf.format(d.n)}</span></div>`,iconSize:[0,0]}),zIndexOffset:d.n,title:d.nombre+': '+d.n+' iglesias',keyboard:true});
+        mk.on('click',()=>m.flyToBounds([[d.bbox[0],d.bbox[1]],[d.bbox[2],d.bbox[3]]],{duration:.9,padding:[20,20]}));
+        mk.addTo(layer);
+      });
+      if(LOC)L.marker([LOC.lat,LOC.lon],{icon:L.divIcon({className:'',html:'<div class="me"><i></i></div>',iconSize:[22,22],iconAnchor:[11,11]}),interactive:false,zIndexOffset:9e4}).addTo(layer);
+      return;
+    }
     if(LOC)L.circle([LOC.lat,LOC.lon],{radius:RAD*1000,className:'ring',interactive:false}).addTo(layer);
     const items=C.filter(c=>b.contains([c.lat,c.lon])&&(FILT==='todas'||passes(c)||c.i===SEL)).map(c=>[{curso:5,pronto:5,hoy:3,luego:2,nd:1}[c._s.k]+(c.i===SEL?10:0)+(hs.has(c.i)?6:0),c]);
     items.sort((a,b)=>a[0]-b[0]);
@@ -367,7 +377,9 @@ const MAP=(function(){
     }
     if(LOC)L.marker([LOC.lat,LOC.lon],{icon:L.divIcon({className:'',html:'<div class="me"><i></i></div>',iconSize:[22,22],iconAnchor:[11,11]}),interactive:false,zIndexOffset:9e4}).addTo(layer);
   }
-  let drawT=0; m.on('moveend zoomend',()=>{clearTimeout(drawT);drawT=setTimeout(draw,60)});
+  let drawT=0; m.on('moveend zoomend',()=>{clearTimeout(drawT);drawT=setTimeout(()=>{draw();
+    if(m.getZoom()>=8.5){const c=m.getCenter(),r=m.getBounds().getNorthEast().distanceTo(c)/1000;ensureNear(c.lat,c.lng,Math.min(r,120)).then(ch=>{if(ch)render()})}},60)});
+  $('#zes')&&$('#zes').addEventListener('click',()=>m.flyToBounds([[35.8,-9.4],[43.9,3.4]],{duration:.9}));
   m.on('click',e=>{if(!PICK)return;setPick(false);const {p:pl,d}=nearestPlace(e.latlng.lat,e.latlng.lng);setLoc({lat:e.latlng.lat,lon:e.latlng.lng,label:d<12&&pl?'Punto elegido · cerca de '+pl.n:'Punto elegido en el mapa',pin:true})});
   function center(lat,lon,radKm){m.invalidateSize();m.flyToBounds(L.latLng(lat,lon).toBounds(radKm*2100),{duration:.9,easeLinearity:.2,padding:[20,20]});draw()}
   function focus(lat,lon){m.flyTo([lat,lon],Math.max(m.getZoom(),14),{duration:.9})}
@@ -413,7 +425,7 @@ function renderFuentes(){
   const ok=C.filter(c=>c.interpretado).length, ap=C.filter(c=>c.aprox).length;
   const tot=IDX.dioc.reduce((a,d)=>a+d.n,0), okt=IDX.dioc.reduce((a,d)=>a+d.ok,0);
   $('#method').innerHTML=`<div><h3>Cobertura</h3><p>Solo uso <b>fuentes oficiales de cada diócesis</b>. Ahora mismo: ${IDX.dioc.length} diócesis y ${nf.format(tot)} iglesias y capillas, de las que ${nf.format(okt)} publican un horario que he podido interpretar. España tiene 69 diócesis y unas 23.000 parroquias, y cada una publica a su manera (a veces nada), así que las voy añadiendo de una en una. Si tu zona no está, te lo digo en lugar de inventarlo.</p></div>
-  <div><h3>Horarios</h3><p>Salen de las fichas oficiales de cada parroquia. Cádiz, Sevilla y Madrid publican el horario estructurado; Málaga lo publica como texto libre que interpreto automáticamente, por eso muestro también el texto original. Para Guadiaro, Sotogrande y alrededores uso además lo publicado por la parroquia.</p></div>
+  <div><h3>Horarios</h3><p>Salen de las webs oficiales de cada diócesis. Unas publican el horario en tablas (Cádiz, Sevilla, Madrid, Valladolid, Salamanca, Granada) y otras en texto libre que interpreto automáticamente (Málaga, Barcelona, Alcalá, Orihuela-Alicante); en esos casos la ficha muestra también el texto original. Para Guadiaro, Sotogrande y alrededores uso además lo publicado por la parroquia.</p></div>
   <div><h3>Lo que no cubre</h3><p>Misas especiales, bodas y funerales. Festivos locales, vísperas de festivo (solo cuento los sábados), Semana Santa y Navidad. El cambio de horario de verano a invierno varía por parroquia y no siempre está publicado. Si una parroquia cambia hoy su horario, puede tardar días en reflejarse. Ceuta y Gibraltar, de momento, no.</p></div>
   <div><h3>Pendientes de añadir</h3><p>${IDX.pendientes.map(esc).join(' · ')}.</p></div>`;
   $('#cofs').innerHTML=IDX.dioc.map(d=>`<div class="cof glass"><h3>${esc(d.nombre)}<span class="tag on">${d.n}</span></h3><p>${d.ok} con horario · ${d.n-d.ok} sin horario${d.estado!=='ok'?' · <b>datos antiguos</b>':''}</p><a href="${esc(d.web)}" target="_blank" rel="noopener">${esc(d.web.replace(/^https?:\/\/(www\.)?/,'').split('/').slice(0,2).join('/'))}</a></div>`).join('');
@@ -422,7 +434,7 @@ function renderFuentes(){
 // ---------- cabecera y pie ----------
 function renderKpis(){
   const hoy=C.reduce((a,c)=>a+timesOn(c,NOW.date).t.filter(t=>tmin(t)>=NOW.min-DUR).length,0);
-  $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(C.length)}</b><span>iglesias</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
+  $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(IDX.dioc.reduce((a,d)=>a+d.n,0))}</b><span>iglesias en España</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy en tu zona</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
   const b=META.built;
   $('#foot').innerHTML=`Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
 }

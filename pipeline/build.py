@@ -16,7 +16,19 @@ FUENTES = [  # (id, módulo, nombre, web oficial)
     ('malaga', 'malaga', 'Málaga', 'https://diocesismalaga.es/parroquias'),
     ('sevilla', 'sevilla', 'Sevilla', 'https://www.archisevilla.org/iglesia/'),
     ('madrid', 'madrid', 'Madrid', 'https://www.archimadrid.org/index.php/component/archimadrid/?view=parroquias&Itemid=1236'),
+    ('alcala', 'alcala', 'Alcalá de Henares', 'https://diocesisdealcala.es/parroquias/'),
+    ('barcelona', 'barcelona', 'Barcelona', 'https://esglesia.barcelona/parroquia/'),
+    ('granada', 'granada', 'Granada', 'https://archidiocesisgranada.es/horarios-de-misas-en-granada/'),
+    ('valladolid', 'valladolid', 'Valladolid', 'https://www.archivalladolid.org/horario-de-misas'),
+    ('orihuela', 'orihuela', 'Orihuela-Alicante', 'https://diocesisoa.org/parroquias'),
+    ('salamanca', 'salamanca', 'Salamanca', 'https://www.diocesisdesalamanca.com/horario-de-misas/'),
+    ('pamplona', 'pamplona', 'Pamplona y Tudela', 'https://iglesianavarra.org/'),
+    ('tenerife', 'tenerife', 'Tenerife', 'https://www.obispadodetenerife.com/horarios-misas-tenerife/'),
 ]
+# Zona aproximada de cada diócesis (lat_min, lon_min, lat_max, lon_max): una coordenada fuera de ella es un error de geocodificación
+ZONA = {'cadiz': (35.8, -6.5, 36.9, -5.0), 'malaga': (36.3, -5.7, 37.4, -3.7), 'sevilla': (36.8, -6.6, 38.3, -4.6), 'madrid': (39.8, -4.6, 41.2, -3.0),
+        'alcala': (39.9, -3.8, 40.9, -2.9), 'barcelona': (41.2, 1.9, 41.8, 2.6), 'granada': (36.6, -4.3, 37.6, -2.9), 'valladolid': (41.0, -5.7, 42.4, -4.0),
+        'orihuela': (37.8, -1.2, 38.9, 0.3), 'salamanca': (40.8, -5.8, 41.1, -5.5), 'tenerife': (27.6, -18.2, 28.9, -16.0), 'pamplona': (42.6, -1.9, 43.0, -1.4)}
 PENDIENTES = json.load(open(os.path.join(AQUI, 'static', 'pendientes.json'), encoding='utf8'))
 MIN_RATIO = 0.6   # si una diócesis devuelve menos de este % de lo anterior, se descarta lo nuevo
 CAMPOS = ('id', 'nombre', 'localidad', 'calle', 'num', 'cp', 'tel', 'parroco', 'rol', 'arciprestazgo', 'diocesis', 'url', 'fuente',
@@ -43,6 +55,10 @@ def preparar(lista, id_):
     for x in lista:
         if 'lat' not in x:
             g = geocode.localiza(x['id'], x['calle'], x['num'], x['localidad'], x['prov'], x['nombre'], x['cp'])
+            z = ZONA.get(id_)
+            if g and z and not (z[0] < g[0] < z[2] and z[1] < g[1] < z[3]):
+                g = geocode.localiza(x['id'] + '#loc', '', '', x['localidad'], x['prov'], x['localidad'], '')
+                g = (g[0], g[1], True) if g and z[0] < g[0] < z[2] and z[1] < g[1] < z[3] else None
             if not g: sin.append(x['id']); continue
             x['lat'], x['lon'], x['aprox'] = g[0], g[1], bool(g[2])
         res.append(x)

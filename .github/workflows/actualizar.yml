@@ -54,6 +54,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Dependencias
+        run: pip install --quiet openpyxl==3.1.5
+
       - name: Leer las diócesis y generar los datos
         env:
           TZ: Europe/Madrid

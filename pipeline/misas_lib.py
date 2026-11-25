@@ -7,7 +7,7 @@ Modelo de horario de una temporada (inv / ver):
 """
 import html, re, urllib.request, time
 
-UA = 'Mozilla/5.0 (compatible; campana-bot; +https://github.com/juanarenduelesb-byte/campana)'
+UA = 'Mozilla/5.0 (X11; Linux x86_64) Campana/1.0 (+https://github.com/juanarenduelesb-byte/campana)'
 
 def get(url, tries=3, timeout=40):
     last = None

@@ -1,4 +1,79 @@
 {
+"bc-mare-de-deu-de-lesperanca-2": [
+41.54828,
+2.44517,
+false
+],
+"bc-mare-de-deu-de-montserrat-3": [
+41.53983,
+2.44489,
+true
+],
+"bc-maria-auxiliadora-2": [
+41.54154,
+2.42433,
+false
+],
+"bc-sagrada-familia-2": [
+41.54633,
+2.44775,
+false
+],
+"bc-sant-andreu": [
+41.62383,
+2.4356,
+false
+],
+"bc-sant-andreu-4": [
+41.57395,
+2.48282,
+false
+],
+"bc-sant-esteve-2": [
+41.60148,
+2.44719,
+false
+],
+"bc-sant-iscle-i-santa-victoria": [
+41.75835,
+1.84387,
+false
+],
+"bc-sant-iscle-i-santa-victoria#loc": [
+41.38258,
+2.17707,
+false
+],
+"bc-sant-josep-3": [
+41.5394,
+2.44373,
+false
+],
+"bc-sant-julia": [
+41.58641,
+2.27871,
+false
+],
+"bc-sant-simo-i-sant-pau": [
+41.38258,
+2.17707,
+true
+],
+"bc-sant-vicenc-2": [
+41.57871,
+2.51036,
+false
+],
+"bc-santa-maria-2": [
+41.5723,
+2.52709,
+false
+],
+"bc-santa-maria-basilica": [
+41.38258,
+2.17707,
+true
+],
 "divino-salvador-y-nuestra-senora-de-los-dolores-castellar": [
 36.28727,
 -5.42108,
@@ -23,6 +98,636 @@ false
 36.12243,
 -5.45666,
 false
+],
+"gr-abadia-del-sacromontegranada": [
+37.18317,
+-3.5771,
+false
+],
+"gr-agustinas-recoletas-de-santo-tomas-de-villanuevagranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-basilica-de-san-juan-de-dios-hospitalarios-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-capilla-de-la-virgen-de-las-misericordiasgranada": [
+37.17748,
+-3.6034,
+false
+],
+"gr-capilla-de-santa-adelamotril": [
+36.74509,
+-3.52077,
+true
+],
+"gr-capilla-del-carmencarchuna": [
+36.70259,
+-3.44153,
+true
+],
+"gr-capilla-realgranada": [
+37.1763,
+-3.59857,
+false
+],
+"gr-carmelitas-de-la-antigua-observancia-calzadas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-carmelitas-descalzas-de-san-josegranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-clarisas-capuchinas-de-jesus-maria-san-anton-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-comendadoras-de-santiagogranada": [
+37.17229,
+-3.59386,
+false
+],
+"gr-convento-de-nuestra-senora-de-la-piedad-y-sancti-spiritus-do": [
+37.1735,
+-3.59953,
+true
+],
+"gr-el-salvadoralmunecar": [
+36.77037,
+-3.72363,
+true
+],
+"gr-esclavas-del-santisimo-sacramento-y-de-la-inmaculadagranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-franciscanas-clarisas-de-santa-isabel-la-realgranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-franciscanas-clarisas-del-santo-angel-custodiogranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-hijas-de-la-caridadla-zubia": [
+37.12069,
+-3.58508,
+true
+],
+"gr-hospital-clinico-san-cecilio-pts-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-hospital-de-traumatologiagranada": [
+37.1939,
+-3.6083,
+false
+],
+"gr-hospital-universitario-virgen-de-las-nievesgranada": [
+37.19293,
+-3.60718,
+false
+],
+"gr-iglesia-de-los-padres-agustinos-hospitalicos-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-iglesia-de-maria-auxiliadora-salesianos-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-iglesia-de-san-anton-franciscanas-capuchinas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-iglesia-de-san-francisco-franciscanos-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-iglesia-de-san-juan-de-los-reyesgranada": [
+37.17993,
+-3.59182,
+false
+],
+"gr-iglesia-del-sagrado-corazon-jesuitas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-jardines-del-marsalobrena": [
+36.73391,
+-3.58779,
+false
+],
+"gr-los-marinosalmunecar": [
+36.73412,
+-3.70321,
+false
+],
+"gr-mercedariasla-zubia": [
+37.12069,
+-3.58508,
+true
+],
+"gr-monasterio-de-la-encarnacion-clarisas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-monasterio-de-la-visitacion-de-santa-maria-salesas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-monasterio-de-la-visitacion-nazarenas-motril": [
+36.74509,
+-3.52077,
+true
+],
+"gr-monasterio-de-san-jeronimo-jeronimas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-monasterio-de-santa-catalina-de-siena-zafra-dominicas-granad": [
+37.1735,
+-3.59953,
+true
+],
+"gr-padres-agustinosmotril": [
+36.74509,
+-3.52077,
+true
+],
+"gr-pagustin": [
+37.18617,
+-3.7226,
+false
+],
+"gr-panagil": [
+37.1735,
+-3.59953,
+true
+],
+"gr-panasalar": [
+37.15168,
+-4.06853,
+false
+],
+"gr-pandres": [
+37.18112,
+-3.59932,
+false
+],
+"gr-pangelcustodio": [
+37.15937,
+-3.5949,
+false
+],
+"gr-pangustias": [
+37.12178,
+-3.58199,
+false
+],
+"gr-pangustiasmotril": [
+36.75219,
+-3.52602,
+false
+],
+"gr-pantoniodepadua": [
+36.76617,
+-3.45581,
+false
+],
+"gr-pantoniodepaduamotril": [
+36.76617,
+-3.45581,
+false
+],
+"gr-pasuncionmamola": [
+36.74779,
+-3.27563,
+true
+],
+"gr-pasuncionsacromonte": [
+37.1735,
+-3.59953,
+true
+],
+"gr-pasuncionzubia": [
+37.12085,
+-3.58498,
+false
+],
+"gr-pauroravillanuevamesia": [
+37.21451,
+-4.01273,
+true
+],
+"gr-pbuenpastor": [
+36.75092,
+-3.51749,
+false
+],
+"gr-pcabezamotril": [
+36.74509,
+-3.52077,
+true
+],
+"gr-pcarmen": [
+37.34906,
+-3.1682,
+false
+],
+"gr-pcarmencastelldeferro": [
+36.7248,
+-3.35593,
+false
+],
+"gr-pcarmentorrenueva": [
+36.70403,
+-3.49048,
+false
+],
+"gr-pcarmenvaradero": [
+36.75221,
+-3.52465,
+false
+],
+"gr-pcecilio": [
+37.17317,
+-3.58964,
+false
+],
+"gr-pcorpuschristi": [
+37.1735,
+-3.59953,
+true
+],
+"gr-pdivinapastoramotril": [
+36.74657,
+-3.51457,
+false
+],
+"gr-pdolores": [
+37.22797,
+-3.71674,
+false
+],
+"gr-pemilio": [
+37.22069,
+-3.59209,
+false
+],
+"gr-pencarnacionalbolote": [
+37.23097,
+-3.65733,
+false
+],
+"gr-pencarnacionalhambra": [
+37.1735,
+-3.59953,
+true
+],
+"gr-pencarnacionalmunecar": [
+36.73461,
+-3.69067,
+false
+],
+"gr-pencarnacionmotril": [
+36.74571,
+-3.52093,
+false
+],
+"gr-pescolastica": [
+37.1735,
+-3.59953,
+true
+],
+"gr-pespiritusanto": [
+37.46539,
+-2.61245,
+false
+],
+"gr-pespiritusanto#loc": [
+37.1735,
+-3.59953,
+false
+],
+"gr-pfatimalancha": [
+37.22474,
+-3.69085,
+false
+],
+"gr-pfranciscojavier": [
+37.19399,
+-3.60477,
+false
+],
+"gr-pfranciscosales": [
+37.19894,
+-3.62457,
+false
+],
+"gr-pgracia": [
+37.15575,
+-3.47675,
+false
+],
+"gr-pgraciatocon": [
+37.23777,
+-3.966,
+false
+],
+"gr-pgregorio": [
+37.15883,
+-3.58134,
+false
+],
+"gr-piconcepcionalhendin": [
+37.06076,
+-3.70899,
+true
+],
+"gr-pildefonso": [
+37.19088,
+-3.59668,
+false
+],
+"gr-pinmaculadacalahonda": [
+36.70131,
+-3.41772,
+true
+],
+"gr-pinmaculadanina": [
+37.15987,
+-3.58843,
+false
+],
+"gr-pisidro": [
+37.7416,
+-2.55134,
+false
+],
+"gr-pisidro#loc": [
+37.1735,
+-3.59953,
+false
+],
+"gr-pjesusobrero": [
+37.20197,
+-3.7673,
+false
+],
+"gr-pjosecalasanz": [
+37.48676,
+-2.77127,
+false
+],
+"gr-pjosecalasanz#loc": [
+37.1735,
+-3.59953,
+false
+],
+"gr-pjosegranada": [
+36.75284,
+-3.51467,
+false
+],
+"gr-pjoselaherradura": [
+36.73452,
+-3.73932,
+false
+],
+"gr-pjosepurchil": [
+37.17176,
+-3.66742,
+true
+],
+"gr-pjuanavila": [
+37.18918,
+-3.62015,
+false
+],
+"gr-pjuanbautista": [
+37.2039,
+-4.22869,
+false
+],
+"gr-pjuandedios": [
+37.19912,
+-3.62479,
+false
+],
+"gr-pjuanletran": [
+37.1866,
+-3.60723,
+false
+],
+"gr-pjuanmariavianney": [
+37.15411,
+-3.60611,
+false
+],
+"gr-pjustopastor": [
+37.17856,
+-3.60173,
+false
+],
+"gr-plainmaculada": [
+37.18602,
+-3.61038,
+false
+],
+"gr-pmagdalena": [
+37.17412,
+-3.60195,
+false
+],
+"gr-pmariamayorpadul": [
+37.02229,
+-3.62749,
+true
+],
+"gr-pmariamicaela": [
+37.19143,
+-3.62543,
+false
+],
+"gr-pmatias": [
+37.17431,
+-3.59659,
+false
+],
+"gr-pmercedes": [
+37.22657,
+-3.94461,
+false
+],
+"gr-pmiguelarcangel": [
+37.16245,
+-3.59291,
+false
+],
+"gr-pmiguelgualchos": [
+36.73827,
+-3.38993,
+true
+],
+"gr-pmisericordiabelicena": [
+37.17294,
+-3.68853,
+true
+],
+"gr-pmontserrat": [
+37.16582,
+-3.59016,
+false
+],
+"gr-pnatividadrabita": [
+36.74861,
+-3.17142,
+false
+],
+"gr-pnieves": [
+37.07281,
+-3.60102,
+false
+],
+"gr-ppaz": [
+37.29385,
+-3.16801,
+false
+],
+"gr-ppazotura": [
+37.09375,
+-3.63463,
+false
+],
+"gr-ppedropablo": [
+37.17852,
+-3.59129,
+false
+],
+"gr-ppilar": [
+37.36334,
+-3.71062,
+false
+],
+"gr-ppiox": [
+37.1579,
+-3.60044,
+false
+],
+"gr-prafaelarcangel": [
+37.1735,
+-3.59953,
+true
+],
+"gr-preginamundi": [
+37.17401,
+-3.61089,
+false
+],
+"gr-premediosambroz": [
+37.16324,
+-3.66523,
+false
+],
+"gr-premediosfargue": [
+37.20208,
+-3.5648,
+false
+],
+"gr-prosariocaletaguardia": [
+36.74479,
+-3.60082,
+false
+],
+"gr-prosariosalobrena": [
+36.74479,
+-3.60082,
+false
+],
+"gr-psagradafamilia": [
+36.74672,
+-3.50976,
+false
+],
+"gr-psagrario": [
+37.17646,
+-3.59921,
+false
+],
+"gr-psalvador": [
+36.92941,
+-3.62967,
+false
+],
+"gr-psantiagopozuelo": [
+36.74885,
+-3.15389,
+false
+],
+"gr-pteresajesus": [
+36.70383,
+-3.41282,
+false
+],
+"gr-ptomasvillanueva": [
+37.18028,
+-3.61515,
+false
+],
+"gr-pvicentepaul": [
+37.16181,
+-3.58743,
+false
+],
+"gr-san-juan-bautistasalobrena": [
+36.74313,
+-3.58403,
+false
+],
+"gr-santa-iglesia-catedralgranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-santa-josefina-bakhitamotril": [
+36.71686,
+-3.5545,
+false
+],
+"gr-santuario-del-perpetuo-socorro-redentoristas-granada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-siervas-de-maria-ministras-de-los-enfermosgranada": [
+37.1735,
+-3.59953,
+true
+],
+"gr-virgen-del-marsalobrena": [
+36.76507,
+-3.59385,
+true
 ],
 "iglesia-la-conversion-san-pablo": [
 36.53377,
@@ -1479,6 +2184,1336 @@ false
 -6.16264,
 true
 ],
+"oa-1-nuestra-senora-de-los-dolores": [
+38.15065,
+-0.83127,
+true
+],
+"oa-10-san-pedro-apostol": [
+38.15333,
+-0.89398,
+false
+],
+"oa-100-san-francisco": [
+38.50026,
+-0.36343,
+true
+],
+"oa-101-san-juan-bautista": [
+38.34922,
+-0.49639,
+false
+],
+"oa-102-san-juan-bosco": [
+38.41455,
+-0.39904,
+false
+],
+"oa-103-san-lorenzo-martir": [
+38.48119,
+-0.42002,
+false
+],
+"oa-104-san-pedro-apostol": [
+38.3703,
+-0.40977,
+true
+],
+"oa-105-santa-ana": [
+38.38969,
+-0.40965,
+false
+],
+"oa-106-santa-teresa": [
+38.42771,
+-0.40085,
+false
+],
+"oa-107-santiago-apostol": [
+38.36376,
+-0.42556,
+false
+],
+"oa-108-santisima-trinidad": [
+38.43833,
+-0.41134,
+false
+],
+"oa-109-la-purisima": [
+38.29387,
+-0.58877,
+false
+],
+"oa-11-santiago-apostol": [
+38.17844,
+-0.86903,
+false
+],
+"oa-110-san-anton-abad": [
+38.26541,
+-0.67689,
+false
+],
+"oa-111-san-francisco-de-asis": [
+38.27264,
+-0.54647,
+false
+],
+"oa-112-san-vicente-ferrer": [
+38.27188,
+-0.68417,
+false
+],
+"oa-113-san-vicente-ferrer": [
+38.25056,
+-0.63355,
+true
+],
+"oa-114-santa-ana": [
+38.22772,
+-0.60478,
+true
+],
+"oa-115-basilica-de-santa-maria": [
+38.26713,
+-0.69746,
+false
+],
+"oa-116-el-salvador": [
+38.26422,
+-0.6973,
+false
+],
+"oa-117-espiritu-santo": [
+38.21223,
+-0.71902,
+false
+],
+"oa-118-nuestra-senora-de-la-asuncion": [
+38.19326,
+-0.55585,
+false
+],
+"oa-119-san-andres": [
+38.20623,
+-0.62827,
+false
+],
+"oa-12-santos-juanes": [
+38.15966,
+-0.80395,
+false
+],
+"oa-120-san-antonio-de-padua": [
+38.59667,
+-0.67067,
+false
+],
+"oa-121-iglesia-san-antonio-de-padua": [
+38.19351,
+-0.58244,
+false
+],
+"oa-122-san-francisco-de-asis": [
+38.79452,
+0.03469,
+false
+],
+"oa-123-san-juan-bautista": [
+38.26146,
+-0.69854,
+false
+],
+"oa-126-maria-auxiliadora": [
+38.22741,
+-0.74582,
+false
+],
+"oa-127-nuestra-senora-de-belen": [
+38.24852,
+-0.80831,
+false
+],
+"oa-128-nuestra-senora-del-carmen": [
+38.22896,
+-0.75044,
+true
+],
+"oa-129-nuestra-senora-desamparados": [
+38.25739,
+-0.7077,
+false
+],
+"oa-13-la-purisima": [
+38.0842,
+-0.74638,
+false
+],
+"oa-130-sagrado-corazon": [
+38.26704,
+-0.70262,
+false
+],
+"oa-131-san-agatangelo": [
+38.26533,
+-0.69884,
+true
+],
+"oa-132-san-cayetano": [
+38.26403,
+-0.89561,
+false
+],
+"oa-133-san-isidro-labrador": [
+38.20142,
+-0.71241,
+true
+],
+"oa-134-san-jaime": [
+38.26136,
+-0.74165,
+false
+],
+"oa-138-el-buen-pastor": [
+38.2744,
+-0.71267,
+false
+],
+"oa-14-nuestra-senora-de-los-dolores": [
+38.13941,
+-0.76954,
+false
+],
+"oa-143-inmaculada-concepcion": [
+38.47921,
+-0.78859,
+false
+],
+"oa-145-nuestra-senora-de-la-asuncion": [
+38.53838,
+-0.81714,
+false
+],
+"oa-148-san-francisco-de-sales": [
+38.47047,
+-0.79206,
+false
+],
+"oa-15-nuestra-senora-de-monserrate": [
+38.10511,
+-0.73806,
+true
+],
+"oa-151-santa-ana": [
+38.47902,
+-0.79577,
+false
+],
+"oa-152-maria-asunta": [
+38.59667,
+-0.67067,
+false
+],
+"oa-153-nuestra-senora-de-la-asuncion": [
+38.53921,
+-0.50784,
+false
+],
+"oa-155-santa-maria-magdalena": [
+38.53357,
+-0.57383,
+false
+],
+"oa-156-santiago-apostol": [
+38.62953,
+-0.67423,
+false
+],
+"oa-157-santiago-apostol": [
+38.62036,
+-0.57805,
+false
+],
+"oa-158-transfiguracion-del-senor": [
+38.62693,
+-0.57384,
+false
+],
+"oa-16-nuestra-senora-del-carmen": [
+38.08698,
+-0.79599,
+false
+],
+"oa-166-el-buen-pastor": [
+38.34338,
+-0.7649,
+false
+],
+"oa-167-nuestra-senora-de-la-salud": [
+38.27363,
+-0.92725,
+false
+],
+"oa-168-nuestra-senora-de-las-nieves": [
+38.30821,
+-0.85373,
+false
+],
+"oa-169-nuestra-senora-de-las-nieves": [
+38.37941,
+-0.72987,
+false
+],
+"oa-170-basilica-nuestra-senora-del-socorro": [
+38.34592,
+-0.76872,
+false
+],
+"oa-171-ermita-sagrado-corazon-de-jesus": [
+38.2771,
+-0.96281,
+true
+],
+"oa-172-san-pascual": [
+38.40539,
+-0.77584,
+false
+],
+"oa-174-san-pedro-apostol": [
+38.39092,
+-0.74758,
+false
+],
+"oa-175-san-roque": [
+38.38371,
+-0.77053,
+false
+],
+"oa-176-el-salvador": [
+38.30496,
+-0.93387,
+false
+],
+"oa-177-nuestra-senora-de-la-asuncion": [
+38.63054,
+-0.76467,
+true
+],
+"oa-178-nuestra-senora-de-la-paz": [
+38.6361,
+-0.86597,
+true
+],
+"oa-179-nuestra-senora-de-las-virtudes": [
+38.62419,
+-0.93275,
+false
+],
+"oa-18-san-andres-apostol": [
+38.10921,
+-0.79183,
+false
+],
+"oa-182-santa-maria": [
+38.63008,
+-0.86139,
+false
+],
+"oa-183-santiago-apostol": [
+38.63132,
+-0.86358,
+false
+],
+"oa-184-la-purisima": [
+38.61337,
+-0.12573,
+true
+],
+"oa-185-nuestra-senora-de-la-asuncion": [
+38.67735,
+-0.1977,
+false
+],
+"oa-186-nuestra-senora-de-las-nieves": [
+38.6449,
+0.04445,
+false
+],
+"oa-189-san-jose": [
+38.58012,
+-0.10251,
+true
+],
+"oa-19-san-fulgencio": [
+38.13582,
+-0.67797,
+false
+],
+"oa-196-san-pedro-apostol": [
+38.62268,
+-0.12754,
+true
+],
+"oa-198-san-vicente-martir": [
+38.67697,
+-0.2103,
+false
+],
+"oa-199-santa-ana": [
+38.63149,
+-0.04305,
+false
+],
+"oa-2-nuestra-senora-del-rosario": [
+38.07803,
+-0.83824,
+false
+],
+"oa-20-san-jaime-apostol": [
+38.09003,
+-0.65459,
+false
+],
+"oa-201-san-juan-bautista": [
+38.53169,
+-0.16288,
+false
+],
+"oa-202-el-buen-pastor": [
+38.53854,
+-0.13473,
+false
+],
+"oa-203-nuestra-senora-de-la-almudena": [
+38.54063,
+-0.12909,
+true
+],
+"oa-204-nuestra-senora-de-la-asuncion": [
+38.5054,
+-0.23237,
+false
+],
+"oa-205-nuestra-senora-del-carmen": [
+38.53478,
+-0.10747,
+false
+],
+"oa-206-nuestra-senora-del-carmen": [
+38.51008,
+-0.22962,
+true
+],
+"oa-208-san-antonio-abad": [
+38.51008,
+-0.22962,
+true
+],
+"oa-21-san-miguel-arcangel": [
+38.11405,
+-0.76231,
+false
+],
+"oa-214-san-jaime": [
+38.5341,
+-0.13112,
+false
+],
+"oa-215-nuestra-senora-de-la-merced": [
+38.65586,
+0.06752,
+false
+],
+"oa-217-el-salvador": [
+38.002,
+-0.65695,
+false
+],
+"oa-218-nuestra-senora-del-carmen": [
+37.98331,
+-0.66297,
+false
+],
+"oa-219-san-pedro-y-san-pablo": [
+37.99003,
+-0.69149,
+false
+],
+"oa-22-san-pedro-apostol": [
+38.08885,
+-0.72306,
+false
+],
+"oa-222-cristo-resucitado-y-centro-ecumenico": [
+37.92589,
+-0.73448,
+true
+],
+"oa-23-santa-cruz": [
+38.09929,
+-0.80502,
+false
+],
+"oa-239-monasterio-santuario-de-la-santa-faz": [
+38.39289,
+-0.44086,
+true
+],
+"oa-24-santiago-apostol": [
+38.08106,
+-0.73869,
+false
+],
+"oa-242-san-lorenzo": [
+38.60282,
+-0.04721,
+true
+],
+"oa-25-catedral-parroquia-el-salvador": [
+38.02756,
+-0.9131,
+true
+],
+"oa-250-santiago-apostol": [
+38.24089,
+-0.52632,
+false
+],
+"oa-251-iglesia-maria-auxiliadora": [
+38.37698,
+-0.77235,
+false
+],
+"oa-253-santuario-san-pascual-y-nuestra-senora-de-orito": [
+38.37722,
+-0.6897,
+true
+],
+"oa-256-ermita-sagrado-corazon": [
+38.07578,
+-0.97,
+false
+],
+"oa-257-ermita-cristo-de-la-agonia": [
+38.07403,
+-0.92486,
+false
+],
+"oa-258-ermita-sagrado-corazon": [
+38.10127,
+-0.92696,
+false
+],
+"oa-26-santa-ana-franciscanos": [
+37.9245,
+-0.72524,
+false
+],
+"oa-261-ermita-virgen-de-la-fuensanta": [
+38.10685,
+-0.922,
+false
+],
+"oa-262-ermita-san-jose": [
+38.07849,
+-0.97278,
+false
+],
+"oa-263-santuario-nuestra-senora-de-monserrate": [
+38.08806,
+-0.94991,
+false
+],
+"oa-264-ermita-nuestra-senora-del-pilar": [
+38.08076,
+-1.00929,
+true
+],
+"oa-265-ermita-sagrada-familia": [
+38.09437,
+-0.86101,
+true
+],
+"oa-266-ermita-la-milagrosa": [
+38.09537,
+-0.85978,
+false
+],
+"oa-267-santuario-diocesano-nuestra-senora-del-pilar": [
+38.0766,
+-0.83921,
+true
+],
+"oa-268-ermita-sagrada-familia": [
+38.12518,
+-0.87785,
+true
+],
+"oa-269-santuario-diocesano-nuestra-senora-del-carmen": [
+38.14132,
+-0.88716,
+true
+],
+"oa-27-san-anton": [
+38.09548,
+-0.94321,
+false
+],
+"oa-270-ermita-santa-cruz": [
+38.15123,
+-0.89175,
+false
+],
+"oa-271-ermita-sagrada-familia": [
+38.09187,
+-0.92733,
+false
+],
+"oa-272-ermita-santisima-trinidad": [
+38.15065,
+-0.88998,
+true
+],
+"oa-273-ermita-nuestra-senora-de-la-porteria": [
+38.12107,
+-0.79754,
+false
+],
+"oa-274-ermita-san-carlos": [
+38.11517,
+-0.90693,
+true
+],
+"oa-275-ermita-santa-cruz": [
+38.11517,
+-0.90693,
+true
+],
+"oa-276-ermita-sagrado-corazon": [
+38.12622,
+-0.79995,
+false
+],
+"oa-277-ermita-corazon-de-jesus": [
+38.12622,
+-0.79995,
+false
+],
+"oa-278-ermita-nuestra-senora-del-rosario": [
+38.10154,
+-0.76006,
+false
+],
+"oa-279-ermita-sagrado-corazon": [
+38.13924,
+-0.76932,
+true
+],
+"oa-28-san-vicente-ferrer": [
+38.08263,
+-0.94436,
+false
+],
+"oa-280-ermita-nuestra-senora-del-rosario": [
+38.09,
+-0.65381,
+true
+],
+"oa-281-ermita-nuestra-senora-del-carmen": [
+37.92589,
+-0.73448,
+true
+],
+"oa-282-capilla-santa-maria-del-mar": [
+37.92589,
+-0.73448,
+false
+],
+"oa-283-ermita-nuestra-senora-de-los-angeles": [
+37.92589,
+-0.73448,
+true
+],
+"oa-284-iglesia-san-pedro-y-san-francisco": [
+38.60282,
+-0.04721,
+true
+],
+"oa-29-santas-justa-y-rufina": [
+38.08525,
+-0.94961,
+false
+],
+"oa-3-nuestra-senora-del-rosario": [
+38.10468,
+-0.84899,
+false
+],
+"oa-30-santiago-el-mayor": [
+38.08754,
+-0.95005,
+false
+],
+"oa-31-ecce-homo": [
+38.08221,
+-0.90851,
+false
+],
+"oa-32-nuestra-senora-de-belen": [
+38.063,
+-0.89561,
+false
+],
+"oa-33-nuestra-senora-de-belen": [
+38.06073,
+-0.86631,
+false
+],
+"oa-34-nuestra-senora-de-belen": [
+38.08078,
+-1.00928,
+false
+],
+"oa-35-nuestra-senora-de-monserrate": [
+38.05935,
+-0.9232,
+false
+],
+"oa-36-nuestra-senora-de-monserrate": [
+37.99205,
+-0.86537,
+true
+],
+"oa-37-nuestra-senora-del-camino": [
+38.17086,
+-0.96358,
+true
+],
+"oa-38-nuestra-senora-del-carmen": [
+38.05488,
+-0.94099,
+true
+],
+"oa-39-nuestra-senora-del-pilar": [
+38.08748,
+-0.8938,
+false
+],
+"oa-4-san-felipe": [
+38.17751,
+-0.7966,
+false
+],
+"oa-40-nuestra-senora-del-remedio": [
+38.13608,
+-1.01126,
+false
+],
+"oa-41-nuestra-senora-desamparados": [
+38.05961,
+-0.98289,
+true
+],
+"oa-42-san-bartolome": [
+38.09537,
+-0.85978,
+false
+],
+"oa-43-san-jeronimo": [
+38.14052,
+-0.96367,
+false
+],
+"oa-44-san-joaquin": [
+38.08928,
+-0.9756,
+false
+],
+"oa-45-san-jose": [
+38.17257,
+-0.96291,
+false
+],
+"oa-46-inmaculada-concepcion": [
+37.97748,
+-0.68321,
+false
+],
+"oa-47-nuestra-senora-del-pilar": [
+38.02672,
+-0.74295,
+false
+],
+"oa-48-nuestra-senora-del-pilar": [
+37.86503,
+-0.79313,
+false
+],
+"oa-49-nuestra-senora-del-rosario": [
+38.02601,
+-0.65357,
+false
+],
+"oa-5-san-isidro": [
+38.17032,
+-0.83667,
+false
+],
+"oa-50-sagrado-corazon": [
+37.97648,
+-0.67695,
+false
+],
+"oa-51-san-miguel-arcangel": [
+37.97708,
+-0.7896,
+false
+],
+"oa-52-san-roque-y-santa-ana": [
+37.97225,
+-0.6981,
+false
+],
+"oa-53-corazon-de-maria": [
+38.82835,
+0.14133,
+false
+],
+"oa-54-maria-auxiliadora": [
+38.3463,
+-0.49283,
+false
+],
+"oa-55-nuestra-senora-de-gracia": [
+38.34427,
+-0.488,
+false
+],
+"oa-56-nuestra-senora-de-la-misericordia": [
+38.35202,
+-0.4837,
+false
+],
+"oa-57-san-antonio": [
+38.35131,
+-0.48747,
+false
+],
+"oa-58-san-juan-de-avila": [
+38.34141,
+-0.491,
+false
+],
+"oa-59-san-nicolas": [
+38.34537,
+-0.48285,
+false
+],
+"oa-6-san-jose": [
+38.11863,
+-0.87962,
+false
+],
+"oa-60-san-pascual": [
+38.342,
+-0.49128,
+false
+],
+"oa-61-santa-cruz-san-roque": [
+38.34204,
+-0.4786,
+false
+],
+"oa-62-basilica-de-santa-maria": [
+38.63037,
+-0.86147,
+false
+],
+"oa-63-corpus-christi": [
+38.34403,
+-0.49935,
+false
+],
+"oa-64-la-resurreccion-del-senor": [
+38.33837,
+-0.50559,
+false
+],
+"oa-65-nuestra-senora-del-carmen": [
+38.35046,
+-0.61109,
+false
+],
+"oa-66-nuestra-senora-del-rosario": [
+38.3458,
+-0.50851,
+false
+],
+"oa-67-san-blas": [
+38.35115,
+-0.49699,
+false
+],
+"oa-68-san-esteban-protomartir": [
+38.19335,
+-0.57671,
+false
+],
+"oa-69-san-francisco-de-asis": [
+37.91887,
+-0.81263,
+false
+],
+"oa-7-san-juan-bautista": [
+38.13958,
+-0.88422,
+false
+],
+"oa-70-san-francisco-javier": [
+38.34278,
+-0.51201,
+false
+],
+"oa-71-san-gabriel": [
+38.32919,
+-0.5142,
+false
+],
+"oa-72-san-juan-bautista": [
+38.34086,
+-0.49503,
+false
+],
+"oa-73-santos-juanes": [
+38.3196,
+-0.55682,
+false
+],
+"oa-74-el-buen-pastor": [
+38.35491,
+-0.47807,
+false
+],
+"oa-75-el-salvador": [
+38.36219,
+-0.47398,
+false
+],
+"oa-76-inmaculada-concepcion": [
+38.35721,
+-0.47527,
+false
+],
+"oa-77-maria-madre-de-la-iglesia": [
+38.34364,
+-0.48817,
+true
+],
+"oa-78-san-jose": [
+38.37915,
+-0.72905,
+false
+],
+"oa-79-santisima-cruz": [
+38.36456,
+-0.44844,
+false
+],
+"oa-8-san-martin-obispo": [
+38.12251,
+-0.87913,
+false
+],
+"oa-80-divina-pastora": [
+38.37184,
+-0.50338,
+false
+],
+"oa-81-inmaculada-concepcion": [
+38.39651,
+-0.52024,
+false
+],
+"oa-82-la-visitacion-de-nuestra-senora": [
+38.36869,
+-0.49867,
+false
+],
+"oa-83-nuestra-senora-de-los-angeles": [
+37.9842,
+-0.69427,
+false
+],
+"oa-84-sagrada-familia": [
+38.36637,
+-0.5076,
+false
+],
+"oa-85-san-agustin": [
+38.36311,
+-0.49944,
+false
+],
+"oa-86-san-pablo": [
+38.3587,
+-0.49299,
+false
+],
+"oa-87-san-pedro-apostol": [
+38.43691,
+-0.63967,
+true
+],
+"oa-88-san-vicente-ferrer": [
+38.40048,
+-0.52041,
+false
+],
+"oa-89-santa-isabel": [
+38.38169,
+-0.5026,
+false
+],
+"oa-9-san-miguel-arcangel": [
+38.11384,
+-0.90508,
+false
+],
+"oa-90-santisima-trinidad": [
+38.40554,
+-0.58803,
+false
+],
+"oa-91-la-redencion-de-nuestro-senor": [
+38.34364,
+-0.48817,
+true
+],
+"oa-92-nuestra-senora-del-carmen": [
+38.35046,
+-0.61109,
+false
+],
+"oa-93-nuestra-senora-del-remedio": [
+38.11101,
+-0.77979,
+false
+],
+"oa-94-nuestra-senora-desamparados": [
+38.37585,
+-0.48622,
+false
+],
+"oa-95-san-jose": [
+38.38675,
+-0.49148,
+false
+],
+"oa-96-san-rafael": [
+38.71927,
+-0.3562,
+false
+],
+"oa-97-santa-teresa-de-avila": [
+38.34364,
+-0.48817,
+true
+],
+"oa-99-nuestra-senora-de-las-virtudes": [
+38.40891,
+-0.46956,
+false
+],
+"sa-capilla-colegio-mayor-ntra-sra-de-guadalupe": [
+40.96516,
+-5.66402,
+true
+],
+"sa-capilla-de-la-asuncion-sotomayor-dominicos": [
+40.59305,
+-6.53679,
+false
+],
+"sa-capilla-de-la-asuncion-sotomayor-dominicos#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-centro-parroquial-de-chamberi": [
+40.95291,
+-5.68187,
+false
+],
+"sa-convento-de-las-duenas-dominicas": [
+40.96074,
+-5.66379,
+false
+],
+"sa-convento-madre-de-dios": [
+40.96381,
+-5.66589,
+false
+],
+"sa-hospital-de-la-santisima-trinidad": [
+40.96808,
+-5.66967,
+false
+],
+"sa-hospital-universitario-de-salamanca": [
+40.96472,
+-5.67981,
+false
+],
+"sa-iglesia-carmen-de-abajo-carmelitas-calzados": [
+40.95935,
+-5.66431,
+false
+],
+"sa-iglesia-de-la-purisima": [
+40.96474,
+-5.66728,
+false
+],
+"sa-iglesia-de-san-benito": [
+40.96381,
+-5.66589,
+false
+],
+"sa-iglesia-ntra-sra-del-carmen": [
+40.96707,
+-5.66446,
+false
+],
+"sa-iglesia-san-esteban-dominicos": [
+40.96074,
+-5.66379,
+false
+],
+"sa-iglesia-san-francisco-capuchinos": [
+40.9652,
+-5.66785,
+false
+],
+"sa-iglesia-san-juan-de-sahagun": [
+40.9682,
+-5.66123,
+false
+],
+"sa-iglesia-san-julian-y-santa-basilisa": [
+40.96474,
+-5.6621,
+false
+],
+"sa-iglesia-san-marcos": [
+40.96919,
+-5.6642,
+false
+],
+"sa-iglesia-san-martin": [
+41.0846,
+-5.2329,
+false
+],
+"sa-iglesia-san-martin#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-iglesia-san-pablo": [
+40.9619,
+-5.66344,
+false
+],
+"sa-iglesia-san-pedro-apostol": [
+40.70015,
+-6.18733,
+false
+],
+"sa-iglesia-san-pedro-apostol#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-iglesia-san-sebastian": [
+40.96133,
+-5.66601,
+false
+],
+"sa-iglesia-sancti-spiritus": [
+40.96586,
+-5.65885,
+false
+],
+"sa-iglesia-santa-maria-del-monte-carmelo": [
+40.9685,
+-5.66778,
+false
+],
+"sa-iglesia-santa-maria-magdalena-carmelitas-descalzos": [
+40.9687,
+-5.66438,
+false
+],
+"sa-iglesia-santisima-trinidad-del-arrabal": [
+40.95539,
+-5.67356,
+false
+],
+"sa-mercedarios-ntra-sra-de-la-merced": [
+40.9778,
+-5.66221,
+false
+],
+"sa-monasterio-de-la-purisima-concepcion-franciscas-descalzas": [
+40.9673,
+-5.6487,
+false
+],
+"sa-monasterio-del-corpus-christi": [
+40.96859,
+-5.66609,
+false
+],
+"sa-monasterio-franciscas-descalzas": [
+40.9673,
+-5.6487,
+false
+],
+"sa-monasterio-santa-maria-de-la-vega": [
+40.97068,
+-5.6779,
+false
+],
+"sa-parroquia-cristo-rey": [
+40.97438,
+-5.66727,
+false
+],
+"sa-parroquia-de-la-anunciacion-del-senor": [
+40.97438,
+-5.6481,
+false
+],
+"sa-parroquia-jesus-obrero": [
+40.97458,
+-5.67488,
+false
+],
+"sa-parroquia-maria-mediadora": [
+40.97437,
+-5.66246,
+false
+],
+"sa-parroquia-milagro-de-san-jose": [
+40.96406,
+-5.65443,
+false
+],
+"sa-parroquia-nombre-de-maria": [
+40.96808,
+-5.64745,
+false
+],
+"sa-parroquia-ntra-sra-de-fatima": [
+40.9728,
+-5.65262,
+false
+],
+"sa-parroquia-ntra-sra-de-la-asuncion": [
+40.97441,
+-5.63938,
+false
+],
+"sa-parroquia-ntra-sra-de-los-dolores": [
+40.94957,
+-5.66268,
+false
+],
+"sa-parroquia-ntra-sra-de-lourdes": [
+40.97982,
+-5.66812,
+false
+],
+"sa-parroquia-sagrada-familia": [
+40.42379,
+-3.66647,
+false
+],
+"sa-parroquia-sagrada-familia#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-parroquia-san-francisco-y-santa-clara": [
+40.96574,
+-5.6462,
+false
+],
+"sa-parroquia-san-isidro": [
+40.96672,
+-5.6518,
+false
+],
+"sa-parroquia-san-juan-de-mata": [
+40.97189,
+-5.67594,
+false
+],
+"sa-parroquia-san-juan-de-ribera": [
+40.98201,
+-5.6599,
+false
+],
+"sa-parroquia-san-mateo": [
+40.99993,
+-5.90956,
+false
+],
+"sa-parroquia-san-mateo#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-parroquia-santa-maria-de-nazaret": [
+40.96516,
+-5.66402,
+true
+],
+"sa-parroquia-santa-teresa": [
+40.97274,
+-5.67186,
+false
+],
+"sa-parroquia-santo-tomas-de-villanueva": [
+40.97537,
+-5.65621,
+false
+],
+"sa-parroquia-santuario-de-maria-auxiliadora": [
+40.55901,
+-5.67232,
+false
+],
+"sa-parroquia-santuario-de-maria-auxiliadora#loc": [
+40.96516,
+-5.66402,
+false
+],
+"sa-s-i-b-catedral-nueva": [
+40.96115,
+-5.66665,
+false
+],
+"sa-s-i-b-catedral-vieja": [
+40.96115,
+-5.66665,
+false
+],
+"sa-siervas-de-maria": [
+40.96228,
+-5.66564,
+false
+],
 "sagrado-corazon-de-jesus-la-linea": [
 36.16939,
 -5.36024,
@@ -2828,5 +4863,1280 @@ false
 37.60518,
 -5.82605,
 false
+],
+"va-icbenito": [
+41.65409,
+-4.72937,
+false
+],
+"va-icspablo": [
+41.65774,
+-4.72409,
+false
+],
+"va-ipangust": [
+41.65392,
+-4.72385,
+false
+],
+"va-ipjesusn": [
+41.65256,
+-4.72912,
+false
+],
+"va-ipveracr": [
+41.65374,
+-4.7263,
+false
+],
+"va-nsrpazte": [
+41.6485,
+-4.72488,
+false
+],
+"va-tadalia": [
+41.64865,
+-5.12131,
+true
+],
+"va-taguilar": [
+41.98404,
+-5.18073,
+true
+],
+"va-tagustin": [
+41.62,
+-4.72599,
+true
+],
+"va-talaejos": [
+41.30741,
+-5.21603,
+true
+],
+"va-talcazar": [
+41.37093,
+-4.67157,
+true
+],
+"va-taldeama": [
+41.51219,
+-4.63989,
+true
+],
+"va-tandres": [
+41.64785,
+-4.72198,
+false
+],
+"va-tantigua": [
+41.65351,
+-4.7229,
+false
+],
+"va-tarroyo": [
+41.61067,
+-4.78697,
+false
+],
+"va-tataquin": [
+41.18185,
+-4.80574,
+true
+],
+"va-tauxilia": [
+41.64661,
+-4.70444,
+false
+],
+"va-tbagprom": [
+41.64932,
+-4.7208,
+false
+],
+"va-tbarcial": [
+41.95053,
+-5.28465,
+true
+],
+"va-tbarruel": [
+41.67252,
+-5.06855,
+false
+],
+"va-tbecilla": [
+42.0941,
+-5.21184,
+true
+],
+"va-tbelenns": [
+41.65584,
+-4.70976,
+false
+],
+"va-tbenafar": [
+41.62108,
+-5.29353,
+true
+],
+"va-tbercero": [
+41.56356,
+-5.0559,
+true
+],
+"va-tberceru": [
+41.58022,
+-5.03256,
+true
+],
+"va-tbobadil": [
+41.20581,
+-5.02286,
+false
+],
+"va-tbocosdu": [
+41.62366,
+-4.06905,
+true
+],
+"va-tboecill": [
+41.54068,
+-4.69938,
+true
+],
+"va-tbolanos": [
+42.00627,
+-5.28387,
+true
+],
+"va-tbrahojo": [
+41.23131,
+-5.04194,
+true
+],
+"va-tbustill": [
+42.13045,
+-5.09105,
+true
+],
+"va-tcabezpi": [
+41.73393,
+-4.64698,
+false
+],
+"va-tcabezva": [
+42.16785,
+-5.15803,
+true
+],
+"va-tcabrero": [
+41.84935,
+-5.27089,
+true
+],
+"va-tcampill": [
+41.25782,
+-5.0147,
+true
+],
+"va-tcarmen": [
+41.64195,
+-4.72101,
+false
+],
+"va-tcarmext": [
+41.67094,
+-4.70312,
+false
+],
+"va-tcarpio": [
+41.21445,
+-5.1119,
+false
+],
+"va-tcasasol": [
+41.57786,
+-5.24131,
+true
+],
+"va-tcastrej": [
+41.25155,
+-5.17061,
+false
+],
+"va-tcastrid": [
+41.57504,
+-4.01445,
+true
+],
+"va-tcastrit": [
+41.70309,
+-4.3715,
+true
+],
+"va-tcastrob": [
+42.13756,
+-5.30625,
+true
+],
+"va-tcastrod": [
+41.64852,
+-4.9596,
+true
+],
+"va-tcastroe": [
+41.67246,
+-5.30472,
+true
+],
+"va-tcastrom": [
+41.77328,
+-5.04038,
+true
+],
+"va-tcastron": [
+41.68105,
+-4.58785,
+true
+],
+"va-tcastroo": [
+41.38877,
+-5.26332,
+true
+],
+"va-tcastrop": [
+42.11673,
+-5.17056,
+true
+],
+"va-tcatedra": [
+41.65239,
+-4.72374,
+false
+],
+"va-tceinos": [
+42.03212,
+-5.15019,
+true
+],
+"va-tcervill": [
+41.1874,
+-4.94988,
+true
+],
+"va-tcigales": [
+41.75829,
+-4.69898,
+true
+],
+"va-tcigunue": [
+41.64039,
+-4.85649,
+true
+],
+"va-tclaraas": [
+41.65924,
+-4.72061,
+false
+],
+"va-tcogecei": [
+41.40628,
+-4.54528,
+true
+],
+"va-tcorcos": [
+41.81118,
+-4.69414,
+false
+],
+"va-tcorcosa": [
+41.76096,
+-4.62339,
+true
+],
+"va-tcorjesu": [
+41.65247,
+-4.72032,
+false
+],
+"va-tcristor": [
+41.63323,
+-4.75684,
+false
+],
+"va-tcuenca": [
+42.05774,
+-5.05527,
+false
+],
+"va-tcuriel": [
+41.63974,
+-4.09923,
+false
+],
+"va-tdomingo": [
+41.63345,
+-4.74129,
+false
+],
+"va-tdulceno": [
+41.64103,
+-4.71966,
+false
+],
+"va-tencinas": [
+41.75689,
+-4.10341,
+true
+],
+"va-tfelipen": [
+41.65112,
+-4.7258,
+false
+],
+"va-tfernand": [
+41.66255,
+-4.71796,
+false
+],
+"va-tflecha": [
+41.6264,
+-4.77478,
+false
+],
+"va-tflorent": [
+41.61853,
+-4.7451,
+false
+],
+"va-tfoncast": [
+41.43555,
+-5.01822,
+true
+],
+"va-tfontiho": [
+42.16202,
+-5.05796,
+true
+],
+"va-tfrancis": [
+41.62695,
+-4.72572,
+false
+],
+"va-tfresnoe": [
+41.19609,
+-5.14644,
+false
+],
+"va-tfuensal": [
+41.70698,
+-4.76512,
+false
+],
+"va-tfuentee": [
+41.17635,
+-4.93468,
+true
+],
+"va-tgallego": [
+41.60953,
+-5.0979,
+true
+],
+"va-tgeria": [
+41.57891,
+-4.87567,
+true
+],
+"va-tgordali": [
+42.13261,
+-5.13551,
+true
+],
+"va-tguadalu": [
+41.62002,
+-4.75485,
+false
+],
+"va-thenarns": [
+41.65827,
+-4.73732,
+false
+],
+"va-therrera": [
+41.56346,
+-4.65338,
+true
+],
+"va-therrinc": [
+42.12477,
+-4.95172,
+true
+],
+"va-thoncala": [
+41.1545,
+-4.85169,
+true
+],
+"va-thornill": [
+41.36672,
+-4.71799,
+true
+],
+"va-tignacio": [
+41.65007,
+-4.70881,
+false
+],
+"va-tildefon": [
+41.64799,
+-4.73212,
+false
+],
+"va-tinmacul": [
+41.62,
+-4.72599,
+true
+],
+"va-tisidrol": [
+41.64441,
+-4.713,
+false
+],
+"va-tjoseobr": [
+41.66736,
+-4.70902,
+false
+],
+"va-tjuanbau": [
+41.65051,
+-4.71653,
+false
+],
+"va-tlagduea": [
+41.58328,
+-4.72176,
+false
+],
+"va-tlagduep": [
+41.58746,
+-4.72662,
+false
+],
+"va-tlangayo": [
+41.56956,
+-4.19819,
+true
+],
+"va-tlomovie": [
+41.14997,
+-4.91693,
+true
+],
+"va-tlorenzo": [
+41.75718,
+-4.70381,
+false
+],
+"va-tmagdale": [
+41.65376,
+-4.71771,
+false
+],
+"va-tmanzani": [
+41.58634,
+-4.18904,
+true
+],
+"va-tmartiny": [
+41.65606,
+-4.72237,
+false
+],
+"va-tmarzale": [
+41.58737,
+-5.13307,
+true
+],
+"va-tmatapoz": [
+41.41391,
+-4.79004,
+true
+],
+"va-tmatilla": [
+41.54779,
+-4.96783,
+true
+],
+"va-tmayorga": [
+42.16535,
+-5.25989,
+false
+],
+"va-tmedican": [
+41.30783,
+-4.91582,
+false
+],
+"va-tmedicmi": [
+41.30266,
+-4.92244,
+false
+],
+"va-tmedicsa": [
+41.31176,
+-4.92082,
+false
+],
+"va-tmedicto": [
+41.30939,
+-4.91515,
+false
+],
+"va-tmedirma": [
+41.88368,
+-5.04336,
+true
+],
+"va-tmegeces": [
+41.40716,
+-4.56667,
+true
+],
+"va-tmelgaba": [
+42.24324,
+-5.14216,
+true
+],
+"va-tmelgarr": [
+42.26793,
+-5.09487,
+true
+],
+"va-tmelida": [
+41.58075,
+-4.07733,
+true
+],
+"va-tmercedn": [
+41.66596,
+-4.73711,
+false
+],
+"va-tmicaela": [
+41.65097,
+-4.71438,
+false
+],
+"va-tmiguely": [
+41.65534,
+-4.72796,
+false
+],
+"va-tmilagro": [
+41.64302,
+-4.71474,
+false
+],
+"va-tmojados": [
+41.43059,
+-4.66437,
+true
+],
+"va-tmonaste": [
+42.23041,
+-5.18037,
+true
+],
+"va-tmorales": [
+41.8605,
+-5.17335,
+true
+],
+"va-tmotamar": [
+41.63281,
+-5.17743,
+false
+],
+"va-tmucient": [
+41.7425,
+-4.76255,
+true
+],
+"va-tmudarra": [
+41.77939,
+-4.94403,
+true
+],
+"va-tmuriel": [
+41.12307,
+-4.84214,
+true
+],
+"va-tnavarey": [
+41.33045,
+-5.08137,
+true
+],
+"va-tnicolas": [
+41.65794,
+-4.73003,
+false
+],
+"va-tnuevavi": [
+41.26764,
+-5.05711,
+true
+],
+"va-tolivare": [
+41.63779,
+-4.3651,
+true
+],
+"va-tolmedo": [
+41.28853,
+-4.68519,
+false
+],
+"va-tolmosde": [
+41.68783,
+-4.5225,
+true
+],
+"va-tolmosdp": [
+41.57214,
+-4.0422,
+true
+],
+"va-toveruel": [
+41.69083,
+-4.70711,
+false
+],
+"va-tpadilla": [
+41.6127,
+-4.16317,
+true
+],
+"va-tpalazue": [
+41.92965,
+-5.14498,
+true
+],
+"va-tpascual": [
+41.64439,
+-4.74114,
+false
+],
+"va-tpedraja": [
+41.47091,
+-4.6469,
+true
+],
+"va-tpedroa": [
+41.70143,
+-4.06078,
+false
+],
+"va-tpedrosa": [
+41.55583,
+-5.20282,
+true
+],
+"va-tpedroso": [
+41.55311,
+-4.93646,
+true
+],
+"va-tpenafie": [
+41.59664,
+-4.12157,
+true
+],
+"va-tpenaflo": [
+41.71157,
+-4.98106,
+true
+],
+"va-tpesquer": [
+41.64161,
+-4.15586,
+true
+],
+"va-tpilarns": [
+41.65184,
+-4.70883,
+false
+],
+"va-tpinaesg": [
+41.72826,
+-4.42854,
+true
+],
+"va-tpinarde": [
+41.5871,
+-4.75075,
+false
+],
+"va-tpinelab": [
+41.67486,
+-4.14767,
+true
+],
+"va-tpinelar": [
+41.69889,
+-4.12848,
+true
+],
+"va-tpioxs": [
+41.65762,
+-4.74657,
+false
+],
+"va-tpollos": [
+41.44331,
+-5.12548,
+true
+],
+"va-tportarr": [
+41.47443,
+-4.59245,
+true
+],
+"va-tportill": [
+41.47877,
+-4.58877,
+true
+],
+"va-tpozaldz": [
+41.37211,
+-4.84464,
+true
+],
+"va-tpozuelo": [
+41.82224,
+-5.25906,
+true
+],
+"va-tpradons": [
+41.62,
+-4.72599,
+true
+],
+"va-tpuented": [
+41.55413,
+-4.79123,
+false
+],
+"va-tquintar": [
+41.61971,
+-4.21822,
+true
+],
+"va-tquinton": [
+41.62498,
+-4.36666,
+false
+],
+"va-tquinttr": [
+41.85386,
+-4.65921,
+true
+],
+"va-tramiro": [
+41.22853,
+-4.78575,
+true
+],
+"va-tramonno": [
+41.65207,
+-4.73561,
+false
+],
+"va-trenedoe": [
+41.65399,
+-4.62763,
+true
+],
+"va-trobladi": [
+41.60805,
+-4.91014,
+true
+],
+"va-trodilan": [
+41.37102,
+-4.87814,
+true
+],
+"va-trosalim": [
+41.63276,
+-4.7501,
+false
+],
+"va-trosario": [
+41.62807,
+-4.74175,
+false
+],
+"va-trubidbr": [
+41.21437,
+-4.92414,
+true
+],
+"va-trueda": [
+41.41298,
+-4.95975,
+true
+],
+"va-tsaelice": [
+42.21194,
+-5.20604,
+true
+],
+"va-tsagcons": [
+41.62679,
+-4.71393,
+false
+],
+"va-tsagrada": [
+41.64483,
+-4.73718,
+false
+],
+"va-tsalvado": [
+41.65098,
+-4.72503,
+false
+],
+"va-tsancebr": [
+41.68097,
+-5.14787,
+true
+],
+"va-tsanllor": [
+41.68622,
+-4.0649,
+true
+],
+"va-tsanmart": [
+41.75283,
+-4.56662,
+true
+],
+"va-tsanmigp": [
+41.50915,
+-4.9112,
+true
+],
+"va-tsanpabl": [
+41.16066,
+-4.7773,
+true
+],
+"va-tsanpedr": [
+41.7355,
+-5.32696,
+false
+],
+"va-tsanroma": [
+41.48065,
+-5.28522,
+true
+],
+"va-tsansalv": [
+41.62017,
+-5.08684,
+true
+],
+"va-tsantaes": [
+41.73065,
+-5.10399,
+false
+],
+"va-tsantaeu": [
+41.89572,
+-5.26513,
+true
+],
+"va-tsanterv": [
+42.2176,
+-5.09928,
+true
+],
+"va-tsantiag": [
+41.65056,
+-4.72894,
+false
+],
+"va-tsantiba": [
+41.57098,
+-4.44965,
+true
+],
+"va-tsantove": [
+41.69365,
+-4.6896,
+true
+],
+"va-tsanvice": [
+41.2186,
+-4.85191,
+false
+],
+"va-tsardond": [
+41.60852,
+-4.43393,
+true
+],
+"va-tsardonr": [
+41.61708,
+-4.41714,
+true
+],
+"va-tsecala": [
+41.41442,
+-4.90713,
+true
+],
+"va-tserrada": [
+41.45844,
+-4.86201,
+false
+],
+"va-tsieteig": [
+41.35161,
+-5.18481,
+false
+],
+"va-tsimanca": [
+41.59029,
+-4.82681,
+true
+],
+"va-tsimondr": [
+41.61262,
+-4.75386,
+false
+],
+"va-tteresa": [
+41.66586,
+-4.71747,
+false
+],
+"va-ttiedra": [
+41.65242,
+-5.26756,
+true
+],
+"va-ttomasaq": [
+41.63753,
+-4.73512,
+false
+],
+"va-ttordehu": [
+41.81444,
+-5.15765,
+true
+],
+"va-ttordema": [
+41.50085,
+-5.00053,
+true
+],
+"va-ttoribio": [
+41.6335,
+-4.72334,
+false
+],
+"va-ttorreca": [
+41.48473,
+-5.08651,
+true
+],
+"va-ttorreco": [
+41.21958,
+-5.22381,
+true
+],
+"va-ttorrect": [
+41.66659,
+-5.04941,
+true
+],
+"va-ttorrecv": [
+41.37217,
+-5.01212,
+true
+],
+"va-ttorrelo": [
+41.64904,
+-5.02508,
+true
+],
+"va-ttriguer": [
+41.83006,
+-4.65261,
+true
+],
+"va-ttudela": [
+41.58379,
+-4.5798,
+false
+],
+"va-tunionca": [
+42.08913,
+-5.34442,
+true
+],
+"va-turonesc": [
+42.10804,
+-5.29143,
+true
+],
+"va-turuena": [
+41.72717,
+-5.20356,
+true
+],
+"va-tvalbuen": [
+41.64226,
+-4.29283,
+true
+],
+"va-tvalbues": [
+41.62998,
+-4.26308,
+true
+],
+"va-tvaldear": [
+41.6426,
+-4.04832,
+true
+],
+"va-tvaldest": [
+41.47688,
+-4.77078,
+true
+],
+"va-tvaldunq": [
+42.04172,
+-5.31259,
+true
+],
+"va-tvaloria": [
+41.79997,
+-4.52996,
+true
+],
+"va-tvalverd": [
+41.83484,
+-5.03712,
+true
+],
+"va-tvegarui": [
+42.18768,
+-5.11585,
+true
+],
+"va-tvegaval": [
+41.5944,
+-5.11346,
+true
+],
+"va-tvelasca": [
+41.23413,
+-4.96882,
+true
+],
+"va-tvelilla": [
+41.55856,
+-5.00483,
+true
+],
+"va-tvelliza": [
+41.57952,
+-4.94751,
+true
+],
+"va-tventosa": [
+41.41138,
+-4.82904,
+true
+],
+"va-tvianace": [
+41.52874,
+-4.75207,
+true
+],
+"va-tvicente": [
+41.65226,
+-4.74066,
+false
+],
+"va-tvictori": [
+41.66415,
+-4.73712,
+false
+],
+"va-tvillbra": [
+41.82283,
+-5.11498,
+true
+],
+"va-tvillcar": [
+42.1895,
+-5.04251,
+true
+],
+"va-tvillcid": [
+42.08279,
+-5.12415,
+true
+],
+"va-tvillfrc": [
+42.07839,
+-4.9708,
+true
+],
+"va-tvillfrd": [
+41.43304,
+-5.30174,
+true
+],
+"va-tvillfre": [
+41.8941,
+-5.2173,
+false
+],
+"va-tvillgar": [
+41.78133,
+-5.19308,
+true
+],
+"va-tvillgom": [
+42.15578,
+-5.1422,
+true
+],
+"va-tvilllan": [
+42.01416,
+-5.23609,
+true
+],
+"va-tvilllar": [
+41.54999,
+-5.13848,
+true
+],
+"va-tvilllba": [
+41.38659,
+-4.77558,
+true
+],
+"va-tvilllbl": [
+42.17458,
+-5.19027,
+true
+],
+"va-tvilllbo": [
+41.86363,
+-4.8591,
+true
+],
+"va-tvilllbr": [
+41.60441,
+-5.21238,
+true
+],
+"va-tvilllon": [
+42.09832,
+-5.0341,
+false
+],
+"va-tvillmar": [
+41.53114,
+-4.88513,
+false
+],
+"va-tvillmur": [
+41.94688,
+-5.20753,
+true
+],
+"va-tvillnto": [
+41.59277,
+-4.9213,
+true
+],
+"va-tvillnuc": [
+41.75917,
+-5.24796,
+true
+],
+"va-tvillnud": [
+42.14893,
+-5.09546,
+true
+],
+"va-tvillnue": [
+41.51791,
+-4.86734,
+true
+],
+"va-tvillnui": [
+41.70322,
+-4.48318,
+true
+],
+"va-tvillrde": [
+41.72419,
+-5.25343,
+true
+],
+"va-tvillrme": [
+41.68484,
+-4.54533,
+true
+],
+"va-tvillsex": [
+41.63969,
+-5.06452,
+true
+],
+"va-tvillvel": [
+41.69247,
+-5.27697,
+true
+],
+"va-tvillver": [
+41.30663,
+-5.02535,
+true
+],
+"va-tvillvic": [
+42.05617,
+-5.2259,
+true
+],
+"va-tvillvie": [
+41.53209,
+-5.03769,
+false
+],
+"va-twamba": [
+41.67533,
+-4.91703,
+true
+],
+"va-tzaratan": [
+41.6619,
+-4.78361,
+false
+],
+"va-tzorital": [
+42.23798,
+-5.0221,
+true
 ]
 }

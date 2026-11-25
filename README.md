@@ -43,7 +43,14 @@ Campana ya no se limita a Sotogrande: cada diócesis es una fuente independiente
 y solo se usan las webs oficiales de las diócesis. `pipeline/build.py` genera un archivo por diócesis (`site/data/<id>.js`)
 y un índice de cobertura (`site/data/indice.js`); la web carga solo las diócesis cercanas a tu ubicación.
 
-- Hoy: Cádiz y Ceuta, Málaga, Sevilla y Madrid. Pendientes: ver `pipeline/static/pendientes.json`.
+- Hoy: Cádiz y Ceuta, Málaga, Sevilla, Madrid, Alcalá de Henares, Barcelona, Granada, Valladolid, Orihuela-Alicante, Salamanca, Pamplona y Tudela, y Tenerife. Pendientes: ver `pipeline/static/pendientes.json`.
 - Para añadir una diócesis: crea `pipeline/fuentes/<id>.py` con `run() -> (lista_normalizada, fallos)`, añádela a `FUENTES` en `build.py` y prueba con `python3 pipeline/build.py <id>`.
 - Si una diócesis falla o devuelve menos del 60 % de lo anterior, se conservan sus datos anteriores y el índice la marca como «antiguo».
 - Sevilla guarda una caché (`pipeline/static/cache_sevilla.json`) para no volver a descargar las fichas que no han cambiado.
+
+### Formatos que entiende el generador
+
+- Tablas por día (Sevilla, Valladolid, Salamanca, Tenerife), servicios de datos de la propia diócesis (Madrid, Granada) y hojas de cálculo (Pamplona, necesita `openpyxl`).
+- Texto libre en español y catalán (`pipeline/texto.py`): «Lunes a sábado: 19h», bloques LABORABLES / VÍSPERAS / FESTIVOS, «Feiners: dimecres i divendres 20:00h».
+- Las coordenadas salen de la propia web cuando las publica; si no, de OpenStreetMap (Nominatim, 1 consulta por segundo, con caché en `pipeline/static/geo_cache.json`). Si el resultado cae fuera de la zona de la diócesis, se usa la localidad y la ficha lo marca como ubicación aproximada.
+- Diócesis revisadas sin horarios legibles todavía: Burgos (no publica la localidad de cada misa), Getafe y Jaén (solo directorio, sin horarios), Cartagena (buscador en mantenimiento), Huelva (PDF), Ibiza (solo la ciudad).
