@@ -1,4 +1,144 @@
 {
+"at-astorga-catedral": [
+42.45805,
+-6.05683,
+false
+],
+"at-astorga-monasterio-de-sancti-spiritus": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-parroquia-de-puerta-de-rey": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-parroquia-de-san-andres": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-parroquia-de-san-bartolome": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-parroquia-de-san-pedro-de-rectivia": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-parroquia-de-santa-marta": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-pp-redentoristas": [
+42.4554,
+-6.05292,
+true
+],
+"at-astorga-santuario-de-ntra-sra-de-fatima": [
+42.4554,
+-6.05292,
+true
+],
+"at-branuelas-parroquia-de-branuelas": [
+42.63278,
+-6.20097,
+true
+],
+"at-la-baneza-parroquia-de-el-salvador": [
+42.29981,
+-5.89701,
+true
+],
+"at-la-baneza-parroquia-de-santa-maria": [
+42.29981,
+-5.89701,
+true
+],
+"at-nistal-de-la-vega-parroquia-de-nistal-de-la-vega": [
+42.42397,
+-6.00749,
+true
+],
+"at-ponferrada-basilica-de-la-encina": [
+42.54423,
+-6.59173,
+false
+],
+"at-ponferrada-capilla-del-convento-de-las-mm-concepcionistas-fr": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-hospital-de-la-reina": [
+42.54129,
+-6.59349,
+false
+],
+"at-ponferrada-parroquia-de-compostilla": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-fuentesnuevas-tiene-dos-templos": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-san-antonio": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-san-ignacio": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-san-jose-obrero": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-san-pedro": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-de-santiago-apostol-de-flores-del-sil": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-del-buen-pastor": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-del-sagrado-corazon": [
+42.49844,
+-6.56632,
+true
+],
+"at-ponferrada-parroquia-jesus-redentor": [
+42.49844,
+-6.56632,
+true
+],
+"at-san-justo-de-la-vega-parroquia-de-san-justo-de-la-vega": [
+42.45447,
+-6.01456,
+true
+],
+"at-val-de-san-lorenzo-parroquia-de-val-de-san-lorenzo": [
+42.41665,
+-6.12074,
+true
+],
 "bc-mare-de-deu-de-lesperanca-2": [
 41.54828,
 2.44517,
@@ -73,6 +213,1301 @@ false
 41.38258,
 2.17707,
 true
+],
+"cc-catedral-de-coria": [
+39.9825,
+-6.53724,
+false
+],
+"cc-concatedral-de-santa-maria": [
+39.25575,
+-6.18548,
+false
+],
+"cc-ermita-de-la-paz": [
+39.47492,
+-6.37162,
+false
+],
+"cc-ermita-ntra-sra-de-argeme": [
+39.99051,
+-6.45633,
+false
+],
+"cc-ermita-ntra-sra-de-la-montana": [
+39.47161,
+-6.36498,
+false
+],
+"cc-iglesia-de-santo-domingo": [
+39.47608,
+-6.37242,
+false
+],
+"cc-parroquia-de-cristo-rey": [
+40.44383,
+-6.30495,
+true
+],
+"cc-parroquia-de-el-espiritu-santo": [
+40.2954,
+-6.25615,
+false
+],
+"cc-parroquia-de-el-salvador": [
+40.42566,
+-6.14586,
+false
+],
+"cc-parroquia-de-el-salvador-almoharin": [
+39.17621,
+-6.04809,
+false
+],
+"cc-parroquia-de-el-salvador-carbajo": [
+39.60428,
+-7.19763,
+false
+],
+"cc-parroquia-de-el-salvador-santa-cruz-de-paniagua": [
+40.19106,
+-6.34106,
+false
+],
+"cc-parroquia-de-la-concepcion": [
+40.32618,
+-6.17576,
+true
+],
+"cc-parroquia-de-la-concepcion-pino-de-valencia-de-alcantara": [
+39.33251,
+-7.28021,
+false
+],
+"cc-parroquia-de-la-consolacion": [
+40.17861,
+-6.62514,
+false
+],
+"cc-parroquia-de-la-consolacion-arroyomolinos": [
+39.1848,
+-6.16275,
+false
+],
+"cc-parroquia-de-la-consolacion-santiago-de-alcantara": [
+39.6073,
+-7.24101,
+false
+],
+"cc-parroquia-de-la-conversion-de-san-pablo": [
+39.37818,
+-6.34665,
+false
+],
+"cc-parroquia-de-la-encarnacion": [
+39.46296,
+-6.90583,
+false
+],
+"cc-parroquia-de-la-encarnacion-valencia-de-alcantara": [
+39.41223,
+-7.24259,
+false
+],
+"cc-parroquia-de-la-inmaculada-concepcion": [
+40.30584,
+-6.22202,
+true
+],
+"cc-parroquia-de-la-inmaculada-concepcion-de-maria": [
+39.46176,
+-6.54353,
+true
+],
+"cc-parroquia-de-la-piedad": [
+40.06848,
+-6.66044,
+true
+],
+"cc-parroquia-de-la-purisima-concepcion": [
+40.23751,
+-6.5398,
+true
+],
+"cc-parroquia-de-la-sagrada-familia": [
+39.45448,
+-6.37799,
+false
+],
+"cc-parroquia-de-la-virgen-de-los-dolores": [
+40.40446,
+-6.0851,
+false
+],
+"cc-parroquia-de-los-santos-martires": [
+39.61113,
+-6.77574,
+false
+],
+"cc-parroquia-de-ntra-sra-de-argeme": [
+39.98251,
+-6.45456,
+false
+],
+"cc-parroquia-de-ntra-sra-de-de-la-asuncion": [
+40.15436,
+-6.68074,
+false
+],
+"cc-parroquia-de-ntra-sra-de-gracia": [
+39.52684,
+-7.05435,
+true
+],
+"cc-parroquia-de-ntra-sra-de-guadalupe": [
+39.46315,
+-6.37894,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion": [
+40.38356,
+-6.18795,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-ahigal": [
+40.1904,
+-6.18742,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-alcuescar": [
+39.18136,
+-6.22965,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-aliseda": [
+39.42079,
+-6.69062,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-arroyo-de-la-luz": [
+39.48405,
+-6.58484,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-casar-de-caceres": [
+39.56075,
+-6.41907,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-casas-de-don-antonio": [
+39.25283,
+-6.28509,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-casillas-de-coria": [
+39.96561,
+-6.63629,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-eljas": [
+40.22379,
+-6.83069,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-galisteo": [
+39.97672,
+-6.26649,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-hinojal": [
+39.71069,
+-6.35902,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-malpartida-de-caceres": [
+39.4458,
+-6.50532,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-montehermoso": [
+40.08836,
+-6.34866,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-pescueza": [
+39.91791,
+-6.64602,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-robledillo-de-gata": [
+40.3226,
+-6.47095,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-sierra-de-fuentes": [
+39.43726,
+-6.27443,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-torre-de-don-miguel": [
+40.22365,
+-6.57712,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-torre-de-santa-maria": [
+39.25265,
+-6.11677,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-torrecilla-de-los-angel": [
+40.24807,
+-6.4184,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-torremocha": [
+39.34573,
+-6.17283,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-valdefuentes": [
+39.27401,
+-6.1263,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-valverde-del-fresno": [
+40.17722,
+-6.94185,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-vegas-de-coria": [
+40.38495,
+-6.1841,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-villanueva-de-la-sierra": [
+40.21056,
+-6.42655,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-asuncion-zarza-de-granadilla": [
+40.23809,
+-6.04665,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-consolacion": [
+40.06192,
+-6.53037,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-encina": [
+40.30187,
+-6.33413,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-o": [
+39.62368,
+-6.65094,
+false
+],
+"cc-parroquia-de-ntra-sra-de-la-pena-de-francia": [
+40.40394,
+-6.20791,
+true
+],
+"cc-parroquia-de-ntra-sra-de-la-romana": [
+39.78598,
+-6.92729,
+false
+],
+"cc-parroquia-de-ntra-sra-de-los-angeles": [
+40.20173,
+-6.71701,
+false
+],
+"cc-parroquia-de-ntra-sra-de-los-angeles-ovejuela": [
+40.30361,
+-6.43782,
+false
+],
+"cc-parroquia-de-ntra-sra-de-los-angeles-villa-del-campo": [
+40.14266,
+-6.42662,
+false
+],
+"cc-parroquia-de-ntra-sra-de-los-apostoles": [
+40.12035,
+-6.74099,
+false
+],
+"cc-parroquia-de-ntra-sra-del-buen-varon": [
+40.17109,
+-6.72151,
+false
+],
+"cc-parroquia-de-ntra-sra-del-carmen": [
+40.42666,
+-6.14873,
+true
+],
+"cc-parroquia-de-ntra-sra-del-olmo": [
+40.25894,
+-5.92859,
+false
+],
+"cc-parroquia-de-ntra-sra-del-olmo-ceclavin": [
+39.8207,
+-6.77596,
+false
+],
+"cc-parroquia-de-ntra-sra-del-pilar": [
+39.97155,
+-6.37771,
+true
+],
+"cc-parroquia-de-ntra-sra-del-rosario-de-fatima": [
+40.0412,
+-6.71847,
+false
+],
+"cc-parroquia-de-ntra-sra-del-rosario-de-fatima-acena-de-la-borr": [
+39.32072,
+-7.2267,
+true
+],
+"cc-parroquia-de-ntra-sra-del-rosario-de-fatima-caceres": [
+39.47452,
+-6.37168,
+true
+],
+"cc-parroquia-de-rocamador": [
+39.41264,
+-7.24023,
+false
+],
+"cc-parroquia-de-san-andres": [
+40.01769,
+-6.39851,
+false
+],
+"cc-parroquia-de-san-andres-apostol": [
+40.19318,
+-6.16196,
+false
+],
+"cc-parroquia-de-san-andres-apostol-torrejoncillo": [
+39.89641,
+-6.46621,
+false
+],
+"cc-parroquia-de-san-andres-apostol-valdemorales": [
+39.20559,
+-6.06502,
+false
+],
+"cc-parroquia-de-san-antonio-abad": [
+39.48355,
+-6.57838,
+false
+],
+"cc-parroquia-de-san-antonio-de-padua": [
+40.43519,
+-6.24206,
+true
+],
+"cc-parroquia-de-san-antonio-de-padua-cedillo": [
+39.65065,
+-7.4962,
+false
+],
+"cc-parroquia-de-san-antonio-de-padua-cedillo#loc": [
+39.64958,
+-7.49395,
+false
+],
+"cc-parroquia-de-san-antonio-de-padua-erias": [
+40.36788,
+-6.39345,
+false
+],
+"cc-parroquia-de-san-antonio-de-padua-valencia-de-alcantara": [
+39.40623,
+-7.25092,
+false
+],
+"cc-parroquia-de-san-blas": [
+39.47893,
+-6.3694,
+false
+],
+"cc-parroquia-de-san-blas-aldehuela-del-jerte": [
+40.01008,
+-6.23854,
+false
+],
+"cc-parroquia-de-san-esteban": [
+40.10022,
+-6.46424,
+false
+],
+"cc-parroquia-de-san-esteban-torrequemada": [
+39.36616,
+-6.22193,
+false
+],
+"cc-parroquia-de-san-eugenio": [
+39.44395,
+-6.39547,
+false
+],
+"cc-parroquia-de-san-francisco-javier": [
+40.00978,
+-6.37002,
+false
+],
+"cc-parroquia-de-san-gabriel-arcangel": [
+40.00815,
+-6.60126,
+false
+],
+"cc-parroquia-de-san-ignacio": [
+39.98788,
+-6.53663,
+false
+],
+"cc-parroquia-de-san-ildefonso": [
+40.26876,
+-6.20291,
+false
+],
+"cc-parroquia-de-san-ildefonso-salorino": [
+39.47788,
+-7.00999,
+false
+],
+"cc-parroquia-de-san-isidro-labrador": [
+40.09711,
+-6.62208,
+false
+],
+"cc-parroquia-de-san-jose": [
+40.44819,
+-6.1857,
+false
+],
+"cc-parroquia-de-san-jose-caceres": [
+39.47738,
+-6.3788,
+false
+],
+"cc-parroquia-de-san-jose-caminomorisco": [
+40.32817,
+-6.28844,
+false
+],
+"cc-parroquia-de-san-jose-obrero": [
+39.9659,
+-6.49157,
+false
+],
+"cc-parroquia-de-san-juan-bautista": [
+40.17495,
+-6.7886,
+false
+],
+"cc-parroquia-de-san-juan-bautista-3": [
+39.8019,
+-6.63351,
+true
+],
+"cc-parroquia-de-san-juan-bautista-caceres": [
+39.47359,
+-6.37357,
+false
+],
+"cc-parroquia-de-san-juan-bautista-cerezo": [
+40.23738,
+-6.22718,
+false
+],
+"cc-parroquia-de-san-juan-macias": [
+39.48968,
+-6.36451,
+false
+],
+"cc-parroquia-de-san-julian-el-hospitalario": [
+40.30339,
+-6.48618,
+false
+],
+"cc-parroquia-de-san-martin-de-tours": [
+40.21377,
+-6.79632,
+false
+],
+"cc-parroquia-de-san-martin-de-tours-aldea-del-cano": [
+39.2876,
+-6.31871,
+false
+],
+"cc-parroquia-de-san-mateo": [
+39.47298,
+-6.37111,
+false
+],
+"cc-parroquia-de-san-mateo-apostol": [
+39.22519,
+-6.15329,
+false
+],
+"cc-parroquia-de-san-miguel": [
+40.24653,
+-6.27623,
+true
+],
+"cc-parroquia-de-san-miguel-portaje": [
+39.91805,
+-6.5623,
+true
+],
+"cc-parroquia-de-san-miguel-zarza-de-montanchez": [
+39.25715,
+-6.0314,
+true
+],
+"cc-parroquia-de-san-pedro": [
+40.08401,
+-6.24893,
+false
+],
+"cc-parroquia-de-san-pedro-apostol": [
+40.23787,
+-6.59652,
+false
+],
+"cc-parroquia-de-san-pedro-apostol-benquerencia": [
+39.31013,
+-6.08422,
+false
+],
+"cc-parroquia-de-san-pedro-apostol-guijo-de-galisteo": [
+40.09343,
+-6.41269,
+false
+],
+"cc-parroquia-de-san-pedro-apostol-pozuelo-de-zarzon": [
+40.14969,
+-6.41611,
+false
+],
+"cc-parroquia-de-san-pedro-apostol-santibanez-el-alto": [
+40.16149,
+-6.58131,
+false
+],
+"cc-parroquia-de-san-pedro-apostol-torreorgaz": [
+39.38168,
+-6.25029,
+false
+],
+"cc-parroquia-de-san-pedro-de-alcantara": [
+40.39694,
+-6.29904,
+true
+],
+"cc-parroquia-de-san-pedro-de-alcantara-caceres": [
+39.46794,
+-6.3757,
+false
+],
+"cc-parroquia-de-san-pedro-de-alcantara-san-pedro-de-los-majarre": [
+39.36969,
+-7.29589,
+true
+],
+"cc-parroquia-de-san-pedro-garrovillas": [
+39.71464,
+-6.5496,
+false
+],
+"cc-parroquia-de-san-pedro-huelaga": [
+40.05631,
+-6.61771,
+false
+],
+"cc-parroquia-de-san-ramon-nonato": [
+40.29741,
+-6.29995,
+true
+],
+"cc-parroquia-de-san-sebastian": [
+39.91664,
+-6.66926,
+false
+],
+"cc-parroquia-de-san-sebastian-arroyo-de-la-luz": [
+39.48906,
+-6.58215,
+false
+],
+"cc-parroquia-de-san-sebastian-herrera-de-alcantara": [
+39.63832,
+-7.40647,
+false
+],
+"cc-parroquia-de-san-sebastian-herrera-de-alcantara#loc": [
+39.63763,
+-7.4045,
+false
+],
+"cc-parroquia-de-san-servando": [
+40.25904,
+-5.92972,
+true
+],
+"cc-parroquia-de-santa-catalina-riolobos": [
+39.92086,
+-6.30397,
+false
+],
+"cc-parroquia-de-santa-maria": [
+39.61252,
+-6.77912,
+false
+],
+"cc-parroquia-de-santa-maria-garrovillas": [
+39.71464,
+-6.5496,
+false
+],
+"cc-parroquia-de-santa-maria-magdalena": [
+39.25502,
+-6.18486,
+false
+],
+"cc-parroquia-de-santa-maria-magdalena-botija": [
+39.34366,
+-6.07354,
+false
+],
+"cc-parroquia-de-santa-marina": [
+40.14907,
+-6.33125,
+true
+],
+"cc-parroquia-de-santa-marina-canaveral": [
+39.79018,
+-6.39356,
+false
+],
+"cc-parroquia-de-santa-marina-pedroso-de-acim": [
+39.82445,
+-6.41211,
+true
+],
+"cc-parroquia-de-santa-marina-portezuelo": [
+39.8112,
+-6.4749,
+false
+],
+"cc-parroquia-de-santiago": [
+40.17602,
+-6.22585,
+false
+],
+"cc-parroquia-de-santiago-2": [
+40.10084,
+-6.46443,
+false
+],
+"cc-parroquia-de-santiago-apostol": [
+40.2678,
+-6.27458,
+true
+],
+"cc-parroquia-de-santiago-apostol-carcaboso": [
+40.04904,
+-6.21361,
+true
+],
+"cc-parroquia-de-santiago-apostol-estorninos": [
+39.74043,
+-6.93198,
+false
+],
+"cc-parroquia-de-santiago-apostol-salvatierra-de-santiago": [
+39.29403,
+-6.06517,
+false
+],
+"cc-parroquia-de-santiago-caceres": [
+39.47659,
+-6.36914,
+false
+],
+"cc-parroquia-de-santiago-santiago-del-campo": [
+39.62584,
+-6.36428,
+false
+],
+"cc-parroquia-de-santiago-villa-del-rey": [
+39.66113,
+-6.76965,
+false
+],
+"cc-parroquia-de-santo-domingo": [
+40.25834,
+-5.97904,
+false
+],
+"cc-parroquia-de-sta-maria-de-almocovar": [
+39.72068,
+-6.88699,
+true
+],
+"cc-parroquia-de-sta-maria-de-gracia": [
+39.71849,
+-6.81989,
+false
+],
+"cc-parroquia-de-sta-maria-magdalena": [
+40.18518,
+-6.78486,
+false
+],
+"cc-parroquia-de-sta-maria-magdalena-el-bronco": [
+40.21917,
+-6.31566,
+true
+],
+"cc-parroquia-de-sta-maria-magdalena-granja-de-granadilla": [
+40.2388,
+-6.02619,
+true
+],
+"cc-parroquia-de-sta-maria-magdalena-holguera": [
+39.90016,
+-6.34931,
+true
+],
+"cc-parroquia-de-sta-teresa": [
+39.915,
+-6.40902,
+false
+],
+"cc-parroquia-del-beato-marcelo-spinola": [
+39.47155,
+-6.39407,
+false
+],
+"cc-parroquia-del-espiritu-santo-alagon": [
+39.97342,
+-6.31512,
+false
+],
+"cc-parroquia-del-espiritu-santo-caceres": [
+39.45898,
+-6.37256,
+false
+],
+"cc-parroquia-del-sagrado-corazon-de-jesus": [
+40.06848,
+-6.66044,
+true
+],
+"cc-parroquia-del-santisimo-sacramento": [
+40.46008,
+-6.29526,
+true
+],
+"cc-parroquia-virgen-de-guadalupe": [
+39.19643,
+-6.39272,
+false
+],
+"co-horarios-basilica-menor-de-san-pedro-apostol": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-beato-alvaro-de-cordoba": [
+37.87671,
+-4.79805,
+false
+],
+"co-horarios-beato-de-santa-catalina-templo-auxiliar-de-beato-al": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-betania-de-jesus-nazareno": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-colegio-de-la-salle": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-colegio-de-las-esclavas-pl-s-juan": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-convento-del-santo-angel-capuchinos": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-convento-sta-cruz-agustin-moreno": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-cristo-rey-y-ntra-sra-del-valle": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-el-salvador-y-sto-domingo-de-silos-la-compania": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ermita-ntra-sra-de-la-salud-cementerio": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ermita-san-diego-de-alcala-urb-torreblanca": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ermita-santos-martires-ribera": [
+37.88067,
+-4.76862,
+false
+],
+"co-horarios-esclavas-del-santisimo-puerta-colodro": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-hermanitas-de-la-cruz-pl-capuchinas": [
+37.88561,
+-4.77835,
+false
+],
+"co-horarios-hnas-a-desamparados-casa-ejercicios-s-jose": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-hospital-cruz-roja": [
+37.88017,
+-4.78465,
+false
+],
+"co-horarios-hospital-provincial": [
+37.86882,
+-4.79172,
+false
+],
+"co-horarios-hospital-reina-sofia": [
+37.8684,
+-4.79718,
+false
+],
+"co-horarios-hospital-s-juan-de-dios": [
+37.90947,
+-4.79278,
+false
+],
+"co-horarios-iglesia-de-san-pablo": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-iglesia-juramento-de-san-rafael": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-iglesia-ntra-sra-de-la-piedad-pl-las-canas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-inmaculado-corazon-de-maria-miralbaida": [
+37.88563,
+-4.81499,
+false
+],
+"co-horarios-jesus-divino-obrero": [
+37.86702,
+-4.77354,
+false
+],
+"co-horarios-la-inmaculada-concepcion-y-san-alberto-magno": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-monasterio-de-la-encarnacion": [
+37.88103,
+-4.77899,
+false
+],
+"co-horarios-monasterio-de-la-visitacion-salesas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-monasterio-de-san-miguel-esclavos-de-la-eucaristia-": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-monasterio-de-santa-ana-c-descalzas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-monasterio-de-sta-marta-mm-jeronimas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntra-sra-de-araceli": [
+37.41255,
+-4.49076,
+false
+],
+"co-horarios-ntra-sra-de-araceli#loc": [
+37.88458,
+-4.77601,
+false
+],
+"co-horarios-ntra-sra-de-belen": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntra-sra-de-gracia-y-s-eulogio-pp-trinitarios": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntra-sra-de-la-asuncion-parque-figueroa": [
+37.89073,
+-4.80554,
+false
+],
+"co-horarios-ntra-sra-de-la-asuncion-y-s-roque-encinarejo": [
+37.83213,
+-4.92807,
+true
+],
+"co-horarios-ntra-sra-de-la-aurora": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntra-sra-de-la-consolacion": [
+38.55276,
+-5.20327,
+false
+],
+"co-horarios-ntra-sra-de-la-consolacion#loc": [
+37.88458,
+-4.77601,
+false
+],
+"co-horarios-ntra-sra-de-la-esperanza": [
+37.89692,
+-4.79288,
+false
+],
+"co-horarios-ntra-sra-de-la-fuensanta": [
+37.92203,
+-4.70681,
+false
+],
+"co-horarios-ntra-sra-de-la-merced": [
+37.89965,
+-4.7586,
+false
+],
+"co-horarios-ntra-sra-de-la-paz-s-basilio": [
+37.87618,
+-4.78441,
+false
+],
+"co-horarios-ntra-sra-de-la-purificacion-trassierra": [
+37.92884,
+-4.90264,
+true
+],
+"co-horarios-ntra-sra-de-linares": [
+37.89734,
+-4.76746,
+false
+],
+"co-horarios-ntra-sra-de-los-angeles-alcolea": [
+37.9316,
+-4.66699,
+false
+],
+"co-horarios-ntra-sra-del-carmen-puerta-nueva": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntra-sra-del-rosario-electromecanica": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-ntro-sr-del-huerto": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-real-colegiata-de-san-hipolito": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-sagrada-familia": [
+37.89188,
+-4.79468,
+false
+],
+"co-horarios-sagrario-de-la-santa-iglesia-catedral": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-acisclo": [
+37.91346,
+-4.70033,
+false
+],
+"co-horarios-san-agustin-pp-dominicos": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-andres-apostol": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-antonio-de-padua": [
+37.89224,
+-4.77148,
+false
+],
+"co-horarios-san-antonio-maria-claret-las-palmeras": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-cayetano": [
+37.89416,
+-4.77257,
+false
+],
+"co-horarios-san-fernando-huerta-de-la-reina": [
+37.8943,
+-4.786,
+false
+],
+"co-horarios-san-francisco-y-san-eulogio": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-ignacio-de-loyola": [
+37.88575,
+-4.78322,
+false
+],
+"co-horarios-san-isidro-labrador-el-higueron": [
+37.86703,
+-4.85047,
+true
+],
+"co-horarios-san-jose-y-espiritu-santo": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-juan-de-avila": [
+37.5888,
+-4.63824,
+false
+],
+"co-horarios-san-juan-de-avila#loc": [
+37.88458,
+-4.77601,
+false
+],
+"co-horarios-san-juan-pablo-ii": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-juan-y-todos-los-santos-la-trinidad": [
+37.88331,
+-4.78271,
+false
+],
+"co-horarios-san-lorenzo-martir": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-martin-de-porres": [
+37.88253,
+-4.75579,
+false
+],
+"co-horarios-san-miguel-arcangel": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-nicolas-de-la-villa": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-pelagio-martir-parque-cruz-conde": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-san-vicente-ferrer": [
+37.88951,
+-4.75405,
+false
+],
+"co-horarios-santa-barbara-cerro-muriano": [
+38.00134,
+-4.76802,
+false
+],
+"co-horarios-santa-cecilia": [
+37.88101,
+-4.78692,
+false
+],
+"co-horarios-santa-iglesia-catedral": [
+37.88055,
+-4.77801,
+false
+],
+"co-horarios-santa-isabel-de-hungria": [
+37.87014,
+-4.77792,
+false
+],
+"co-horarios-santa-luisa-de-marillac": [
+37.86071,
+-4.77869,
+false
+],
+"co-horarios-santa-ma-madre-de-la-iglesia": [
+37.89726,
+-4.78378,
+false
+],
+"co-horarios-santa-marina-de-aguas-santas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santa-rafaela-maria-del-sagrado-corazon": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santa-teresa-de-avila": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santa-victoria-barrio-naranjo": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santas-margaritas": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santiago-apostol": [
+37.2579,
+-4.308,
+false
+],
+"co-horarios-santiago-apostol#loc": [
+37.88458,
+-4.77601,
+false
+],
+"co-horarios-santo-angel-barriada-de-los-angeles-alcolea": [
+37.93243,
+-4.66991,
+true
+],
+"co-horarios-santo-cristo-los-mochos": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santuario-ma-auxiliadora-pp-salesianos": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-santuario-virgen-de-linares": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-siervas-de-maria-blanco-belmonte": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-sta-beatriz-de-silva-urb-azahara": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-sta-maria-de-guadalupe-pp-franciscanos": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-sto-domingo-de-scala-coeli": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-virgen-de-fatima": [
+37.89711,
+-4.75295,
+false
+],
+"co-horarios-virgen-del-camino": [
+37.8823,
+-4.79607,
+false
 ],
 "divino-salvador-y-nuestra-senora-de-los-dolores-castellar": [
 36.28727,
@@ -734,6 +2169,646 @@ true
 -3.59385,
 true
 ],
+"gu-albares-parroquia-de-albares": [
+40.30731,
+-3.01204,
+true
+],
+"gu-alcocer-parroquia-de-alcocer": [
+40.46467,
+-2.58403,
+true
+],
+"gu-almoguera-parroquia-de-almoguera": [
+40.34222,
+-3.0277,
+false
+],
+"gu-almonacid-de-zorita-parroquia-sto-domingo-de-silos": [
+40.32908,
+-2.85044,
+true
+],
+"gu-almonacid-de-zorita-residencia-ntra-sra-de-la-luz": [
+40.32908,
+-2.85044,
+true
+],
+"gu-alovera-parroquia-de-alovera": [
+40.59536,
+-3.24878,
+true
+],
+"gu-arbancon-parroquia-de-arbancon": [
+40.96424,
+-3.11516,
+true
+],
+"gu-azuqueca-de-henares-ermita-virgen-de-la-soledad": [
+40.57009,
+-3.26241,
+false
+],
+"gu-azuqueca-de-henares-parroquia-s-fco-javier": [
+40.56838,
+-3.26271,
+true
+],
+"gu-azuqueca-de-henares-parroquia-s-miguel": [
+40.56838,
+-3.26271,
+true
+],
+"gu-azuqueca-de-henares-parroquia-sta-teresa": [
+40.56838,
+-3.26271,
+true
+],
+"gu-barbatona-santuario-de-nuestra-senora-de-la-salud": [
+41.05975,
+-2.57884,
+true
+],
+"gu-brihuega-monasterio-de-santa-ana": [
+40.76039,
+-2.86443,
+false
+],
+"gu-brihuega-parroquia-de-brihuega": [
+40.75925,
+-2.87035,
+true
+],
+"gu-buenafuente-del-sistal-monasterio-de-la-madre-de-dios": [
+40.82421,
+-2.22595,
+true
+],
+"gu-cabanillas-del-campo-parroquia-de-cabanillas-del-campo": [
+40.62948,
+-3.24336,
+true
+],
+"gu-caraquiz-parroquia-de-caraquiz": [
+40.7914,
+-3.48916,
+true
+],
+"gu-checa-parroquia-de-checa": [
+40.58609,
+-1.7909,
+true
+],
+"gu-chiloeches-parroquia-de-chiloeches": [
+40.57321,
+-3.16272,
+true
+],
+"gu-cifuentes-parroquia-de-el-salvador": [
+40.78546,
+-2.62212,
+true
+],
+"gu-cogolludo-parroquia-de-cogolludo": [
+40.94707,
+-3.08875,
+true
+],
+"gu-el-casar-parroquia-de-la-sagrada-familia-de-montecalderon": [
+40.7041,
+-3.42964,
+true
+],
+"gu-el-casar-parroquia-de-ntra-sra-de-la-asuncion": [
+40.7041,
+-3.42964,
+true
+],
+"gu-el-casar-parroquia-de-san-jose-de-el-coto": [
+40.7041,
+-3.42964,
+true
+],
+"gu-el-casar-parroquia-virgen-del-carmen-de-las-colinas": [
+40.7041,
+-3.42964,
+true
+],
+"gu-espinosa-de-henares-parroquia-de-espinosa-de-henares": [
+40.89121,
+-3.0707,
+true
+],
+"gu-fontanar-parroquia-de-fontanar": [
+40.72582,
+-3.1757,
+false
+],
+"gu-galapagos-parroquia-de-galapagos": [
+40.69657,
+-3.33796,
+true
+],
+"gu-hita-parroquia-de-hita": [
+40.82485,
+-3.04958,
+true
+],
+"gu-horche-ermita-de-ntra-sra-de-la-soledad": [
+40.56551,
+-3.06419,
+true
+],
+"gu-horche-parroquia-ntra-sra-de-la-asuncion": [
+40.56551,
+-3.06419,
+true
+],
+"gu-humanes-parroquia-de-san-esteban": [
+40.82803,
+-3.15411,
+true
+],
+"gu-illana-parroquia-de-illana": [
+40.18407,
+-2.90821,
+true
+],
+"gu-iriepal-parroquia-la-purisima-concepcion": [
+40.63875,
+-3.12044,
+true
+],
+"gu-jadraque-parroquia-de-jadraque": [
+40.92638,
+-2.92267,
+true
+],
+"gu-la-beltraneja-parroquia-de-la-beltraneja": [
+40.79008,
+-2.95444,
+true
+],
+"gu-las-castillas-parroquia-de-las-castillas": [
+40.68586,
+-3.36903,
+true
+],
+"gu-marchamalo-parroquia-de-marchamalo": [
+40.66896,
+-3.20135,
+true
+],
+"gu-mazuecos-parroquia-de-mazuecos": [
+40.26268,
+-3.0088,
+true
+],
+"gu-membrillera-parroquia-de-membrillera": [
+40.94724,
+-2.97818,
+true
+],
+"gu-mesones-de-uceda-parroquia-de-mesones-de-uceda": [
+40.79823,
+-3.41208,
+true
+],
+"gu-mohernando-parroquia-de-mohernando": [
+40.80334,
+-3.176,
+true
+],
+"gu-molina-de-aragon-monasterio-de-santa-clara": [
+40.84408,
+-1.88887,
+true
+],
+"gu-molina-de-aragon-monasterio-de-santa-clara-2": [
+40.84408,
+-1.88887,
+true
+],
+"gu-molina-de-aragon-parroquia-de-molina-de-aragon": [
+40.84408,
+-1.88887,
+true
+],
+"gu-molina-de-aragon-parroquia-de-san-martin-iglesia-de-san-feli": [
+40.84408,
+-1.88887,
+true
+],
+"gu-molina-de-aragon-parroquia-de-sta-m-la-mayor-de-san-gil": [
+40.84408,
+-1.88887,
+true
+],
+"gu-molina-de-aragon-parroquia-de-sta-m-la-mayor-de-san-gil-2": [
+40.84408,
+-1.88887,
+true
+],
+"gu-mondejar-parroquia-de-mondejar": [
+40.32276,
+-3.10962,
+true
+],
+"gu-nueva-sierra-parroquia-de-nueva-sierra": [
+40.30898,
+-2.82,
+true
+],
+"gu-pastrana-monasterio-de-san-jose": [
+40.4179,
+-2.92259,
+true
+],
+"gu-pastrana-parroquia-de-ntra-sra-de-la-asuncion-colegiata": [
+40.4179,
+-2.92259,
+true
+],
+"gu-pioz-parroquia-de-pioz": [
+40.46354,
+-3.176,
+true
+],
+"gu-pozo-de-guadalajara-parroquia-de-pozo-de-guadalajara": [
+40.34222,
+-3.0277,
+false
+],
+"gu-quer-parroquia-de-quer": [
+40.61361,
+-3.28251,
+true
+],
+"gu-robledo-de-corpes-parroquia-san-gil": [
+41.11874,
+-2.94912,
+false
+],
+"gu-romancos-parroquia-de-romancos": [
+40.68755,
+-2.88384,
+true
+],
+"gu-sacedon-parroquia-de-sacedon": [
+40.48118,
+-2.7329,
+true
+],
+"gu-siguenza-catedral-de-santa-maria-en-su-asuncion-a-los-cielos": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-monasterio-de-santa-clara": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-monasterio-jesus-maria-y-jose": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-parroquia-de-san-vicente": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-parroquia-de-santa-maria": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-parroquia-de-siguenza": [
+41.06878,
+-2.64146,
+false
+],
+"gu-siguenza-pp-josefinos-de-murialdo": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-residencia-de-ancianos-san-mateo": [
+41.06803,
+-2.64057,
+true
+],
+"gu-siguenza-residencia-de-mayores-alameda": [
+41.06803,
+-2.64057,
+true
+],
+"gu-torija-parroquia-de-torija": [
+40.75068,
+-3.02921,
+true
+],
+"gu-torrejon-del-rey-parroquia-de-torrejon-del-rey": [
+40.66786,
+-3.34238,
+true
+],
+"gu-trillo-parroquia-de-trillo": [
+40.70143,
+-2.59302,
+true
+],
+"gu-uceda-parroquia-de-uceda": [
+40.84326,
+-3.46359,
+true
+],
+"gu-valdeaveruelo-parroquia-de-valdeaveruelo": [
+40.6364,
+-3.31669,
+true
+],
+"gu-valfermoso-de-las-monjas-monasterio-san-juan-bautista": [
+40.86908,
+-2.8828,
+true
+],
+"gu-ventosa-santuario-de-la-virgen-de-la-hoz": [
+40.82942,
+-2.00021,
+false
+],
+"gu-yebes-parroquia-san-bartolome": [
+40.53314,
+-3.1104,
+true
+],
+"gu-yebes-parroquia-san-jeronimo-de-valdeluz": [
+40.53314,
+-3.1104,
+true
+],
+"gu-yebra-parroquia-de-yebra": [
+40.35662,
+-2.96662,
+true
+],
+"gu-yunquera-de-henares-parroquia-san-pedro": [
+40.7547,
+-3.16627,
+true
+],
+"hu-hermanitas-de-los-ancianos-desamparados": [
+42.13159,
+-0.40924,
+false
+],
+"hu-jesus-nazareno-catedral": [
+42.1407,
+-0.40854,
+false
+],
+"hu-la-encarnacion": [
+42.13497,
+-0.41725,
+false
+],
+"hu-maria-auxiliadora": [
+42.14226,
+-0.41204,
+false
+],
+"hu-nuestra-senora-del-perpetuo-socorro": [
+42.14125,
+-0.39621,
+false
+],
+"hu-san-francisco-de-asis": [
+42.12606,
+-0.40924,
+false
+],
+"hu-san-jose": [
+42.13579,
+-0.41535,
+false
+],
+"hu-san-lorenzo": [
+41.5866,
+0.26157,
+false
+],
+"hu-san-lorenzo#loc": [
+42.13825,
+-0.40809,
+false
+],
+"hu-san-pedro-el-viejo": [
+42.571,
+-0.54979,
+false
+],
+"hu-san-pedro-el-viejo#loc": [
+42.13825,
+-0.40809,
+false
+],
+"hu-san-vicente-martir": [
+42.2916,
+0.52818,
+false
+],
+"hu-san-vicente-martir#loc": [
+42.13825,
+-0.40809,
+false
+],
+"hu-santiago-apostol": [
+42.09451,
+-0.35624,
+false
+],
+"hu-santo-domingo-y-san-martin": [
+42.41627,
+0.13962,
+false
+],
+"hu-santo-domingo-y-san-martin#loc": [
+42.13825,
+-0.40809,
+false
+],
+"ib-capilla-de-cala-llonga": [
+38.97439,
+1.41975,
+true
+],
+"ib-capilla-de-lourdes": [
+38.98627,
+1.5364,
+false
+],
+"ib-capilla-de-nuestra-senora-del-carmen-de-portinatx": [
+38.97439,
+1.41975,
+true
+],
+"ib-capilla-de-san-cristobal-de-es-canar": [
+38.97439,
+1.41975,
+true
+],
+"ib-catedral-santa-maria-de-ibiza": [
+38.97439,
+1.41975,
+true
+],
+"ib-cementerio-nuevo": [
+38.97439,
+1.41975,
+true
+],
+"ib-formentera-parroquia-de-san-fernando": [
+38.70622,
+1.43341,
+true
+],
+"ib-formentera-parroquia-de-sant-francesc-xavier": [
+38.70622,
+1.43341,
+true
+],
+"ib-formentera-parroquia-nuestra-senora-del-pilar": [
+38.70622,
+1.43341,
+true
+],
+"ib-monasterio-de-san-cristobal": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-la-sagrada-familia": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-la-virgen-del-rosario-y-san-ciriaco": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-nuestra-senora-de-jesus": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-nuestra-senora-del-carmen-de-es-cubells": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-nuestra-senora-madre-de-la-iglesia": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-antonio": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-carlos": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-francisco-de-paula": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-lorenzo": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-mateo": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-miguel": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-pablo": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-pedro": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-san-rafael": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-sant-joan": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-sant-jordi": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-sant-josep": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-sant-vicent": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-santa-cruz": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-santa-eulalia": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-santa-gertrudis": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-de-santa-ines": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-del-salvador": [
+38.97439,
+1.41975,
+true
+],
+"ib-parroquia-sant-agusti": [
+38.97439,
+1.41975,
+true
+],
 "iglesia-la-conversion-san-pablo": [
 36.53377,
 -6.29788,
@@ -828,6 +2903,831 @@ false
 36.20599,
 -5.34118,
 false
+],
+"ll-ager-sant-vicenc-martir": [
+42.00004,
+0.76321,
+true
+],
+"ll-aitona-sant-antoli-martir": [
+41.49395,
+0.45911,
+true
+],
+"ll-alamus-els-sant-marti-bisbe": [
+41.61563,
+0.739,
+true
+],
+"ll-albages-l-sant-joan-baptista": [
+41.44922,
+0.73877,
+false
+],
+"ll-albatarrec-transfiguracio-del-senyor": [
+41.57332,
+0.60592,
+true
+],
+"ll-alcano-sant-pere-apostol": [
+41.48113,
+0.61676,
+true
+],
+"ll-alcarras-assumpcio-de-la-mare-de-deu": [
+41.56326,
+0.52404,
+true
+],
+"ll-alcoletge-sant-miquel-arcangel": [
+41.64722,
+0.69444,
+true
+],
+"ll-alfarras-sant-pere-apostol": [
+41.83193,
+0.57034,
+true
+],
+"ll-alfes-sant-pere-apostol": [
+41.52142,
+0.62001,
+true
+],
+"ll-algerri-purificacio-de-la-mare-de-deu": [
+41.81505,
+0.63842,
+true
+],
+"ll-alguaire-sant-sadurni-bisbe": [
+41.73615,
+0.58593,
+true
+],
+"ll-almacelles-mare-de-deu-de-la-merce": [
+41.73192,
+0.43739,
+false
+],
+"ll-almatret-sant-miquel-arcangel": [
+41.30539,
+0.42366,
+true
+],
+"ll-almenar-assumpcio-de-la-mare-de-deu": [
+41.7961,
+0.56883,
+true
+],
+"ll-alpicat-sant-bartomeu-apostol": [
+41.66664,
+0.55548,
+true
+],
+"ll-andani-sant-nicolau-bisbe": [
+41.84076,
+0.57221,
+true
+],
+"ll-artesa-de-lleida-sant-miquel-arcangel": [
+41.5528,
+0.70346,
+true
+],
+"ll-aspa-sant-julia": [
+41.49573,
+0.67215,
+false
+],
+"ll-balafia-lleida-sant-antoni-maria-claret": [
+41.62845,
+0.6255,
+false
+],
+"ll-bell-lloc-durgell-sant-miquel-arcangel": [
+41.63062,
+0.77854,
+true
+],
+"ll-bellaguarda-sant-antoni-abat": [
+41.33727,
+0.73613,
+true
+],
+"ll-benavent-de-segria-sant-joan-baptista": [
+41.69568,
+0.63256,
+false
+],
+"ll-bordeta-lleida-sant-agusti-bisbe": [
+41.60304,
+0.64361,
+true
+],
+"ll-borges-blanques-les-assumpcio-de-la-mare-de-deu": [
+41.52033,
+0.86841,
+true
+],
+"ll-bovera-sant-josep": [
+41.32632,
+0.63914,
+false
+],
+"ll-castelldans-assumpcio-de-la-mare-de-deu": [
+41.49807,
+0.76634,
+true
+],
+"ll-castello-de-farfanya-assumpcio-de-la-mare-de-deu": [
+41.82032,
+0.72778,
+true
+],
+"ll-catedral": [
+41.99454,
+1.5194,
+false
+],
+"ll-catedral#loc": [
+41.99454,
+1.5194,
+false
+],
+"ll-cementiri": [
+41.80496,
+0.78772,
+false
+],
+"ll-cogul-el-assumpcio-de-la-mare-de-deu": [
+41.46702,
+0.68942,
+true
+],
+"ll-collegi-mater-salvatoris": [
+41.63913,
+0.56053,
+true
+],
+"ll-corbins-sant-jaume-apostol": [
+41.69057,
+0.69308,
+true
+],
+"ll-floresta-la-sant-blai-bisbe": [
+41.51031,
+0.91955,
+true
+],
+"ll-gimenells-mare-de-deu-del-roser": [
+41.65218,
+0.3899,
+false
+],
+"ll-granadella-la-mare-de-deu-de-gracia": [
+41.35554,
+0.6649,
+true
+],
+"ll-granja-descarp-la-sant-jaume-apostol": [
+41.41913,
+0.35237,
+true
+],
+"ll-granyena-de-les-garrigues-sant-miquel-arcangel": [
+41.43297,
+0.6492,
+true
+],
+"ll-hospital-arnau-de-vilanova": [
+41.6269,
+0.61289,
+true
+],
+"ll-ivars-de-noguera-assumpcio-de-la-mare-de-deu": [
+41.85,
+0.58606,
+true
+],
+"ll-juneda-transfiguracio-del-senyor": [
+41.54961,
+0.82544,
+false
+],
+"ll-llardecans-assumpcio-de-la-mare-de-deu": [
+41.37457,
+0.55003,
+true
+],
+"ll-lleida-mare-de-deu-de-la-merce": [
+41.73192,
+0.43739,
+false
+],
+"ll-lleida-mare-de-deu-de-montserrat": [
+41.49148,
+0.75821,
+false
+],
+"ll-lleida-mare-de-deu-del-carme": [
+41.95956,
+1.04306,
+false
+],
+"ll-lleida-mare-de-deu-del-pilar": [
+42.32678,
+0.86536,
+false
+],
+"ll-lleida-mare-de-deu-del-pilar#loc": [
+41.61476,
+0.62678,
+false
+],
+"ll-lleida-sagrada-familia": [
+42.19969,
+0.85402,
+false
+],
+"ll-lleida-sant-ignasi-de-loiola": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-sant-jaume-apostol": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-sant-joan-baptista": [
+42.39838,
+0.94271,
+false
+],
+"ll-lleida-sant-joan-baptista#loc": [
+41.61476,
+0.62678,
+false
+],
+"ll-lleida-sant-llorenc-martir": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-sant-marti-bisbe-de-tours": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-sant-pau-apostol": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-sant-pere-apostol": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-santa-maria-de-butsenit": [
+41.80028,
+0.99365,
+false
+],
+"ll-lleida-santa-maria-de-gardeny": [
+41.60993,
+0.61229,
+false
+],
+"ll-lleida-santa-maria-magdalena": [
+41.67673,
+1.35316,
+false
+],
+"ll-lleida-santa-maria-magdalena#loc": [
+41.61476,
+0.62678,
+false
+],
+"ll-lleida-santa-teresa-de-linfant-jesus": [
+41.61476,
+0.62678,
+true
+],
+"ll-lleida-santa-teresa-jornet": [
+41.6099,
+0.63151,
+false
+],
+"ll-llivia": [
+41.66098,
+0.63102,
+false
+],
+"ll-magraners-lleida-sant-josep-obrer": [
+41.61022,
+0.66488,
+false
+],
+"ll-maials-assumpcio-de-la-mare-de-deu": [
+41.36407,
+0.50533,
+true
+],
+"ll-massalcoreig-sant-bartomeu-apostol": [
+41.45918,
+0.35965,
+true
+],
+"ll-montoliu-de-lleida-nativitat-de-la-mare-de-deu": [
+41.56014,
+0.58894,
+true
+],
+"ll-pardinyes-lleida-santissim-salvador": [
+41.62379,
+0.63677,
+true
+],
+"ll-pla-de-la-font-esglesia-de-sant-josep-obrer": [
+42.59633,
+1.07347,
+true
+],
+"ll-pla-de-la-font-esglesia-de-sant-josep-obrer#loc": [
+41.68673,
+0.3548,
+false
+],
+"ll-pont-de-suert-lassumpcio-de-la-mare-de-deu": [
+42.40899,
+0.74081,
+false
+],
+"ll-pont-de-suert-lassumpcio-de-la-mare-de-deu#loc": [
+42.41127,
+0.73995,
+false
+],
+"ll-puiggros-assumpcio-de-la-mare-de-deu": [
+41.55104,
+0.88907,
+true
+],
+"ll-puigverd-de-lleida-sant-pere-apostol": [
+41.54361,
+0.7334,
+true
+],
+"ll-raimat-sagrat-cor": [
+41.67831,
+0.4782,
+true
+],
+"ll-rossello-sant-pere-ad-vincula": [
+41.69458,
+0.59226,
+true
+],
+"ll-sarroca-de-lleida-assumpcio-de-la-mare-de-deu": [
+41.45942,
+0.56101,
+true
+],
+"ll-seca-lleida-verge-dels-pobres": [
+41.63589,
+0.62958,
+true
+],
+"ll-seros-nativitat-de-la-mare-de-deu": [
+41.46367,
+0.41187,
+true
+],
+"ll-soleras-el-assumpcio-de-la-mare-de-deu": [
+41.41349,
+0.68196,
+true
+],
+"ll-soses-sant-llorenc-martir": [
+41.53316,
+0.48748,
+true
+],
+"ll-sucs-assumpcio-de-la-mare-de-deu": [
+41.70178,
+0.41177,
+true
+],
+"ll-sudanell-sant-pere-apostol": [
+41.55689,
+0.56691,
+true
+],
+"ll-sunyer-nativitat-de-la-mare-de-deu": [
+41.523,
+0.59245,
+true
+],
+"ll-torms-els-sant-joan-baptista": [
+41.39398,
+0.71984,
+false
+],
+"ll-torre-serona-assumpcio-de-la-mare-de-deu": [
+41.67217,
+0.63036,
+true
+],
+"ll-torrebesses-transfiguracio-del-senyor": [
+41.42654,
+0.59472,
+true
+],
+"ll-torrefarrera-exaltacio-de-la-santa-creu": [
+41.67354,
+0.60669,
+true
+],
+"ll-torregrossa-assumpcio-de-la-mare-de-deu": [
+41.58051,
+0.83171,
+true
+],
+"ll-torrelameu-assumpcio-de-la-mare-de-deu": [
+41.70435,
+0.7029,
+true
+],
+"ll-torres-de-segre-assumpcio-de-la-mare-de-deu": [
+41.53534,
+0.51345,
+true
+],
+"ll-vilaller-sant-climent-papa": [
+42.47593,
+0.71656,
+true
+],
+"ll-vilaller-sant-climent-papa#loc": [
+42.47754,
+0.71796,
+false
+],
+"ll-vilanova-de-la-barca-assumpcio-de-la-mare-de-deu": [
+41.68956,
+0.72888,
+true
+],
+"ll-vilanova-de-segria-sant-sebastia-martir": [
+41.71211,
+0.61692,
+true
+],
+"lu-608544": [
+42.99131,
+-7.59083,
+true
+],
+"lu-619627": [
+42.77837,
+-7.90836,
+true
+],
+"lu-619653": [
+42.79707,
+-7.84185,
+true
+],
+"lu-619660": [
+42.50068,
+-7.84767,
+true
+],
+"lu-619679": [
+42.89782,
+-7.84081,
+true
+],
+"lu-619696": [
+42.73257,
+-7.47058,
+true
+],
+"lu-619703": [
+42.84858,
+-7.85632,
+true
+],
+"lu-619720": [
+42.57723,
+-7.59103,
+true
+],
+"lu-619735": [
+42.58926,
+-7.75266,
+true
+],
+"lu-619751": [
+42.55817,
+-7.66143,
+true
+],
+"lu-619776": [
+43.24583,
+-7.0386,
+true
+],
+"lu-619810": [
+42.91229,
+-7.27579,
+true
+],
+"lu-619814": [
+42.88427,
+-7.14361,
+true
+],
+"lu-619825": [
+43.0267,
+-7.34285,
+true
+],
+"lu-619826": [
+43.23864,
+-7.89571,
+true
+],
+"lu-619832": [
+42.82641,
+-6.96143,
+true
+],
+"lu-619843": [
+43.00886,
+-7.24064,
+true
+],
+"lu-619885": [
+42.7868,
+-7.12446,
+true
+],
+"lu-619902": [
+42.94673,
+-7.5018,
+true
+],
+"lu-619908": [
+42.96425,
+-7.00647,
+true
+],
+"lu-619962": [
+42.46443,
+-7.58395,
+true
+],
+"lu-619974": [
+42.63491,
+-7.5015,
+true
+],
+"lu-620003": [
+42.742,
+-7.50033,
+true
+],
+"lu-620007": [
+42.51381,
+-7.62736,
+true
+],
+"lu-620039": [
+42.51055,
+-7.48752,
+true
+],
+"lu-620067": [
+42.53906,
+-7.399,
+true
+],
+"lu-620071": [
+42.46583,
+-7.18497,
+true
+],
+"lu-620084": [
+42.42929,
+-7.26436,
+true
+],
+"lu-620091": [
+42.65528,
+-7.48691,
+true
+],
+"lu-620099": [
+42.67647,
+-7.68695,
+true
+],
+"lu-620136": [
+42.58426,
+-7.6378,
+true
+],
+"lu-620204": [
+42.6664,
+-7.36322,
+true
+],
+"lu-620273": [
+42.6939,
+-7.23186,
+true
+],
+"lu-620276": [
+42.77098,
+-7.43349,
+true
+],
+"lu-620277": [
+42.77098,
+-7.43349,
+true
+],
+"lu-620278": [
+42.77098,
+-7.43349,
+true
+],
+"lu-620295": [
+42.76222,
+-7.21413,
+true
+],
+"lu-620316": [
+43.22531,
+-7.25049,
+true
+],
+"lu-620369": [
+43.35585,
+-7.67517,
+true
+],
+"lu-620379": [
+42.86714,
+-7.87691,
+true
+],
+"lu-620418": [
+42.66114,
+-7.35756,
+true
+],
+"lu-620434": [
+42.72041,
+-7.74784,
+true
+],
+"lu-620474": [
+42.53077,
+-7.80552,
+true
+],
+"lu-620475": [
+42.72173,
+-7.45506,
+true
+],
+"lu-620482": [
+42.61091,
+-7.81075,
+true
+],
+"lu-620499": [
+42.58795,
+-7.74725,
+true
+],
+"lu-620522": [
+42.7842,
+-7.42475,
+true
+],
+"lu-620569": [
+42.88238,
+-7.61966,
+true
+],
+"lu-620570": [
+42.90064,
+-7.65833,
+true
+],
+"lu-620574": [
+42.85292,
+-7.65435,
+true
+],
+"lu-620588": [
+43.10697,
+-7.57028,
+true
+],
+"lu-620594": [
+42.8162,
+-7.68139,
+true
+],
+"lu-620626": [
+42.65964,
+-7.80998,
+true
+],
+"lu-620648": [
+43.03404,
+-7.80364,
+true
+],
+"lu-620664": [
+43.2201,
+-7.26357,
+true
+],
+"lu-620731": [
+42.95528,
+-7.47471,
+true
+],
+"lu-620732": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620733": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620734": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620736": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620737": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620739": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620740": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620742": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620743": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620749": [
+42.87842,
+-7.91445,
+true
+],
+"lu-698628": [
+42.42728,
+-7.54204,
+true
+],
+"lu-702004": [
+42.76502,
+-7.90641,
+true
+],
+"lu-815441": [
+42.86714,
+-7.87691,
+true
 ],
 "m1": [
 36.76479,
@@ -2072,6 +4972,421 @@ false
 "maria-auxiliadora-y-san-isidro-algeciras": [
 36.12882,
 -5.4522,
+false
+],
+"mb-badajoz-capilla-d-rafael-antiguo-hospital-provincial": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-carmelitas-descalzas": [
+38.8785,
+-6.96837,
+false
+],
+"mb-badajoz-catedral": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-convento-de-santa-ana": [
+38.23851,
+-6.0223,
+false
+],
+"mb-badajoz-convento-de-santa-ana#loc": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-convento-santa-ana": [
+38.23851,
+-6.0223,
+false
+],
+"mb-badajoz-convento-santa-ana#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-corazon-de-jesus": [
+38.83137,
+-7.02518,
+false
+],
+"mb-badajoz-ermita-de-botoa": [
+39.00216,
+-6.91582,
+false
+],
+"mb-badajoz-ermita-de-botoa#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-espiritu-santo": [
+38.68473,
+-7.10074,
+false
+],
+"mb-badajoz-espiritu-santo#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-hospital-perpetuo-socorro": [
+38.86649,
+-6.97154,
+false
+],
+"mb-badajoz-hospital-universitario": [
+38.88447,
+-7.00141,
+false
+],
+"mb-badajoz-jesus-obrero": [
+38.86508,
+-6.9611,
+false
+],
+"mb-badajoz-la-soledad": [
+38.86577,
+-5.61707,
+false
+],
+"mb-badajoz-la-soledad#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-maria-auxiliadora": [
+38.86723,
+-6.97741,
+false
+],
+"mb-badajoz-nuestra-senora-de-gracia": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-nuestra-senora-del-perpetuo-socorro": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-purisima-concepcion": [
+38.55485,
+-6.06484,
+false
+],
+"mb-badajoz-purisima-concepcion#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-residencia-hermanitas-ancianos-desamparados": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-san-andres": [
+38.89701,
+-6.33209,
+false
+],
+"mb-badajoz-san-fernando-y-santa-isabel": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-san-jose": [
+38.36576,
+-6.81037,
+false
+],
+"mb-badajoz-san-jose#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-san-juan-bautista": [
+38.87836,
+-6.96968,
+false
+],
+"mb-badajoz-san-juan-de-dios": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-san-juan-de-ribera": [
+38.87764,
+-6.97105,
+false
+],
+"mb-badajoz-san-juan-macias": [
+38.56297,
+-6.33043,
+false
+],
+"mb-badajoz-san-juan-macias#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-san-juan-pablo-ii": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-san-pedro-de-alcantara": [
+38.87819,
+-6.97011,
+true
+],
+"mb-badajoz-san-roque": [
+38.87935,
+-6.95904,
+false
+],
+"mb-badajoz-santa-eulalia": [
+38.91802,
+-6.34292,
+false
+],
+"mb-badajoz-santa-maria-la-real": [
+38.14116,
+-6.69125,
+false
+],
+"mb-badajoz-santa-maria-la-real#loc": [
+38.87819,
+-6.97011,
+false
+],
+"mb-badajoz-santisima-trinidad": [
+38.95036,
+-6.26113,
+false
+],
+"mb-merida-asilo-de-ancianos": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-centro-sociosanitario": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-cristo-rey-el-calvario": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-hospital-de-merida": [
+38.91224,
+-6.36353,
+false
+],
+"mb-merida-nuestra-senora-de-los-milagros": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-nuestra-senora-del-rosario": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-nuestra-senora-perpetuo-socorro": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-residencia-el-prado": [
+38.91596,
+-6.35953,
+false
+],
+"mb-merida-salesianos": [
+38.91593,
+-6.32746,
+false
+],
+"mb-merida-san-antonio": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-san-francisco-de-sales": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-san-jose": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-san-juan-bautista-y-m-auxiliadora": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-san-servando-y-san-german": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-santa-maria": [
+38.90093,
+-6.40194,
+false
+],
+"mn-alaior-santa-eulalia": [
+39.93515,
+4.13887,
+false
+],
+"mn-ciutadella-la-catedral": [
+40.00149,
+3.83752,
+false
+],
+"mn-ciutadella-m-auxiliadora": [
+40.00448,
+3.83935,
+false
+],
+"mn-ciutadella-sant-antoni-m-claret": [
+40.00044,
+3.83524,
+true
+],
+"mn-ciutadella-sant-crist": [
+40.00204,
+3.83904,
+false
+],
+"mn-ciutadella-sant-esteve": [
+39.99584,
+3.83498,
+false
+],
+"mn-ciutadella-sant-francesc": [
+40.00046,
+3.83753,
+false
+],
+"mn-ciutadella-sant-miquel": [
+40.00296,
+3.83714,
+false
+],
+"mn-ciutadella-sant-rafel": [
+40.00231,
+3.83686,
+false
+],
+"mn-ciutadella-santa-clara": [
+40.00351,
+3.83855,
+false
+],
+"mn-es-castell-mare-de-deu-del-roser": [
+39.87797,
+4.2896,
+false
+],
+"mn-es-mercadal-el-toro": [
+39.98508,
+4.11309,
+false
+],
+"mn-es-mercadal-sant-marti": [
+39.98785,
+4.09226,
+false
+],
+"mn-es-migjorn-gran-sant-cristofol": [
+39.946,
+4.04971,
+false
+],
+"mn-ferreries-sant-bartomeu": [
+39.98285,
+4.00969,
+false
+],
+"mn-ferreries-santa-maria": [
+39.98335,
+4.01095,
+true
+],
+"mn-fornells-sant-antoni-abat": [
+40.05638,
+4.13199,
+false
+],
+"mn-llucmacanes-sant-gaieta": [
+39.86889,
+4.24148,
+false
+],
+"mn-mao-concepcionistes": [
+39.88949,
+4.26621,
+true
+],
+"mn-mao-el-carme": [
+39.88852,
+4.26645,
+false
+],
+"mn-mao-hospital-mateu-orfila": [
+39.8828,
+4.25277,
+false
+],
+"mn-mao-la-concepcio": [
+39.888,
+4.2696,
+false
+],
+"mn-mao-mare-de-deu-de-gracia": [
+39.8881,
+4.25373,
+false
+],
+"mn-mao-sant-antoni": [
+39.89242,
+4.28143,
+false
+],
+"mn-mao-sant-francesc": [
+39.89133,
+4.26084,
+false
+],
+"mn-mao-sant-josep": [
+39.88738,
+4.26205,
+false
+],
+"mn-mao-santa-maria": [
+39.88941,
+4.26467,
+false
+],
+"mn-sant-climent-sant-climent": [
+39.86989,
+4.21044,
+false
+],
+"mn-sant-lluis-sant-lluis": [
+39.85148,
+4.25781,
 false
 ],
 "nuestra-senora-de-europa-chiclana": [
@@ -3894,6 +7209,386 @@ true
 -1.69262,
 true
 ],
+"pl-palencia-agustinas-canonigas": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-agustinas-recoletas": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-allende-el-rio": [
+42.00825,
+-4.54131,
+false
+],
+"pl-palencia-auxiliares-parroquiales": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-carmelitas-descalzas": [
+42.33954,
+-4.60954,
+false
+],
+"pl-palencia-carmelitas-descalzas#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-catedral": [
+42.01122,
+-4.53735,
+false
+],
+"pl-palencia-cementerio-nuestra-senora-de-los-angeles": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-claras": [
+42.19182,
+-4.29828,
+false
+],
+"pl-palencia-claras#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-corazon-de-m": [
+42.00629,
+-4.52485,
+false
+],
+"pl-palencia-dominicas-piadosas": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-el-carmen": [
+41.99925,
+-4.52859,
+false
+],
+"pl-palencia-el-salvador": [
+42.0553,
+-4.48029,
+false
+],
+"pl-palencia-ermita-de-santo-domingo-de-la-calzada": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-hermanas-hospitalarias": [
+41.99346,
+-4.50649,
+false
+],
+"pl-palencia-hermanitas-de-los-ancianos": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-hospital-rio-carrion": [
+42.00087,
+-4.53965,
+false
+],
+"pl-palencia-hospital-san-juan-de-dios": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-jesus-nazareno": [
+42.01423,
+-4.53679,
+false
+],
+"pl-palencia-la-soledad": [
+42.14571,
+-4.64653,
+false
+],
+"pl-palencia-la-soledad#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-maria-estela": [
+42.01802,
+-4.53386,
+false
+],
+"pl-palencia-maria-reina-inmaculada": [
+42.01613,
+-4.52735,
+false
+],
+"pl-palencia-nuestra-senora-de-la-calle": [
+41.93468,
+-4.24887,
+false
+],
+"pl-palencia-nuestra-senora-de-la-calle#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-residencia-la-milagrosa": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-residencia-san-bernabe": [
+42.01223,
+-4.5369,
+false
+],
+"pl-palencia-residencia-san-jose": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-residencia-san-telmo": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-san-antonio": [
+42.01815,
+-4.54202,
+false
+],
+"pl-palencia-san-francisco": [
+42.09142,
+-4.14245,
+false
+],
+"pl-palencia-san-francisco#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-san-ignacio": [
+42.02158,
+-4.5334,
+false
+],
+"pl-palencia-san-jose": [
+42.08646,
+-4.25812,
+false
+],
+"pl-palencia-san-jose#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-san-lazaro": [
+42.26099,
+-4.35418,
+false
+],
+"pl-palencia-san-lazaro#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-san-marco": [
+42.00821,
+-4.52131,
+false
+],
+"pl-palencia-san-miguel": [
+42.73651,
+-4.11908,
+false
+],
+"pl-palencia-san-miguel#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-san-pablo": [
+42.08426,
+-4.57869,
+false
+],
+"pl-palencia-san-telmo": [
+41.99823,
+-4.52276,
+false
+],
+"pl-palencia-santa-marina": [
+42.40449,
+-4.37433,
+false
+],
+"pl-palencia-santa-marina#loc": [
+41.99516,
+-4.54427,
+false
+],
+"pl-palencia-siervas-de-maria": [
+41.99516,
+-4.54427,
+true
+],
+"pl-palencia-tanatorio-de-palencia": [
+42.00936,
+-4.513,
+false
+],
+"ps-plasencia-capuchinas": [
+40.03034,
+-6.09129,
+false
+],
+"ps-plasencia-carmelitas": [
+40.03096,
+-6.06023,
+false
+],
+"ps-plasencia-centro-parroquial-san-jose": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-cristo-de-las-batallas": [
+40.03188,
+-6.08565,
+false
+],
+"ps-plasencia-cristo-resucitado": [
+40.03445,
+-6.0801,
+false
+],
+"ps-plasencia-dominicas": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-el-pilar": [
+40.04099,
+-6.08751,
+false
+],
+"ps-plasencia-el-salvador": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-hermanitas-de-los-pobres": [
+40.04016,
+-6.07942,
+false
+],
+"ps-plasencia-hogar-de-nazaret": [
+40.04399,
+-6.0732,
+false
+],
+"ps-plasencia-hospital-psiquiatrico": [
+40.00598,
+-6.11337,
+false
+],
+"ps-plasencia-hospital-virgen-del-puerto": [
+40.04901,
+-6.08541,
+false
+],
+"ps-plasencia-ildefonsas": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-josefinas-trinitarias": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-pradochano": [
+40.00638,
+-6.21602,
+false
+],
+"ps-plasencia-pradochano#loc": [
+40.02226,
+-6.09963,
+false
+],
+"ps-plasencia-s-i-catedral": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-san-esteban": [
+40.02929,
+-6.0902,
+false
+],
+"ps-plasencia-san-gil": [
+39.97245,
+-6.2451,
+false
+],
+"ps-plasencia-san-gil#loc": [
+40.02226,
+-6.09963,
+false
+],
+"ps-plasencia-san-jose": [
+40.03629,
+-6.08123,
+false
+],
+"ps-plasencia-san-lazaro": [
+40.02931,
+-6.09805,
+false
+],
+"ps-plasencia-san-miguel": [
+40.02591,
+-6.09477,
+false
+],
+"ps-plasencia-san-nicolas": [
+40.02875,
+-6.09305,
+false
+],
+"ps-plasencia-san-pedro": [
+40.02983,
+-6.08772,
+false
+],
+"ps-plasencia-santa-elena": [
+40.03071,
+-6.08538,
+false
+],
+"ps-plasencia-santa-maria-de-la-esperanza": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-santuario-del-puerto": [
+40.02992,
+-6.09017,
+true
+],
+"ps-plasencia-virgen-de-guadalupe": [
+40.0186,
+-6.10142,
+false
+],
 "sa-capilla-colegio-mayor-ntra-sra-de-guadalupe": [
 40.96516,
 -5.66402,
@@ -4547,6 +8242,196 @@ false
 "santo-tomas-de-villanueva-cantarranas": [
 36.31584,
 -5.88502,
+false
+],
+"sg-segovia-agustinas-de-santa-rita": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-carmelitas": [
+40.95562,
+-4.13318,
+false
+],
+"sg-segovia-catedral": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-convento-de-san-jose": [
+40.95152,
+-4.12671,
+false
+],
+"sg-segovia-el-cristo": [
+41.09122,
+-3.76165,
+false
+],
+"sg-segovia-el-cristo#loc": [
+40.94812,
+-4.11721,
+false
+],
+"sg-segovia-el-cristo-del-mercado": [
+40.93878,
+-4.11618,
+false
+],
+"sg-segovia-el-salvador": [
+40.94717,
+-4.11381,
+false
+],
+"sg-segovia-hermanitas-de-los-pobres": [
+40.94424,
+-4.10906,
+false
+],
+"sg-segovia-hospital-general": [
+40.94418,
+-4.12721,
+false
+],
+"sg-segovia-iglesia-de-belen": [
+40.95423,
+-4.10626,
+false
+],
+"sg-segovia-jeronimos-el-parral": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-la-resurreccion": [
+40.92896,
+-4.0991,
+false
+],
+"sg-segovia-misioneros-claretianos": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-mm-concepcionistas-franciscanas": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-mm-dominicas": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-nuestra-senora-del-carmen": [
+41.2938,
+-3.93146,
+false
+],
+"sg-segovia-nuestra-senora-del-carmen#loc": [
+40.94812,
+-4.11721,
+false
+],
+"sg-segovia-pp-carmelitas": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-san-andres": [
+40.81344,
+-4.45185,
+false
+],
+"sg-segovia-san-andres#loc": [
+40.94812,
+-4.11721,
+false
+],
+"sg-segovia-san-frutos": [
+40.94556,
+-4.1068,
+false
+],
+"sg-segovia-san-jose-obrero": [
+40.93807,
+-4.10926,
+false
+],
+"sg-segovia-san-justo": [
+40.94776,
+-4.11527,
+false
+],
+"sg-segovia-san-lorenzo": [
+40.95443,
+-4.11283,
+false
+],
+"sg-segovia-san-marcos": [
+40.95452,
+-4.1332,
+false
+],
+"sg-segovia-san-martin": [
+41.22643,
+-4.30959,
+false
+],
+"sg-segovia-san-martin#loc": [
+40.94812,
+-4.11721,
+false
+],
+"sg-segovia-san-miguel": [
+40.77224,
+-4.24469,
+false
+],
+"sg-segovia-san-miguel#loc": [
+40.94812,
+-4.11721,
+false
+],
+"sg-segovia-san-millan": [
+40.94689,
+-4.12173,
+false
+],
+"sg-segovia-santa-eulalia": [
+40.94408,
+-4.11599,
+false
+],
+"sg-segovia-santa-teresa": [
+40.92884,
+-4.11865,
+false
+],
+"sg-segovia-santisima-trinidad": [
+40.95127,
+-4.1224,
+false
+],
+"sg-segovia-santo-tomas": [
+40.942,
+-4.11748,
+false
+],
+"sg-segovia-santuario-de-nuestra-senora-de-la-fuencisla": [
+40.95664,
+-4.13533,
+false
+],
+"sg-segovia-santuario-nuestra-senora-de-la-fuencisla": [
+40.94812,
+-4.11721,
+true
+],
+"sg-segovia-siervas-de-maria": [
+40.95156,
+-4.12838,
 false
 ],
 "sv-basilica-de-la-macarena-parroquia-san-gil": [
@@ -8024,6 +11909,1056 @@ false
 -17.94913,
 true
 ],
+"tg-aguilo-santa-maria": [
+41.5526,
+1.41898,
+false
+],
+"tg-aiguamurcia-esglesia-de-santa-llucia": [
+41.36187,
+1.44063,
+true
+],
+"tg-albinyana-sant-bartomeu": [
+41.24611,
+1.48638,
+false
+],
+"tg-alcover-ermita-mare-de-deu-del-remei": [
+41.26292,
+1.17028,
+true
+],
+"tg-alcover-l-assumpcio": [
+41.26292,
+1.16855,
+false
+],
+"tg-alio-sant-bartomeu": [
+41.29483,
+1.30596,
+false
+],
+"tg-almoster-sant-miquel-arcangel": [
+41.19606,
+1.11114,
+true
+],
+"tg-altafulla-ermita-de-sant-antoni-de-padua": [
+41.14235,
+1.37687,
+true
+],
+"tg-altafulla-sant-marti": [
+41.143,
+1.3761,
+false
+],
+"tg-altafulla-santa-maria": [
+41.13575,
+1.37812,
+false
+],
+"tg-arbeca-sant-jaume-apostol": [
+41.53967,
+0.92619,
+true
+],
+"tg-banyeres-del-penedes-santa-eulalia": [
+41.28009,
+1.58051,
+false
+],
+"tg-bellmunt-del-priorat-santa-llucia": [
+41.16324,
+0.76615,
+true
+],
+"tg-belltall-belltall": [
+41.50473,
+1.18577,
+false
+],
+"tg-bellvei-santa-maria": [
+41.23902,
+1.57803,
+true
+],
+"tg-blancafort-santa-maria-magdalena": [
+41.43843,
+1.15872,
+false
+],
+"tg-bonastre-santa-magdalena": [
+41.22227,
+1.44073,
+false
+],
+"tg-botarell-sant-llorenc-martir": [
+41.13628,
+0.98978,
+true
+],
+"tg-brafim-sant-jaume-apostol": [
+41.26879,
+1.34124,
+true
+],
+"tg-cabra-del-camp-santa-maria": [
+41.3744,
+1.34094,
+false
+],
+"tg-calafell-sant-pere-apostol": [
+41.20106,
+1.56867,
+true
+],
+"tg-calafell-santa-creu": [
+41.21053,
+1.57938,
+false
+],
+"tg-cambrils-ermita-de-la-mare-de-deu-del-cami": [
+41.06794,
+1.06576,
+true
+],
+"tg-cambrils-sant-pere": [
+41.0729,
+1.11486,
+false
+],
+"tg-cambrils-santa-maria": [
+41.06402,
+1.05333,
+false
+],
+"tg-capafonts-santa-maria-assumpta": [
+41.29488,
+1.02697,
+true
+],
+"tg-castellvell-del-camp-sant-vicenc-martir": [
+41.18136,
+1.09658,
+false
+],
+"tg-clara-esglesia-de-sant-joan-baptista-de-baix-a-mar": [
+41.15185,
+1.41674,
+true
+],
+"tg-clara-sant-joan-baptista": [
+41.15019,
+1.41747,
+false
+],
+"tg-coma-ruga-sant-ramon-nonat": [
+41.18159,
+1.52304,
+true
+],
+"tg-conesa-santa-maria": [
+41.51832,
+1.29125,
+false
+],
+"tg-constanti-sant-feliu-martir": [
+41.15281,
+1.21518,
+true
+],
+"tg-cornudella-de-montsant-santa-maria": [
+41.26475,
+0.90547,
+false
+],
+"tg-creixell-sant-jaume": [
+41.16786,
+1.44211,
+false
+],
+"tg-cunit-sant-cristofol": [
+41.19769,
+1.63423,
+false
+],
+"tg-duesaigues-santa-maria": [
+41.14591,
+0.93091,
+false
+],
+"tg-el-catllar-sant-joan-baptista": [
+41.1748,
+1.32591,
+false
+],
+"tg-el-mila-santa-ursula": [
+41.24807,
+1.20643,
+false
+],
+"tg-el-morell-sant-marti-bisbe": [
+41.19235,
+1.2071,
+true
+],
+"tg-el-papiolet-esglesia-de-la-mare-de-deu-dels-angels": [
+41.283,
+1.5279,
+true
+],
+"tg-el-pla-de-santa-maria-l-assumpcio": [
+41.36386,
+1.28987,
+false
+],
+"tg-el-pont-d-armentera-santa-maria-magdalena": [
+41.38322,
+1.36269,
+true
+],
+"tg-el-rourell-sant-pere-apostol": [
+41.22357,
+1.21839,
+true
+],
+"tg-el-vendrell-ermita-de-sant-salvador": [
+41.18541,
+1.54445,
+false
+],
+"tg-el-vendrell-esglesia-de-sant-salvador-de-les-palmeres": [
+41.21997,
+1.53486,
+true
+],
+"tg-el-vendrell-sant-salvador": [
+41.18479,
+1.54249,
+false
+],
+"tg-els-garidells-sant-jaume-apostol": [
+41.20713,
+1.24716,
+true
+],
+"tg-els-pallaresos-sant-salvador": [
+41.16446,
+1.2443,
+false
+],
+"tg-falset-santa-maria": [
+41.14658,
+0.81902,
+false
+],
+"tg-figuerola-del-camp-sant-jaume-apostol": [
+41.37207,
+1.26557,
+true
+],
+"tg-fontscaldes-sant-simo": [
+41.33373,
+1.23335,
+false
+],
+"tg-fores-sant-miquel-arcangel": [
+41.49414,
+1.23785,
+true
+],
+"tg-gratallops-sant-llorenc": [
+41.19323,
+0.77679,
+false
+],
+"tg-guimera-santa-maria": [
+41.08859,
+0.79461,
+true
+],
+"tg-l-alba-santa-maria": [
+41.34022,
+1.40368,
+false
+],
+"tg-l-albi-santa-maria": [
+41.44479,
+0.95107,
+true
+],
+"tg-l-albiol-sant-miquel-arcangel": [
+41.25187,
+1.0898,
+true
+],
+"tg-l-aleixar-sant-marti-bisbe": [
+41.20162,
+1.04575,
+false
+],
+"tg-l-arboc-sant-julia": [
+41.26813,
+1.60407,
+false
+],
+"tg-l-arboc-sant-llucia": [
+41.26774,
+1.60375,
+true
+],
+"tg-l-argilaga-sant-roc": [
+41.20469,
+1.29501,
+false
+],
+"tg-l-espluga-de-francoli-capella-de-la-residencia-jaume-i": [
+41.39655,
+1.10232,
+true
+],
+"tg-l-espluga-de-francoli-monastir-de-poblet": [
+41.39655,
+1.10232,
+true
+],
+"tg-l-espluga-de-francoli-sant-miquel-arcangel": [
+41.39655,
+1.10232,
+true
+],
+"tg-la-bisbal-del-penedes-santa-maria": [
+41.2811,
+1.48792,
+false
+],
+"tg-la-canonja-mare-de-deu-de-l-esperanca-de-masricart": [
+41.12041,
+1.18207,
+true
+],
+"tg-la-canonja-sant-sebastia": [
+41.12337,
+1.17881,
+false
+],
+"tg-la-guardia-dels-prats-sant-jaume-apostol": [
+41.39722,
+1.1714,
+true
+],
+"tg-la-joncosa-de-montmell-sant-miquel-i-la-mare-de-deu-del-reme": [
+41.3638,
+1.54046,
+true
+],
+"tg-la-maso-santa-maria-magdalena": [
+41.23464,
+1.22308,
+false
+],
+"tg-la-morera-de-montsant-nativitat-de-la-mare-de-deu": [
+41.25927,
+0.82903,
+true
+],
+"tg-la-nou-de-gaia-santa-maria-magdalena": [
+41.18329,
+1.37521,
+true
+],
+"tg-la-pineda-ermita-de-la-pineda": [
+41.07759,
+1.17975,
+true
+],
+"tg-la-pineda-esglesia-de-l-esperit-sant": [
+41.08014,
+1.17993,
+false
+],
+"tg-la-plana-esglesia-de-sant-joan": [
+41.29487,
+1.19497,
+true
+],
+"tg-la-pobla-de-cervoles-mare-de-deu-de-la-jonquera": [
+41.34951,
+0.9137,
+true
+],
+"tg-la-pobla-de-mafumet-sant-joan-baptista": [
+41.1866,
+1.20828,
+true
+],
+"tg-la-pobla-de-montornes-santa-maria": [
+41.17848,
+1.41421,
+true
+],
+"tg-la-riba-sant-nicolau": [
+41.31885,
+1.17796,
+false
+],
+"tg-la-secuita-santa-maria": [
+41.20481,
+1.28009,
+false
+],
+"tg-la-torre-de-fontaubella-nativitat-de-la-mare-de-deu": [
+41.1246,
+0.86449,
+true
+],
+"tg-la-torregassa-capella-de-sant-antoni-abat": [
+41.29186,
+1.52734,
+true
+],
+"tg-les-borges-del-camp-l-assumpcio": [
+41.17159,
+1.02044,
+true
+],
+"tg-les-gunyoles-sant-salvador": [
+41.21673,
+1.25259,
+true
+],
+"tg-les-peces-esglesia-del-sagrat-cor-de-jesus": [
+41.25451,
+1.50252,
+true
+],
+"tg-les-peces-sagrat-cor-de-jesus": [
+41.25451,
+1.50252,
+true
+],
+"tg-lilla-sant-joan-evangelista": [
+41.34858,
+1.21253,
+false
+],
+"tg-lletger-esglesia-de-sant-andreu-i-santa-marina": [
+41.29416,
+1.57856,
+true
+],
+"tg-llorenc-del-penedes-sant-llorenc": [
+41.28652,
+1.54915,
+false
+],
+"tg-malda-santa-maria": [
+41.44704,
+1.32004,
+true
+],
+"tg-masllorenc-sant-ramon-de-penyafort": [
+41.27017,
+1.41449,
+true
+],
+"tg-masmolets-sant-roc": [
+41.31615,
+1.23736,
+false
+],
+"tg-maspujols-l-assumpcio": [
+41.1818,
+1.04579,
+true
+],
+"tg-miami-platja-santa-magdalena": [
+41.01152,
+0.93601,
+false
+],
+"tg-mont-roig-del-camp-ermita-de-la-mare-de-deu-de-la-roca": [
+41.09495,
+0.93819,
+false
+],
+"tg-mont-roig-del-camp-sant-miquel-arcangel": [
+41.08467,
+0.9613,
+true
+],
+"tg-montblanc-esglesia-de-sant-miquel": [
+41.37623,
+1.16207,
+true
+],
+"tg-montblanc-santa-maria-la-major": [
+41.37623,
+1.16207,
+true
+],
+"tg-montblanc-santuari-de-la-mare-de-deu-de-la-serra": [
+41.37623,
+1.16207,
+true
+],
+"tg-montbrio-de-la-marca-sant-llorenc-martir": [
+41.46346,
+1.29689,
+true
+],
+"tg-montbrio-del-camp-sant-pere-apostol": [
+41.12009,
+1.00573,
+true
+],
+"tg-montferri-sant-bartomeu": [
+41.26556,
+1.36593,
+false
+],
+"tg-nulles-sant-joan-baptista": [
+41.24929,
+1.29573,
+true
+],
+"tg-passanant-sant-jaume": [
+41.5319,
+1.19675,
+false
+],
+"tg-perafort-sant-pere": [
+41.1909,
+1.25557,
+false
+],
+"tg-picamoixons-sant-salvador": [
+41.30499,
+1.20188,
+false
+],
+"tg-pira-transfiguracio-del-senyor": [
+41.42362,
+1.2031,
+true
+],
+"tg-poblet-monestir-de-santa-maria-de-poblet": [
+41.38062,
+1.08087,
+true
+],
+"tg-poboleda-sant-pere": [
+41.23316,
+0.84509,
+false
+],
+"tg-porrera-sant-joan-evangelista": [
+41.18914,
+0.85588,
+false
+],
+"tg-pradell-de-la-teixeta-santa-maria-magdalena": [
+41.15702,
+0.87619,
+false
+],
+"tg-prades-santa-maria-la-major": [
+41.30967,
+0.98738,
+true
+],
+"tg-puigdelfi-sant-sebastia": [
+41.19514,
+1.23637,
+false
+],
+"tg-puigpelat-santa-maria": [
+41.28784,
+1.28255,
+false
+],
+"tg-querol-santa-maria": [
+41.40065,
+1.473,
+false
+],
+"tg-renau-santa-llucia": [
+41.22496,
+1.31122,
+false
+],
+"tg-reus-capella-del-barri-montserrat": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-capella-sagrada-familia": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-col-legi-i-residencia-universitaria-pare-manyanet": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-crist-rei": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-germanetes-dels-pobres": [
+41.1556,
+1.101,
+false
+],
+"tg-reus-l-assumpcio": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-la-immaculada-concepcio": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-monestir-de-santa-clara": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-purissima-sang": [
+41.15633,
+1.11155,
+false
+],
+"tg-reus-residencia-icas": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-residencia-roger-de-lluria-capella": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-sant-bernat-calvo-bisbe": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-sant-francesc-d-assis": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-sant-joan-baptista": [
+41.15556,
+1.10761,
+true
+],
+"tg-reus-sant-josep-obrer": [
+41.14793,
+1.1195,
+false
+],
+"tg-reus-sant-pere-apostol": [
+41.15434,
+1.11045,
+false
+],
+"tg-reus-santuari-mare-de-deu-de-misericordia": [
+41.14334,
+1.09958,
+false
+],
+"tg-riudecanyes-sant-mateu-apostol": [
+41.13037,
+0.96189,
+true
+],
+"tg-riudoms-sant-jaume-apostol": [
+41.13909,
+1.05197,
+true
+],
+"tg-rocafort-de-queralt-sant-salvador": [
+41.47766,
+1.28149,
+false
+],
+"tg-rocallaura-sant-llorenc-martir": [
+41.20642,
+1.62432,
+true
+],
+"tg-rocamora-sant-magi": [
+41.47825,
+1.44947,
+true
+],
+"tg-roda-de-bera-ermita-de-la-mare-de-deu-de-bara": [
+41.1858,
+1.45699,
+true
+],
+"tg-roda-de-bera-esglesia-de-sant-llorenc": [
+41.1858,
+1.45699,
+true
+],
+"tg-roda-de-bera-sant-bartomeu": [
+41.18622,
+1.45428,
+false
+],
+"tg-rodonya-sant-joan-baptista": [
+41.28268,
+1.39907,
+true
+],
+"tg-salomo-santa-maria": [
+41.22925,
+1.37486,
+false
+],
+"tg-salou-sant-ramon-nonat": [
+41.07682,
+1.14404,
+true
+],
+"tg-salou-santa-maria-del-mar": [
+41.0761,
+1.12986,
+false
+],
+"tg-sant-jaume-dels-domenys-sant-jaume": [
+41.29358,
+1.55735,
+false
+],
+"tg-santa-coloma-de-queralt-capella-de-la-residencia-geriatrica-": [
+41.5321,
+1.38842,
+true
+],
+"tg-santa-coloma-de-queralt-santa-coloma-verge-i-martir": [
+41.5321,
+1.38842,
+true
+],
+"tg-santa-oliva-santa-maria": [
+41.25329,
+1.55101,
+true
+],
+"tg-santes-creus-santa-llucia": [
+41.34655,
+1.36231,
+false
+],
+"tg-sarral-santa-maria": [
+41.44538,
+1.24694,
+true
+],
+"tg-savalla-del-comtat-sant-pere-apostol": [
+41.54281,
+1.29979,
+true
+],
+"tg-segur-de-calafell-l-assumpcio": [
+41.19368,
+1.60294,
+false
+],
+"tg-selma-pla-de-manlleu-sant-cristofor": [
+41.371,
+1.48989,
+true
+],
+"tg-senan-santa-maria": [
+41.46997,
+1.08757,
+false
+],
+"tg-solivella-santa-maria": [
+41.45582,
+1.17744,
+false
+],
+"tg-tarragona-bonavista-santa-maria-assumpta": [
+41.18638,
+1.55555,
+true
+],
+"tg-tarragona-campclar-santa-tecla": [
+41.11734,
+1.2066,
+false
+],
+"tg-tarragona-centre-sociosanitari-santa-tecla-llevant-capella-t": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-col-legi-sagrat-cor": [
+40.70683,
+0.56883,
+false
+],
+"tg-tarragona-col-legi-sagrat-cor#loc": [
+41.11724,
+1.25461,
+false
+],
+"tg-tarragona-esglesia-carmelites-descalcos": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-esglesia-de-sant-magi": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-esglesia-dels-sants-reis-sant-agusti": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-esglesia-sant-antoni-de-padua": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-hospital-sociosanitari-francoli": [
+41.12498,
+1.23915,
+false
+],
+"tg-tarragona-la-floresta-sant-pere": [
+41.12385,
+1.21161,
+true
+],
+"tg-tarragona-residencia-sanitaria-joan-xxiii": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-sant-francesc-d-assis": [
+41.09165,
+0.31337,
+false
+],
+"tg-tarragona-sant-fructuos": [
+41.12113,
+1.25424,
+false
+],
+"tg-tarragona-sant-joan-baptista": [
+41.11314,
+0.93759,
+false
+],
+"tg-tarragona-sant-pau": [
+41.08865,
+0.67671,
+false
+],
+"tg-tarragona-sant-pere-i-sant-pau-sant-pere-i-sant-pau": [
+41.13832,
+1.25606,
+false
+],
+"tg-tarragona-sant-salvador-sant-salvador": [
+41.16446,
+1.2443,
+false
+],
+"tg-tarragona-santa-clara": [
+41.11584,
+1.24222,
+false
+],
+"tg-tarragona-santa-maria-de-la-catedral": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-santissima-trinitat": [
+41.37322,
+1.11098,
+false
+],
+"tg-tarragona-santuari-de-nostra-senyora-del-sagrat-cor-esglesia": [
+41.11724,
+1.25461,
+true
+],
+"tg-tarragona-serrallo-sant-pere-apostol": [
+41.11571,
+1.23828,
+true
+],
+"tg-tarragona-torreforta-sant-josep-obrer": [
+41.11912,
+1.21872,
+false
+],
+"tg-tarres-santa-maria-assumpta": [
+41.2221,
+1.53557,
+true
+],
+"tg-torredembarra-capella-residencia-pere-badia": [
+41.14616,
+1.39595,
+true
+],
+"tg-torredembarra-sant-pere-apostol": [
+41.14616,
+1.39595,
+true
+],
+"tg-torroja-del-priorat-sant-miquel-arcangel": [
+41.21332,
+0.81061,
+true
+],
+"tg-ulldemolins-sant-jaume-apostol": [
+41.32229,
+0.87614,
+true
+],
+"tg-vallbona-de-les-monges-santa-maria": [
+41.46878,
+1.11304,
+true
+],
+"tg-vallclara-sant-joan-baptista": [
+41.37748,
+0.98259,
+true
+],
+"tg-vallfogona-de-riucorb-santa-maria": [
+41.56304,
+1.23625,
+false
+],
+"tg-vallmoll-ermita-del-roser": [
+41.24788,
+1.24972,
+false
+],
+"tg-vallmoll-santa-maria": [
+41.2422,
+1.24913,
+false
+],
+"tg-valls-carmelites-missioneres-teresianes": [
+41.28354,
+1.24736,
+true
+],
+"tg-valls-esglesia-del-sagrat-cor": [
+41.28354,
+1.24736,
+true
+],
+"tg-valls-mare-de-deu-del-carme": [
+41.28369,
+1.24691,
+false
+],
+"tg-valls-mare-de-deu-del-lledo": [
+41.28933,
+1.25205,
+false
+],
+"tg-valls-residencia-alt-camp": [
+41.28659,
+1.24104,
+false
+],
+"tg-valls-sant-antoni-abat": [
+41.28374,
+1.24988,
+false
+],
+"tg-valls-sant-joan-baptista": [
+41.28408,
+1.24711,
+false
+],
+"tg-vespella-de-gaia-sant-miquel-arcangel": [
+41.2041,
+1.35994,
+true
+],
+"tg-vila-rodona-santa-maria": [
+41.31082,
+1.35848,
+false
+],
+"tg-vila-seca-sant-esteve-protomartir": [
+41.11093,
+1.14496,
+true
+],
+"tg-vilabella-sant-pere-ad-vincula": [
+41.24676,
+1.32988,
+true
+],
+"tg-vilafortuny-santa-maria": [
+41.07093,
+1.09882,
+false
+],
+"tg-vilallonga-del-camp-sant-marti-bisbe": [
+41.20801,
+1.20747,
+true
+],
+"tg-vilanova-de-prades-transfiguracio-del-senyor": [
+41.34787,
+0.95715,
+true
+],
+"tg-vilaplana-nativitat-de-la-mare-de-deu": [
+41.22811,
+1.03365,
+true
+],
+"tg-vilaverd-sant-marti": [
+41.33468,
+1.17744,
+false
+],
+"tg-vilella-alta-la-santa-llucia": [
+41.22457,
+0.78113,
+true
+],
+"tg-vimbodi-transfiguracio-del-senyor": [
+41.38482,
+1.04915,
+true
+],
+"tg-vinaixa-sant-joan-baptista": [
+41.42714,
+0.98172,
+true
+],
+"tg-vinyols-i-els-arcs-santa-caterina-verge-i-martir": [
+41.114,
+1.03872,
+true
+],
 "va-icbenito": [
 41.65409,
 -4.72937,
@@ -9302,6 +14237,816 @@ false
 "va-tzorital": [
 42.23798,
 -5.0221,
+true
+],
+"za-zamora-cristo-rey": [
+41.50717,
+-5.73643,
+false
+],
+"za-zamora-ermita-del-carmen-del-camino": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-espiritu-santo": [
+41.50354,
+-5.7587,
+false
+],
+"za-zamora-la-asuncion-de-nuestra-senora-carrascal": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-la-natividad-de-nuestra-senora": [
+41.3193,
+-6.11057,
+false
+],
+"za-zamora-maria-auxiliadora": [
+41.51205,
+-5.75098,
+false
+],
+"za-zamora-nuestra-senora-de-lourdes": [
+41.51194,
+-5.74235,
+false
+],
+"za-zamora-nuestra-senora-del-pilar": [
+41.63663,
+-6.14248,
+false
+],
+"za-zamora-s-i-catedral": [
+41.49912,
+-5.75467,
+false
+],
+"za-zamora-san-benito": [
+41.55829,
+-5.60845,
+false
+],
+"za-zamora-san-claudio-de-olivares": [
+41.50184,
+-5.7483,
+false
+],
+"za-zamora-san-frontis": [
+41.49197,
+-5.75368,
+false
+],
+"za-zamora-san-frontis-capilla-del-amor-de-dios-de-pinilla": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-san-frontis-iglesia-del-sepulcro": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-san-jose-obrero": [
+41.51327,
+-5.75303,
+false
+],
+"za-zamora-san-lazaro": [
+41.50716,
+-5.75313,
+false
+],
+"za-zamora-san-lorenzo": [
+41.51257,
+-5.73067,
+false
+],
+"za-zamora-u-p-el-buen-pastor-san-ildefonso": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-u-p-el-buen-pastor-san-juan": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-u-p-el-buen-pastor-san-torcuato": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-u-p-el-buen-pastor-san-vicente-martir": [
+41.51628,
+-5.7736,
+true
+],
+"za-zamora-u-p-el-buen-pastor-santa-maria-de-la-horta": [
+41.51628,
+-5.7736,
+true
+],
+"zg-alfajarin-residencia-virgen-de-la-pena": [
+41.61378,
+-0.70369,
+true
+],
+"zg-alfajarin-san-miguel-arcangel": [
+41.61499,
+-0.70224,
+false
+],
+"zg-alpartir-nuestra-senora-de-los-angeles": [
+41.42199,
+-1.38168,
+false
+],
+"zg-azaila-nuestra-senora-del-rosario": [
+41.6414,
+-0.91643,
+true
+],
+"zg-badules-nuestra-senora-de-la-asuncion": [
+41.13803,
+-1.2518,
+true
+],
+"zg-bardenas-san-francisco-de-asis": [
+42.17696,
+-1.19967,
+true
+],
+"zg-bujaraloz-santiago-el-mayor": [
+41.49817,
+-0.15267,
+false
+],
+"zg-calaceite-nuestra-senora-de-la-asuncion": [
+41.10234,
+0.14593,
+true
+],
+"zg-carinena-nuestra-senora-de-la-asuncion": [
+41.33829,
+-1.22293,
+false
+],
+"zg-casetas-san-miguel-arcangel": [
+41.72273,
+-1.02049,
+true
+],
+"zg-caspe-capilla-de-las-hermanas-clarisas-capuchinas": [
+41.23683,
+-0.03948,
+true
+],
+"zg-caspe-capilla-hermanas-de-santa-ana": [
+41.23781,
+-0.04234,
+false
+],
+"zg-caspe-capilla-hermanitas-de-los-ancianos-desamparados": [
+41.2318,
+-0.03983,
+false
+],
+"zg-caspe-iglesia-de-santa-lucia": [
+41.23685,
+-0.04091,
+false
+],
+"zg-caspe-parroquia-colegiata-santa-maria-la-mayor-del-pilar": [
+41.2356,
+-0.03751,
+false
+],
+"zg-castejon-de-valdejasa-santa-maria-la-mayor": [
+41.98234,
+-0.99499,
+false
+],
+"zg-chiprana-iglesia-de-san-juan-bautista": [
+41.25917,
+-0.1738,
+true
+],
+"zg-cinco-olivas-santiago-apostol": [
+41.34032,
+-0.37194,
+true
+],
+"zg-cretas-san-juan-bautista": [
+40.92916,
+0.21513,
+true
+],
+"zg-cuarte-de-huerva-capilla-de-san-lorenzo-santa-fe": [
+41.59359,
+-0.93888,
+true
+],
+"zg-cuarte-de-huerva-santa-cruz-y-santa-fe": [
+41.59359,
+-0.93888,
+true
+],
+"zg-daroca-madres-dominicas": [
+41.11333,
+-1.41706,
+true
+],
+"zg-daroca-santa-maria-de-los-sagrados-corporales": [
+41.11333,
+-1.41706,
+true
+],
+"zg-ejea-de-los-caballeros-iglesia-de-el-salvador": [
+42.13335,
+-1.13656,
+true
+],
+"zg-ejea-de-los-caballeros-santuario-de-la-virgen-de-la-oliva": [
+42.13335,
+-1.13656,
+true
+],
+"zg-el-bayo-san-rafael-arcangel": [
+42.18844,
+-1.26343,
+true
+],
+"zg-el-sabinar-la-natividad-del-senor": [
+42.0844,
+-1.23342,
+true
+],
+"zg-fuentes-de-ebro-san-miguel-arcangel": [
+41.51284,
+-0.63059,
+false
+],
+"zg-gallocanta-san-pedro-apostol": [
+40.99658,
+-1.50753,
+true
+],
+"zg-hijar-santa-maria-la-mayor": [
+41.63546,
+-0.8634,
+true
+],
+"zg-la-almolda-nuestra-senora-de-la-luz": [
+41.55456,
+-0.21014,
+true
+],
+"zg-la-almunia-de-dona-godina-nuestra-senora-de-la-asuncion": [
+41.47678,
+-1.37476,
+false
+],
+"zg-la-fresneda-santa-maria-la-mayor": [
+41.0751,
+-1.7214,
+true
+],
+"zg-la-joyosa-nuestra-senora-del-puig": [
+41.74509,
+-1.07336,
+false
+],
+"zg-la-muela-capilla-de-nuestra-senora-del-pilar": [
+41.58047,
+-1.1162,
+true
+],
+"zg-la-muela-iglesia-de-san-clemente-papa": [
+41.57842,
+-1.12353,
+false
+],
+"zg-la-puebla-de-alfinden-nuestra-senora-de-la-asuncion": [
+41.63164,
+-0.75105,
+false
+],
+"zg-la-zaida-san-jose": [
+41.32779,
+-0.42974,
+true
+],
+"zg-langa-del-castillo-san-pedro-apostol": [
+41.21188,
+-1.3985,
+true
+],
+"zg-las-lomas-del-gallego-capilla-de-la-asuncion-de-la-virgen-la": [
+41.79976,
+-0.81303,
+true
+],
+"zg-las-pedrosas-santa-maria-la-mayor": [
+42.03812,
+-0.87635,
+false
+],
+"zg-letux-santa-maria-de-las-nieves": [
+41.25508,
+-0.8026,
+true
+],
+"zg-mainar-santa-ana": [
+41.19258,
+-1.30276,
+true
+],
+"zg-manchones-conversion-de-san-pablo": [
+41.15025,
+-1.46636,
+false
+],
+"zg-marlofa-nuestra-senora-del-carmen": [
+41.74072,
+-1.06936,
+true
+],
+"zg-mediana-de-aragon-santa-ana": [
+41.46712,
+-0.70564,
+false
+],
+"zg-murero-nuestra-senora-de-la-asuncion": [
+41.15909,
+-1.48227,
+true
+],
+"zg-nuez-de-ebro-san-martin": [
+41.58419,
+-0.68509,
+true
+],
+"zg-ontinar-de-salz-nuestra-senora-del-salz": [
+41.93566,
+-0.75739,
+true
+],
+"zg-osera-de-ebro-residencia-el-veral": [
+41.54887,
+-0.59679,
+false
+],
+"zg-osera-de-ebro-residencia-las-adelfas": [
+41.53985,
+-0.58361,
+false
+],
+"zg-penaflor-nuestra-senora-del-coro-de-los-angeles": [
+41.7613,
+-0.79651,
+true
+],
+"zg-pina-de-ebro-asuncion-de-nuestra-senora": [
+41.48921,
+-0.52635,
+true
+],
+"zg-pinseque-san-pedro-martir-de-verona": [
+41.73784,
+-1.10139,
+true
+],
+"zg-pinsoro-san-mateo": [
+42.19481,
+-1.33461,
+false
+],
+"zg-rivas-san-miguel-arcangel": [
+42.16824,
+-1.13449,
+true
+],
+"zg-roden-san-martin-de-tours": [
+41.49597,
+-0.65464,
+true
+],
+"zg-san-juan-de-mozarrifar-san-juan-bautista": [
+41.71673,
+-0.84053,
+false
+],
+"zg-san-mateo-de-gallego-san-mateo-apostol": [
+41.83161,
+-0.76862,
+false
+],
+"zg-santa-anastasia-santa-anastasia": [
+42.13653,
+-1.23021,
+false
+],
+"zg-sierra-de-luna-santa-agueda": [
+42.05422,
+-0.91043,
+false
+],
+"zg-torralba-de-los-frailes-nuestra-senora-de-la-blanca": [
+41.03672,
+-1.66095,
+true
+],
+"zg-torre-del-compte-san-pedro-apostol": [
+40.93731,
+0.10797,
+true
+],
+"zg-torres-de-berrellen-san-andres-apostol": [
+41.75702,
+-1.06461,
+true
+],
+"zg-tosos-santa-maria-la-mayor": [
+41.31579,
+-1.07157,
+true
+],
+"zg-urrea-de-gaen-san-pedro-martir": [
+41.16211,
+-0.46956,
+true
+],
+"zg-used-san-pedro-y-san-pablo": [
+41.05448,
+-1.55843,
+false
+],
+"zg-utebo-capilla-del-carmen": [
+41.71408,
+-0.99436,
+true
+],
+"zg-utebo-nuestra-senora-de-la-asuncion": [
+41.71408,
+-0.99436,
+true
+],
+"zg-valarena-san-miguel-arcangel": [
+42.13053,
+-1.30853,
+false
+],
+"zg-valjunquera-san-miguel-arcangel": [
+41.76484,
+-1.61776,
+true
+],
+"zg-villadoz-santiago-apostol": [
+41.16242,
+-1.28743,
+true
+],
+"zg-villafeliche-san-miguel-arcangel": [
+41.19614,
+-1.51073,
+false
+],
+"zg-villafranca-de-ebro-san-miguel-arcangel": [
+41.57212,
+-0.65032,
+false
+],
+"zg-villanueva-de-gallego-el-salvador": [
+41.76822,
+-0.82146,
+false
+],
+"zg-villanueva-de-jiloca-iglesia-de-san-gil-abad-rural": [
+41.07524,
+-1.39244,
+true
+],
+"zg-villarreal-de-huerva-san-miguel-arcangel": [
+41.19021,
+-1.28953,
+true
+],
+"zg-zaragoza-capilla-de-san-ignacio-clemente-delgado-paseo-de-lo": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-capilla-de-santa-maria-reina-de-los-martires-plaza-": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-capilla-del-hospital-miguel-servet": [
+41.63624,
+-0.90001,
+false
+],
+"zg-zaragoza-capilla-del-hospital-san-juan-de-dios": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-capilla-del-zorongo": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-catedral-basilica-de-nuestra-senora-del-pilar-altar": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-catedral-basilica-de-nuestra-senora-del-pilar-capil": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-catedral-basilica-de-nuestra-senora-del-pilar-santa": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-catedral-del-salvador-la-seo": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-clinica-montecanal": [
+41.62975,
+-0.93171,
+false
+],
+"zg-zaragoza-corazon-de-maria": [
+41.64584,
+-0.89343,
+false
+],
+"zg-zaragoza-coronacion-de-la-virgen": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-cristo-rey": [
+41.12228,
+0.14265,
+false
+],
+"zg-zaragoza-el-buen-pastor": [
+41.62989,
+-0.88181,
+false
+],
+"zg-zaragoza-espiritu-santo-parroquia-de-san-andres": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-iglesia-de-la-exaltacion-de-la-santa-cruz": [
+41.65452,
+-0.87844,
+false
+],
+"zg-zaragoza-iglesia-de-la-inmaculada-concepcion": [
+41.63835,
+-0.90847,
+false
+],
+"zg-zaragoza-iglesia-de-la-presentacion-de-la-virgen": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-iglesia-de-nuestra-senora-de-la-paz": [
+41.62773,
+-0.87607,
+false
+],
+"zg-zaragoza-iglesia-de-san-braulio": [
+41.64384,
+-0.89746,
+false
+],
+"zg-zaragoza-iglesia-de-san-felipe": [
+41.65456,
+-0.88242,
+false
+],
+"zg-zaragoza-iglesia-de-san-gil-abad-ciudad": [
+41.65583,
+-0.8762,
+false
+],
+"zg-zaragoza-iglesia-de-san-jose-de-calasanz": [
+42.49672,
+-1.21566,
+false
+],
+"zg-zaragoza-iglesia-de-san-jose-de-calasanz#loc": [
+41.69158,
+-0.91013,
+false
+],
+"zg-zaragoza-iglesia-de-san-jose-pignatelli": [
+41.64748,
+-0.88324,
+false
+],
+"zg-zaragoza-iglesia-de-santa-maria-magdalena": [
+41.29322,
+-1.37449,
+false
+],
+"zg-zaragoza-iglesia-del-hospital-nuestra-senora-de-gracia": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-madre-de-dios-de-begona": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-nuestra-senora-de-altabas": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-nuestra-senora-de-belen": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-nuestra-senora-de-guadalupe": [
+41.64961,
+-0.91266,
+false
+],
+"zg-zaragoza-nuestra-senora-de-la-esperanza-parroquia-de-san-and": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-nuestra-senora-de-montserrat": [
+41.64562,
+-0.90336,
+false
+],
+"zg-zaragoza-nuestra-senora-del-perpetuo-socorro": [
+41.64216,
+-0.88777,
+false
+],
+"zg-zaragoza-nuestra-senora-del-portillo": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-nuestra-senora-del-rosario": [
+41.68456,
+-0.82731,
+false
+],
+"zg-zaragoza-parroquieta-de-la-seo": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-sagrado-corazon-de-jesus": [
+41.67163,
+-0.88283,
+false
+],
+"zg-zaragoza-san-andres-parroquia-de-san-andres": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-san-gregorio-ostiense": [
+41.69043,
+-0.86249,
+false
+],
+"zg-zaragoza-san-ignacio-clemente-delgado-paseo-de-mary-poppins": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-san-jorge-parroquia-de-san-andres": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-san-juan-de-avila-y-santa-teresa-de-jesus": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-san-juan-de-la-cruz": [
+41.64113,
+-0.89213,
+false
+],
+"zg-zaragoza-san-lamberto": [
+41.94111,
+-1.0687,
+false
+],
+"zg-zaragoza-san-lorenzo-martir": [
+41.63165,
+-0.87863,
+false
+],
+"zg-zaragoza-san-miguel-de-los-navarros": [
+41.23685,
+-1.1018,
+false
+],
+"zg-zaragoza-san-pedro-apostol": [
+41.4229,
+-1.56256,
+false
+],
+"zg-zaragoza-san-pedro-arbues": [
+41.65107,
+-0.89585,
+false
+],
+"zg-zaragoza-san-valero": [
+41.65597,
+-0.88036,
+false
+],
+"zg-zaragoza-san-vicente-de-paul": [
+41.65307,
+-0.87519,
+false
+],
+"zg-zaragoza-san-vicente-martir": [
+41.64516,
+-0.88054,
+false
+],
+"zg-zaragoza-santa-engracia": [
+41.64879,
+-0.88285,
+false
+],
+"zg-zaragoza-santa-gema": [
+41.62897,
+-0.91162,
+false
+],
+"zg-zaragoza-santa-maria-madre-de-la-iglesia": [
+41.66315,
+-0.90606,
+false
+],
+"zg-zaragoza-santa-maria-montecanal": [
+41.62828,
+-0.92687,
+false
+],
+"zg-zaragoza-santa-maria-reina-de-los-martires": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zaragoza-santa-monica": [
+41.63669,
+-0.90556,
+false
+],
+"zg-zaragoza-santa-rafaela-maria": [
+41.64111,
+-0.91672,
+false
+],
+"zg-zaragoza-santa-rita-de-casia": [
+41.64191,
+-0.88197,
+false
+],
+"zg-zaragoza-santiago-el-mayor": [
+41.49817,
+-0.15267,
+false
+],
+"zg-zaragoza-santo-dominguito-de-val": [
+41.69158,
+-0.91013,
+true
+],
+"zg-zuera-san-pedro-apostol": [
+41.86591,
+-0.78864,
 true
 ]
 }

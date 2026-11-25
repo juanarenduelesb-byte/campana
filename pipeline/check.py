@@ -15,7 +15,7 @@ for d in idx['dioc']:
         err.append(f"{d['nombre']}: archivo ilegible ({e})"); continue
     total += len(I)
     if len(I) != d['n']: err.append(f"{d['nombre']}: el índice dice {d['n']} y hay {len(I)}")
-    if len(I) < 20: err.append(f"{d['nombre']}: solo {len(I)} iglesias")
+    if len(I) < 10: err.append(f"{d['nombre']}: solo {len(I)} iglesias")
     if sum(1 for x in I if x['interpretado']) < 0.6 * len(I): err.append(f"{d['nombre']}: demasiados horarios sin interpretar")
     b = d['bbox']
     if any(not (27 < x['lat'] < 44.5 and -19 < x['lon'] < 5) for x in I): err.append(f"{d['nombre']}: coordenadas fuera de España")

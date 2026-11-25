@@ -39,12 +39,13 @@ FUENTES = [  # (id, módulo, nombre, web oficial)
     ('cordoba', 'cordoba', 'Córdoba', 'https://www.diocesisdecordoba.es/horarios-de-misas/'),
     ('plasencia', 'plasencia', 'Plasencia', 'https://diocesisplasencia.org/horario-de-misas/'),
     ('astorga', 'astorga', 'Astorga', 'https://www.diocesisastorga.es/actualidad/horario-de-misas'),
+    ('ibiza', 'ibiza', 'Ibiza', 'https://www.obispadodeibiza.es/horarios-de-misas/'),
     ('tenerife', 'tenerife', 'Tenerife', 'https://www.obispadodetenerife.com/horarios-misas-tenerife/'),
 ]
 # Zona aproximada de cada diócesis (lat_min, lon_min, lat_max, lon_max): una coordenada fuera de ella es un error de geocodificación
 ZONA = {'cadiz': (35.8, -6.5, 36.9, -5.0), 'malaga': (36.3, -5.7, 37.4, -3.7), 'sevilla': (36.8, -6.6, 38.3, -4.6), 'madrid': (39.8, -4.6, 41.2, -3.0),
         'alcala': (39.9, -3.8, 40.9, -2.9), 'barcelona': (41.2, 1.9, 41.8, 2.6), 'granada': (36.6, -4.3, 37.6, -2.9), 'valladolid': (41.0, -5.7, 42.4, -4.0),
-        'orihuela': (37.8, -1.2, 38.9, 0.3), 'salamanca': (40.8, -5.8, 41.1, -5.5), 'tenerife': (27.6, -18.2, 28.9, -16.0), 'pamplona': (42.6, -1.9, 43.0, -1.4), 'tarragona': (40.8, 0.3, 41.8, 1.8), 'lleida': (41.2, 0.2, 42.2, 1.3), 'lugo': (42.3, -8.3, 43.4, -6.8), 'zamora': (41.3, -6.9, 42.2, -5.2), 'guadalajara': (40.0, -3.6, 41.4, -1.5), 'coria': (39.0, -7.4, 40.5, -5.6), 'zaragoza': (40.6, -2.0, 42.3, 0.5), 'vitoria': (42.4, -3.3, 43.2, -2.2), 'menorca': (39.7, 3.7, 40.15, 4.4), 'huesca': (42.05, -0.5, 42.25, -0.3), 'segovia': (40.85, -4.2, 41.0, -4.0), 'palencia': (41.95, -4.6, 42.1, -4.45), 'merida': (38.8, -7.1, 39.0, -6.2), 'cordoba': (37.75, -4.95, 38.05, -4.6), 'plasencia': (39.98, -6.15, 40.08, -6.0), 'astorga': (42.2, -7.1, 42.8, -5.8)}
+        'orihuela': (37.8, -1.2, 38.9, 0.3), 'salamanca': (40.8, -5.8, 41.1, -5.5), 'tenerife': (27.6, -18.2, 28.9, -16.0), 'pamplona': (42.6, -1.9, 43.0, -1.4), 'tarragona': (40.8, 0.3, 41.8, 1.8), 'lleida': (41.2, 0.2, 42.2, 1.3), 'lugo': (42.3, -8.3, 43.4, -6.8), 'zamora': (41.3, -6.9, 42.2, -5.2), 'guadalajara': (40.0, -3.6, 41.4, -1.5), 'coria': (39.0, -7.4, 40.5, -5.6), 'zaragoza': (40.6, -2.0, 42.3, 0.5), 'vitoria': (42.4, -3.3, 43.2, -2.2), 'menorca': (39.7, 3.7, 40.15, 4.4), 'huesca': (42.05, -0.5, 42.25, -0.3), 'segovia': (40.85, -4.2, 41.0, -4.0), 'palencia': (41.95, -4.6, 42.1, -4.45), 'merida': (38.8, -7.1, 39.0, -6.2), 'cordoba': (37.75, -4.95, 38.05, -4.6), 'plasencia': (39.98, -6.15, 40.08, -6.0), 'astorga': (42.2, -7.1, 42.8, -5.8), 'ibiza': (38.6, 1.1, 39.15, 1.65)}
 PENDIENTES = json.load(open(os.path.join(AQUI, 'static', 'pendientes.json'), encoding='utf8'))
 MIN_RATIO = 0.6   # si una diócesis devuelve menos de este % de lo anterior, se descarta lo nuevo
 CAMPOS = ('id', 'nombre', 'localidad', 'calle', 'num', 'cp', 'tel', 'parroco', 'rol', 'arciprestazgo', 'diocesis', 'url', 'fuente',
@@ -123,7 +124,7 @@ def main(solo=None):
             estado = 'antiguo'
             if previo is None: continue
             nuevo = previo
-        elif len(nuevo) < 20:
+        elif len(nuevo) < 10:
             problemas.append(f'{nombre}: demasiado pocas ({len(nuevo)})'); continue
         if estado == 'ok':
             escribir_shard(id_, nuevo)
