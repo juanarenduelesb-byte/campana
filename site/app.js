@@ -460,8 +460,8 @@ function route_(){
   VIEWS.forEach(v=>$('#v-'+v).hidden=v!==VIEW);
   document.querySelectorAll('.tabs a').forEach(a=>{const on=a.dataset.grp?a.dataset.grp===grp:a.getAttribute('href')==='#'+VIEW;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const tool=VIEW==='cerca'||VIEW==='semana'; $('#tool').hidden=!tool; $('#quick').hidden=!tool;
-  document.title=VIEW==='retiros'?'Retiros · Hoy hay misa':'Hoy hay misa · Horarios de misa cerca de ti';
-  if(VIEW==='retiros'){RET.importa();RET.render()}
+  document.title=VIEW==='retiros'?'Retiros (próximamente) · Hoy hay misa':'Hoy hay misa · Horarios de misa cerca de ti';
+  if(VIEW==='retiros'){RET.render()}   // sección bloqueada: «Próximamente»
   kick();render();moveInd();
 }
 
