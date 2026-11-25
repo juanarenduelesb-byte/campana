@@ -8,8 +8,8 @@ const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
 const pad=n=>String(n).padStart(2,'0');
 
 // ---------- almacenamiento (solo con consentimiento) ----------
-const PFX='campana.', PREFS=['theme','fav','rad','filt','ord'];
-const store=k=>(k==='theme'||k==='fav')?localStorage:sessionStorage;
+const PFX='campana.', PREFS=['theme','fav','rad','filt','ord','ret'];   // el prefijo se mantiene para no perder lo ya guardado
+const store=k=>(k==='theme'||k==='fav'||k==='ret')?localStorage:sessionStorage;
 function CONSENT(){try{const c=JSON.parse(localStorage.getItem(PFX+'consent'));if(c&&Date.now()-c.t<365*864e5)return c}catch(e){}return null}
 function setConsent(pref){try{localStorage.setItem(PFX+'consent',JSON.stringify({pref:!!pref,t:Date.now(),v:1}))}catch(e){}
   if(!pref)PREFS.forEach(k=>{try{localStorage.removeItem(PFX+k);sessionStorage.removeItem(PFX+k)}catch(e){}})}
@@ -441,7 +441,7 @@ function renderKpis(){
   const hoy=C.reduce((a,c)=>a+timesOn(c,NOW.date).t.filter(t=>tmin(t)>=NOW.min-DUR).length,0);
   $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(IDX.dioc.reduce((a,d)=>a+d.n,0)+(IDX.osm?IDX.osm.n:0))}</b><span>iglesias en el mapa</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy en tu zona</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
   const b=META.built;
-  $('#foot').innerHTML=`Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
+  $('#foot').innerHTML=`Hoy hay misa · Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
 }
 
 // ---------- render general ----------
@@ -453,14 +453,111 @@ function render(){
   if(VIEW==='fuentes')renderFuentes();
   renderKpis();
 }
-const VIEWS=['cerca','semana','favoritas','fuentes'];
+const MISAS=['cerca','semana','favoritas','fuentes'], VIEWS=MISAS.concat(['retiros']);
 function route_(){
-  const h=(location.hash||'#cerca').slice(1); VIEW=VIEWS.includes(h)?h:'cerca';
+  const h=(location.hash||'#cerca').slice(1).split('?')[0]; VIEW=VIEWS.includes(h)?h:'cerca';
+  const grp=VIEW==='retiros'?'retiros':'misas'; document.body.dataset.grp=grp;
   VIEWS.forEach(v=>$('#v-'+v).hidden=v!==VIEW);
-  document.querySelectorAll('.tabs a').forEach(a=>{const on=a.getAttribute('href')==='#'+VIEW;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  document.querySelectorAll('.tabs a').forEach(a=>{const on=a.dataset.grp?a.dataset.grp===grp:a.getAttribute('href')==='#'+VIEW;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const tool=VIEW==='cerca'||VIEW==='semana'; $('#tool').hidden=!tool; $('#quick').hidden=!tool;
+  document.title=VIEW==='retiros'?'Retiros · Hoy hay misa':'Hoy hay misa · Horarios de misa cerca de ti';
+  if(VIEW==='retiros'){RET.importa();RET.render()}
   kick();render();moveInd();
 }
+
+// ---------- retiros: organizador ----------
+const RET=(function(){
+  const TIPOS=['Misa','Adoración','Hora santa','Charla','Testimonio','Oración','Laudes','Vísperas','Rosario','Confesiones','Silencio','Grupos','Música','Comida','Cena','Desayuno','Tiempo libre','Llegada','Despedida','Otro'];
+  const PLANT={
+    hora:{n:'Hora santa (estilo Hakuna)',dias:1,p:[[1,'19:30','Llegada','Acogida'],[1,'20:00','Charla','Charla o testimonio'],[1,'20:30','Adoración','Exposición del Santísimo con música'],[1,'21:30','Oración','Bendición y reserva'],[1,'21:40','Tiempo libre','Algo de picar y tertulia']]},
+    dia:{n:'Retiro de un día',dias:1,p:[[1,'10:00','Llegada','Acogida y oración inicial'],[1,'10:30','Charla','Primera meditación'],[1,'11:15','Silencio','Tiempo personal'],[1,'12:30','Confesiones',''],[1,'13:00','Misa',''],[1,'14:00','Comida',''],[1,'15:30','Charla','Segunda meditación'],[1,'16:30','Grupos','Compartir'],[1,'17:30','Adoración','Adoración y bendición'],[1,'18:00','Despedida','']]},
+    finde:{n:'Fin de semana (viernes a domingo)',dias:3,p:[[1,'19:00','Llegada',''],[1,'20:30','Cena',''],[1,'21:30','Charla','Apertura del retiro'],[1,'22:30','Oración','Oración de la noche'],[2,'08:30','Laudes',''],[2,'09:00','Desayuno',''],[2,'10:00','Charla',''],[2,'11:00','Silencio',''],[2,'12:30','Misa',''],[2,'14:00','Comida',''],[2,'16:00','Charla',''],[2,'17:00','Grupos',''],[2,'18:30','Confesiones','Confesiones y adoración'],[2,'21:00','Cena',''],[2,'22:00','Música','Velada'],[3,'09:00','Laudes','Laudes y desayuno'],[3,'10:30','Charla','Charla final'],[3,'12:00','Misa','Misa de envío'],[3,'14:00','Despedida','Comida y despedida']]},
+    ejer:{n:'Ejercicios en silencio (3 días)',dias:3,p:[[1,'19:00','Llegada','Introducción y comienzo del silencio'],[1,'21:30','Oración',''],[2,'08:00','Laudes',''],[2,'09:30','Charla','Puntos de oración'],[2,'10:00','Silencio','Oración personal'],[2,'12:30','Misa',''],[2,'16:30','Charla','Puntos de oración'],[2,'17:00','Silencio','Oración personal'],[2,'19:00','Confesiones','Acompañamiento personal'],[2,'21:30','Vísperas',''],[3,'08:00','Laudes',''],[3,'09:30','Charla',''],[3,'12:00','Misa','Misa de clausura'],[3,'13:30','Despedida','Se rompe el silencio']]},
+  };
+  const TAREAS=['Fijar fecha y lugar','Reservar la casa o el espacio','Hablar con el sacerdote (misa y confesiones)','Charlas y testimonios','Música','Comidas','Inscripciones y precio','Autorizaciones de menores y protocolo de protección','Seguro y botiquín','Transporte','Materiales (biblias, cuadernos, folletos)','Avisar a la parroquia'];
+  let L=LS.get('ret')||[], cur=L[0]?L[0].id:null;
+  const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  const guarda=()=>{LS.set('ret',L);aviso()};
+  function aviso(){const e=$('#rsave');if(!e)return;e.innerHTML=canSave()?'Se guardan solo en este dispositivo.':'Para que no se borren al cerrar la página, <a href="#" id="rck">acepta guardar preferencias</a>. Se quedan solo en este dispositivo.';const a=$('#rck');if(a)a.onclick=ev=>{ev.preventDefault();$('#cookies').hidden=false}}
+  function nuevo(pl){
+    const r={id:uid(),nombre:'Nuevo retiro',tipo:'',inicio:'',fin:'',lugar:'',personas:'',resp:'',notas:'',prog:[],tareas:TAREAS.map(t=>({t,ok:false}))};
+    if(pl)aplica(r,pl);
+    L.unshift(r);cur=r.id;guarda();render();
+  }
+  function aplica(r,k){const P=PLANT[k];r.tipo=P.n;if(r.nombre==='Nuevo retiro')r.nombre=P.n;r.prog=P.p.map(([d,h,a,det])=>({d,h,a,det}))}
+  const fmt=d=>d?new Date(d+'T12:00').toLocaleDateString('es-ES',{day:'numeric',month:'short'}):'';
+  function dias(r){const n=Math.max(1,...r.prog.map(x=>x.d),1);return n}
+  function fechaDia(r,d){if(!r.inicio)return '';const f=new Date(r.inicio+'T12:00');f.setDate(f.getDate()+d-1);return f.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'})}
+  function render(){
+    const lst=$('#rlist'),ed=$('#redit');if(!lst)return;
+    lst.innerHTML=L.length?L.map(r=>{const ok=r.tareas.filter(t=>t.ok).length;return `<button type="button" class="ritem${r.id===cur?' on':''}" data-r="${r.id}"><b>${esc(r.nombre)}</b><span>${[fmt(r.inicio),r.lugar].filter(Boolean).map(esc).join(' · ')||'Sin fecha ni lugar'} · ${ok}/${r.tareas.length} tareas</span></button>`}).join(''):'<p class="rempty" style="padding:10px">Aún no tienes ninguno.</p>';
+    lst.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{cur=b.dataset.r;render()});
+    aviso();
+    const r=L.find(x=>x.id===cur);
+    if(!r){ed.innerHTML=`<div class="rempty"><p><b>Empieza con una plantilla</b> y luego ajústala a tu grupo.</p><div class="plant" style="justify-content:center">${Object.entries(PLANT).map(([k,v])=>`<button type="button" class="chip" data-new="${k}">${esc(v.n)}</button>`).join('')}<button type="button" class="chip" data-new="">En blanco</button></div></div>`;
+      ed.querySelectorAll('[data-new]').forEach(b=>b.onclick=()=>nuevo(b.dataset.new||null));renderOrgs();return}
+    const n=dias(r), ok=r.tareas.filter(t=>t.ok).length;
+    let prog='';
+    for(let d=1;d<=n;d++){
+      const items=r.prog.map((x,i)=>[x,i]).filter(([x])=>x.d===d).sort((a,b)=>a[0].h.localeCompare(b[0].h));
+      prog+=`<div class="dia">${n>1?'Día '+d:'Programa'}${fechaDia(r,d)?' · '+esc(fechaDia(r,d)):''}</div>`+items.map(([x,i])=>`<div class="prog"><input type="time" value="${esc(x.h)}" data-p="${i}" data-k="h" aria-label="Hora"><select data-p="${i}" data-k="a" aria-label="Actividad">${TIPOS.map(t=>`<option${t===x.a?' selected':''}>${t}</option>`).join('')}</select><input class="pdet" type="text" value="${esc(x.det)}" placeholder="Detalle (quién, dónde…)" data-p="${i}" data-k="det"><button class="xb" type="button" data-px="${i}" aria-label="Quitar">×</button></div>`).join('')+`<button type="button" class="chip" data-add="${d}">+ Añadir al ${n>1?'día '+d:'programa'}</button>`;
+    }
+    const misas=r.prog.filter(x=>x.a==='Misa').length;
+    ed.innerHTML=`<div class="rform">
+      <label class="w2">Nombre<input type="text" data-f="nombre" value="${esc(r.nombre)}"></label>
+      <label>Empieza<input type="date" data-f="inicio" value="${esc(r.inicio)}"></label>
+      <label>Termina<input type="date" data-f="fin" value="${esc(r.fin)}"></label>
+      <label class="w2">Lugar<input type="text" data-f="lugar" value="${esc(r.lugar)}" placeholder="Casa, parroquia, municipio…"></label>
+      <label>Personas<input type="number" min="0" data-f="personas" value="${esc(r.personas)}"></label>
+      <label>Responsable<input type="text" data-f="resp" value="${esc(r.resp)}"></label>
+      <label class="w4">Notas<textarea data-f="notas" placeholder="Precio, qué llevar, contacto…">${esc(r.notas)}</textarea></label></div>
+      <div class="rsec"><h3>Programa</h3><div class="plant">${Object.entries(PLANT).map(([k,v])=>`<button type="button" class="chip" data-pl="${k}" title="Sustituye el programa por la plantilla">${esc(v.n)}</button>`).join('')}<button type="button" class="chip" data-dia="1">+ Día</button></div></div>
+      ${prog}
+      ${r.lugar?`<p class="note">${misas?'Tu programa tiene '+misas+' misa'+(misas>1?'s':'')+'. ':''}¿Necesitas una misa cerca del lugar? <a href="#" id="rmisa">Ver misas cerca de ${esc(r.lugar)}</a>.</p>`:''}
+      <div class="rsec"><h3>Tareas</h3><span class="sub" style="color:var(--muted);font-size:14px">${ok} de ${r.tareas.length} hechas</span></div>
+      <div class="rprog"><i style="width:${r.tareas.length?Math.round(ok*100/r.tareas.length):0}%"></i></div>
+      ${r.tareas.map((t,i)=>`<div class="tarea${t.ok?' ok':''}"><input type="checkbox" data-t="${i}"${t.ok?' checked':''} aria-label="Hecha"><input type="text" value="${esc(t.t)}" data-tt="${i}" aria-label="Tarea"><button class="xb" type="button" data-tx="${i}" aria-label="Quitar">×</button></div>`).join('')}
+      <button type="button" class="chip" id="tadd">+ Añadir tarea</button>
+      <div class="racts"><button class="btn soft" type="button" id="rshare">Copiar enlace para compartir</button><button class="btn soft" type="button" id="rprint">Imprimir o guardar PDF</button><button class="btn soft ract-del" type="button" id="rdel">Borrar</button></div>`;
+    const upd=fn=>{fn();guarda()};
+    ed.querySelectorAll('[data-f]').forEach(el=>el.onchange=()=>upd(()=>{r[el.dataset.f]=el.value;render()}));
+    ed.querySelectorAll('[data-p]').forEach(el=>el.onchange=()=>upd(()=>{r.prog[+el.dataset.p][el.dataset.k]=el.value;if(el.dataset.k!=='det')render()}));
+    ed.querySelectorAll('[data-px]').forEach(b=>b.onclick=()=>upd(()=>{r.prog.splice(+b.dataset.px,1);render()}));
+    ed.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>upd(()=>{const d=+b.dataset.add,u=r.prog.filter(x=>x.d===d).map(x=>x.h).sort().pop()||'10:00';const [hh,mm]=u.split(':').map(Number);const t=Math.min(23,hh+1);r.prog.push({d,h:String(t).padStart(2,'0')+':'+String(mm).padStart(2,'0'),a:'Charla',det:''});render()}));
+    ed.querySelectorAll('[data-dia]').forEach(b=>b.onclick=()=>upd(()=>{r.prog.push({d:dias(r)+(r.prog.length?1:0)||1,h:'10:00',a:'Oración',det:''});render()}));
+    ed.querySelectorAll('[data-pl]').forEach(b=>b.onclick=()=>{if(r.prog.length&&!confirmar('¿Sustituir el programa actual por la plantilla?'))return;upd(()=>{aplica(r,b.dataset.pl);render()})});
+    ed.querySelectorAll('[data-t]').forEach(el=>el.onchange=()=>upd(()=>{r.tareas[+el.dataset.t].ok=el.checked;render()}));
+    ed.querySelectorAll('[data-tt]').forEach(el=>el.onchange=()=>upd(()=>{r.tareas[+el.dataset.tt].t=el.value}));
+    ed.querySelectorAll('[data-tx]').forEach(b=>b.onclick=()=>upd(()=>{r.tareas.splice(+b.dataset.tx,1);render()}));
+    $('#tadd').onclick=()=>upd(()=>{r.tareas.push({t:'Nueva tarea',ok:false});render()});
+    $('#rdel').onclick=()=>{if(!confirmar('¿Borrar «'+r.nombre+'»?'))return;L=L.filter(x=>x.id!==r.id);cur=L[0]?L[0].id:null;guarda();render()};
+    $('#rprint').onclick=()=>print();
+    $('#rshare').onclick=()=>{const u=location.origin+location.pathname+'#retiros?plan='+b64(JSON.stringify({...r,id:undefined}));
+      (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>toast('Enlace copiado: quien lo abra podrá guardar una copia del retiro.'),()=>prompt('Copia este enlace',u))};
+    const rm=$('#rmisa'); if(rm)rm.onclick=ev=>{ev.preventDefault();const k=norm(r.lugar);const p=PLACES.find(x=>x.k===k)||PLACES.find(x=>k.includes(x.k)||x.k.includes(k));
+      if(p){location.hash='cerca';setLoc({lat:p.lat,lon:p.lon,label:p.n})}else{location.hash='cerca';q.value=r.lugar;q.dispatchEvent(new Event('input'));q.focus()}};
+    renderOrgs();
+  }
+  const b64=t=>btoa(unescape(encodeURIComponent(t))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+  const unb64=t=>decodeURIComponent(escape(atob(t.replace(/-/g,'+').replace(/_/g,'/'))));
+  function confirmar(m){try{return confirm(m)}catch(e){return true}}
+  function importa(){const m=location.hash.match(/plan=([\w-]+)/);if(!m)return;try{const r=JSON.parse(unb64(m[1]));if(r&&r.nombre&&Array.isArray(r.prog)){r.id=uid();r.tareas=Array.isArray(r.tareas)?r.tareas:[];L.unshift(r);cur=r.id;guarda();toast('Retiro «'+esc(r.nombre)+'» añadido a tus retiros.')}}catch(e){}
+    history.replaceState(null,'',location.pathname+'#retiros')}
+  const ORGS=[
+    ['DeRetiro','Buscador de retiros y actividades de parroquias y movimientos de toda España: Emaús, Effetá, Bartimeo, ejercicios, horas santas… por provincia, edad y fecha.','https://deretiro.es/','Buscar retiros',true],
+    ['Hakuna','Movimiento de jóvenes con horas santas semanales, retiros (God Stop) y misiones, con su música.','https://hakuna.org/','Ver Hakuna'],
+    ['Cursillos de Cristiandad','Movimiento nacido en Mallorca: cursillos de tres días y reuniones de grupo (ultreyas) en casi todas las diócesis.','https://www.cursillosdecristiandad.com/','Ver cursillos'],
+    ['Ejercicios espirituales en Manresa','La Cova de Sant Ignasi (jesuitas) organiza ejercicios ignacianos de fin de semana, de ocho días y de un mes.','https://www.covamanresa.cat/','Ver calendario'],
+    ['Centro de Espiritualidad de Loyola','Programa anual de ejercicios espirituales de la Compañía de Jesús en el santuario de Loyola (Gipuzkoa).','https://loyola.global/es/','Ver programa'],
+    ['Life Teen España','Recursos y encuentros de pastoral juvenil para parroquias: ideas para preparar retiros con adolescentes.','https://www.lifeteen.es/','Ver recursos'],
+    ['Proyecto Amor Conyugal','Retiros y materiales para matrimonios.','https://proyectoamorconyugal.es/','Ver retiros'],
+  ];
+  function renderOrgs(){const o=$('#orgs');if(!o||o.dataset.ok)return;o.dataset.ok=1;
+    o.innerHTML=ORGS.map(([n,d,u,l,dest])=>`<div class="org glass${dest?' dest':''}"><h3>${esc(n)}</h3><p>${esc(d)}</p><a href="${u}" target="_blank" rel="noopener">${esc(l)} ↗</a></div>`).join('')+'<p class="note" style="grid-column:1/-1">Enlazamos a webs públicas de cada movimiento; Hoy hay misa no organiza ni avala ninguna actividad.</p>'}
+  $('#rnew').onclick=()=>{cur=null;render()};
+  return {render,importa};
+})();
+
 addEventListener('hashchange',route_);
 function moveInd(){document.querySelectorAll('.tabs').forEach(t=>{const a=t.querySelector('a.on'),i=t.querySelector('.pill-ind');if(!a||!i||!a.offsetWidth)return;i.style.width=a.offsetWidth+'px';i.style.transform=`translateX(${a.offsetLeft}px)`})}
 addEventListener('resize',moveInd);

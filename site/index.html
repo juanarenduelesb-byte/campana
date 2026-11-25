@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Campana · Horarios de misa cerca de ti</title>
+<title>Hoy hay misa · Horarios de misa cerca de ti</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="La misa más cercana y la que antes empieza donde estés, con los horarios oficiales de las diócesis.">
 <meta name="theme-color" content="#6B1426">
@@ -295,6 +295,66 @@ footer .by .a{stroke:var(--wine)} footer .by .b{stroke:var(--gold)}
 .cookies:not(.cfg) #ckSave,.cookies.cfg #ckCfg{display:none}
 #ckOk{background:var(--wine);border-color:var(--wine);color:var(--wine-ink)}
 
+
+/* ---------- marca ---------- */
+.mark .sol{fill:var(--gold)} .mark .cap{fill:var(--wine)} .mark .cruz{fill:none;stroke:var(--wine);stroke-width:1.7;stroke-linecap:round} .mark .pta{fill:var(--bg)}
+.brand:hover svg{animation:none} .brand:hover .sol{animation:amanece 1.4s var(--ease)}
+@keyframes amanece{0%{transform:translateY(0)}35%{transform:translateY(2.5px)}100%{transform:translateY(0)}}
+/* ---------- submenú (como en Banderín) ---------- */
+.subnav{max-width:1240px;margin:12px auto 0;padding:0 20px;display:flex;justify-content:center}
+.subnav .sub{position:relative;display:flex;gap:2px;padding:4px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.subnav a{position:relative;z-index:1;padding:8px 20px;border-radius:999px;font-size:15px;font-weight:500;color:var(--muted);text-decoration:none;white-space:nowrap;transition:color .35s var(--ease)}
+.subnav a:hover{color:var(--ink)} .subnav a.on{color:var(--bg)}
+.subnav .pill-ind{position:absolute;z-index:0;top:4px;bottom:4px;left:0;border-radius:999px;background:var(--ink);transition:transform .55s var(--spring),width .55s var(--spring)}
+body[data-grp=retiros] .subnav,body[data-grp=retiros] #band{display:none}
+@media (max-width:700px){.subnav{margin-top:8px;padding:0 14px}.subnav .sub{width:100%}.subnav a{flex:1;text-align:center;padding:8px 4px;font-size:14px}}
+/* ---------- retiros ---------- */
+.rhero{padding:36px 0 18px}
+.rh1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.8vw,68px);line-height:1;letter-spacing:-.015em;margin:0;max-width:16ch}
+.rh1 em{font-style:italic;color:var(--wine)}
+.rlead{color:var(--muted);max-width:62ch;margin:16px 0 0;font-size:18px}
+.rgrid{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:start}
+.rlist,.redit{border-radius:24px;padding:18px;min-width:0}
+.rgrid>*{min-width:0}
+.rform input,.rform select,.rform textarea,.prog input,.prog select,.tarea input[type=text]{width:100%;box-sizing:border-box}
+.rlh{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.rlh h2{font-family:var(--serif);font-weight:400;font-size:24px;margin:0}
+.btn.sm{height:38px;padding:0 14px;font-size:14px}
+.ritem{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:10px 12px;margin:0 0 8px;cursor:pointer}
+.ritem b{display:block;font-weight:600} .ritem span{font-size:13px;color:var(--muted)}
+.ritem.on{border-color:var(--wine);box-shadow:inset 0 0 0 1px var(--wine)}
+.rsave{font-size:13px;color:var(--muted);margin:10px 2px 0}
+.rform{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rform label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted);font-weight:500}
+.rform label.w2{grid-column:span 2} .rform label.w4{grid-column:1/-1}
+.rform input,.rform select,.rform textarea,.prog input,.prog select,.tarea input[type=text]{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:9px 11px;font-size:15px;color:var(--ink);min-width:0}
+.rform textarea{min-height:70px;resize:vertical;font:inherit;font-size:15px}
+.rsec{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:22px 0 10px;flex-wrap:wrap}
+.rsec h3{font-family:var(--serif);font-weight:400;font-size:22px;margin:0}
+.plant{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--wine)}
+.dia{margin:12px 0 4px;font-weight:600;color:var(--wine);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.prog{display:grid;grid-template-columns:118px 170px 1fr 36px;gap:8px;align-items:center;margin-bottom:6px}
+.xb{border:0;background:transparent;color:var(--muted);font-size:20px;cursor:pointer;border-radius:10px;height:36px}
+.xb:hover{color:var(--wine);background:var(--paper)}
+.tarea{display:grid;grid-template-columns:28px 1fr 36px;gap:8px;align-items:center;margin-bottom:6px}
+.tarea input[type=checkbox]{width:20px;height:20px;accent-color:var(--wine)}
+.tarea.ok input[type=text]{text-decoration:line-through;color:var(--muted)}
+.racts{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}
+.ract-del{margin-left:auto}
+.rprog{height:6px;border-radius:9px;background:var(--paper);overflow:hidden;margin:6px 0 10px}.rprog i{display:block;height:100%;background:var(--wine);border-radius:9px}
+.rempty{color:var(--muted);text-align:center;padding:40px 10px}
+.rt2{margin-top:40px}
+.orgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-bottom:30px}
+.org{border-radius:20px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.org h3{margin:0;font-size:17px} .org p{margin:0;color:var(--muted);font-size:14px;flex:1}
+.org a{font-weight:600;font-size:14px;text-decoration:none}
+.org.dest{border-color:var(--wine);box-shadow:inset 0 0 0 1px var(--wine)}
+@media (max-width:900px){.rgrid{grid-template-columns:1fr}.rform{grid-template-columns:1fr 1fr}.prog{grid-template-columns:112px 1fr 36px}.prog .pdet{grid-column:1/-1;order:4;margin-top:-2px}.prog .xb{order:3}.redit{padding:14px}}
+@media print{.topnav,.subnav,.tabbar,.rlist,.racts,.orgs,.rt2,.rhero,.health,footer,.plant,.xb,.cookies,.toast{display:none!important}
+ body{background:#fff;color:#000}.redit{border:0;box-shadow:none;padding:0}.rgrid{display:block}
+ .rform input,.rform select,.rform textarea,.prog input,.prog select,.tarea input{border:0;padding:2px 0;background:none}}
+
 /* ---------- barra inferior móvil ---------- */
 .tabbar{display:none}
 
@@ -346,13 +406,14 @@ body.anim section:not([hidden]) > .title{animation:rise .7s var(--ease) both}
 </head>
 <body>
 <nav class="topnav" id="topnav"><div class="bar">
-  <a class="brand mark" href="#cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="cr" d="M12 2.6a1.4 1.4 0 0 1 1.4 1.4v.45A6.2 6.2 0 0 1 18.2 10.5v3.2l1.75 2.5a1 1 0 0 1-.82 1.58H4.87a1 1 0 0 1-.82-1.58l1.75-2.5v-3.2a6.2 6.2 0 0 1 4.8-6.05V4A1.4 1.4 0 0 1 12 2.6z"/><path class="mo" d="M9.4 19h5.2a2.6 2.6 0 0 1-5.2 0z"/></svg><span>Campana</span></a>
-  <div class="seg tabs"><span class="pill-ind"></span><a href="#cerca">Cerca de mí</a><a href="#semana">Esta semana</a><a href="#favoritas">Favoritas</a><a href="#fuentes">Fuentes</a></div>
+  <a class="brand mark" href="#cerca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="sol" cx="16.6" cy="10.6" r="5.6"/><path class="cap" d="M4.2 21.2V12.6L10.6 7.4l6.4 5.2v8.6z"/><path class="cruz" d="M10.6 2.2v5.6M8.7 4.1h3.8"/><path class="pta" d="M8.9 21.2v-3.5a1.7 1.7 0 0 1 3.4 0v3.5z"/></svg><span>Hoy hay misa</span></a>
+  <div class="seg tabs"><span class="pill-ind"></span><a href="#cerca" data-grp="misas">Horarios de misa</a><a href="#retiros" data-grp="retiros">Retiros</a></div>
   <button class="icon-btn" id="theme" title="Cambiar entre modo claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/></svg></button>
 </div></nav>
+<nav class="subnav" id="subnav" aria-label="Horarios de misa"><div class="sub tabs"><span class="pill-ind"></span><a href="#cerca">Cerca de mí</a><a href="#semana">Esta semana</a><a href="#favoritas">Favoritas</a><a href="#fuentes">Fuentes</a></div></nav>
 
-<header class="band">
-<nav class="tabbar" aria-label="Secciones"><div class="tabin tabs"><span class="pill-ind"></span><a href="#cerca" class="tb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" class="f"/></svg><span>Cerca</span></a><a href="#semana" class="tb"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3.2"/><path d="M3.5 9.6h17M8 3v4M16 3v4"/></svg><span>Semana</span></a><a href="#favoritas" class="tb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.8 6.8 19.6l1-5.9L3.5 9.6l5.9-.8z"/></svg><span>Favoritas</span></a><a href="#fuentes" class="tb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9.5 12 4l8.5 5.5"/><path d="M5.5 10v8M9.8 10v8M14.2 10v8M18.5 10v8M3.5 20.5h17"/></svg><span>Fuentes</span></a></div></nav>
+<header class="band" id="band">
+<nav class="tabbar" aria-label="Secciones"><div class="tabin tabs"><span class="pill-ind"></span><a href="#cerca" class="tb" data-grp="misas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Horarios</span></a><a href="#retiros" class="tb" data-grp="retiros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 10 8l3.5 6 2-3 4.5 8.5z"/><circle cx="17" cy="6" r="2"/></svg><span>Retiros</span></a></div></nav>
 <div class="wrap">
   <div class="head">
     <div>
@@ -402,6 +463,24 @@ body.anim section:not([hidden]) > .title{animation:rise .7s var(--ease) both}
     <div id="fbody"></div>
   </section>
 
+  <section id="v-retiros" hidden>
+    <div class="rhero">
+      <p class="eyebrow">Retiros y encuentros</p>
+      <h1 class="rh1">Organiza un <em>retiro</em> sin perder detalle.</h1>
+      <p class="rlead">Monta el programa de un retiro, una hora santa o una convivencia, reparte las tareas y compártelo con tu equipo. Y si buscas uno al que apuntarte, abajo tienes por dónde empezar.</p>
+    </div>
+    <div class="rgrid">
+      <aside class="rlist glass">
+        <div class="rlh"><h2>Tus retiros</h2><button class="btn soft sm" type="button" id="rnew">+ Nuevo</button></div>
+        <div id="rlist"></div>
+        <p class="rsave" id="rsave"></p>
+      </aside>
+      <div class="redit glass" id="redit"></div>
+    </div>
+    <h2 class="title rt2">Encuentra un retiro</h2>
+    <div class="orgs" id="orgs"></div>
+  </section>
+
   <section id="v-fuentes" hidden>
     <h2 class="title">De dónde salen los datos</h2>
     <div class="method glass" id="method"></div>
@@ -414,7 +493,7 @@ body.anim section:not([hidden]) > .title{animation:rise .7s var(--ease) both}
   <div class="cookies" id="cookies" role="dialog" aria-modal="false" aria-labelledby="ckT" hidden>
     <div class="ckin">
       <h2 id="ckT">Tu privacidad</h2>
-      <p>Campana no usa cookies de analítica ni de publicidad. Si aceptas, guardaremos en tu navegador tus favoritas y preferencias. Tu ubicación solo se usa en tu dispositivo. <a href="legal.html#cookies">Más información</a></p>
+      <p>Hoy hay misa no usa cookies de analítica ni de publicidad. Si aceptas, guardaremos en tu navegador tus favoritas, tus retiros y tus preferencias. Tu ubicación solo se usa en tu dispositivo. <a href="legal.html#cookies">Más información</a></p>
       <div class="ckopts">
         <label class="ckrow"><span><b>Necesarias</b><small>Recordar tu elección sobre este aviso. Siempre activas.</small></span><input type="checkbox" checked disabled></label>
         <label class="ckrow"><span><b>Preferencias</b><small>Favoritas, tema, radio y filtros, solo en tu dispositivo.</small></span><input type="checkbox" id="ckPref"></label>

@@ -1,4 +1,4 @@
-# Campana · horarios de misa
+# Hoy hay misa · horarios de misa
 
 Web estática que dice **cuál es la misa más cercana** y **cuál empieza antes** según dónde estés y la hora que sea, en Sotogrande y 50 km alrededor (Cádiz y Málaga). Mismo diseño que Turno, en burdeos cardenalicio y oro.
 
