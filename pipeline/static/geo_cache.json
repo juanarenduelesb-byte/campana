@@ -714,6 +714,11 @@ true
 -3.5545,
 false
 ],
+"gr-santa-maria-del-maralmunecar": [
+36.77037,
+-3.72363,
+true
+],
 "gr-santuario-del-perpetuo-socorro-redentoristas-granada": [
 37.1735,
 -3.59953,
@@ -7569,6 +7574,11 @@ false
 -16.75907,
 false
 ],
+"tf-santa-cruz-de-tenerife-san-gerardo": [
+28.47172,
+-16.27316,
+false
+],
 "tf-santa-cruz-de-tenerife-san-jose": [
 28.64501,
 -17.77531,
@@ -8313,6 +8323,11 @@ false
 41.63323,
 -4.75684,
 false
+],
+"va-tcubilla": [
+41.83412,
+-4.61346,
+true
 ],
 "va-tcuenca": [
 42.05774,
