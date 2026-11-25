@@ -62,6 +62,10 @@ def preparar(lista, id_):
             if not g: sin.append(x['id']); continue
             x['lat'], x['lon'], x['aprox'] = g[0], g[1], bool(g[2])
         res.append(x)
+    ids = {}
+    for x in res:   # ids únicos dentro de la diócesis
+        n = ids.get(x['id'], 0); ids[x['id']] = n + 1
+        if n: x['id'] = '%s-%d' % (x['id'], n + 1)
     vistos = set(); fin = []
     for x in res:
         k = (x['nombre'].lower(), x['localidad'].lower(), x['calle'].lower(), x['url'])

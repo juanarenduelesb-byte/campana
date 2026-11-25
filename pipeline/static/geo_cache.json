@@ -2374,9 +2374,29 @@ true
 -0.74165,
 false
 ],
+"oa-135-san-jose": [
+38.25837,
+-0.73697,
+false
+],
+"oa-136-san-luis-gonzaga": [
+38.24931,
+-0.81114,
+true
+],
+"oa-137-santisima-trinidad": [
+38.24909,
+-0.81252,
+false
+],
 "oa-138-el-buen-pastor": [
 38.2744,
 -0.71267,
+false
+],
+"oa-139-madre-de-dios": [
+38.27208,
+-0.7154,
 false
 ],
 "oa-14-nuestra-senora-de-los-dolores": [
@@ -2384,9 +2404,29 @@ false
 -0.76954,
 false
 ],
+"oa-140-nuestra-senora-del-carmen": [
+38.27314,
+-0.70764,
+false
+],
+"oa-141-sagrada-familia": [
+38.26901,
+-0.71145,
+false
+],
+"oa-142-san-francisco-de-asis": [
+38.27468,
+-0.70416,
+false
+],
 "oa-143-inmaculada-concepcion": [
 38.47921,
 -0.78859,
+false
+],
+"oa-144-la-santa-cruz": [
+38.48236,
+-0.78504,
 false
 ],
 "oa-145-nuestra-senora-de-la-asuncion": [
@@ -2394,15 +2434,35 @@ false
 -0.81714,
 false
 ],
+"oa-146-san-antonio": [
+38.51986,
+-0.91324,
+false
+],
+"oa-147-san-bartolome": [
+38.48497,
+-0.77015,
+false
+],
 "oa-148-san-francisco-de-sales": [
 38.47047,
 -0.79206,
+false
+],
+"oa-149-san-jose-obrero": [
+38.48667,
+-0.79827,
 false
 ],
 "oa-15-nuestra-senora-de-monserrate": [
 38.10511,
 -0.73806,
 true
+],
+"oa-150-san-pascual": [
+38.47066,
+-0.79824,
+false
 ],
 "oa-151-santa-ana": [
 38.47902,
@@ -2418,6 +2478,11 @@ false
 38.53921,
 -0.50784,
 false
+],
+"oa-154-santa-ana": [
+38.60719,
+-0.41906,
+true
 ],
 "oa-155-santa-maria-magdalena": [
 38.53357,
@@ -2439,10 +2504,45 @@ false
 -0.57384,
 false
 ],
+"oa-159-nuestra-senora-del-remedio": [
+38.40593,
+-0.95323,
+true
+],
 "oa-16-nuestra-senora-del-carmen": [
 38.08698,
 -0.79599,
 false
+],
+"oa-160-ermita-sagrado-corazon": [
+38.43878,
+-0.83963,
+true
+],
+"oa-161-san-jose": [
+38.3381,
+-1.00325,
+false
+],
+"oa-162-san-juan-bautista": [
+38.43802,
+-0.84237,
+false
+],
+"oa-163-san-pedro-apostol": [
+38.4034,
+-1.04241,
+false
+],
+"oa-164-santa-catalina": [
+38.43967,
+-0.91825,
+true
+],
+"oa-165-santisima-trinidad": [
+38.39183,
+-0.98934,
+true
 ],
 "oa-166-el-buen-pastor": [
 38.34338,
@@ -2477,6 +2577,11 @@ true
 "oa-172-san-pascual": [
 38.40539,
 -0.77584,
+false
+],
+"oa-173-san-pedro-apostol": [
+38.36733,
+-0.89627,
 false
 ],
 "oa-174-san-pedro-apostol": [
@@ -2514,6 +2619,16 @@ false
 -0.79183,
 false
 ],
+"oa-180-san-francisco-de-asis": [
+38.63096,
+-0.85124,
+false
+],
+"oa-181-san-juan-bautista": [
+38.76633,
+-0.95321,
+false
+],
 "oa-182-santa-maria": [
 38.63008,
 -0.86139,
@@ -2539,6 +2654,11 @@ false
 0.04445,
 false
 ],
+"oa-187-nuestra-senora-del-consuelo": [
+38.59872,
+-0.05158,
+false
+],
 "oa-189-san-jose": [
 38.58012,
 -0.10251,
@@ -2549,9 +2669,44 @@ true
 -0.67797,
 false
 ],
+"oa-190-iglesia-espiritu-santo": [
+38.58012,
+-0.10251,
+true
+],
+"oa-191-san-jose": [
+38.65018,
+-0.12094,
+false
+],
+"oa-192-san-jose": [
+38.68371,
+-0.26868,
+false
+],
+"oa-193-san-juan-bautista": [
+38.68355,
+-0.21636,
+true
+],
+"oa-194-san-juan-bautista": [
+38.65143,
+-0.12206,
+false
+],
+"oa-195-san-miguel-arcangel": [
+38.67334,
+-0.2294,
+true
+],
 "oa-196-san-pedro-apostol": [
 38.62268,
 -0.12754,
+true
+],
+"oa-197-san-vicente-ferrer": [
+38.69402,
+-0.25712,
 true
 ],
 "oa-198-san-vicente-martir": [
@@ -2572,6 +2727,11 @@ false
 "oa-20-san-jaime-apostol": [
 38.09003,
 -0.65459,
+false
+],
+"oa-200-santa-barbara": [
+38.69415,
+-0.10343,
 false
 ],
 "oa-201-san-juan-bautista": [
@@ -2604,15 +2764,45 @@ false
 -0.22962,
 true
 ],
+"oa-207-nuestra-senora-del-mar": [
+38.53503,
+-0.10345,
+false
+],
 "oa-208-san-antonio-abad": [
 38.51008,
 -0.22962,
 true
 ],
+"oa-209-san-bartolome": [
+38.56717,
+-0.21197,
+false
+],
 "oa-21-san-miguel-arcangel": [
 38.11405,
 -0.76231,
 false
+],
+"oa-210-san-francisco-de-asis": [
+38.54763,
+-0.12483,
+false
+],
+"oa-211-san-jaime": [
+38.56345,
+-0.26142,
+true
+],
+"oa-212-san-jaime": [
+38.58662,
+-0.31193,
+false
+],
+"oa-213-santa-ana": [
+38.60838,
+-0.27225,
+true
 ],
 "oa-214-san-jaime": [
 38.5341,
@@ -2622,6 +2812,11 @@ false
 "oa-215-nuestra-senora-de-la-merced": [
 38.65586,
 0.06752,
+false
+],
+"oa-216-el-salvador": [
+38.41136,
+-0.45016,
 false
 ],
 "oa-217-el-salvador": [
@@ -2644,15 +2839,95 @@ false
 -0.72306,
 false
 ],
+"oa-221-templo-cristo-resucitado": [
+38.51008,
+-0.22962,
+true
+],
 "oa-222-cristo-resucitado-y-centro-ecumenico": [
 37.92589,
 -0.73448,
+true
+],
+"oa-223-iglesia-san-jose": [
+38.04856,
+-0.7107,
+false
+],
+"oa-224-beato-francisco-castello": [
+38.33159,
+-0.50862,
+false
+],
+"oa-225-nuestra-senora-del-rosario-heredades": [
+38.09435,
+-0.7746,
+true
+],
+"oa-226-ermita-nuestra-senora-de-fatima": [
+38.09,
+-0.65381,
+true
+],
+"oa-227-ermita-santa-maria-del-mar": [
+38.07804,
+-0.64991,
+false
+],
+"oa-228-san-pedro-y-san-pablo": [
+38.16707,
+-0.48216,
+false
+],
+"oa-229-capilla-el-mojon": [
+37.84647,
+-0.76837,
 true
 ],
 "oa-23-santa-cruz": [
 38.09929,
 -0.80502,
 false
+],
+"oa-230-capilla-virgen-del-carmen": [
+38.25511,
+-0.5189,
+false
+],
+"oa-231-ermita-san-justo": [
+37.8863,
+-0.75737,
+false
+],
+"oa-232-ermita-santa-ana-de-balsares": [
+38.27302,
+-0.53925,
+true
+],
+"oa-233-ermita-santiago-apostol": [
+37.89947,
+-0.82576,
+true
+],
+"oa-234-ermita-santiago-apostol": [
+37.89947,
+-0.82576,
+true
+],
+"oa-235-iglesia-nuestra-senora-de-la-asuncion": [
+37.86853,
+-0.75901,
+false
+],
+"oa-236-iglesia-nuestra-senora-de-la-paz": [
+38.13582,
+-0.67797,
+false
+],
+"oa-237-monasterio-de-san-juan-clarisas": [
+38.02756,
+-0.9131,
+true
 ],
 "oa-239-monasterio-santuario-de-la-santa-faz": [
 38.39289,
@@ -2664,9 +2939,29 @@ true
 -0.73869,
 false
 ],
+"oa-241-capilla-nuestra-senora-de-los-angeles": [
+38.28349,
+-0.52173,
+false
+],
 "oa-242-san-lorenzo": [
 38.60282,
 -0.04721,
+true
+],
+"oa-243-monasterio-carmelitas-descalzas": [
+38.63052,
+-0.04434,
+true
+],
+"oa-245-monasterio-de-san-sebastian-agustinas": [
+38.02756,
+-0.9131,
+true
+],
+"oa-246-monasterio-de-la-trinidad-dominicas": [
+38.02756,
+-0.9131,
 true
 ],
 "oa-25-catedral-parroquia-el-salvador": [
@@ -2684,10 +2979,25 @@ false
 -0.77235,
 false
 ],
+"oa-252-iglesia-santa-maria-del-mar": [
+38.27221,
+-0.53733,
+false
+],
 "oa-253-santuario-san-pascual-y-nuestra-senora-de-orito": [
 38.37722,
 -0.6897,
 true
+],
+"oa-254-ermita-nuestra-senora-de-las-angustias": [
+38.06511,
+-0.95239,
+false
+],
+"oa-255-ermita-cruz-cubierta": [
+38.07578,
+-0.97,
+false
 ],
 "oa-256-ermita-sagrado-corazon": [
 38.07578,
@@ -3223,6 +3533,361 @@ true
 38.40891,
 -0.46956,
 false
+],
+"pa-ansoain-stos-cosme-y-damian": [
+42.8338,
+-1.63969,
+true
+],
+"pa-artica-san-marcelo": [
+42.83998,
+-1.65647,
+false
+],
+"pa-badostain-parroquia-de-badostain": [
+42.79904,
+-1.59564,
+true
+],
+"pa-baranain-s-esteban-y-s-pablo": [
+42.80483,
+-1.68102,
+true
+],
+"pa-baranain-santa-maria": [
+42.80354,
+-1.68671,
+false
+],
+"pa-berriozar-san-esteban": [
+42.8367,
+-1.67423,
+false
+],
+"pa-burlada-san-blas": [
+42.82698,
+-1.61598,
+false
+],
+"pa-burlada-san-juan-bautista": [
+42.82273,
+-1.61398,
+false
+],
+"pa-cizur-menor-s-emeterio-celedonio": [
+42.78914,
+-1.67657,
+false
+],
+"pa-gorraiz-san-esteban": [
+42.82298,
+-1.57851,
+false
+],
+"pa-huarte-san-juan-evangelista": [
+42.83135,
+-1.59041,
+true
+],
+"pa-mutilva-san-pedro": [
+42.78922,
+-1.61814,
+false
+],
+"pa-mutilva-san-saturnino": [
+42.80089,
+-1.61918,
+false
+],
+"pa-noain-san-miguel": [
+42.75734,
+-1.63127,
+false
+],
+"pa-olaz-san-pedro": [
+42.82107,
+-1.58961,
+false
+],
+"pa-olloki-parroquia-de-olloki": [
+42.84057,
+-1.58363,
+true
+],
+"pa-pamplona-carmelitas": [
+42.81863,
+-1.64913,
+false
+],
+"pa-pamplona-carmelitas-descalzos": [
+42.81863,
+-1.64913,
+false
+],
+"pa-pamplona-carmelitas-misioneras": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-catedral": [
+42.8194,
+-1.64123,
+false
+],
+"pa-pamplona-clinica-universitaria": [
+42.80582,
+-1.6643,
+false
+],
+"pa-pamplona-corazon-de-jesus": [
+42.81119,
+-1.63027,
+false
+],
+"pa-pamplona-corpus-christi": [
+42.80993,
+-1.65964,
+false
+],
+"pa-pamplona-cristo-rey": [
+42.80957,
+-1.63414,
+false
+],
+"pa-pamplona-el-salvador": [
+42.8257,
+-1.65646,
+false
+],
+"pa-pamplona-escolapios": [
+42.82553,
+-1.65117,
+false
+],
+"pa-pamplona-hermanitas-de-los-pobres": [
+42.82923,
+-1.66237,
+false
+],
+"pa-pamplona-hospital-de-navarra": [
+42.80582,
+-1.6643,
+false
+],
+"pa-pamplona-la-asuncion": [
+42.95681,
+-1.69483,
+false
+],
+"pa-pamplona-la-inmaculada-jesuitas": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-la-milagrosa-paules": [
+42.80855,
+-1.6432,
+false
+],
+"pa-pamplona-la-sagrada-familia": [
+42.87072,
+-1.71214,
+false
+],
+"pa-pamplona-lezkairu-capilla-de-las-blancas": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-nuestra-senora-de-la-paz": [
+42.81084,
+-1.65429,
+false
+],
+"pa-pamplona-nuestra-senora-del-carmen": [
+42.81865,
+-1.64884,
+false
+],
+"pa-pamplona-nuestra-senora-del-huerto": [
+42.81335,
+-1.65807,
+false
+],
+"pa-pamplona-nuestra-senora-del-pilar": [
+42.80005,
+-1.6755,
+false
+],
+"pa-pamplona-padre-nuestro-mendillorri": [
+42.81187,
+-1.61506,
+false
+],
+"pa-pamplona-san-agustin": [
+42.81777,
+-1.64116,
+false
+],
+"pa-pamplona-san-alberto": [
+42.81359,
+-1.66376,
+false
+],
+"pa-pamplona-san-antonio-capuchinos": [
+42.81264,
+-1.63895,
+false
+],
+"pa-pamplona-san-antonio-maria-claret": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-san-cristobal": [
+42.85562,
+-1.66468,
+false
+],
+"pa-pamplona-san-enrique": [
+42.80499,
+-1.63455,
+false
+],
+"pa-pamplona-san-fermin": [
+42.81997,
+-1.64393,
+false
+],
+"pa-pamplona-san-fermin-aldapa-claretianos": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-san-francisco-de-asis": [
+42.81681,
+-1.64645,
+false
+],
+"pa-pamplona-san-francisco-javier": [
+42.81319,
+-1.63606,
+false
+],
+"pa-pamplona-san-ignacio": [
+42.81536,
+-1.64335,
+false
+],
+"pa-pamplona-san-jorge": [
+42.82118,
+-1.66435,
+false
+],
+"pa-pamplona-san-jose": [
+42.81507,
+-1.67273,
+false
+],
+"pa-pamplona-san-juan-bosco": [
+42.80609,
+-1.64794,
+false
+],
+"pa-pamplona-san-lorenzo": [
+42.81686,
+-1.64888,
+false
+],
+"pa-pamplona-san-miguel": [
+42.80861,
+-1.67695,
+false
+],
+"pa-pamplona-san-nicolas": [
+42.81572,
+-1.64492,
+false
+],
+"pa-pamplona-san-pedro-capuchinos": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-san-raimundo-de-fitero": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-san-saturnino": [
+42.818,
+-1.64493,
+false
+],
+"pa-pamplona-san-vicente-de-paul": [
+42.81633,
+-1.6606,
+false
+],
+"pa-pamplona-santa-maria-de-ermitagana": [
+42.81069,
+-1.66845,
+false
+],
+"pa-pamplona-santa-teresa-de-jesus": [
+42.82444,
+-1.63008,
+false
+],
+"pa-pamplona-santa-vicenta-maria": [
+42.81963,
+-1.66381,
+false
+],
+"pa-pamplona-santiago-apostol": [
+42.85221,
+-1.61863,
+false
+],
+"pa-pamplona-santos-martires-de-uganda": [
+42.81569,
+-1.65224,
+true
+],
+"pa-pamplona-virgen-del-rio": [
+42.82669,
+-1.64537,
+false
+],
+"pa-sarriguren-colegio-salesianos": [
+42.81471,
+-1.59292,
+false
+],
+"pa-sarriguren-santa-engracia": [
+42.8128,
+-1.59966,
+false
+],
+"pa-villava-san-andres": [
+42.82891,
+-1.60478,
+false
+],
+"pa-zizur-mayor-san-andres": [
+42.79332,
+-1.69364,
+false
+],
+"pa-zizur-mayor-santa-maria": [
+42.78872,
+-1.69262,
+true
+],
+"pa-zizur-mayor-santa-maria-esperanza": [
+42.78872,
+-1.69262,
+true
 ],
 "sa-capilla-colegio-mayor-ntra-sra-de-guadalupe": [
 40.96516,
@@ -4863,6 +5528,2491 @@ false
 37.60518,
 -5.82605,
 false
+],
+"tf-granadilla-de-abona-ermita-de-las-casas": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-espacio-religioso-cueva-del-santo-herman": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-inmaculada-concepcion-jama": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-inmdo-corazon-de-maria-aldea-blanca": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-la-cruz-blanca-las-chafiras": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-madre-del-divino-pastor-la-camella": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-nra-sra-del-carmen-guargacho": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-ntra-sra-de-fatima-la-sabinita": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-ntra-sra-de-la-merced-el-medano": [
+28.04621,
+-16.53817,
+false
+],
+"tf-granadilla-de-abona-ntra-sra-de-la-paz-buzanada": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-ntra-sra-del-carmen-los-cristianos": [
+28.13262,
+-16.53325,
+false
+],
+"tf-granadilla-de-abona-rectorado-iglesia-catolica-st-blas-golf-": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-antonio-abad-arona": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-antonio-de-padua-granadilla-de-abona": [
+28.12214,
+-16.57667,
+false
+],
+"tf-granadilla-de-abona-san-benito-abad-los-blanquitos": [
+28.1291,
+-16.55715,
+false
+],
+"tf-granadilla-de-abona-san-blas-los-abrigos": [
+28.02916,
+-16.59077,
+false
+],
+"tf-granadilla-de-abona-san-casiano-las-galletas": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-esteban-martir-las-zocas": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-isidro-labrador-san-isidro": [
+28.07339,
+-16.55641,
+false
+],
+"tf-granadilla-de-abona-san-jeronimo-guaza": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-juan-bautista-el-salto": [
+28.10465,
+-16.55977,
+false
+],
+"tf-granadilla-de-abona-san-lorenzo-martir-valle-san-lorenzo": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-luis-de-francia-charco-del-pino": [
+28.11141,
+-16.59324,
+false
+],
+"tf-granadilla-de-abona-san-martin-de-porres-cabo-blanco": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-san-miguel-arcangel-san-miguel-de-abona": [
+28.13432,
+-16.62,
+false
+],
+"tf-granadilla-de-abona-san-pedro-apostol-vilaflor": [
+28.17023,
+-16.61209,
+false
+],
+"tf-granadilla-de-abona-san-roque-el-roque": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-santa-isabel-de-portugal-el-fraile": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-santa-teresa-de-calcuta-llano-del-camell": [
+28.08705,
+-16.50581,
+false
+],
+"tf-granadilla-de-abona-santiago-apostol-la-escalona": [
+28.08017,
+-16.55921,
+false
+],
+"tf-granadilla-de-abona-santuario-hermano-pedro-vilaflor": [
+28.17023,
+-16.61209,
+false
+],
+"tf-granadilla-de-abona-sta-teresa-del-nino-jesus-parque-de-la-r": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-sta-teresa-jornet-e-ibars-tunez": [
+28.12203,
+-16.55732,
+true
+],
+"tf-granadilla-de-abona-sto-hermano-pedro-ifonche": [
+28.05148,
+-16.55307,
+false
+],
+"tf-guia-de-isora-el-espiritu-santo-los-gigantes": [
+28.24901,
+-16.81786,
+false
+],
+"tf-guia-de-isora-ermita-de-la-asuncion-de-maria-molledo": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-ntra-sra-del-carmen": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-ntra-sra-del-pilar-las-manchas": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-san-felipe-neri": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-san-jose": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-san-jose-agua-dulce": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-san-lorenzo-martir-retamar": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-san-pedro": [
+28.19104,
+-16.74947,
+false
+],
+"tf-guia-de-isora-ermita-de-san-roque": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-santa-lucia-fonsalia": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-santa-margarita-y-ntra-sra-socorro-l": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-de-santiago-apostol-valle-de-arriba": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ermita-el-carmen-tijoco-bajo": [
+28.16334,
+-16.75462,
+false
+],
+"tf-guia-de-isora-ermita-las-nieves-las-nieves": [
+28.23786,
+-16.79875,
+false
+],
+"tf-guia-de-isora-ermita-ntra-sra-concepcion-la-concepcion-y-en-": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-hogar-santa-gema-centro-de-mayores-en-el-valle": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-iglesia-de-jesucristo-redentor-callao-salvaje": [
+28.1338,
+-16.7735,
+false
+],
+"tf-guia-de-isora-iglesia-de-san-francisco-de-asis-piedra-hincad": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-iglesia-de-san-ramon-nonato-cueva-del-polvo": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-iglesia-de-san-sebastian-la-caleta": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-inmaculada-concepcion-de-maria-masca": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-ntra-sra-de-candelaria-alcala": [
+28.20095,
+-16.82151,
+false
+],
+"tf-guia-de-isora-ntra-sra-del-carmen-puerto-santiago-del-teide": [
+28.22754,
+-16.84017,
+false
+],
+"tf-guia-de-isora-nuestra-senora-de-guadalupe-las-americas": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-p-la-virgen-milagrosa-tijoco-la-hoya": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-p-ntra-sra-del-campo-fanabe": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-p-resurreccion-del-senor-armenime": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-p-san-jose-los-olivos": [
+28.23561,
+-16.79556,
+false
+],
+"tf-guia-de-isora-p-santa-ursula-adeje-casco": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-parroquia-de-ntra-sra-de-candelaria-arguayo": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-parroquia-de-ntra-sra-de-la-luz-guia-de-isora-": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-parroquia-de-ntra-sra-del-rosario": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-parroquia-de-san-juan-bautista-chio": [
+28.23583,
+-16.79672,
+false
+],
+"tf-guia-de-isora-parroquia-de-san-juan-bautista-playa-san-juan": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-parroquia-de-santa-ana-tamaimo": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-pueblo-canario": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guia-de-isora-san-fernando-rey-el-valle": [
+28.21519,
+-16.75898,
+true
+],
+"tf-guimar-basilica-de-candelaria": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-chinguaro": [
+28.32341,
+-16.39426,
+false
+],
+"tf-guimar-el-calvario-la-zarza": [
+28.31334,
+-16.43762,
+false
+],
+"tf-guimar-el-pilar-guaza": [
+28.31161,
+-16.41437,
+false
+],
+"tf-guimar-ermita-del-socorro-guimar": [
+28.30513,
+-16.38306,
+false
+],
+"tf-guimar-la-santa-cruz-lomo-de-mena": [
+28.27164,
+-16.41861,
+false
+],
+"tf-guimar-monasterio": [
+28.31615,
+-16.39657,
+false
+],
+"tf-guimar-n-s-agache-y-s-carlos-el-tablado-la-caleta": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-n-s-de-fatima-poris-de-abona": [
+28.32625,
+-16.41284,
+false
+],
+"tf-guimar-n-s-de-la-luz-arico-nuevo": [
+28.31502,
+-16.40995,
+false
+],
+"tf-guimar-n-s-de-la-paz-chacona": [
+28.31502,
+-16.40995,
+false
+],
+"tf-guimar-n-s-de-la-pena-la-hoya": [
+28.31475,
+-16.41855,
+false
+],
+"tf-guimar-n-s-del-carmen-arafo": [
+28.30254,
+-16.45396,
+false
+],
+"tf-guimar-n-s-del-carmen-chimiche": [
+28.33357,
+-16.41919,
+false
+],
+"tf-guimar-n-s-del-carmen-la-zarza": [
+28.31334,
+-16.43762,
+false
+],
+"tf-guimar-n-s-del-carmen-las-eras": [
+28.33357,
+-16.41919,
+false
+],
+"tf-guimar-n-s-fatima-guimar": [
+28.30513,
+-16.38306,
+false
+],
+"tf-guimar-ntra-sra-carmen-abades": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-ntra-sra-carmen-la-jaca": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-ntra-sra-carmen-las-maretas": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-ntra-sra-esperanza-las-vegas": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-ntra-sra-pobres-la-listada": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-playa-de-lima-arafo": [
+28.30254,
+-16.45396,
+false
+],
+"tf-guimar-s-andres-cuevecitas": [
+28.29261,
+-16.37779,
+false
+],
+"tf-guimar-s-andres-la-hidalga-arafo": [
+28.29261,
+-16.37779,
+false
+],
+"tf-guimar-s-antonio-de-padua-la-medida": [
+28.28007,
+-16.40925,
+false
+],
+"tf-guimar-s-bartolome-rio-de-arico-18-00": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-s-francisco-javier": [
+28.33105,
+-16.40023,
+false
+],
+"tf-guimar-s-joaquin-fasnia": [
+28.27646,
+-16.4557,
+false
+],
+"tf-guimar-s-jose-barranco-hondo": [
+28.2835,
+-16.4075,
+false
+],
+"tf-guimar-s-jose-el-escobonal": [
+28.26359,
+-16.4278,
+false
+],
+"tf-guimar-s-juan-araya": [
+28.3002,
+-16.44322,
+false
+],
+"tf-guimar-s-juan-bautista-villa-de-arico": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-s-juan-degollado-arafo": [
+28.30254,
+-16.45396,
+false
+],
+"tf-guimar-s-nicolas-la-constitucion": [
+28.32512,
+-16.41424,
+false
+],
+"tf-guimar-s-pedro-abajo": [
+28.31499,
+-16.40793,
+false
+],
+"tf-guimar-s-pedro-apostol-guimar": [
+28.322,
+-16.41282,
+false
+],
+"tf-guimar-s-pedro-arriba": [
+28.31691,
+-16.41666,
+false
+],
+"tf-guimar-s-silvestre-la-sombrera": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-san-antonio-de-padua-malpais-de-candelaria": [
+28.27984,
+-16.40841,
+false
+],
+"tf-guimar-san-felipe-la-caleta": [
+28.27359,
+-16.38475,
+false
+],
+"tf-guimar-san-isidro-sabina-alta": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-san-jose-la-cisnera": [
+28.2853,
+-16.44255,
+false
+],
+"tf-guimar-san-juan": [
+28.30717,
+-16.42462,
+false
+],
+"tf-guimar-santa-ana-candelaria": [
+28.31423,
+-16.40738,
+false
+],
+"tf-guimar-santa-maria-magdalena-caletillas": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-santiago-apostol-el-puertito": [
+28.29593,
+-16.374,
+false
+],
+"tf-guimar-santisima-trinidad-igueste-de-candelaria": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-senor-de-la-cruz-arico-viejo-17-00": [
+28.31502,
+-16.40995,
+true
+],
+"tf-guimar-sto-domingo-guimar": [
+28.30513,
+-16.38306,
+false
+],
+"tf-icod-de-los-vinos-centro-jesus-de-nazaret-el-empalme": [
+28.37839,
+-16.69527,
+false
+],
+"tf-icod-de-los-vinos-convento-concepcionistas-garachico": [
+28.39,
+-16.72751,
+false
+],
+"tf-icod-de-los-vinos-cristo-del-calvario-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-dulce-el-nombre-de-jesus-la-guancha": [
+28.36018,
+-16.7214,
+false
+],
+"tf-icod-de-los-vinos-el-guincho-garachico": [
+28.39,
+-16.72751,
+false
+],
+"tf-icod-de-los-vinos-erjos-el-tanque": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ermita-cruz-del-camino-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-ermita-de-fatima-los-silos": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ermita-las-abiertas-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-hospital-de-garachico": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-la-cruz-del-tronco-la-florida": [
+28.35986,
+-16.66987,
+false
+],
+"tf-icod-de-los-vinos-la-cruz-y-san-pedro-las-aguas": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-la-cuesta-buenavista": [
+28.36543,
+-16.73559,
+false
+],
+"tf-icod-de-los-vinos-la-vera-san-juan-de-la-rambla": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-las-lajas-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-las-portelas-buenavista": [
+28.36543,
+-16.73559,
+false
+],
+"tf-icod-de-los-vinos-las-rosas-san-juan-de-la-rambla": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-los-piquetes-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-de-candelaria-el-paredon": [
+28.36703,
+-16.70995,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-de-candelaria-genoves-garachico": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ntra-sra-de-la-consolacion-el-palmar": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ntra-sra-de-la-luz-los-silos": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ntra-sra-de-los-remedios-buenavista": [
+28.36543,
+-16.73559,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-de-lourdes-tierra-del-trigo": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ntra-sra-del-amparo-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-del-buen-paso": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-ntra-sra-del-carmen-llanito-perera": [
+28.3605,
+-16.69397,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-del-coromoto-la-guancha": [
+28.36018,
+-16.7214,
+false
+],
+"tf-icod-de-los-vinos-ntra-sra-del-rosario-s-juan-de-la-rambla": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-playa-san-marcos-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-ruigomes-el-tanque": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-san-andres-apostol-la-caleta": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-san-andres-la-centinela": [
+28.37343,
+-16.70972,
+false
+],
+"tf-icod-de-los-vinos-san-bernabe-la-vega": [
+28.35503,
+-16.73674,
+false
+],
+"tf-icod-de-los-vinos-san-bernardo-los-silos": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-san-felipe-neri-la-centinela": [
+28.37343,
+-16.70972,
+false
+],
+"tf-icod-de-los-vinos-san-fermin-hoya-ana-diaz": [
+28.37197,
+-16.67887,
+false
+],
+"tf-icod-de-los-vinos-san-francisco-la-montaneta": [
+28.36666,
+-16.71944,
+false
+],
+"tf-icod-de-los-vinos-san-isidro-el-empalme": [
+28.37839,
+-16.69527,
+false
+],
+"tf-icod-de-los-vinos-san-jose-de-los-llanos-el-tanque": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-san-jose-san-juan-de-la-rambla": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-san-juan-bautista-la-culata-garachico": [
+28.36476,
+-16.7776,
+false
+],
+"tf-icod-de-los-vinos-san-juan-bautista-s-juan-de-la-rambla": [
+28.37743,
+-16.72379,
+false
+],
+"tf-icod-de-los-vinos-san-juan-las-canales": [
+28.36724,
+-16.72995,
+false
+],
+"tf-icod-de-los-vinos-san-lucas-y-santa-dorotea-las-cucharas-la-": [
+28.38209,
+-16.67587,
+false
+],
+"tf-icod-de-los-vinos-san-marcos-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-san-pedro-apostol-garachico": [
+28.39,
+-16.72751,
+false
+],
+"tf-icod-de-los-vinos-san-pedro-redondo": [
+28.34367,
+-16.6898,
+false
+],
+"tf-icod-de-los-vinos-santa-ana-garachico": [
+28.39,
+-16.72751,
+false
+],
+"tf-icod-de-los-vinos-santa-barbara-icod": [
+28.36645,
+-16.72112,
+false
+],
+"tf-icod-de-los-vinos-santa-catalina-san-juan-de-la-rambla": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-tanque-alto-el-tanque": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-tanque-bajo-el-tanque": [
+28.33309,
+-16.69156,
+true
+],
+"tf-icod-de-los-vinos-teno-alto-buenavista": [
+28.36543,
+-16.73559,
+false
+],
+"tf-la-orotava-colegio-la-milagrosa-orotava": [
+28.38764,
+-16.52719,
+false
+],
+"tf-la-orotava-el-carmen-barranco-la-arena": [
+28.38988,
+-16.52357,
+true
+],
+"tf-la-orotava-hermanas-de-la-cruz-orotava": [
+28.38764,
+-16.52719,
+false
+],
+"tf-la-orotava-la-santa-cruz-caneno": [
+28.37008,
+-16.51603,
+false
+],
+"tf-la-orotava-maria-auxiliadora-colegio-salesianos": [
+28.3945,
+-16.52196,
+false
+],
+"tf-la-orotava-ntra-sra-candelaria-camino-chasna": [
+28.3786,
+-16.52712,
+false
+],
+"tf-la-orotava-ntra-sra-de-la-concepcion-orotava": [
+28.38764,
+-16.52719,
+false
+],
+"tf-la-orotava-ntra-sra-de-las-nieves-las-canadas": [
+28.22442,
+-16.62697,
+false
+],
+"tf-la-orotava-ntra-sra-del-pino-pino-alto": [
+28.40048,
+-16.50125,
+false
+],
+"tf-la-orotava-nuestra-senora-de-la-luz-la-luz": [
+28.38797,
+-16.55397,
+false
+],
+"tf-la-orotava-nuestra-senora-del-rosario-perdoma": [
+28.37781,
+-16.55221,
+false
+],
+"tf-la-orotava-san-agustin-orotava-centro": [
+28.39087,
+-16.52592,
+false
+],
+"tf-la-orotava-san-antonio-abad-la-florida": [
+28.38854,
+-16.50177,
+false
+],
+"tf-la-orotava-san-antonio-maria-claret-san-antonio": [
+28.38189,
+-16.53481,
+false
+],
+"tf-la-orotava-san-bartolome-el-durazno": [
+28.38988,
+-16.52357,
+true
+],
+"tf-la-orotava-san-diego-de-alcala-el-rincon": [
+28.41263,
+-16.51641,
+false
+],
+"tf-la-orotava-san-francisco-de-asis-orotava-centro": [
+28.39087,
+-16.52592,
+false
+],
+"tf-la-orotava-san-isidro-labrador-el-calvario": [
+28.37873,
+-16.54792,
+false
+],
+"tf-la-orotava-san-jose-obrero-aguamansa": [
+28.36449,
+-16.49883,
+false
+],
+"tf-la-orotava-san-juan-bautista-orotava-centro": [
+28.39087,
+-16.52592,
+false
+],
+"tf-la-orotava-san-lorenzo-martir-barroso": [
+28.3791,
+-16.50778,
+false
+],
+"tf-la-orotava-san-roque-bebedero": [
+28.37514,
+-16.50878,
+false
+],
+"tf-la-orotava-santa-maria-de-las-cabezas-benijos": [
+28.36322,
+-16.54614,
+false
+],
+"tf-la-orotava-santo-domingo-orotava-centro": [
+28.39087,
+-16.52592,
+false
+],
+"tf-los-llanos-de-aridane-la-rosa-el-paso": [
+28.64134,
+-17.89826,
+false
+],
+"tf-los-llanos-de-aridane-las-caletas-fuencaliente": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-m-auxiliadora-el-tablado-garafia": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-n-s-madre-de-la-iglesia-las-indias-fue": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-candelaria-tijarafe": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-fatima-la-punta-tijarafe": [
+28.66017,
+-17.90492,
+false
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-la-bonanza-el-paso": [
+28.64134,
+-17.89826,
+false
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-la-luz-garafia": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-las-angustias-los-llanos-d": [
+28.65934,
+-17.91385,
+false
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-los-dolores-cueva-agua-gar": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-ntra-sra-de-los-remedios-los-llanos-de": [
+28.65934,
+-17.91385,
+false
+],
+"tf-los-llanos-de-aridane-ntra-sra-del-carmen-las-tricias-garafi": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-ntra-sra-del-carmen-tazacorte": [
+28.63171,
+-17.90835,
+false
+],
+"tf-los-llanos-de-aridane-puerto-naos-los-llanos-de-aridane": [
+28.65934,
+-17.91385,
+false
+],
+"tf-los-llanos-de-aridane-s-an-antonio-de-padua-garafia": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-sagrada-familia-tajuya-el-paso": [
+28.63342,
+-17.88883,
+false
+],
+"tf-los-llanos-de-aridane-sagrado-corazon-tinizara-tijarafe": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-san-antonio-abad-fuencaliente-de-la-pa": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-san-isidro-la-laguna-los-llanos-de-ari": [
+28.63184,
+-17.90805,
+false
+],
+"tf-los-llanos-de-aridane-san-mauro-abad-templo-antiguo-puntagor": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-san-mauro-abad-templo-nuevo-puntagorda": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-san-miguel-arcangel-tazacorte": [
+28.63171,
+-17.90835,
+false
+],
+"tf-los-llanos-de-aridane-san-nicolas-las-manchas": [
+28.60135,
+-17.88167,
+false
+],
+"tf-los-llanos-de-aridane-san-pedro-apostol-y-los-santos-martire": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-san-pio-x-todoque-los-llanos-de-aridan": [
+28.61912,
+-17.90475,
+false
+],
+"tf-los-llanos-de-aridane-san-vicente-ferrer-franceses-garafia": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-llanos-de-aridane-santa-cecilia-el-charco-fuencaliente": [
+28.65922,
+-17.91519,
+true
+],
+"tf-los-realejos-ermita-la-concepcion-tigaiga": [
+28.38337,
+-16.59676,
+false
+],
+"tf-los-realejos-ermita-san-benito": [
+28.38492,
+-16.58055,
+false
+],
+"tf-los-realejos-ermita-san-vicente": [
+28.39315,
+-16.59066,
+false
+],
+"tf-los-realejos-la-santa-cruz-la-cruz-santa": [
+28.37775,
+-16.56811,
+false
+],
+"tf-los-realejos-ntra-sra-concepcion-realejo-bajo": [
+28.38482,
+-16.58782,
+false
+],
+"tf-los-realejos-ntra-sra-de-las-nieves-la-zamora": [
+28.3862,
+-16.56723,
+false
+],
+"tf-los-realejos-ntra-sra-del-buen-viaje-icod-alto": [
+28.38457,
+-16.61108,
+false
+],
+"tf-los-realejos-ntra-sra-del-carmen-san-agustin": [
+28.38824,
+-16.58596,
+false
+],
+"tf-los-realejos-ntra-sra-guadalupe-toscal-longuera": [
+28.39829,
+-16.57556,
+false
+],
+"tf-los-realejos-ntra-sra-los-dolores-palo-blanco": [
+28.36519,
+-16.57785,
+false
+],
+"tf-los-realejos-san-cayetano-la-montana": [
+28.39331,
+-16.55763,
+false
+],
+"tf-los-realejos-san-joaquin-y-santa-ana-el-jardin": [
+28.38931,
+-16.57062,
+false
+],
+"tf-los-realejos-santiago-apostol-realejos-centro": [
+28.38421,
+-16.58276,
+false
+],
+"tf-puerto-de-la-cruz-ntra-senora-de-la-penita-puerto": [
+28.4186,
+-16.554,
+false
+],
+"tf-puerto-de-la-cruz-ntra-sra-candelaria-la-vera": [
+28.39786,
+-16.55882,
+false
+],
+"tf-puerto-de-la-cruz-ntra-sra-dolores-y-san-felipe-el-tejar": [
+28.4159,
+-16.5533,
+true
+],
+"tf-puerto-de-la-cruz-ntra-sra-pena-de-francia-puerto": [
+28.4186,
+-16.554,
+false
+],
+"tf-puerto-de-la-cruz-nuestra-senora-de-la-paz": [
+28.41306,
+-16.53006,
+false
+],
+"tf-puerto-de-la-cruz-san-amaro-la-paz": [
+28.41393,
+-16.53354,
+false
+],
+"tf-puerto-de-la-cruz-san-antonio-de-padua-san-antonio": [
+28.40536,
+-16.55133,
+false
+],
+"tf-puerto-de-la-cruz-san-pablo-apostol-las-dehesas": [
+28.40339,
+-16.56429,
+false
+],
+"tf-puerto-de-la-cruz-san-telmo": [
+28.41756,
+-16.54553,
+false
+],
+"tf-puerto-de-la-cruz-santa-rita-de-casia-punta-brava": [
+28.41116,
+-16.56547,
+false
+],
+"tf-san-cristobal-de-la-laguna-asilo-de-ancianos": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-buen-consejo": [
+28.49391,
+-16.32115,
+false
+],
+"tf-san-cristobal-de-la-laguna-capilla-maria-auxiliadora-salesia": [
+28.47092,
+-16.28276,
+false
+],
+"tf-san-cristobal-de-la-laguna-cristo-de-la-gallega-sra-del-pila": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-el-buen-pastor-las-moraditas": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-el-rosarito": [
+28.44323,
+-16.29851,
+false
+],
+"tf-san-cristobal-de-la-laguna-ermita-del-rosario-machado": [
+28.47091,
+-16.28658,
+false
+],
+"tf-san-cristobal-de-la-laguna-exaltacion-de-la-santa-cruz-llano": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-hospital-nuestra-senora-de-la-can": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-hospital-universitario-de-canaria": [
+28.45684,
+-16.29189,
+false
+],
+"tf-san-cristobal-de-la-laguna-maria-inmaculada-beato-manuel-gon": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-fatima": [
+28.49014,
+-16.27725,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-la-concepcion": [
+28.49051,
+-16.32033,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-la-esperanza": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-la-merced-el-draguill": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-la-mercedes": [
+28.53121,
+-16.27984,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-de-los-dolores": [
+28.44859,
+-16.30885,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-del-carmen-el-coromoto": [
+28.48288,
+-16.32598,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-del-carmen-el-sobradillo": [
+28.44737,
+-16.31834,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-del-pilar-torres-de-taco": [
+28.45198,
+-16.29697,
+false
+],
+"tf-san-cristobal-de-la-laguna-ntra-sra-del-rosario-el-tablero": [
+28.46727,
+-16.28312,
+false
+],
+"tf-san-cristobal-de-la-laguna-nuestra-senora-de-candelaria": [
+28.4543,
+-16.31515,
+false
+],
+"tf-san-cristobal-de-la-laguna-nuestra-senora-de-la-encarnacion": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-nuestra-senora-de-las-nieves": [
+28.47625,
+-16.29847,
+false
+],
+"tf-san-cristobal-de-la-laguna-nuestra-senora-del-rosario": [
+28.46727,
+-16.28312,
+false
+],
+"tf-san-cristobal-de-la-laguna-nuestra-senora-la-paz-y-union": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-nuestra-sra-perpetuo-socorro": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-residencia-universitaria-nazaret": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-san-albino-y-la-sta-cruz-tincer": [
+28.45067,
+-16.30878,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-alfonso-maria-ligorio-los-gla": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-san-bartolome-geneto": [
+28.46613,
+-16.31056,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-benito-abad": [
+28.49019,
+-16.32642,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-cristobal": [
+28.48887,
+-16.3162,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-felipe-apostol-barranco-grand": [
+28.43249,
+-16.29672,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-francisco-de-paula-los-baldio": [
+28.47058,
+-16.3275,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-isidro-el-chorrillo": [
+28.4538,
+-16.30014,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-jeronimo-taco": [
+28.44676,
+-16.29978,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-juan-bautista": [
+28.48513,
+-16.31933,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-lazaro": [
+28.49107,
+-16.3387,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-luis-gonzaga-taco": [
+28.44676,
+-16.29978,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-martin-de-porres-los-andenes": [
+28.44939,
+-16.30564,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-matias-apostol-taco": [
+28.44676,
+-16.29978,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-miguel-arcangel-geneto": [
+28.46613,
+-16.31056,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-miguel-chimisay": [
+28.45389,
+-16.3,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-miguel-de-chimisay-la-hornera": [
+28.45389,
+-16.3,
+false
+],
+"tf-san-cristobal-de-la-laguna-san-pablo-apostol-radazul-y-tabai": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-san-pablo-radazul": [
+28.43783,
+-16.29669,
+false
+],
+"tf-san-cristobal-de-la-laguna-santa-catalina": [
+28.48775,
+-16.31434,
+false
+],
+"tf-san-cristobal-de-la-laguna-santa-clara": [
+28.48982,
+-16.31338,
+false
+],
+"tf-san-cristobal-de-la-laguna-santa-cruz-de-ofra": [
+28.45203,
+-16.2921,
+false
+],
+"tf-san-cristobal-de-la-laguna-santa-iglesia-catedral": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-santa-maria-de-anaza-anaza": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-santa-maria-de-gracia": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-santa-maria-del-mar-s-c-de-teneri": [
+28.47381,
+-16.30071,
+false
+],
+"tf-san-cristobal-de-la-laguna-santa-rosa-cmno-tornero": [
+28.49385,
+-16.33139,
+false
+],
+"tf-san-cristobal-de-la-laguna-santisimo-redentor-las-chumberas": [
+28.46282,
+-16.30231,
+false
+],
+"tf-san-cristobal-de-la-laguna-santo-domingo": [
+28.4858,
+-16.3129,
+false
+],
+"tf-san-cristobal-de-la-laguna-siervas-de-maria": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-sta-maria-madre-de-jesus-el-cardo": [
+28.45035,
+-16.30055,
+false
+],
+"tf-san-cristobal-de-la-laguna-stmo-cristo-de-la-laguna": [
+28.48577,
+-16.31594,
+true
+],
+"tf-san-cristobal-de-la-laguna-valle-tabares": [
+28.48343,
+-16.29153,
+false
+],
+"tf-san-sebastian-de-la-gomera-el-salvador-alajero": [
+28.10758,
+-17.12795,
+false
+],
+"tf-san-sebastian-de-la-gomera-ermita-de-la-milagrosa-valle-gran": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ermita-de-las-nieves": [
+28.10109,
+-17.20208,
+false
+],
+"tf-san-sebastian-de-la-gomera-ermita-de-san-pedro-valle-gran-re": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ermita-del-carmen": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ermita-del-carmen-valle-gran-rey-": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-la-encarnacion-hermigua": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-los-santos-reyes-valle-gran-rey": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-macayo": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-n-sra-buen-viaje-taguluche": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-n-sra-del-carmen-ingenio": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ntra-sra-candelaria-chipude": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ntra-sra-caridad-del-cobre": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ntra-sra-de-la-asuncion-san-sebas": [
+28.08742,
+-17.11304,
+false
+],
+"tf-san-sebastian-de-la-gomera-ntra-sra-de-la-nieves-la-dama": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-ntra-sra-de-la-salud-arure": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-residencia-ancianos-vallehermoso": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-s-juan-bautista-vallehermoso": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-san-antonio-de-padua-valle-gran-r": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-san-bartolome-alojera": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-san-cristobal-la-lomada": [
+28.09827,
+-17.10875,
+false
+],
+"tf-san-sebastian-de-la-gomera-san-isidro-epina": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-san-isidro-la-palmita": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-san-marcos-agulo": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-santa-ana-imada": [
+28.09264,
+-17.11155,
+false
+],
+"tf-san-sebastian-de-la-gomera-santa-clara-arguamul": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-santa-maria-madre-de-la-iglesia-c": [
+28.11697,
+-17.1694,
+false
+],
+"tf-san-sebastian-de-la-gomera-santa-rosa-las-rosas": [
+28.18653,
+-17.22221,
+false
+],
+"tf-san-sebastian-de-la-gomera-santiago-apostol-playa-santiago": [
+28.02968,
+-17.19181,
+false
+],
+"tf-san-sebastian-de-la-gomera-santo-domingo-hermigua": [
+28.09104,
+-17.11101,
+true
+],
+"tf-san-sebastian-de-la-gomera-santuario-de-guadalupe-puntallana": [
+28.12873,
+-17.10428,
+false
+],
+"tf-san-sebastian-de-la-gomera-santuario-de-los-reyes-valle-gran": [
+28.09104,
+-17.11101,
+true
+],
+"tf-santa-cruz-de-la-palma-cruz-del-senor-el-granel-puntallana": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-el-pilar-y-santiago": [
+28.68726,
+-17.76516,
+false
+],
+"tf-santa-cruz-de-la-palma-el-salvador-santa-cruz-de-la-palma": [
+28.68401,
+-17.7627,
+false
+],
+"tf-santa-cruz-de-la-palma-hospital-de-dolores": [
+28.68614,
+-17.76393,
+false
+],
+"tf-santa-cruz-de-la-palma-hospital-general-de-la-palma-brena-al": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-la-encarnacion": [
+28.69059,
+-17.7625,
+false
+],
+"tf-santa-cruz-de-la-palma-la-palmita": [
+28.68629,
+-17.76647,
+false
+],
+"tf-santa-cruz-de-la-palma-maria-auxiliadora-la-cadena-barlovent": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-monasterio-del-cister-brena-alta": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-de-candelaria-mirca": [
+28.70845,
+-17.76474,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-de-la-concepcion": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-de-las-nieves": [
+28.69435,
+-17.78216,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-de-los-dolores-lodero-villa-": [
+28.69563,
+-17.7703,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-de-montserrat-san-andres-y-s": [
+28.7926,
+-17.7592,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-del-rosario-barlovento": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-del-socorro-brena-alta": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-ntra-sra-pino-y-vicente-ferrer-velhoc": [
+28.68343,
+-17.78912,
+false
+],
+"tf-santa-cruz-de-la-palma-residencia-de-pensionistas-la-dehesa": [
+28.69474,
+-17.77408,
+false
+],
+"tf-santa-cruz-de-la-palma-sagrado-corazon-te-nagua-puntallana": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-andres-san-andres-y-sauces": [
+28.7926,
+-17.7592,
+false
+],
+"tf-santa-cruz-de-la-palma-san-antonio-brena-baja": [
+28.48277,
+-17.84839,
+false
+],
+"tf-santa-cruz-de-la-palma-san-bartolome-ap-la-galga-puntallana": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-blas-villa-de-mazo": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-francisco": [
+28.68791,
+-17.76271,
+false
+],
+"tf-santa-cruz-de-la-palma-san-isidro-labrador-brena-alta": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-san-jose-brena-baja": [
+28.68667,
+-17.76213,
+false
+],
+"tf-santa-cruz-de-la-palma-san-juan-bautista-los-gallitos-san-an": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-juan-bautista-puntallana": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-miguel-brena-alta": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-san-pedro-apostol-las-lomadas-san-and": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-san-pedro-brena-alta": [
+28.67015,
+-17.81095,
+false
+],
+"tf-santa-cruz-de-la-palma-san-sebastian": [
+28.68362,
+-17.76635,
+false
+],
+"tf-santa-cruz-de-la-palma-santa-lucia-santa-lucia-puntallana": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-santa-rita-benahoare-s-c-de-la-palma": [
+28.68972,
+-17.76768,
+false
+],
+"tf-santa-cruz-de-la-palma-santa-rosalia-monte-brena-villa-de-ma": [
+28.68189,
+-17.76634,
+true
+],
+"tf-santa-cruz-de-la-palma-santo-cristo-calcinas-s-c-de-la-palma": [
+28.68439,
+-17.76876,
+false
+],
+"tf-santa-cruz-de-la-palma-santo-domingo-santa-cruz-de-la-palma": [
+28.68401,
+-17.7627,
+false
+],
+"tf-santa-cruz-de-la-palma-santo-domingo-tigalate-villa-de-mazo": [
+28.68259,
+-17.7664,
+false
+],
+"tf-santa-cruz-de-la-palma-virgen-de-la-luz": [
+28.68157,
+-17.76701,
+false
+],
+"tf-santa-cruz-de-tenerife-capilla-de-las-siervas-junto-a-ayunta": [
+28.46998,
+-16.25476,
+false
+],
+"tf-santa-cruz-de-tenerife-cruz-de-ifara": [
+28.49191,
+-16.21778,
+false
+],
+"tf-santa-cruz-de-tenerife-cruz-del-senor": [
+28.46313,
+-16.27228,
+false
+],
+"tf-santa-cruz-de-tenerife-el-carmen-valleseco": [
+28.48834,
+-16.23873,
+false
+],
+"tf-santa-cruz-de-tenerife-el-pilar": [
+28.45515,
+-16.2949,
+false
+],
+"tf-santa-cruz-de-tenerife-ermita-de-regla": [
+28.45696,
+-16.25223,
+false
+],
+"tf-santa-cruz-de-tenerife-ermita-de-san-telmo": [
+28.46256,
+-16.24879,
+false
+],
+"tf-santa-cruz-de-tenerife-ermita-ntra-sra-de-begona-almaciga": [
+28.57129,
+-16.19704,
+false
+],
+"tf-santa-cruz-de-tenerife-hogar-escuela": [
+28.47164,
+-16.24906,
+false
+],
+"tf-santa-cruz-de-tenerife-hospital-candelaria": [
+28.4485,
+-16.28464,
+false
+],
+"tf-santa-cruz-de-tenerife-hospital-universitario": [
+28.45761,
+-16.29276,
+false
+],
+"tf-santa-cruz-de-tenerife-la-concepcion": [
+28.15775,
+-16.74802,
+false
+],
+"tf-santa-cruz-de-tenerife-maria-auxiliadora": [
+28.47045,
+-16.28354,
+false
+],
+"tf-santa-cruz-de-tenerife-ntra-sra-de-las-nieves-taganana": [
+28.56096,
+-16.21779,
+false
+],
+"tf-santa-cruz-de-tenerife-ntra-sra-de-loreto-cueva-bermeja": [
+28.49614,
+-16.21612,
+false
+],
+"tf-santa-cruz-de-tenerife-ntra-sra-del-camino": [
+28.45771,
+-16.28611,
+false
+],
+"tf-santa-cruz-de-tenerife-nuestra-senora-de-fatima": [
+28.16452,
+-16.43385,
+false
+],
+"tf-santa-cruz-de-tenerife-nuestra-senora-de-la-salud": [
+28.46998,
+-16.25476,
+false
+],
+"tf-santa-cruz-de-tenerife-orden-tercera": [
+28.46799,
+-16.24987,
+false
+],
+"tf-santa-cruz-de-tenerife-sagrado-corazon": [
+28.08448,
+-17.11959,
+false
+],
+"tf-santa-cruz-de-tenerife-san-agustin": [
+28.38824,
+-16.58596,
+false
+],
+"tf-santa-cruz-de-tenerife-san-alfonso-maria-ligorio": [
+28.45989,
+-16.26795,
+false
+],
+"tf-santa-cruz-de-tenerife-san-andres": [
+28.5055,
+-16.19249,
+false
+],
+"tf-santa-cruz-de-tenerife-san-antonio-de-padua": [
+28.126,
+-16.57665,
+false
+],
+"tf-santa-cruz-de-tenerife-san-fernando-rey": [
+28.45553,
+-16.27308,
+false
+],
+"tf-santa-cruz-de-tenerife-san-francisco-de-asis": [
+28.33544,
+-16.75907,
+false
+],
+"tf-santa-cruz-de-tenerife-san-jose": [
+28.64501,
+-17.77531,
+false
+],
+"tf-santa-cruz-de-tenerife-san-jose-de-anchieta": [
+28.47929,
+-16.24441,
+false
+],
+"tf-santa-cruz-de-tenerife-san-juan-bautista-m-jimenez": [
+28.49302,
+-16.22631,
+false
+],
+"tf-santa-cruz-de-tenerife-san-juan-de-la-cruz": [
+28.45108,
+-16.27512,
+false
+],
+"tf-santa-cruz-de-tenerife-san-juan-evangelista": [
+28.49384,
+-16.2255,
+false
+],
+"tf-santa-cruz-de-tenerife-san-martin-de-porres-chamberi": [
+28.45042,
+-16.27463,
+false
+],
+"tf-santa-cruz-de-tenerife-san-pedro-igueste": [
+28.38242,
+-16.37375,
+false
+],
+"tf-santa-cruz-de-tenerife-san-pio-x": [
+28.44714,
+-16.28855,
+false
+],
+"tf-santa-cruz-de-tenerife-san-roque": [
+28.48753,
+-16.31017,
+false
+],
+"tf-santa-cruz-de-tenerife-san-sebastian": [
+28.46419,
+-16.25406,
+false
+],
+"tf-santa-cruz-de-tenerife-santa-barbara": [
+28.36913,
+-16.69116,
+false
+],
+"tf-santa-cruz-de-tenerife-santa-clara": [
+28.45365,
+-16.28633,
+false
+],
+"tf-santa-cruz-de-tenerife-santa-teresa-de-jesus": [
+28.45715,
+-16.28083,
+false
+],
+"tf-santa-cruz-de-tenerife-santiago-apostol": [
+28.37699,
+-16.58301,
+false
+],
+"tf-santa-cruz-de-tenerife-santo-domingo-de-guzman": [
+28.4588,
+-16.26015,
+false
+],
+"tf-santa-cruz-de-tenerife-santo-hermano-pedro-cabo-llanos": [
+28.45633,
+-16.25742,
+false
+],
+"tf-tacoronte-cruz-de-lucio-ravelo-el-sauzal": [
+28.46174,
+-16.41286,
+false
+],
+"tf-tacoronte-el-calvario-el-sauzal": [
+28.43169,
+-16.40868,
+false
+],
+"tf-tacoronte-el-carmen-lomo-colorado": [
+28.49823,
+-16.39716,
+false
+],
+"tf-tacoronte-el-cobre-la-victoria": [
+28.47888,
+-16.37647,
+false
+],
+"tf-tacoronte-el-pris-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-el-salvador-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-ermita-de-san-jose-puerto-la-madera": [
+28.50452,
+-16.41688,
+false
+],
+"tf-tacoronte-ermita-ntra-sra-del-carmen-mesa-del-mar": [
+28.50338,
+-16.42392,
+false
+],
+"tf-tacoronte-hermano-pedro-tamaide": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-hogar-jesus-de-nazaret-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-la-caridad-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-la-encarnacion-la-victoria": [
+28.47888,
+-16.37647,
+false
+],
+"tf-tacoronte-la-santa-cruz-ravelo": [
+28.46174,
+-16.41286,
+false
+],
+"tf-tacoronte-la-santa-cruz-tagoro-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-ntra-sra-de-guia-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-ntra-sra-de-la-luz-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-ntra-sra-de-los-angeles": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-ntra-sra-del-rosario-bco-las-lajas": [
+28.4648,
+-16.40576,
+false
+],
+"tf-tacoronte-ntra-sra-fatima-agua-garcia": [
+28.46561,
+-16.40543,
+false
+],
+"tf-tacoronte-s-juan-bautista-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-san-antonio-la-matanza": [
+28.48104,
+-16.41167,
+false
+],
+"tf-tacoronte-san-bartolome-sta-ursula": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-san-blas-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-san-diego-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-san-jeronimo-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-san-jose-el-sauzal": [
+28.43169,
+-16.40868,
+false
+],
+"tf-tacoronte-san-juan-la-victoria": [
+28.47888,
+-16.37647,
+false
+],
+"tf-tacoronte-san-martin-de-porres-el-pirul-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-san-nicolas-el-sauzal": [
+28.43169,
+-16.40868,
+false
+],
+"tf-tacoronte-san-pedro-el-sauzal": [
+28.43169,
+-16.40868,
+false
+],
+"tf-tacoronte-santa-ana-tosca-ana-maria": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-santo-domingo-la-victoria": [
+28.47888,
+-16.37647,
+false
+],
+"tf-tacoronte-santo-hermano-pedro-la-vica-la-matanza": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-sta-ana-ortigal": [
+28.47141,
+-16.37405,
+false
+],
+"tf-tacoronte-sta-catalina-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-sta-rosa-de-lima-guamasa": [
+28.4868,
+-16.38598,
+false
+],
+"tf-tacoronte-sta-ursula-martir-sta-ursula": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tacoronte-sto-cristo-tacoronte": [
+28.48053,
+-16.41376,
+false
+],
+"tf-tacoronte-v-milagrosa-ortigal-alto": [
+28.47897,
+-16.39772,
+true
+],
+"tf-tegueste-el-rosario-valle-de-guerra": [
+28.50178,
+-16.35968,
+false
+],
+"tf-tegueste-el-socorro-tegueste": [
+28.52326,
+-16.34076,
+false
+],
+"tf-tegueste-gran-poder-bajamar": [
+28.518,
+-16.33578,
+true
+],
+"tf-tegueste-la-padilla": [
+28.499,
+-16.36148,
+false
+],
+"tf-tegueste-sagrado-corazon-de-jesus-pedro-alvarez": [
+28.52165,
+-16.31603,
+false
+],
+"tf-tegueste-san-antonio-abad-portezuelo": [
+28.49144,
+-16.35489,
+false
+],
+"tf-tegueste-san-bartolome-tejina": [
+28.5341,
+-16.34536,
+false
+],
+"tf-tegueste-san-isidro-el-pico": [
+28.501,
+-16.35457,
+false
+],
+"tf-tegueste-san-marcos-tegueste": [
+28.52326,
+-16.34076,
+false
+],
+"tf-tegueste-san-mateo-punta-hidalgo": [
+28.52252,
+-16.3438,
+false
+],
+"tf-valverde-capilla-de-san-telmo-puerto-de-la-estaca": [
+27.78499,
+-17.90175,
+false
+],
+"tf-valverde-cementerio-erese-pozo-de-las-calcozas": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-cementerio-guarazoca": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-el-mocanal": [
+27.82107,
+-17.94283,
+false
+],
+"tf-valverde-ermita-de-el-cristo-las-casas": [
+27.72003,
+-17.97108,
+false
+],
+"tf-valverde-ermita-de-san-juan-tamaduste": [
+27.82501,
+-17.89525,
+false
+],
+"tf-valverde-ermita-de-san-lazaro": [
+27.81745,
+-17.91564,
+false
+],
+"tf-valverde-ermita-de-san-lorenzo-pozo-de-las-calcosas": [
+27.83994,
+-17.94687,
+false
+],
+"tf-valverde-ermita-la-milagrosa-los-llanitos": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-ermita-san-juan-bautista-las-puntas": [
+27.84193,
+-17.95571,
+false
+],
+"tf-valverde-ermita-santiago": [
+27.81385,
+-17.91401,
+false
+],
+"tf-valverde-la-concepcion": [
+27.80755,
+-17.91437,
+false
+],
+"tf-valverde-la-sagrada-familia-tinor": [
+27.78828,
+-17.93405,
+false
+],
+"tf-valverde-ntra-sra-de-candelaria-frontera": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-ntra-sra-de-la-consolacion-sabinosa": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-residencia-de-mayores-echedo": [
+27.83338,
+-17.92194,
+false
+],
+"tf-valverde-residencia-de-mayores-el-pinar": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-san-agustin-timijiraque": [
+27.76712,
+-17.91404,
+false
+],
+"tf-valverde-san-andres": [
+27.77106,
+-17.95581,
+false
+],
+"tf-valverde-san-antonio-abad-el-pinar": [
+27.77062,
+-17.94913,
+true
+],
+"tf-valverde-san-jose-isora": [
+27.74498,
+-17.94801,
+false
+],
+"tf-valverde-san-juan-bautista-la-restinga": [
+27.74481,
+-17.97122,
+false
+],
+"tf-valverde-san-mariano-las-playas": [
+27.72524,
+-17.95537,
+false
+],
+"tf-valverde-santuario-de-la-virgen-de-los-reyes-la-dehesa": [
+27.77062,
+-17.94913,
+true
 ],
 "va-icbenito": [
 41.65409,

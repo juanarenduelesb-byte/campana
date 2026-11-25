@@ -366,7 +366,7 @@ const MAP=(function(){
       return;
     }
     if(LOC)L.circle([LOC.lat,LOC.lon],{radius:RAD*1000,className:'ring',interactive:false}).addTo(layer);
-    const items=C.filter(c=>b.contains([c.lat,c.lon])&&(FILT==='todas'||passes(c)||c.i===SEL)).map(c=>[{curso:5,pronto:5,hoy:3,luego:2,nd:1}[c._s.k]+(c.i===SEL?10:0)+(hs.has(c.i)?6:0),c]);
+    const items=C.filter(c=>c._s&&b.contains([c.lat,c.lon])&&(FILT==='todas'||passes(c)||c.i===SEL)).map(c=>[{curso:5,pronto:5,hoy:3,luego:2,nd:1}[c._s.k]+(c.i===SEL?10:0)+(hs.has(c.i)?6:0),c]);
     items.sort((a,b)=>a[0]-b[0]);
     for(const [w,c] of items){
       const hero=hs.has(c.i), sel=c.i===SEL;
