@@ -105,6 +105,7 @@ h1 em{font-style:italic;color:var(--wine)}
 @keyframes pop{from{opacity:0;transform:translateY(-6px) scale(.98)}to{opacity:1;transform:none}}
 .gmsg{grid-column:1/-1;padding:4px 14px 6px;color:var(--muted);font-size:15px}
 .quick{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0}
+.qlab{align-self:center;font-size:13px;font-weight:600;color:var(--mute,#6E5A60);margin-right:2px}
 .qchip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 15px;font-size:15px;font-weight:500;color:var(--muted);cursor:pointer;transition:all .35s var(--ease)}
 .qchip:hover{color:var(--ink);border-color:var(--line2)}
 .qchip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
@@ -412,19 +413,219 @@ body.anim section:not([hidden]) > .title{animation:rise .7s var(--ease) both}
   .wrow .acts{grid-column:2}
   .status>span:first-child{width:100%;margin:0 0 4px}
 }
+/* inicio */
+@keyframes hhm-spin{to{transform:rotate(360deg)}}
+@keyframes hhm-rise{0%{transform:translateY(46px);opacity:.0}100%{transform:translateY(0);opacity:1}}
+@keyframes hhm-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes hhm-pulse{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+@keyframes hhm-glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes hhm-marquee{to{transform:translateX(-50%)}}
+.hhm-rays{transform-origin:200px 220px;animation:hhm-spin 60s linear infinite}
+.hhm-sun{animation:hhm-rise 2.4s cubic-bezier(.2,.8,.2,1) both,hhm-glow 5s 2.4s ease-in-out infinite}
+.hhm-float{animation:hhm-float 6s ease-in-out infinite}
+.hhm-float2{animation:hhm-float 7s 1.2s ease-in-out infinite}
+.hhm-ring{transform-origin:center;transform-box:fill-box;animation:hhm-pulse 2.6s ease-out infinite}
+.hhm-pin{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:#E5B84B;box-shadow:0 0 0 3px #6B1426}
+.hhm-pin::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:2px solid #E5B84B;animation:hhm-pulse 2.6s ease-out infinite}
+.hhm-track{display:flex;width:max-content;animation:hhm-marquee 40s linear infinite}
+@media (max-width:640px){.hhm-navl{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+body[data-grp=inicio] .subnav,body[data-grp=inicio] #band,body[data-grp=inicio] .health{display:none}
+#v-inicio a:hover{opacity:.92}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <nav class="topnav" id="topnav"><div class="bar">
-  <a class="brand mark" href="inicio.html" title="Qué es Hoy hay misa"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="sol" cx="16.6" cy="10.6" r="5.6"/><path class="cap" d="M4.2 21.2V12.6L10.6 7.4l6.4 5.2v8.6z"/><path class="cruz" d="M10.6 2.2v5.6M8.7 4.1h3.8"/><path class="pta" d="M8.9 21.2v-3.5a1.7 1.7 0 0 1 3.4 0v3.5z"/></svg><span>Hoy hay misa</span></a>
-  <div class="seg tabs"><span class="pill-ind"></span><a href="#cerca" data-grp="misas">Horarios de misa</a><a href="#retiros" data-grp="retiros">Retiros <small class="soon">pronto</small></a></div>
+  <a class="brand mark" href="#inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="sol" cx="16.6" cy="10.6" r="5.6"/><path class="cap" d="M4.2 21.2V12.6L10.6 7.4l6.4 5.2v8.6z"/><path class="cruz" d="M10.6 2.2v5.6M8.7 4.1h3.8"/><path class="pta" d="M8.9 21.2v-3.5a1.7 1.7 0 0 1 3.4 0v3.5z"/></svg><span>Hoy hay misa</span></a>
+  <div class="seg tabs"><span class="pill-ind"></span><a href="#inicio" data-grp="inicio">Inicio</a><a href="#cerca" data-grp="misas">Horarios de misa</a><a href="#retiros" data-grp="retiros">Retiros <small class="soon">pronto</small></a></div>
   <button class="icon-btn" id="theme" title="Cambiar entre modo claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/></svg></button>
 </div></nav>
 <nav class="subnav" id="subnav" aria-label="Horarios de misa"><div class="sub tabs"><span class="pill-ind"></span><a href="#cerca">Cerca de mí</a><a href="#semana">Esta semana</a><a href="#favoritas">Favoritas</a><a href="#fuentes">Fuentes</a></div></nav>
 
+<section id="v-inicio" hidden>
+<div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#24151A;background:#FAF6F2;overflow:hidden">
+
+<!-- HERO -->
+<section id="l-top" style="position:relative;max-width:1240px;margin:0 auto;padding:40px 32px 96px;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+  <div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:28px">
+    <div style="align-self:flex-start;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:#F1E6E1;color:#6B1426;font-size:14px;font-weight:600">
+      <span style="width:8px;height:8px;border-radius:50%;background:#2F8A57"></span>
+      Toda España · actualizado cada día
+    </div>
+    <h1 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(56px,7.4vw,104px);line-height:.95;letter-spacing:-2px">La próxima misa,<br><em style="color:#6B1426">cerca de ti.</em></h1>
+    <p style="margin:0;max-width:520px;font-size:20px;line-height:1.55;color:#5A464C">Abre, mira y llega. Hoy hay misa te dice qué iglesia tiene la siguiente misa, cuál alcanzas a tiempo y a qué hora es el domingo, estés donde estés.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+      <a href="#cerca" style="display:flex;align-items:center;gap:10px;background:#6B1426;color:#FAF6F2;text-decoration:none;padding:18px 28px;border-radius:999px;font-size:17px;font-weight:600;box-shadow:0 14px 30px -12px rgba(107,20,38,.6)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Buscar misa cerca de mí
+      </a>
+      <a href="#semana" style="color:#24151A;text-decoration:none;padding:18px 22px;border-radius:999px;border:1.5px solid #D9C9C3;font-size:17px;font-weight:600">Ver esta semana</a>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:22px;font-size:14px;color:#6E5A60">
+      <span>Gratis</span><span>·</span><span>Sin registro</span><span>·</span><span>Funciona en el móvil como una app</span>
+    </div>
+  </div>
+
+  <div style="flex:1 1 460px;min-width:0;position:relative;height:640px;display:flex;justify-content:center">
+    <svg viewBox="0 0 400 440" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true">
+      <defs>
+        <radialGradient id="hg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F3CF72"/><stop offset="1" stop-color="#E5B84B" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="200" cy="220" r="190" fill="url(#hg)" opacity=".45"/>
+      <g class="hhm-rays" stroke="#E5B84B" stroke-width="2" stroke-linecap="round" opacity=".55">
+        <line x1="200" y1="20" x2="200" y2="60"/><line x1="200" y1="380" x2="200" y2="420"/>
+        <line x1="0" y1="220" x2="40" y2="220"/><line x1="360" y1="220" x2="400" y2="220"/>
+        <line x1="59" y1="79" x2="87" y2="107"/><line x1="313" y1="333" x2="341" y2="361"/>
+        <line x1="341" y1="79" x2="313" y2="107"/><line x1="87" y1="333" x2="59" y2="361"/>
+        <line x1="123" y1="35" x2="138" y2="72"/><line x1="262" y1="368" x2="277" y2="405"/>
+        <line x1="277" y1="35" x2="262" y2="72"/><line x1="138" y1="368" x2="123" y2="405"/>
+        <line x1="15" y1="143" x2="52" y2="158"/><line x1="348" y1="282" x2="385" y2="297"/>
+        <line x1="385" y1="143" x2="348" y2="158"/><line x1="52" y1="282" x2="15" y2="297"/>
+      </g>
+      <circle class="hhm-sun" cx="200" cy="220" r="118" fill="#E5B84B"/>
+      <circle cx="200" cy="220" r="150" fill="none" stroke="#6B1426" stroke-opacity=".12" stroke-width="1.5" stroke-dasharray="3 8"/>
+    </svg>
+    <div class="hhm-float" style="position:relative;margin-top:30px;width:290px;padding:10px;border-radius:46px;background:#1E1114;box-shadow:0 50px 80px -30px rgba(60,10,22,.55),0 0 0 1px rgba(255,255,255,.06) inset">
+      <img width="560" height="1212" src="img/m_home.webp" alt="Pantalla Cerca de mí de Hoy hay misa" style="display:block;width:100%;height:auto;border-radius:37px">
+    </div>
+    <div class="hhm-float2" style="position:absolute;left:0;top:150px;display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:18px;background:#FFFFFF;box-shadow:0 20px 40px -18px rgba(60,10,22,.35)">
+      <span style="width:38px;height:38px;border-radius:12px;background:#F1E6E1;display:flex;align-items:center;justify-content:center;color:#6B1426">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </span>
+      <span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px">La primera que alcanzas</b><span style="font-size:13px;color:#6E5A60">calculada andando desde donde estás</span></span>
+    </div>
+    <div class="hhm-float" style="position:absolute;right:0;bottom:90px;display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:18px;background:#6B1426;color:#FAF6F2;box-shadow:0 20px 40px -18px rgba(60,10,22,.55)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5B84B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.3 6L12 16.5 6.6 19.4l1.3-6L3.4 9.3l6-.7z"/></svg>
+      <span style="font-size:15px;font-weight:600">Tu parroquia, en favoritas</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section style="background:#6B1426;color:#FAF6F2">
+  <div style="max-width:1240px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px">
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#E5B84B"><span id="k-igl">29.500+</span></span><span style="font-size:16px;color:#EBDCD8">iglesias católicas en el mapa</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#E5B84B"><span id="k-dioc">29</span></span><span style="font-size:16px;color:#EBDCD8">diócesis con horarios oficiales</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#E5B84B"><span id="k-hor">~4.000</span></span><span style="font-size:16px;color:#EBDCD8">templos con horario de su diócesis</span></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:1;color:#E5B84B">24 h</span><span style="font-size:16px;color:#EBDCD8">se actualiza sola cada día</span></div>
+  </div>
+  <div style="border-top:1px solid rgba(250,246,242,.14);padding:18px 0;overflow:hidden" aria-hidden="true">
+    <div class="hhm-track" style="gap:48px;font-family:'Instrument Serif',serif;font-size:26px;font-style:italic;color:#D9BFC3;white-space:nowrap">
+      <span>Madrid</span><span>✦</span><span>Barcelona</span><span>✦</span><span>Sevilla</span><span>✦</span><span>Málaga</span><span>✦</span><span>Granada</span><span>✦</span><span>Córdoba</span><span>✦</span><span>Zaragoza</span><span>✦</span><span>Valladolid</span><span>✦</span><span>Salamanca</span><span>✦</span><span>Pamplona</span><span>✦</span><span>Vitoria</span><span>✦</span><span>Lugo</span><span>✦</span><span>Mérida</span><span>✦</span><span>Tenerife</span><span>✦</span><span>Ibiza</span><span>✦</span><span>Menorca</span><span>✦</span>
+      <span>Madrid</span><span>✦</span><span>Barcelona</span><span>✦</span><span>Sevilla</span><span>✦</span><span>Málaga</span><span>✦</span><span>Granada</span><span>✦</span><span>Córdoba</span><span>✦</span><span>Zaragoza</span><span>✦</span><span>Valladolid</span><span>✦</span><span>Salamanca</span><span>✦</span><span>Pamplona</span><span>✦</span><span>Vitoria</span><span>✦</span><span>Lugo</span><span>✦</span><span>Mérida</span><span>✦</span><span>Tenerife</span><span>✦</span><span>Ibiza</span><span>✦</span><span>Menorca</span><span>✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- FUNCIONES -->
+<section id="l-funciones" style="max-width:1240px;margin:0 auto;padding:120px 32px 40px;display:flex;flex-direction:column;gap:64px">
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+    <span style="font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8A2A3D">Horarios de misa</span>
+    <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(42px,5vw,68px);line-height:1;letter-spacing:-1px">Todo lo que necesitas para no llegar tarde a misa.</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px">
+    <article style="display:flex;flex-direction:column;gap:22px;padding:28px 28px 0;border-radius:32px;background:#F1E6E1;overflow:hidden">
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:24px;font-weight:600">Cerca de mí</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#5A464C">Las misas que empiezan ahora a tu alrededor, ordenadas por la que te da tiempo a llegar.</p></div>
+      <img loading="lazy" width="560" height="1212" src="img/m_home.webp" alt="Cerca de mí" style="display:block;width:78%;height:460px;object-fit:cover;object-position:top;align-self:center;border-radius:28px 28px 0 0;box-shadow:0 -10px 40px -20px rgba(60,10,22,.4)">
+    </article>
+    <article style="display:flex;flex-direction:column;gap:22px;padding:28px 28px 0;border-radius:32px;background:#EFE3C8;overflow:hidden">
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:24px;font-weight:600">Esta semana</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#5A464C">Planifica el domingo, la víspera o un festivo. Horarios de invierno y verano incluidos.</p></div>
+      <img loading="lazy" width="560" height="1212" src="img/m_week.webp" alt="Esta semana" style="display:block;width:78%;height:460px;object-fit:cover;object-position:top;align-self:center;border-radius:28px 28px 0 0;box-shadow:0 -10px 40px -20px rgba(60,10,22,.4)">
+    </article>
+    <article style="display:flex;flex-direction:column;gap:22px;padding:28px 28px 0;border-radius:32px;background:#2A161B;color:#FAF6F2;overflow:hidden">
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:24px;font-weight:600">Favoritas y modo oscuro</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#D9C9C3">Guarda tus iglesias de siempre. De noche, la pantalla no deslumbra en el templo.</p></div>
+      <img loading="lazy" width="560" height="1212" src="img/m_dark.webp" alt="Modo oscuro" style="display:block;width:78%;height:460px;object-fit:cover;object-position:top;align-self:center;border-radius:28px 28px 0 0;box-shadow:0 -10px 40px -20px rgba(0,0,0,.6)">
+    </article>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section id="l-mapa" style="max-width:1240px;margin:0 auto;padding:100px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+  <div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:20px">
+    <span style="font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8A2A3D">El mapa</span>
+    <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(42px,5vw,64px);line-height:1;letter-spacing:-1px">De Finisterre a Formentera.</h2>
+    <p style="margin:0;font-size:18px;line-height:1.6;color:#5A464C">Mueve el mapa y aparecen las iglesias de esa zona. Donde la diócesis publica horarios, los ves al momento; en el resto, te llevamos a su web o a misas.org para consultarlo.</p>
+    <div style="display:flex;flex-direction:column;gap:12px;font-size:16px">
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:12px;height:12px;border-radius:50%;background:#6B1426"></span>Horario oficial de la diócesis</div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:12px;height:12px;border-radius:50%;background:#C79A2E"></span>Iglesia en el mapa, horario por confirmar</div>
+    </div>
+  </div>
+  <div style="flex:1.6 1 560px;min-width:0;position:relative;border-radius:28px;background:#FFFFFF;padding:12px;box-shadow:0 40px 80px -40px rgba(60,10,22,.45)">
+    <div style="display:flex;gap:7px;padding:4px 6px 12px"><span style="width:11px;height:11px;border-radius:50%;background:#E5D6D1"></span><span style="width:11px;height:11px;border-radius:50%;background:#E5D6D1"></span><span style="width:11px;height:11px;border-radius:50%;background:#E5D6D1"></span></div>
+    <div style="position:relative;border-radius:18px;overflow:hidden">
+      <img loading="lazy" width="1400" height="875" src="img/d_map.webp" alt="Mapa de iglesias de Hoy hay misa" style="display:block;width:100%;height:auto">
+      <span class="hhm-pin" style="left:38%;top:44%"></span>
+      <span class="hhm-pin" style="left:62%;top:30%"></span>
+      <span class="hhm-pin" style="left:52%;top:68%"></span>
+    </div>
+  </div>
+</section>
+
+<!-- FUENTES -->
+<section id="l-fuentes" style="background:#F1E6E1">
+  <div style="max-width:1240px;margin:0 auto;padding:110px 32px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+      <span style="font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8A2A3D">Fuentes</span>
+      <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(40px,4.6vw,60px);line-height:1.02;letter-spacing:-1px">Horarios de quien los sabe: las propias diócesis.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+      <div style="display:flex;flex-direction:column;gap:12px;padding:30px;border-radius:24px;background:#FAF6F2">
+        <span style="font-family:'Instrument Serif',serif;font-size:40px;color:#6B1426">01</span>
+        <h3 style="margin:0;font-size:20px">Webs oficiales</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A464C">Leemos cada día los buscadores y listados que publican las diócesis españolas.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding:30px;border-radius:24px;background:#FAF6F2">
+        <span style="font-family:'Instrument Serif',serif;font-size:40px;color:#6B1426">02</span>
+        <h3 style="margin:0;font-size:20px">OpenStreetMap</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A464C">Completa el mapa con las iglesias del resto de España, con su horario cuando lo tiene.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding:30px;border-radius:24px;background:#FAF6F2">
+        <span style="font-family:'Instrument Serif',serif;font-size:40px;color:#6B1426">03</span>
+        <h3 style="margin:0;font-size:20px">Siempre con enlace</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A464C">Cada iglesia lleva a su fuente, para que puedas comprobarlo antes de salir de casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RETIROS (bloqueado) -->
+<section id="l-retiros" style="max-width:1240px;margin:0 auto;padding:120px 32px">
+  <a href="#retiros" aria-label="Retiros, próximamente" style="display:block;position:relative;border-radius:36px;overflow:hidden;background:#2A161B;min-height:460px;text-decoration:none">
+    <div aria-hidden="true" style="position:absolute;inset:0;padding:48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;filter:blur(14px);opacity:.75">
+      <div style="border-radius:24px;background:#6B1426"></div>
+      <div style="border-radius:24px;background:#E5B84B;opacity:.6"></div>
+      <div style="border-radius:24px;background:#8A2A3D"></div>
+      <div style="grid-column:span 2;border-radius:24px;background:#4A1C26"></div>
+      <div style="border-radius:24px;background:#E5B84B;opacity:.35"></div>
+    </div>
+    <div style="position:relative;min-height:460px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:48px;text-align:center;color:#FAF6F2;background:rgba(30,17,20,.35)">
+      <span style="width:84px;height:84px;border-radius:50%;background:rgba(250,246,242,.12);border:1px solid rgba(250,246,242,.3);display:flex;align-items:center;justify-content:center">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E5B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      </span>
+      <span style="font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#E5B84B">Próximamente</span>
+      <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(44px,5vw,72px);line-height:1">Retiros</h2>
+    </div>
+  </a>
+</section>
+
+<!-- CTA -->
+<section style="max-width:1240px;margin:0 auto;padding:0 32px 120px">
+  <div style="position:relative;border-radius:40px;background:#6B1426;color:#FAF6F2;padding:88px 48px;display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center;overflow:hidden">
+    <svg viewBox="0 0 400 200" style="position:absolute;left:50%;bottom:-120px;width:720px;margin-left:-360px;opacity:.35" aria-hidden="true">
+      <circle class="hhm-sun" cx="200" cy="200" r="150" fill="#E5B84B"/>
+    </svg>
+    <h2 style="position:relative;margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(48px,6vw,88px);line-height:.98;letter-spacing:-1.5px">¿Hoy hay misa?<br><em style="color:#E5B84B">Sí. Y cerca.</em></h2>
+    <p style="position:relative;margin:0;max-width:520px;font-size:19px;line-height:1.55;color:#EBDCD8">Añádela a tu pantalla de inicio y tenla a mano como una app más.</p>
+    <a href="#cerca" style="position:relative;background:#FAF6F2;color:#6B1426;text-decoration:none;padding:18px 32px;border-radius:999px;font-size:17px;font-weight:700">Buscar misa ahora</a>
+  </div>
+</section>
+
+</div>
+</section>
+
 <header class="band" id="band">
-<nav class="tabbar" aria-label="Secciones"><div class="tabin tabs"><span class="pill-ind"></span><a href="#cerca" class="tb" data-grp="misas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Horarios</span></a><a href="#retiros" class="tb" data-grp="retiros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 10 8l3.5 6 2-3 4.5 8.5z"/><circle cx="17" cy="6" r="2"/></svg><span>Retiros</span></a></div></nav>
+<nav class="tabbar" aria-label="Secciones"><div class="tabin tabs"><span class="pill-ind"></span><a href="#inicio" class="tb" data-grp="inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg><span>Inicio</span></a><a href="#cerca" class="tb" data-grp="misas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Horarios</span></a><a href="#retiros" class="tb" data-grp="retiros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 10 8l3.5 6 2-3 4.5 8.5z"/><circle cx="17" cy="6" r="2"/></svg><span>Retiros</span></a></div></nav>
 <div class="wrap">
   <div class="head">
     <div>

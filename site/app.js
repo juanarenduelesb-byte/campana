@@ -19,7 +19,9 @@ const LS={get(k){try{return JSON.parse(store(k).getItem(PFX+k))}catch(e){return 
 // ---------- datos (un archivo por diócesis, se cargan según dónde estés) ----------
 const IDX=window.CAMPANA_IDX, META={built:IDX.built,fallos:IDX.dioc.filter(d=>d.estado!=='ok')};
 const C=[], PLACES=[], LOADED=new Set(); let LOADING=0;
-const DEFLOC={lat:36.2825,lon:-5.2945,label:'Sotogrande',def:true};
+const DEFLOC={lat:40.4168,lon:-3.7038,label:'Madrid',def:true};
+const MAIN=['Madrid','Barcelona','Valencia','Sevilla','Zaragoza','Málaga','Bilbao','Granada'];
+let NEAR=null; // última posición GPS: los atajos muestran sitios cercanos a ella
 const BASEPL=[['Sotogrande',36.2825,-5.2945],['Gibraltar',36.1408,-5.3536],['Algeciras',36.1408,-5.4562],['La Línea de la Concepción',36.1681,-5.3478],['San Roque',36.2103,-5.3844],['Estepona',36.4276,-5.1459],['Manilva',36.3777,-5.2506],['Casares',36.4459,-5.2736],['Marbella',36.5100,-4.8825],['Tarifa',36.0143,-5.6044],['Los Barrios',36.1856,-5.4912],['Jimena de la Frontera',36.4343,-5.4531],['Castellar de la Frontera',36.2886,-5.4533],['Gaucín',36.5170,-5.3189],
  ['Sevilla',37.3891,-5.9845],['Málaga',36.7213,-4.4214],['Cádiz',36.5271,-6.2886],['Jerez de la Frontera',36.6850,-6.1261],['Córdoba',37.8882,-4.7794],['Granada',37.1773,-3.5986],['Almería',36.8340,-2.4637],['Huelva',37.2614,-6.9447],['Jaén',37.7796,-3.7849],['Madrid',40.4168,-3.7038],['Barcelona',41.3874,2.1686],['Valencia',39.4699,-0.3763],['Zaragoza',41.6488,-0.8891],['Bilbao',43.2630,-2.9350],['Alicante',38.3452,-0.4810],['Murcia',37.9922,-1.1307],['Palma de Mallorca',39.5696,2.6502],['Las Palmas de Gran Canaria',28.1235,-15.4363],['Santa Cruz de Tenerife',28.4636,-16.2518],['Valladolid',41.6523,-4.7245],['Vigo',42.2406,-8.7207],['A Coruña',43.3623,-8.4115],['Santander',43.4623,-3.8100],['Pamplona',42.8125,-1.6458],['San Sebastián',43.3183,-1.9812],['Oviedo',43.3614,-5.8593],['Toledo',39.8628,-4.0273],['Salamanca',40.9701,-5.6635],['Burgos',42.3439,-3.6969],['Logroño',42.4627,-2.4450],['Badajoz',38.8794,-6.9707],['Santiago de Compostela',42.8782,-8.5448]];
 function misasOrg(c){return 'https://misas.org/buscar/misas/'+encodeURIComponent((c.localidad||c.nombre).toLowerCase())}
@@ -188,26 +190,33 @@ function setLoc(l){kick();$('#gmsg').hidden=true;LOC=l; SEL=null; q.value=l.def?
 function gps(auto){
   const m=$('#gmsg');
   const fail=why=>{
-    if(auto){m.hidden=false;m.textContent='No he podido leer tu ubicación'+(why?' ('+why+')':'')+'. Muestro Sotogrande; escribe un lugar o márcalo en el mapa.';}
+    if(auto){m.hidden=false;m.textContent='No he podido leer tu ubicación'+(why?' ('+why+')':'')+'. Muestro '+DEFLOC.label+'; escribe un lugar o márcalo en el mapa.';}
     else{m.hidden=false;m.textContent='No he podido leer tu ubicación (permiso denegado o no disponible). Escribe tu municipio o toca el botón del mapa para marcar dónde estás.'}
   };
   if(!navigator.geolocation)return fail('no disponible en este navegador');
   if(!auto){m.hidden=false;m.textContent='Pidiendo tu ubicación…'}
   try{
     navigator.geolocation.getCurrentPosition(p=>{
-      m.hidden=true; GPSOK=true;
+      m.hidden=true; GPSOK=true; NEAR={lat:p.coords.latitude,lon:p.coords.longitude};
       const {p:pl,d}=nearestPlace(p.coords.latitude,p.coords.longitude);
       setLoc({lat:p.coords.latitude,lon:p.coords.longitude,label:d<12&&pl?'Tu ubicación · cerca de '+pl.n:'Tu ubicación',gps:true});
     },err=>fail(err&&err.code===1?'permiso denegado':''),{timeout:9000,maximumAge:60000,enableHighAccuracy:false});
   }catch(e){fail('')}
 }
 $('#gps').addEventListener('click',()=>gps(false));
+const QMAX=()=>innerWidth<600?5:8;
 function renderQuick(){
-  const names=['Sotogrande','Guadiaro','Torreguadiaro','San Roque','La Línea de la Concepción','Estepona','Algeciras','Manilva'];
-  const arr=names.map(n=>PLACES.find(p=>p.k===norm(n))).filter(Boolean).slice(0,7);
-  $('#quick').innerHTML=(GPSOK?'':'')+arr.map((p,i)=>{
-    const on=!LOC.gps&&Math.abs(LOC.lat-p.lat)<2e-3&&Math.abs(LOC.lon-p.lon)<2e-3;
-    return `<button type="button" class="qchip" data-p="${esc(p.k)}" aria-pressed="${on}">${p.c?'<i class="dot"></i>':''}${esc(p.n.replace('de la Concepción',''))}</button>`}).join('');
+  let arr;
+  if(NEAR){ // cerca de tu ubicación: localidades reales (con varias iglesias), sin repetir sitios casi iguales
+    const BAD=/^(pp\.|pp |parroquia|centro|hermanas|carmelitas|iglesia|capilla|convento|monasterio|ermita|santuario|bas[ií]lica|colegio|residencia|hospital|real |nuestra|ntra|templo|padres)|[()]/i;
+    const dist=p=>distKm(NEAR.lat,NEAR.lon,p.lat,p.lon);
+    const pick=(list,max)=>{for(const p of list.sort((a,b)=>dist(a)-dist(b))){if(arr.length>=QMAX())break;if(dist(p)>max)break;if(arr.some(q=>distKm(q.lat,q.lon,p.lat,p.lon)<2.5||q.k.split('/')[0].trim()===p.k.split('/')[0].trim()))continue;arr.push(p)}};
+    arr=[]; pick(PLACES.filter(p=>p.c>=2&&!BAD.test(p.n)),50);
+    if(arr.length<5)pick(PLACES.filter(p=>!BAD.test(p.n)),150);
+  }else arr=MAIN.map(n=>PLACES.find(p=>p.k===norm(n))).filter(Boolean).slice(0,QMAX()+1);
+  $('#quick').innerHTML=(NEAR?'<span class="qlab">Cerca de ti:</span>':'')+arr.map(p=>{
+    const on=Math.abs(LOC.lat-p.lat)<2e-3&&Math.abs(LOC.lon-p.lon)<2e-3;
+    return `<button type="button" class="qchip" data-p="${esc(p.k)}" aria-pressed="${on}">${p.c?'<i class="dot"></i>':''}${esc(p.n.replace(' de la Concepción',''))}</button>`}).join('');
 }
 $('#quick').addEventListener('click',e=>{const b=e.target.closest('.qchip');if(!b)return;const p=PLACES.find(x=>x.k===b.dataset.p);if(p)setLoc({lat:p.lat,lon:p.lon,label:p.n.replace(' de la Concepción','')})});
 
@@ -274,7 +283,7 @@ function renderList(){
   const st=$('#status'), li=$('#list');
   const all=sorted();
   const hoy=ROWS.filter(c=>c._u&&c._u[0]&&c._u[0].k===0).length;
-  st.innerHTML=`<span><span class="count num">${nf.format(ROWS.length)}</span> iglesias a menos de ${RAD} km${LOC.def?' de Sotogrande':''}</span>`+
+  st.innerHTML=`<span><span class="count num">${nf.format(ROWS.length)}</span> iglesias a menos de ${RAD} km${LOC.def?' de '+DEFLOC.label:''}</span>`+
     FL.map(([k,t])=>`<button type="button" class="qchip" data-f="${k}" aria-pressed="${FILT===k}">${t}${k==='hoy'?` <span class="n">${hoy}</span>`:''}${k==='fav'?` <span class="n">${ROWS.filter(isFav).length}</span>`:''}</button>`).join('')+
     `<span style="flex:1"></span><button type="button" class="qchip" data-o="${ORD==='cerca'?'antes':'cerca'}" title="Cambiar el orden de la lista">Orden: ${ORD==='cerca'?'más cercana':'antes empieza'}</button>`;
   if(!all.length){li.innerHTML=`<div class="empty"><b>Nada con este filtro</b>${FILT==='fav'?'Marca iglesias con la estrella para verlas aquí.':'Prueba a ampliar el radio o quitar el filtro.'}</div>`;return}
@@ -399,7 +408,7 @@ $('#zpick').addEventListener('click',()=>setPick(!PICK));
 // ---------- semana ----------
 function renderWeek(){
   const body=$('#wbody');
-  $('#wtitle').textContent='Misas de esta semana cerca de '+(LOC.def?'Sotogrande':LOC.label.replace(/^Tu ubicación · cerca de /,'').split(',')[0]);
+  $('#wtitle').textContent='Misas de esta semana cerca de '+(LOC.def?DEFLOC.label:LOC.label.replace(/^Tu ubicación · cerca de /,'').split(',')[0]);
   const days=[...Array(7)].map((_,k)=>addDays(NOW.date,k));
   if(!days.includes(WDAY))WDAY=days[0];
   const pool=ROWS.filter(c=>WFILT==='todas'||(WFILT==='en'&&c.en)||(WFILT==='fav'&&isFav(c)));
@@ -441,7 +450,7 @@ function renderKpis(){
   const hoy=C.reduce((a,c)=>a+timesOn(c,NOW.date).t.filter(t=>tmin(t)>=NOW.min-DUR).length,0);
   $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(IDX.dioc.reduce((a,d)=>a+d.n,0)+(IDX.osm?IDX.osm.n:0))}</b><span>iglesias en el mapa</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy en tu zona</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
   const b=META.built;
-  $('#foot').innerHTML=`Hoy hay misa · Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="inicio.html">Qué es Hoy hay misa</a><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
+  $('#foot').innerHTML=`Hoy hay misa · Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
 }
 
 // ---------- render general ----------
@@ -453,16 +462,24 @@ function render(){
   if(VIEW==='fuentes')renderFuentes();
   renderKpis();
 }
-const MISAS=['cerca','semana','favoritas','fuentes'], VIEWS=MISAS.concat(['retiros']);
+const MISAS=['cerca','semana','favoritas','fuentes'], VIEWS=['inicio'].concat(MISAS,['retiros']); let GPSTRY=false;
 function route_(){
-  const h=(location.hash||'#cerca').slice(1).split('?')[0]; VIEW=VIEWS.includes(h)?h:'cerca';
-  const grp=VIEW==='retiros'?'retiros':'misas'; document.body.dataset.grp=grp;
+  const h=(location.hash||'#inicio').slice(1).split('?')[0]; VIEW=VIEWS.includes(h)?h:(h?'cerca':'inicio');
+  const grp=VIEW==='retiros'||VIEW==='inicio'?VIEW:'misas'; document.body.dataset.grp=grp;
   VIEWS.forEach(v=>$('#v-'+v).hidden=v!==VIEW);
   document.querySelectorAll('.tabs a').forEach(a=>{const on=a.dataset.grp?a.dataset.grp===grp:a.getAttribute('href')==='#'+VIEW;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const tool=VIEW==='cerca'||VIEW==='semana'; $('#tool').hidden=!tool; $('#quick').hidden=!tool;
-  document.title=VIEW==='retiros'?'Retiros (próximamente) · Hoy hay misa':'Hoy hay misa · Horarios de misa cerca de ti';
+  if(VIEW==='inicio'){scrollTo(0,0);inicioKpis()}
+  if(tool&&!GPSTRY){GPSTRY=true;gps(true)} // la ubicación se pide al entrar en Horarios, no en Inicio
+  document.title=VIEW==='inicio'?'Hoy hay misa · La próxima misa, cerca de ti':VIEW==='retiros'?'Retiros (próximamente) · Hoy hay misa':'Hoy hay misa · Horarios de misa cerca de ti';
   if(VIEW==='retiros'){RET.render()}   // sección bloqueada: «Próximamente»
   kick();render();moveInd();
+}
+
+function inicioKpis(){
+  const f=n=>nf.format(n), ok=IDX.dioc.filter(d=>d.n>0), hor=ok.reduce((a,d)=>a+(d.n||0),0), osm=(IDX.osm&&IDX.osm.n)||0;
+  const set=(id,t)=>{const e=document.getElementById(id);if(e)e.textContent=t};
+  set('k-dioc',f(ok.length)); set('k-hor',f(hor)); if(hor+osm)set('k-igl',f(Math.floor((hor+osm)/100)*100)+'+');
 }
 
 // ---------- retiros: organizador ----------
@@ -583,6 +600,5 @@ if(!CONSENT())showCookies(false);
 
 route_();
 ensureNear(DEFLOC.lat,DEFLOC.lon,60).then(ch=>{if(ch)render()});
-gps(true); // cada vez que entras, intenta situarte
 setInterval(()=>{render()},30000);
 })();
