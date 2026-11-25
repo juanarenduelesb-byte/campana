@@ -54,3 +54,10 @@ y un índice de cobertura (`site/data/indice.js`); la web carga solo las dióces
 - Texto libre en español y catalán (`pipeline/texto.py`): «Lunes a sábado: 19h», bloques LABORABLES / VÍSPERAS / FESTIVOS, «Feiners: dimecres i divendres 20:00h».
 - Las coordenadas salen de la propia web cuando las publica; si no, de OpenStreetMap (Nominatim, 1 consulta por segundo, con caché en `pipeline/static/geo_cache.json`). Si el resultado cae fuera de la zona de la diócesis, se usa la localidad y la ficha lo marca como ubicación aproximada.
 - Diócesis revisadas sin horarios legibles todavía: Burgos (no publica la localidad de cada misa), Getafe y Jaén (solo directorio, sin horarios), Cartagena (buscador en mantenimiento), Huelva (PDF), Ibiza (solo la ciudad).
+
+### Resto de España: OpenStreetMap
+
+`pipeline/osm.py` descarga de Overpass todas las iglesias católicas de España (unas decenas de miles) y genera `site/data/osm-NN.js` por provincia,
+descartando las que ya vienen de una fuente oficial. Si la iglesia tiene la etiqueta `service_times`, se interpreta como horario colaborativo y la ficha lo marca como no oficial.
+Las demás muestran un enlace de búsqueda a misas.org. **Misas.org no se descarga**: su aviso legal prohíbe extraer su información sistemáticamente.
+La capa se rehace en la acción diaria y se puede lanzar sola con el flujo «Iglesias de OpenStreetMap».

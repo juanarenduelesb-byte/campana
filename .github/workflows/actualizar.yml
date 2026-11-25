@@ -62,6 +62,9 @@ jobs:
           TZ: Europe/Madrid
         run: python3 pipeline/build.py
 
+      - name: Iglesias de OpenStreetMap (zonas sin fuente oficial)
+        run: python3 pipeline/osm.py
+
       - name: Validar
         run: python3 pipeline/check.py
 

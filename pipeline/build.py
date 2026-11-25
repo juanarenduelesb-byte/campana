@@ -123,6 +123,10 @@ def main(solo=None):
     idx += [e for e in ult if e['id'] not in hechos]          # lo que otro proceso haya escrito mientras tanto
     orden = [f[0] for f in FUENTES]; idx.sort(key=lambda e: orden.index(e['id']) if e['id'] in orden else 99)
     datos = {'built': ahora, 'dioc': idx, 'pendientes': PENDIENTES}
+    try:
+        o = json.loads(open(os.path.join(DATA, 'indice.json'), encoding='utf8').read()).get('osm')
+        if o: datos['osm'] = o   # la capa de OpenStreetMap la rehace osm.py
+    except Exception: pass
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, 'indice.json'), 'w', encoding='utf8').write(json.dumps(datos, ensure_ascii=False))
     open(os.path.join(DATA, 'indice.js'), 'w', encoding='utf8').write('window.CAMPANA_IDX=' + json.dumps(datos, ensure_ascii=False, separators=(',', ':')) + ';\n')

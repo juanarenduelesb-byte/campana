@@ -1,0 +1,48 @@
+name: Iglesias de OpenStreetMap
+
+# Rehace solo la capa de OpenStreetMap (todas las iglesias de España). La acción diaria también la rehace;
+# esta sirve para lanzarla a mano sin esperar a la descarga de las diócesis.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  osm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: actualizar
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Descargar y generar
+        run: python3 pipeline/osm.py
+      - name: Validar
+        run: python3 pipeline/check.py
+      - name: Publicar
+        run: |
+          git config user.name "Campana (actualización diaria)"
+          git config user.email "actions@users.noreply.github.com"
+          rm -rf /tmp/data && cp -r site/data /tmp/data
+          for intento in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            rm -f site/data/osm-*.js && cp /tmp/data/osm-*.js site/data/
+            python3 - <<'PY'
+          import json
+          n = json.load(open('/tmp/data/indice.json', encoding='utf8'))['osm']
+          i = json.load(open('site/data/indice.json', encoding='utf8')); i['osm'] = n
+          open('site/data/indice.json', 'w', encoding='utf8').write(json.dumps(i, ensure_ascii=False))
+          open('site/data/indice.js', 'w', encoding='utf8').write('window.CAMPANA_IDX=' + json.dumps(i, ensure_ascii=False, separators=(',', ':')) + ';\n')
+          PY
+            git add -A site/data
+            if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+            git commit -q -m "Iglesias de OpenStreetMap $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
+            if git push; then exit 0; fi
+            sleep $((intento * 10))
+          done
+          exit 1

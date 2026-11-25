@@ -22,13 +22,14 @@ const C=[], PLACES=[], LOADED=new Set(); let LOADING=0;
 const DEFLOC={lat:36.2825,lon:-5.2945,label:'Sotogrande',def:true};
 const BASEPL=[['Sotogrande',36.2825,-5.2945],['Gibraltar',36.1408,-5.3536],['Algeciras',36.1408,-5.4562],['La Línea de la Concepción',36.1681,-5.3478],['San Roque',36.2103,-5.3844],['Estepona',36.4276,-5.1459],['Manilva',36.3777,-5.2506],['Casares',36.4459,-5.2736],['Marbella',36.5100,-4.8825],['Tarifa',36.0143,-5.6044],['Los Barrios',36.1856,-5.4912],['Jimena de la Frontera',36.4343,-5.4531],['Castellar de la Frontera',36.2886,-5.4533],['Gaucín',36.5170,-5.3189],
  ['Sevilla',37.3891,-5.9845],['Málaga',36.7213,-4.4214],['Cádiz',36.5271,-6.2886],['Jerez de la Frontera',36.6850,-6.1261],['Córdoba',37.8882,-4.7794],['Granada',37.1773,-3.5986],['Almería',36.8340,-2.4637],['Huelva',37.2614,-6.9447],['Jaén',37.7796,-3.7849],['Madrid',40.4168,-3.7038],['Barcelona',41.3874,2.1686],['Valencia',39.4699,-0.3763],['Zaragoza',41.6488,-0.8891],['Bilbao',43.2630,-2.9350],['Alicante',38.3452,-0.4810],['Murcia',37.9922,-1.1307],['Palma de Mallorca',39.5696,2.6502],['Las Palmas de Gran Canaria',28.1235,-15.4363],['Santa Cruz de Tenerife',28.4636,-16.2518],['Valladolid',41.6523,-4.7245],['Vigo',42.2406,-8.7207],['A Coruña',43.3623,-8.4115],['Santander',43.4623,-3.8100],['Pamplona',42.8125,-1.6458],['San Sebastián',43.3183,-1.9812],['Oviedo',43.3614,-5.8593],['Toledo',39.8628,-4.0273],['Salamanca',40.9701,-5.6635],['Burgos',42.3439,-3.6969],['Logroño',42.4627,-2.4450],['Badajoz',38.8794,-6.9707],['Santiago de Compostela',42.8782,-8.5448]];
+function misasOrg(c){return 'https://misas.org/buscar/misas/'+encodeURIComponent((c.localidad||c.nombre).toLowerCase())}
 function enrich(c){
   const addr=[c.calle&&(c.calle+(c.num?', '+c.num:'')),c.cp,c.localidad].filter(Boolean).join(', ');
   return {...c,i:C.length,addr,en:(c.idiomas||[]).includes('en'),k:norm(c.nombre+' '+c.localidad)};
 }
 function rebuildPlaces(){
   const PL={};
-  C.forEach(c=>{const k=norm(c.localidad);const p=PL[k]||(PL[k]={n:c.localidad,lat:0,lon:0,c:0});p.lat+=c.lat;p.lon+=c.lon;p.c++});
+  C.forEach(c=>{if(!c.localidad)return;const k=norm(c.localidad);const p=PL[k]||(PL[k]={n:c.localidad,lat:0,lon:0,c:0});p.lat+=c.lat;p.lon+=c.lon;p.c++});
   PLACES.length=0;
   Object.values(PL).forEach(p=>PLACES.push({n:p.n,lat:p.lat/p.c,lon:p.lon/p.c,c:p.c,k:norm(p.n)}));
   BASEPL.forEach(([n,lat,lon])=>{const k=norm(n);if(!PLACES.some(p=>p.k===k||p.k.startsWith(k)||k.startsWith(p.k)))PLACES.push({n,lat,lon,c:0,k})});
@@ -45,7 +46,8 @@ function loadDioc(id){
 }
 // carga las diócesis cuyo territorio está a menos de r km del punto; devuelve true si ha cargado algo
 function ensureNear(lat,lon,r){
-  const need=IDX.dioc.filter(d=>!LOADED.has(d.id)&&bboxKm(lat,lon,d.bbox)<=(r||60));
+  const capas=IDX.dioc.concat(IDX.osm?IDX.osm.capas:[]);
+  const need=capas.filter(d=>!LOADED.has(d.id)&&bboxKm(lat,lon,d.bbox)<=(r||60));
   return Promise.all(need.map(d=>loadDioc(d.id))).then(a=>a.some(Boolean));
 }
 rebuildPlaces();
@@ -256,10 +258,11 @@ function heroCard(x,kind,merged,sinHoy){
 function renderBest(){
   const el=$('#best'); const h=heroes();
   let pre='';
-  const far=C.length?Math.min(...C.map(c=>c._d)):1e9;
+  const OF=C.filter(c=>!c.osm), far=OF.length?Math.min(...OF.map(c=>c._d)):1e9, hayOsm=C.some(c=>c.osm&&c._d<30);
   if(LOADING)pre=`<div class="info" style="grid-column:1/-1;margin:0"><b>Cargando las iglesias de tu zona…</b></div>`;
-  else if(far>30){const ds=IDX.dioc.map(d=>d.nombre).join(', ');pre=`<div class="info warn" style="grid-column:1/-1;margin:0"><b>Aún no tengo horarios oficiales de esta zona</b>Por ahora cubro las diócesis de ${esc(ds)}${far<1e8?`; la iglesia más cercana que conozco está a ${fmtKm(far)}`:''}. Voy añadiendo más diócesis (mira «Fuentes»).</div>`}
-  if(far>80&&!LOADING){el.innerHTML=pre;return}
+  else if(far>30&&hayOsm)pre=`<div class="info warn" style="grid-column:1/-1;margin:0"><b>Aquí aún no tengo horarios oficiales</b>Te enseño las iglesias cercanas (ubicación de OpenStreetMap) y, cuando su ficha colaborativa lo incluye, su horario. En cada una tienes un enlace para consultar el horario en misas.org o en la web de la parroquia.</div>`;
+  else if(far>30){const ds=IDX.dioc.map(d=>d.nombre).join(', ');pre=`<div class="info warn" style="grid-column:1/-1;margin:0"><b>Aún no tengo horarios oficiales de esta zona</b>Por ahora cubro las diócesis de ${esc(ds)}. Voy añadiendo más diócesis (mira «Fuentes»).</div>`}
+  if(far>80&&!LOADING&&!C.some(c=>c.osm&&c.interpretado&&c._d<30)){el.innerHTML=pre;return}
   if(!h){el.innerHTML=pre+`<div class="best glass"><div class="ic mut">${ICON.bell}</div><div><p class="k mut">Sin misas próximas</p><h2>No encuentro misas en los próximos 8 días</h2><p>Puede que las parroquias no publiquen horario. Mira la lista y llama antes de ir.</p></div></div>`;return}
   const same=h.near.c===h.first.c&&h.near.m===h.first.m;
   el.innerHTML=pre+(same?heroCard(h.near,'near',true,h.sinHoy):heroCard(h.near,'near',false,h.sinHoy)+heroCard(h.first,'first'));
@@ -312,17 +315,19 @@ function renderCard(){
   const up=(c._u||[]).slice(0,4).map(m=>esc(cap((m.k===0?'hoy':m.k===1?'mañana':DOWS[dowOf(m.ds)]+' '+dnum(m.ds))+' '+m.t))).join('<br>');
   const hasBoth=!emptySeason(c.h.inv)&&!emptySeason(c.h.ver)&&JSON.stringify(c.h.inv)!==JSON.stringify(c.h.ver);
   el.hidden=false;
-  el.innerHTML=`<button class="x" type="button" id="cx" aria-label="Cerrar">×</button><h3>${esc(c.nombre)} ${langBadge(c)}</h3><p class="sub">${esc(c.addr)} · ${esc(c.diocesis)}</p>
+  el.innerHTML=`<button class="x" type="button" id="cx" aria-label="Cerrar">×</button><h3>${esc(c.nombre)} ${langBadge(c)}</h3><p class="sub">${esc([c.addr,c.diocesis].filter(Boolean).join(" · "))}</p>
   <div class="facts"><div class="fact ${s.k==='pronto'||s.k==='curso'?'g':''}"><span>Próxima misa</span><b class="s-${s.k}">${esc(s.t)}${s.d?' · '+esc(s.d):''}</b></div><div class="fact"><span>Distancia</span><b class="num">${fmtKm(d)} · ~${eta(d)} min</b></div>
   ${up?`<div class="fact wide"><span>Siguientes misas</span><b>${up}</b></div>`:''}
   ${c.tel?`<div class="fact"><span>Teléfono</span><b class="num">${esc(telFmt(c.tel))}</b></div>`:''}${c.parroco?`<div class="fact"><span>${esc(c.rol||'Párroco')}</span><b>${esc(c.parroco)}</b></div>`:''}</div>
-  <div class="cacts"><a class="btn guard" href="${route(c)}" target="_blank" rel="noopener">${ICON.go}Cómo llegar</a>${c.tel?`<a class="btn ghost" href="tel:${esc(c.tel.replace(/\D/g,''))}">${ICON.tel}Llamar</a>`:''}<a class="btn ghost" href="${esc(c.url)}" target="_blank" rel="noopener">${ICON.ext}Fuente</a>${starBtn(c)}</div>
+  <div class="cacts"><a class="btn guard" href="${route(c)}" target="_blank" rel="noopener">${ICON.go}Cómo llegar</a>${c.tel?`<a class="btn ghost" href="tel:${esc(c.tel.replace(/\D/g,''))}">${ICON.tel}Llamar</a>`:''}<a class="btn ghost" href="${esc(c.url)}" target="_blank" rel="noopener">${ICON.ext}${c.osm?'OpenStreetMap':'Fuente'}</a>${c.web?`<a class="btn ghost" href="${esc(c.web)}" target="_blank" rel="noopener">${ICON.ext}Web</a>`:''}${!c.interpretado||c.osm?`<a class="btn ghost" href="${misasOrg(c)}" target="_blank" rel="noopener">${ICON.ext}Horario en misas.org</a>`:''}${starBtn(c)}</div>
   <h3 class="sub2" style="margin:16px 0 4px;font-size:15px">Horario semanal</h3>
   ${hasBoth?`<div class="seas"><button type="button" data-seas="inv" aria-pressed="${sk==='inv'}">Invierno${cur==='inv'?' · ahora':''}</button><button type="button" data-seas="ver" aria-pressed="${sk==='ver'}">Verano${cur==='ver'?' · ahora':''}</button></div>`:''}
   ${weekTable(c,hasBoth?sk:(emptySeason(c.h.inv)?'ver':'inv'))}
   ${c.obs?`<p class="note"><b>Observaciones de la parroquia:</b> ${esc(c.obs)}</p>`:''}
   ${c.texto?`<details class="note"><summary>Texto original publicado</summary><p>${esc(c.texto)}</p></details>`:''}
-  ${!c.interpretado?'<p class="note"><b>No he podido interpretar el horario.</b> Consulta la fuente oficial o llama a la parroquia.</p>':''}
+  ${c.osm&&!c.interpretado?'<p class="note"><b>No tengo horario oficial de esta iglesia.</b> Su diócesis aún no está incluida. Consulta el horario en misas.org, en la web de la parroquia o llamando.</p>':''}
+  ${c.osm&&c.interpretado?'<p class="note"><b>Horario colaborativo de OpenStreetMap</b>, no de la diócesis: compruébalo antes de ir.</p>':''}
+  ${!c.osm&&!c.interpretado?'<p class="note"><b>No he podido interpretar el horario.</b> Consulta la fuente oficial o llama a la parroquia.</p>':''}
   ${c.id.startsWith('m')&&c.interpretado?'<p class="note">Horario interpretado automáticamente desde un texto libre de la diócesis. Si algo no cuadra, manda el texto original que aparece arriba.</p>':''}
   ${c.res?'<p class="note"><b>Capilla de una residencia de mayores.</b> Confirma con la parroquia si se puede asistir sin ser residente.</p>':''}
   ${c.aprox?'<p class="note">La ubicación en el mapa es aproximada (se ha situado por la localidad o la calle).</p>':''}
@@ -424,17 +429,17 @@ function renderFavs(){
 function renderFuentes(){
   const ok=C.filter(c=>c.interpretado).length, ap=C.filter(c=>c.aprox).length;
   const tot=IDX.dioc.reduce((a,d)=>a+d.n,0), okt=IDX.dioc.reduce((a,d)=>a+d.ok,0);
-  $('#method').innerHTML=`<div><h3>Cobertura</h3><p>Solo uso <b>fuentes oficiales de cada diócesis</b>. Ahora mismo: ${IDX.dioc.length} diócesis y ${nf.format(tot)} iglesias y capillas, de las que ${nf.format(okt)} publican un horario que he podido interpretar. España tiene 69 diócesis y unas 23.000 parroquias, y cada una publica a su manera (a veces nada), así que las voy añadiendo de una en una. Si tu zona no está, te lo digo en lugar de inventarlo.</p></div>
+  $('#method').innerHTML=`<div><h3>Cobertura</h3><p>Los horarios salen de las <b>webs oficiales de cada diócesis</b>. Ahora mismo: ${IDX.dioc.length} diócesis y ${nf.format(tot)} iglesias y capillas, de las que ${nf.format(okt)} publican un horario que he podido interpretar. España tiene 69 diócesis y unas 23.000 parroquias, y cada una publica a su manera (a veces nada), así que las voy añadiendo de una en una. Si tu zona no está, te lo digo en lugar de inventarlo.</p></div>
   <div><h3>Horarios</h3><p>Salen de las webs oficiales de cada diócesis. Unas publican el horario en tablas (Cádiz, Sevilla, Madrid, Valladolid, Salamanca, Granada) y otras en texto libre que interpreto automáticamente (Málaga, Barcelona, Alcalá, Orihuela-Alicante); en esos casos la ficha muestra también el texto original. Para Guadiaro, Sotogrande y alrededores uso además lo publicado por la parroquia.</p></div>
   <div><h3>Lo que no cubre</h3><p>Misas especiales, bodas y funerales. Festivos locales, vísperas de festivo (solo cuento los sábados), Semana Santa y Navidad. El cambio de horario de verano a invierno varía por parroquia y no siempre está publicado. Si una parroquia cambia hoy su horario, puede tardar días en reflejarse. Ceuta y Gibraltar, de momento, no.</p></div>
-  <div><h3>Pendientes de añadir</h3><p>${IDX.pendientes.map(esc).join(' · ')}.</p></div>`;
+  ${IDX.osm?`<div><h3>Resto de España</h3><p>Donde aún no hay fuente oficial cargada, el mapa muestra ${nf.format(IDX.osm.n)} iglesias de <b>OpenStreetMap</b> (datos colaborativos, licencia ODbL), de las que ${nf.format(IDX.osm.ok)} tienen un horario aportado por voluntarios; se marca como no oficial. En el resto hay un enlace para consultar el horario en misas.org, que no permite copiar sus datos.</p></div>`:''}<div><h3>Pendientes de añadir</h3><p>${IDX.pendientes.map(esc).join(' · ')}.</p></div>`;
   $('#cofs').innerHTML=IDX.dioc.map(d=>`<div class="cof glass"><h3>${esc(d.nombre)}<span class="tag on">${d.n}</span></h3><p>${d.ok} con horario · ${d.n-d.ok} sin horario${d.estado!=='ok'?' · <b>datos antiguos</b>':''}</p><a href="${esc(d.web)}" target="_blank" rel="noopener">${esc(d.web.replace(/^https?:\/\/(www\.)?/,'').split('/').slice(0,2).join('/'))}</a></div>`).join('');
 }
 
 // ---------- cabecera y pie ----------
 function renderKpis(){
   const hoy=C.reduce((a,c)=>a+timesOn(c,NOW.date).t.filter(t=>tmin(t)>=NOW.min-DUR).length,0);
-  $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(IDX.dioc.reduce((a,d)=>a+d.n,0))}</b><span>iglesias en España</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy en tu zona</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
+  $('#kpis').innerHTML=`<div class="kpi glass"><b class="num">${nf.format(IDX.dioc.reduce((a,d)=>a+d.n,0)+(IDX.osm?IDX.osm.n:0))}</b><span>iglesias en el mapa</span></div><div class="kpi glass g"><b class="num">${nf.format(hoy)}</b><span>misas que quedan hoy en tu zona</span></div><div class="kpi glass"><b class="num">${IDX.dioc.length}</b><span>diócesis cubiertas</span></div>`;
   const b=META.built;
   $('#foot').innerHTML=`Datos: webs oficiales de las diócesis (${esc(IDX.dioc.map(d=>d.nombre).join(', '))}) y parroquia de Guadiaro. Mapa y geocodificación: © colaboradores de OpenStreetMap (ODbL). Actualizado el ${esc(b.slice(8,10)+'/'+b.slice(5,7)+'/'+b.slice(0,4)+' '+b.slice(11))}.${META.fallos&&META.fallos.length?` <b>Aviso:</b> no se pudo actualizar alguna fuente; se muestran los últimos datos válidos.`:''}<nav class="legal"><a href="legal.html#aviso-legal">Aviso legal</a><a href="legal.html#privacidad">Privacidad</a><a href="legal.html#cookies">Cookies</a><a href="legal.html#terminos">Términos de uso</a><a href="legal.html#fuentes">Fuentes y licencias</a><a href="#" data-cookies>Configurar cookies</a></nav><div class="by esc"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="a" d="M3 7c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/><path class="b" d="M3 14c3 0 3 3 6 3s3-3 6-3 3 3 6 3" fill="none" stroke-width="2.4" stroke-linecap="round"/></svg><span>Un proyecto de <b>esclusa</b></span></div>`;
 }
