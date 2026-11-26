@@ -604,6 +604,11 @@ false
 -6.06502,
 false
 ],
+"cc-parroquia-de-san-andres-zarza-la-mayor": [
+39.87545,
+-6.86152,
+true
+],
 "cc-parroquia-de-san-antonio-abad": [
 39.48355,
 -6.57838,
@@ -984,6 +989,11 @@ true
 -6.02619,
 true
 ],
+"cc-parroquia-de-sta-maria-magdalena-hernan-perez": [
+40.21222,
+-6.46397,
+true
+],
 "cc-parroquia-de-sta-maria-magdalena-holguera": [
 39.90016,
 -6.34931,
@@ -1059,6 +1069,11 @@ true
 -4.77601,
 true
 ],
+"co-horarios-convento-s-rafael-mm-capuchinas": [
+37.88458,
+-4.77601,
+true
+],
 "co-horarios-convento-sta-cruz-agustin-moreno": [
 37.88458,
 -4.77601,
@@ -1070,6 +1085,11 @@ true
 true
 ],
 "co-horarios-el-salvador-y-sto-domingo-de-silos-la-compania": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-eremitorio-p-cristobal-el-banuelo": [
 37.88458,
 -4.77601,
 true
@@ -1124,6 +1144,16 @@ false
 -4.79278,
 false
 ],
+"co-horarios-iglesia-de-s-roque-buen-pastor": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-iglesia-de-san-jacinto-los-dolores": [
+37.88458,
+-4.77601,
+true
+],
 "co-horarios-iglesia-de-san-pablo": [
 37.88458,
 -4.77601,
@@ -1149,7 +1179,17 @@ false
 -4.77354,
 false
 ],
+"co-horarios-jesus-nazareno-residencia-buen-suceso": [
+37.88458,
+-4.77601,
+true
+],
 "co-horarios-la-inmaculada-concepcion-y-san-alberto-magno": [
+37.88458,
+-4.77601,
+true
+],
+"co-horarios-las-ermitas-ntra-sra-de-belen": [
 37.88458,
 -4.77601,
 true
@@ -1264,6 +1304,11 @@ false
 -4.77601,
 true
 ],
+"co-horarios-ntra-sra-del-carmen-villarrubia": [
+37.84797,
+-4.91377,
+true
+],
 "co-horarios-ntra-sra-del-rosario-electromecanica": [
 37.88458,
 -4.77601,
@@ -1329,6 +1374,11 @@ false
 -4.77601,
 true
 ],
+"co-horarios-san-gregorio-magno-iglesia-auxiliar-de-s-isidro-lab": [
+37.86703,
+-4.85047,
+true
+],
 "co-horarios-san-ignacio-de-loyola": [
 37.88575,
 -4.78322,
@@ -1388,6 +1438,11 @@ true
 37.88458,
 -4.77601,
 true
+],
+"co-horarios-san-rafael-arcangel": [
+37.88506,
+-4.7083,
+false
 ],
 "co-horarios-san-vicente-ferrer": [
 37.88951,
@@ -2219,6 +2274,11 @@ true
 -3.26271,
 true
 ],
+"gu-azuqueca-de-henares-parroquia-sta-cruz": [
+40.56838,
+-3.26271,
+true
+],
 "gu-azuqueca-de-henares-parroquia-sta-teresa": [
 40.56838,
 -3.26271,
@@ -2309,6 +2369,11 @@ false
 -3.33796,
 true
 ],
+"gu-hiendelaencina-parroquia-santa-cecilia": [
+41.08358,
+-3.00366,
+true
+],
 "gu-hita-parroquia-de-hita": [
 40.82485,
 -3.04958,
@@ -2332,6 +2397,11 @@ true
 "gu-illana-parroquia-de-illana": [
 40.18407,
 -2.90821,
+true
+],
+"gu-iriepal-monasterio-ntra-sra-de-las-virgenes": [
+40.63875,
+-3.12044,
 true
 ],
 "gu-iriepal-parroquia-la-purisima-concepcion": [
@@ -2552,6 +2622,11 @@ true
 "gu-yebra-parroquia-de-yebra": [
 40.35662,
 -2.96662,
+true
+],
+"gu-yunquera-de-henares-monasterio-de-ntra-sra-de-los-remedios": [
+40.7547,
+-3.16627,
 true
 ],
 "gu-yunquera-de-henares-parroquia-san-pedro": [
@@ -3685,6 +3760,11 @@ true
 true
 ],
 "lu-620737": [
+42.99131,
+-7.59083,
+true
+],
+"lu-620738": [
 42.99131,
 -7.59083,
 true
@@ -4989,6 +5069,16 @@ false
 -6.97011,
 true
 ],
+"mb-badajoz-convento-de-las-descalzas": [
+38.95554,
+-5.85961,
+false
+],
+"mb-badajoz-convento-de-las-descalzas#loc": [
+38.87819,
+-6.97011,
+false
+],
 "mb-badajoz-convento-de-santa-ana": [
 38.23851,
 -6.0223,
@@ -5068,6 +5158,11 @@ false
 38.87819,
 -6.97011,
 true
+],
+"mb-badajoz-nuestra-senora-de-guadalupe": [
+38.91858,
+-6.94616,
+false
 ],
 "mb-badajoz-nuestra-senora-del-perpetuo-socorro": [
 38.87819,
@@ -5169,6 +5264,11 @@ false
 -6.26113,
 false
 ],
+"mb-badajoz-santo-domingo": [
+38.87768,
+-6.97539,
+false
+],
 "mb-merida-asilo-de-ancianos": [
 38.95431,
 -6.35048,
@@ -5235,6 +5335,16 @@ true
 true
 ],
 "mb-merida-san-servando-y-san-german": [
+38.95431,
+-6.35048,
+true
+],
+"mb-merida-santa-eulalia": [
+38.91802,
+-6.34292,
+false
+],
+"mb-merida-santa-eulalia-santa-maria": [
 38.95431,
 -6.35048,
 true
@@ -12309,6 +12419,11 @@ false
 1.28009,
 false
 ],
+"tg-la-selva-del-camp-sant-andreu-apostol": [
+41.21456,
+1.13779,
+true
+],
 "tg-la-torre-de-fontaubella-nativitat-de-la-mare-de-deu": [
 41.1246,
 0.86449,
@@ -12878,6 +12993,11 @@ false
 41.28933,
 1.25205,
 false
+],
+"tg-valls-minimes-de-sant-francesc-de-paula": [
+41.28354,
+1.24736,
+true
 ],
 "tg-valls-residencia-alt-camp": [
 41.28659,
