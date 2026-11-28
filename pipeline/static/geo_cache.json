@@ -1,4 +1,529 @@
 {
+"al-ajalvir-parroquia-de-la-purisima-concepcion": [
+40.53449,
+-3.48073,
+false
+],
+"al-alalpardo-parroquia-de-san-cristobal": [
+40.63042,
+-3.47205,
+false
+],
+"al-alcala-de-henares-capellania-del-rito-hispano-mozarabe-ermit": [
+40.47951,
+-3.36924,
+false
+],
+"al-alcala-de-henares-carmelitas-afuera": [
+40.48208,
+-3.3596,
+false
+],
+"al-alcala-de-henares-convento-agustinas-nuestra-senora-consolac": [
+40.48062,
+-3.36568,
+false
+],
+"al-alcala-de-henares-convento-carmelitas-imagen": [
+40.48195,
+-3.36398,
+true
+],
+"al-alcala-de-henares-convento-clarisas-nuestra-senora-esperanza": [
+40.47995,
+-3.3665,
+false
+],
+"al-alcala-de-henares-convento-clarisas-san-diego": [
+40.48388,
+-3.36291,
+false
+],
+"al-alcala-de-henares-convento-concepcionistas-franciscanas-sant": [
+40.48097,
+-3.36491,
+false
+],
+"al-alcala-de-henares-convento-de-dominicas-de-santa-catalina-de": [
+40.48049,
+-3.36838,
+false
+],
+"al-alcala-de-henares-convento-franciscanas-clarisas-san-juan-pe": [
+40.48416,
+-3.36591,
+false
+],
+"al-alcala-de-henares-ermita-del-val": [
+40.48421,
+-3.34001,
+false
+],
+"al-alcala-de-henares-hospitalillo-de-antezana": [
+40.48247,
+-3.36684,
+false
+],
+"al-alcala-de-henares-oratorio-de-san-felipe-neri-iglesia": [
+40.48187,
+-3.36913,
+false
+],
+"al-alcala-de-henares-parroquia-de-la-virgen-de-belen": [
+40.47898,
+-3.37889,
+false
+],
+"al-alcala-de-henares-parroquia-de-nuestra-senora-de-loreto-cast": [
+40.50213,
+-3.3481,
+false
+],
+"al-alcala-de-henares-parroquia-de-nuestra-senora-del-val": [
+40.48195,
+-3.36398,
+true
+],
+"al-alcala-de-henares-parroquia-de-san-bartolome": [
+40.47788,
+-3.37079,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-diego": [
+40.48692,
+-3.35686,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-francisco-de-asis": [
+40.47565,
+-3.37653,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-isidro-labrador": [
+40.48796,
+-3.36186,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-jose": [
+40.47446,
+-3.36305,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-juan-de-avila": [
+40.4916,
+-3.37672,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-marcos": [
+40.47647,
+-3.36184,
+false
+],
+"al-alcala-de-henares-parroquia-de-san-pedro-apostol": [
+40.481,
+-3.36934,
+false
+],
+"al-alcala-de-henares-parroquia-de-santa-maria-la-mayor": [
+40.48482,
+-3.36259,
+false
+],
+"al-alcala-de-henares-parroquia-de-santa-teresa-de-jesus": [
+40.48044,
+-3.39497,
+false
+],
+"al-alcala-de-henares-parroquia-de-santiago-apostol": [
+40.48704,
+-3.36844,
+false
+],
+"al-alcala-de-henares-parroquia-de-santo-tomas-de-villanueva": [
+40.50624,
+-3.36858,
+false
+],
+"al-alcala-de-henares-parroquia-del-santo-angel": [
+40.48806,
+-3.37158,
+false
+],
+"al-algete-parroquia-de-ntra-sra-de-la-asuncion": [
+40.59616,
+-3.49742,
+false
+],
+"al-ambite-de-tajuna-parroquia-de-ntra-senora-de-la-asuncion": [
+40.28513,
+-3.20626,
+true
+],
+"al-anchuelo-parroquia-de-santa-maria-magdalena": [
+40.4637,
+-3.26853,
+false
+],
+"al-arganda-del-rey-parroquia-de-san-gabriel-arcangel": [
+40.31435,
+-3.47982,
+false
+],
+"al-arganda-del-rey-parroquia-de-san-juan-bautista": [
+40.30089,
+-3.43813,
+false
+],
+"al-arganda-del-rey-parroquia-de-san-sebastian-martir": [
+40.30767,
+-3.4468,
+false
+],
+"al-brea-de-tajo-parroquia-de-la-asuncion-de-nuestra-senora": [
+40.2301,
+-3.10728,
+false
+],
+"al-camarma-de-esteruelas-parroquia-de-san-pedro-apostol": [
+40.54869,
+-3.37681,
+false
+],
+"al-campo-real-parroquia-de-santa-maria-del-castillo": [
+40.33951,
+-3.38239,
+false
+],
+"al-carabana-parroquia-de-la-asuncion-de-nuestra-senora": [
+40.25693,
+-3.23704,
+false
+],
+"al-cobena-parroquia-de-san-cipriano": [
+40.56758,
+-3.50482,
+false
+],
+"al-corpa-parroquia-de-santo-domingo-de-silo": [
+40.42465,
+-3.26274,
+false
+],
+"al-coslada-parroquia-de-la-santa-cruz": [
+40.42472,
+-3.55421,
+false
+],
+"al-coslada-parroquia-de-nuestra-senora-de-covadonga": [
+40.4238,
+-3.55529,
+true
+],
+"al-coslada-parroquia-de-san-jose-obrero": [
+40.42996,
+-3.54514,
+false
+],
+"al-coslada-parroquia-de-san-pablo-apostol-de-las-gentes": [
+40.42091,
+-3.5417,
+false
+],
+"al-coslada-parroquia-de-san-pedro-y-san-pablo": [
+40.42603,
+-3.56745,
+false
+],
+"al-coslada-parroquia-de-santa-maria-de-los-angeles": [
+40.43911,
+-3.53262,
+false
+],
+"al-daganzo-de-arriba-parroquia-de-la-asuncion-de-ntra-senora": [
+40.54528,
+-3.45845,
+false
+],
+"al-estremeraparroquia-de-nuestra-senora-de-los-remedios": [
+40.18473,
+-3.10624,
+true
+],
+"al-fuente-el-saz-de-jarama-parroquia-de-san-pedro-apostol": [
+40.63399,
+-3.51347,
+true
+],
+"al-fuentiduena-de-tajo-parroquia-de-san-andres-apostol": [
+40.12004,
+-3.16225,
+false
+],
+"al-loeches-parroquia-de-la-asuncion-de-ntra-senora": [
+40.38201,
+-3.41618,
+false
+],
+"al-los-berrocales-del-jarama-parroquia-de-nuestra-senora-de-los": [
+40.47402,
+-3.51438,
+false
+],
+"al-los-hueros-villalbilla-parroquia-de-la-asuncion-de-ntra-seno": [
+40.442,
+-3.35383,
+false
+],
+"al-los-santos-de-la-humosa-parroquia-de-san-pedro-apostol": [
+40.5013,
+-3.25668,
+true
+],
+"al-meco-parroquia-de-la-asuncion-de-ntra-senora": [
+40.55386,
+-3.32882,
+false
+],
+"al-mejorada-del-campo-parroquia-de-la-madre-del-rosario-en-los-": [
+40.39401,
+-3.48213,
+false
+],
+"al-mejorada-del-campo-parroquia-de-la-natividad-de-ntra-senora": [
+40.39695,
+-3.48825,
+false
+],
+"al-morata-de-tajuna-parroquia-de-nuestra-senora-de-la-concepcio": [
+40.22862,
+-3.43406,
+false
+],
+"al-nuevo-baztan-parroquia-de-san-francisco-javier": [
+40.36613,
+-3.24362,
+false
+],
+"al-olmeda-de-las-fuentes-parroquia-de-san-pedro-apostol": [
+40.36963,
+-3.22113,
+false
+],
+"al-orusco-de-tajuna-parroquia-de-san-juan-evangelista": [
+40.28352,
+-3.20877,
+false
+],
+"al-paracuellos-del-jarama-parroquia-de-san-vicente-martir": [
+40.50479,
+-3.53192,
+false
+],
+"al-parroquia-belvis-jarama": [
+40.56336,
+-3.55007,
+false
+],
+"al-parroquia-sagrada-familia-paracuellos-jarama": [
+40.50808,
+-3.51134,
+false
+],
+"al-patones-parroquia-de-san-jose": [
+40.85495,
+-3.48039,
+false
+],
+"al-perales-de-tajuna-parroquia-de-santa-maria-del-castillo": [
+40.23259,
+-3.35067,
+true
+],
+"al-pezuela-de-las-torres-parroquia-de-la-asuncion-de-ntra-senor": [
+40.41844,
+-3.17768,
+false
+],
+"al-pozuelo-del-rey-parroquia-de-santo-domingo-de-silos": [
+40.36628,
+-3.3217,
+false
+],
+"al-ribatejada-parroquia-de-san-pedro-apostol": [
+40.66825,
+-3.39352,
+false
+],
+"al-rivas-vaciamadrid-parroquia-de-san-marcos": [
+40.32746,
+-3.51855,
+false
+],
+"al-rivas-vaciamadrid-parroquia-de-santa-monica": [
+40.36288,
+-3.54119,
+false
+],
+"al-san-fernando-de-henares-parroquia-de-la-purificacion-de-nues": [
+40.42596,
+-3.53509,
+false
+],
+"al-san-fernando-de-henares-parroquia-de-los-santos-juan-y-pablo": [
+40.42208,
+-3.52669,
+false
+],
+"al-san-fernando-de-henares-parroquia-de-nuestra-senora-del-temp": [
+40.42818,
+-3.52763,
+false
+],
+"al-santorcaz-parroquia-de-san-torcuato": [
+40.47192,
+-3.23515,
+false
+],
+"al-serracines-parroquia-de-san-esteban-protomartir": [
+40.62215,
+-3.40042,
+true
+],
+"al-talamanca-de-jarama-parroquia-de-san-juan-bautista": [
+40.74613,
+-3.51533,
+false
+],
+"al-tielmes-de-tajuna-parroquia-de-los-santos-justo-y-pastor": [
+40.23057,
+-3.43093,
+true
+],
+"al-torrejon-de-ardoz-capellania-polaca-ermita-de-san-isidro": [
+40.45669,
+-3.4832,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-la-sagrada-familia": [
+40.46186,
+-3.46121,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-ntra-senora-de-la-soledad": [
+40.45951,
+-3.46968,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-ntra-senora-del-rosario": [
+40.44889,
+-3.46598,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-san-isidro": [
+40.4553,
+-3.47828,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-san-juan-evangelista": [
+40.45893,
+-3.4786,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-santa-maria-magdalena": [
+40.44739,
+-3.47021,
+false
+],
+"al-torrejon-de-ardoz-parroquia-de-santiago-apostol": [
+40.45715,
+-3.45075,
+false
+],
+"al-torrejon-de-ardoz-parroquia-del-espiritu-santo": [
+40.46503,
+-3.44654,
+false
+],
+"al-torrelaguna-parroquia-de-santa-maria-magdalena": [
+40.82781,
+-3.53759,
+false
+],
+"al-torremocha-de-jarama-parroquia-de-san-pedro-apostol": [
+40.83776,
+-3.49084,
+false
+],
+"al-torres-de-la-alameda-parroquia-de-la-asuncion-de-ntra-senora": [
+40.40635,
+-3.36278,
+false
+],
+"al-valdaracete-parroquia-de-san-juan-bautista": [
+40.21065,
+-3.19545,
+true
+],
+"al-valdeavero-parroquia-de-la-asuncion-de-ntra-senora": [
+40.63071,
+-3.33259,
+false
+],
+"al-valdeolmos-parroquia-de-la-inmaculada-concepcion": [
+40.63854,
+-3.45324,
+true
+],
+"al-valdepielagos-parroquia-de-la-asuncion-de-ntra-senora": [
+40.76022,
+-3.46674,
+false
+],
+"al-valdetorres-de-jarama-parroquia-de-la-natividad-de-ntra-seno": [
+40.69297,
+-3.51191,
+false
+],
+"al-valdilecha-parroquia-de-san-martin-obispo": [
+40.29514,
+-3.30403,
+false
+],
+"al-valverde-de-alcala-parroquia-de-santo-tomas-apostol": [
+40.41804,
+-3.29968,
+true
+],
+"al-velilla-de-san-antonio-parroquia-de-san-sebastian-martir": [
+40.36648,
+-3.48786,
+false
+],
+"al-villalbilla-parroquia-de-la-asuncion-de-ntra-senora": [
+40.43318,
+-3.29945,
+false
+],
+"al-villalbilla-parroquia-de-nuestra-senora-de-zulema": [
+40.45145,
+-3.37466,
+false
+],
+"al-villamanrique-de-tajo-parroquia-de-nuestra-senora-de-arbuel": [
+40.06762,
+-3.23875,
+false
+],
+"al-villar-del-olmo-parroquia-de-nuestra-senora-de-la-antigua": [
+40.33568,
+-3.23489,
+false
+],
+"al-villarejo-de-salvanes-parroquia-de-san-andres-apostol": [
+40.16889,
+-3.27616,
+true
+],
 "at-astorga-catedral": [
 42.45805,
 -6.05683,
